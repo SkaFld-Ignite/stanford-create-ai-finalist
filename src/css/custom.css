@@ -1,0 +1,184 @@
+/**
+ * Stanford CREATE AI Challenge Proposals
+ * Custom styling with Stanford cardinal red accent
+ */
+
+:root {
+  --ifm-color-primary: #8C1515; /* Stanford Cardinal */
+  --ifm-color-primary-dark: #7a1212;
+  --ifm-color-primary-darker: #731111;
+  --ifm-color-primary-darkest: #5f0e0e;
+  --ifm-color-primary-light: #9e1818;
+  --ifm-color-primary-lighter: #a51919;
+  --ifm-color-primary-lightest: #b91c1c;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(140, 21, 21, 0.1);
+
+  /* Track colors */
+  --track-1-color: #2563eb; /* Blue - Teaching */
+  --track-2-color: #059669; /* Green - Learning */
+  --track-3-color: #7c3aed; /* Purple - Career */
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #e85d5d;
+  --ifm-color-primary-dark: #e44040;
+  --ifm-color-primary-darker: #e23232;
+  --ifm-color-primary-darkest: #c51c1c;
+  --ifm-color-primary-light: #ec7a7a;
+  --ifm-color-primary-lighter: #ee8888;
+  --ifm-color-primary-lightest: #f4acac;
+  --docusaurus-highlighted-code-line-bg: rgba(232, 93, 93, 0.2);
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+table th {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+[data-theme='dark'] table th {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+table tr:hover {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+/* Track indicator badges */
+.track-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.track-badge.track-1 {
+  background-color: var(--track-1-color);
+}
+
+.track-badge.track-2 {
+  background-color: var(--track-2-color);
+}
+
+.track-badge.track-3 {
+  background-color: var(--track-3-color);
+}
+
+/* Grid layout for navigation cards */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+
+.col {
+  padding: 0 0.5rem;
+}
+
+.col--4 {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
+
+@media (max-width: 768px) {
+  .col--4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Track cards */
+.track-card {
+  border: 2px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+.track-card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.track-card.track-1 {
+  border-top: 4px solid var(--track-1-color);
+}
+
+.track-card.track-2 {
+  border-top: 4px solid var(--track-2-color);
+}
+
+.track-card.track-3 {
+  border-top: 4px solid var(--track-3-color);
+}
+
+/* Funding highlight */
+.funding-box {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, #b91c1c 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.funding-box h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.funding-box p {
+  margin: 0.5rem 0 0 0;
+  opacity: 0.9;
+}
+
+/* PDF-ready print styles */
+@media print {
+  .navbar,
+  .footer,
+  .pagination-nav,
+  .theme-doc-sidebar-container {
+    display: none !important;
+  }
+
+  .main-wrapper {
+    padding: 0 !important;
+  }
+
+  article {
+    max-width: 100% !important;
+  }
+
+  h1 {
+    page-break-before: always;
+  }
+
+  h1:first-of-type {
+    page-break-before: avoid;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+}
