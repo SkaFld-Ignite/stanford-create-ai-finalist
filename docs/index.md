@@ -90,8 +90,8 @@ Keith Coleman is Co-Chair of the UN Joint SDG Fund Breakthrough Alliance and Fou
 **Stanford Affiliation:**
 - **B.A. Economics, Stanford University** (1986)
 - **Advisory Scholar, mediaX at Stanford University** (2019-2022) - Industry Affiliate Program of Stanford's H-STAR Institute extended from the Stanford Graduate School of Education
-- **Active Leadership** in Stanford Angels & Entrepreneurs, TomKat Center for Sustainable Energy, Stanford Technology Ventures Program—connecting entrepreneurs with investors and mentorship platforms
-- **Active Connections** to Stanford Technology Ventures Program, Stanford GSB Center for Social Innovation, TomKat Center for Sustainable Energy, Stanford Alumni in AI
+- **Active Leadership** in Stanford Angels & Entrepreneurs, TomKat Center for Sustainable Energy, Stanford Alumni in AI—connecting entrepreneurs with investors and mentorship platforms
+- **Active Connections** to Stanford Technology Ventures Program, Stanford GSB Center for Social Innovation
 
 **Relevant Experience:**
 - **UN Joint SDG Fund Breakthrough Alliance Co-Chair** - Creating opportunities for all through tech, media, and markets; $290M+ portfolio across 150+ countries
