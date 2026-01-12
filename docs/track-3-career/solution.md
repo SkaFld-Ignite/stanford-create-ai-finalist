@@ -56,13 +56,23 @@ Local employers are active partners who shape project scope, validate quality, a
 
 ## AI Integration
 
-AI tools are embedded throughout, ensuring students develop capability to work alongside AI systems.
+AI tools are embedded throughout, ensuring students develop capability to work alongside AI systems responsibly and effectively.
 
 | Function | AI Application | Skill Developed |
 |----------|----------------|-----------------|
 | Research | AI-enhanced information gathering | Critical evaluation of AI output |
 | Content creation | AI drafting with human refinement | Editorial judgment |
 | Documentation | AI-assisted generation | Process transparency |
+| Verification | Cross-checking AI outputs | Hallucination detection |
+
+### Responsible AI Use Framework
+
+Students learn ethical AI interaction from day one:
+
+- **Hallucination Recognition:** Training to identify when AI generates plausible-sounding but inaccurate information, using verification techniques and source checking
+- **Appropriate Use Boundaries:** Understanding when AI assistance is appropriate versus when human judgment or original work is required
+- **Transparency Standards:** Documenting AI tool usage in project work, maintaining honesty about human vs. AI contributions
+- **Quality Guardrails:** Developing critical thinking habits that prevent over-reliance on AI-generated content
 
 ## Weekly Session Structure
 

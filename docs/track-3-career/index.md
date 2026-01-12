@@ -23,11 +23,12 @@ This program puts **educators and learners at the heart of AI design**—ensurin
 
 ### The Innovation
 
-Unlike traditional career preparation that relies on classroom simulation, AI Studio Teams operates at the intersection of three transformative approaches:
+Unlike traditional career preparation that relies on classroom simulation, AI Studio Teams operates at the intersection of four transformative approaches:
 
 1. **Portfolio Over Credentials**: Students graduate with employer-validated work samples, not just transcripts
 2. **Near-Peer Mentorship**: 12th graders mentor 10th graders; 11th graders mentor 9th graders, creating sustainable learning communities
 3. **Employer Integration**: Local companies provide real projects, quarterly portfolio reviews, and micro-internship pathways
+4. **Responsible AI Foundation**: Students learn ethical AI interaction—including hallucination detection and appropriate use boundaries—preparing them to work alongside AI systems with discernment
 
 ### Why El Segundo
 

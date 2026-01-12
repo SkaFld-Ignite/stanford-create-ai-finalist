@@ -22,6 +22,7 @@ sidebar_position: 5
 | Portfolio quality score | 7.0/10 minimum | Employer panel rating |
 | Project completion rate | 85% delivered | Client acceptance |
 | AI tool proficiency | 80% competency | Skills assessment |
+| Responsible AI use | 90% demonstrate ethical practices | Rubric evaluation |
 
 ### Tier 3: Program Health
 
@@ -35,11 +36,12 @@ sidebar_position: 5
 
 | Dimension | Weight | Criteria |
 |-----------|--------|----------|
-| Work Quality | 30% | Professional standards, accuracy |
-| AI Tool Utilization | 20% | Appropriate use, critical evaluation |
+| Work Quality | 25% | Professional standards, accuracy |
+| AI Tool Utilization | 20% | Appropriate use, critical evaluation, hallucination detection |
+| Responsible AI Practices | 10% | Ethical boundaries, transparency, verification habits |
 | Problem-Solving | 20% | Methodology, creativity |
 | Communication | 15% | Clarity, documentation |
-| Collaboration | 15% | Team contribution, mentorship |
+| Collaboration | 10% | Team contribution, mentorship |
 
 **Scoring:** Each dimension rated 1-10. Minimum 7.0 required for AI-Ready Certificate.
 

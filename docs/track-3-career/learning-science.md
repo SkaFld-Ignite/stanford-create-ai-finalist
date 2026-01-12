@@ -47,6 +47,16 @@ Learning in authentic contexts with genuine stakes produces deeper understanding
 
 Students learn to direct AI systems, evaluate output quality, and add human judgment—developing the collaboration skills employers increasingly require.
 
+| Finding | Source | Implication |
+|---------|--------|-------------|
+| AI literacy requires critical evaluation skills | Long & Magerko, 2020 | Students must verify AI outputs, not accept blindly |
+| Effective AI use requires understanding limitations | Markauskaite & Goodyear, 2023 | Hallucination detection is foundational skill |
+| Ethical AI interaction improves long-term outcomes | UNESCO AI Education Guidelines, 2022 | Early guardrails prevent problematic habits |
+
+**Teaching AI Discernment:** Students develop the ability to recognize AI hallucinations—plausible-sounding but factually incorrect outputs—through systematic verification practices. This critical skill prevents the common trap of over-trusting AI-generated content.
+
+**Ethical Use From the Start:** By embedding appropriate use boundaries into every project, students internalize responsible AI practices before entering the workforce. This includes transparency about AI contributions and understanding when human judgment must override AI suggestions.
+
 ---
 
 **Next:** [Outcomes - Measurement Plan](./outcomes)
