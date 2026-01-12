@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Stanford CREATE AI Challenge',
-  tagline: 'El Segundo AI Academy - Transforming K-12 Education',
+  title: 'AI Studio Teams',
+  tagline: 'Portfolio-Based Pathways to AI-Era Careers',
   favicon: 'img/favicon.svg',
 
   future: {
@@ -47,9 +47,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'CREATE AI Challenge',
+      title: 'AI Studio Teams',
       logo: {
-        alt: 'Stanford CREATE AI',
+        alt: 'AI Studio Teams',
         src: 'img/logo.svg',
       },
       items: [
@@ -57,7 +57,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'mainSidebar',
           position: 'left',
-          label: 'Proposals',
+          label: 'Proposal',
         },
         {
           href: 'https://acceleratelearning.stanford.edu/funding/create-ai-challenge/',
@@ -70,15 +70,11 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Proposals',
+          title: 'Proposal',
           items: [
             {
-              label: 'Track 1: Augment Teaching',
-              to: '/track-1-teaching',
-            },
-            {
-              label: 'Track 2: Augment Learning',
-              to: '/track-2-learning',
+              label: 'Overview',
+              to: '/',
             },
             {
               label: 'Track 3: Augment Career',
@@ -100,7 +96,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `El Segundo AI Academy | Stanford CREATE AI Challenge 2026`,
+      copyright: `AI Studio Teams | Stanford CREATE AI Challenge 2026`,
     },
     prism: {
       theme: prismThemes.github,

@@ -34,22 +34,19 @@ Keith Coleman is Co-Chair of the UN Joint SDG Fund Breakthrough Alliance and Fou
 **Stanford Affiliation:**
 - **B.A. Economics, Stanford University** (1986)
 - **Advisory Scholar, mediaX at Stanford University** (2019-2022) - Industry Affiliate Program of Stanford's H-STAR Institute extended from the Stanford Graduate School of Education
-- Active leadership in Stanford Angels & Entrepreneurs, connecting entrepreneurs with investors and mentorship platforms
+- **Active Leadership** in Stanford Angels & Entrepreneurs, TomKat Center for Sustainable Energy, Stanford Technology Ventures Program—connecting entrepreneurs with investors and mentorship platforms
+- **Active Connections** to Stanford Technology Ventures Program, Stanford GSB Center for Social Innovation, TomKat Center for Sustainable Energy, Stanford Alumni in AI
 
 **Relevant Experience:**
 - **UN Joint SDG Fund Breakthrough Alliance Co-Chair** - Creating opportunities for all through tech, media, and markets; $290M+ portfolio across 150+ countries
 - **Capitol Partners General Partner** (17 years) - Workforce development, economic opportunity, and coalition building with aerospace/defense community (AMP SoCal) and education pathways
-- **Alta Sea Partnership** - Public-private partnership driving education and career pathways
+- **Alta Sea Partnership** - Public-private partnership convening organizations in science, business, education and career pathways
 - **Climate Action Pathways for Schools** - Green jobs and career pathway development
 - Extensive consultancy with U.S. Department of Commerce, Department of Labor, DoD, and educational institutions on workforce development strategies
 
 **Education:** Stanford University (B.A. Economics), University of Pennsylvania (M.A. Applied Positive Psychology)
 
-**AI Studio Teams Role:**
-- Lead employer partnership strategy and recruitment
-- Connect program to Stanford entrepreneurship and innovation networks
-- Oversee workforce alignment and credential validation
-- Facilitate industry advisory council and micro-internship partnerships
+**AI Studio Teams Role:** Oversee district/workforce alignment and credential validation, connect program to Stanford entrepreneurship and innovation networks, facilitate industry advisory council and micro-internship partnerships.
 
 ## Advisory Support
 

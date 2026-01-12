@@ -1,14 +1,13 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
 
 **Stanford CREATE AI Challenge Proposals** - A Docusaurus documentation site containing three comprehensive proposals for the Stanford CREATE AI Challenge, each targeting a different track.
 
-### Target Audience
-- Primary: Stanford CREATE AI Challenge reviewers
-- Secondary: Team members, stakeholders
+- **Live Site**: https://stanford-create-ai.vercel.app
+- **Repository**: https://github.com/SkaFld-Ignite/stanford-create-ai-challenge
 
 ### Submission Deadline
 **January 12, 2026 at 12 PM PST**
@@ -21,53 +20,32 @@ This file provides guidance to Claude Code when working with code in this reposi
 | **Track 2** | Augment Learning | Equity-Centered K-12 AI Curriculum |
 | **Track 3** | Augment Career | AI Studio Teams & Workforce Pipeline |
 
-### Funding Request
-$50,000 per track
+Funding request: $50,000 per track
 
 ## Development Commands
 
 ```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm start
-
-# Build for production
-npm run build
-
-# Serve production build locally
-npm run serve
+npm install          # Install dependencies
+npm start            # Start development server (hot reload)
+npm run build        # Build for production
+npm run serve        # Serve production build locally
+npm run typecheck    # TypeScript type checking
+npm run clear        # Clear Docusaurus cache
 ```
 
 ## Architecture
 
-### Technology Stack
-- **Framework**: Docusaurus 3.x with TypeScript
-- **Styling**: Custom CSS with Stanford cardinal red (#8C1515)
+- **Framework**: Docusaurus 3.9 with TypeScript, React 19
+- **Deployment**: Vercel (auto-deploys on push to main)
+- **Docs as Root**: `routeBasePath: '/'` means docs are served at root, not `/docs`
 
-### Directory Structure
-```
-docs/
-├── index.md                    # Landing page with track overview
-├── track-1-teaching/           # Augment Teaching proposal
-│   ├── index.md                # Executive summary
-│   ├── problem.md              # Problem statement
-│   ├── solution.md             # Proposed solution
-│   ├── learning-science.md     # Research foundation
-│   ├── outcomes.md             # Measurement plan
-│   ├── equity.md               # Fairness & accessibility
-│   ├── timeline.md             # Implementation timeline
-│   ├── team.md                 # Team biographies
-│   └── budget.md               # $50K budget breakdown
-├── track-2-learning/           # Augment Learning proposal (same structure)
-└── track-3-career/             # Augment Career proposal (same structure)
-```
-
-### Key Configuration Files
-- `docusaurus.config.ts` - Main site configuration
+### Key Files
+- `docusaurus.config.ts` - Site config, navbar, footer, theme
 - `sidebars.ts` - Navigation structure for all 3 tracks
-- `src/css/custom.css` - Stanford branding and track colors
+- `src/css/custom.css` - Stanford branding (#8C1515) and track colors
+
+### Track Structure
+Each track folder (`docs/track-{1,2,3}-*/`) contains 8 standardized pages: index, problem, solution, learning-science, outcomes, equity, timeline, team, budget.
 
 ## Content Guidelines
 
@@ -85,14 +63,7 @@ docs/
 - Track 3 (Career): Purple (#7c3aed)
 
 ### PDF Export
-Print styles are included in custom.css for clean PDF export via browser print function.
-
-## Related Projects
-
-This proposal site draws from:
-- `/Users/mikebelloli/Development/projects/stanford-create-ai-challenge/` - Original ESUSD school board documentation
-
-The two sites operate independently but share the same underlying El Segundo AI Academy initiative.
+Print styles in custom.css support clean PDF export via browser print.
 
 ## Team
 

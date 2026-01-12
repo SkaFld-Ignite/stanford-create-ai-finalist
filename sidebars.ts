@@ -9,42 +9,6 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Track 1: Augment Teaching',
-      link: {
-        type: 'doc',
-        id: 'track-1-teaching/index',
-      },
-      items: [
-        'track-1-teaching/problem',
-        'track-1-teaching/solution',
-        'track-1-teaching/learning-science',
-        'track-1-teaching/outcomes',
-        'track-1-teaching/equity',
-        'track-1-teaching/timeline',
-        'track-1-teaching/team',
-        'track-1-teaching/budget',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Track 2: Augment Learning',
-      link: {
-        type: 'doc',
-        id: 'track-2-learning/index',
-      },
-      items: [
-        'track-2-learning/problem',
-        'track-2-learning/solution',
-        'track-2-learning/learning-science',
-        'track-2-learning/outcomes',
-        'track-2-learning/equity',
-        'track-2-learning/timeline',
-        'track-2-learning/team',
-        'track-2-learning/budget',
-      ],
-    },
-    {
-      type: 'category',
       label: 'Track 3: Augment Career',
       link: {
         type: 'doc',

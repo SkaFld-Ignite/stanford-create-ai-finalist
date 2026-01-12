@@ -15,9 +15,11 @@ sidebar_position: 1
 
 ## Executive Summary
 
-The pathway from education to employment is breaking. As AI transforms the workforce, entry-level positions are disappearing at an alarming rate, creating an "experience paradox" where young people cannot gain experience because employers no longer offer the entry points that traditionally provided it. Meanwhile, the credentials that once signaled workforce readiness are losing value as AI capabilities render many traditional skills obsolete within months of graduation.
+The pathway from education to employment is breaking. As AI transforms the workforce, entry-level positions are disappearing at an alarming rate—creating an "experience paradox" where young people cannot gain experience because employers no longer offer the entry points that traditionally provided it.
 
-**AI Studio Teams** addresses this crisis by replacing the broken credential-to-career pipeline with a portfolio-based pathway that demonstrates actual capability through real work. Our model creates cross-grade teams of 8-12 high school students who complete authentic projects for local employers, building verified portfolios that prove their ability to work effectively alongside AI systems.
+**AI Studio Teams** addresses this crisis by creating a **farm system for talent development**—a structured approach to nurturing human potential that mirrors the sustained support model used in athletics. Our model replaces the broken credential-to-career pipeline with a portfolio-based pathway where cross-grade teams of 8-12 high school students complete authentic projects for local employers, building verified portfolios that prove their ability to work effectively alongside AI systems.
+
+This program puts **educators and learners at the heart of AI design**—ensuring these tools expand access, agency, and connection, and in turn advance learning, well-being, and opportunity.
 
 ### The Innovation
 
@@ -29,7 +31,7 @@ Unlike traditional career preparation that relies on classroom simulation, AI St
 
 ### Why El Segundo
 
-El Segundo represents an ideal implementation environment: a compact district (5 schools, 3,400 students) with direct access to major employers including aerospace leaders (Boeing, Northrop Grumman), technology companies, and entertainment industry headquarters. This concentration enables authentic employer partnerships that would be impossible in larger, more dispersed districts.
+El Segundo represents an ideal implementation environment: a compact district (5 schools, 3,400 students) with direct access to major employers including aerospace leaders (Boeing, Northrop Grumman), technology companies, and entertainment industry headquarters. This concentration enables authentic employer partnerships and **interdisciplinary practice** that would be impossible in larger, more dispersed districts.
 
 ### Expected Outcomes (12 months)
 
