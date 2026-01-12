@@ -9,7 +9,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Track 3: Augment Career',
+      label: 'Proposal Details',
       link: {
         type: 'doc',
         id: 'track-3-career/index',
