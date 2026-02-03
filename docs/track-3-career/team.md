@@ -12,7 +12,7 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
 <div className="row margin-bottom--xl" style={{alignItems: 'center'}}>
   <div className="col col--3">
     <div className="avatar-circle" style={{width: '180px', height: '180px'}}>
-      <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" style={{objectPosition: 'center', transform: 'scale(1.15) translateX(10px)'}} />
+      <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" style={{objectPosition: 'center', transform: 'scale(1.08) translateX(5px)'}} />
     </div>
   </div>
   <div className="col col--9">
