@@ -54,9 +54,9 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
   <div className="col col--9">
     <h3>Mike Belloli | Technology & Operations</h3>
     <p><strong>Platform strategy, financial modeling, digital infrastructure</strong></p>
-    <p>Mike Belloli is a full-stack developer managing financials, pitch strategy, and digital infrastructure for the SkaFld Spark platform. He ensures operational excellence across all technical and business domains.</p>
+    <p>Mike Belloli is a full-stack developer managing financials, pitch strategy, and digital infrastructure for the SkaFld Trailhead platform. He ensures operational excellence across all technical and business domains.</p>
     <ul style={{fontSize: '0.9rem'}}>
-      <li>Full-stack development and technical operations for the SkaFld Spark platform.</li>
+      <li>Full-stack development and technical operations for the SkaFld Trailhead platform.</li>
       <li>Management of financial models, investor materials, and digital presence.</li>
       <li>Expert in educational data privacy (COPPA/FERPA) and secure AI implementation.</li>
     </ul>

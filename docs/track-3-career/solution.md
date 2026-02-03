@@ -23,7 +23,7 @@ AI Studio Teams replaces the broken credential-to-career pipeline with a portfol
 - **8 teams** of 12 students each (9th-12th grade mix).
 - **Weekly 90-minute sessions** with teacher mentors.
 - **Real client projects** and **Quarterly portfolio reviews**.
-- **Platform support** via SkafldSpark AI-powered environment.
+- **Platform support** via SkafldTrailhead AI-powered environment.
 
 ## The SkaFld Ideation Methodology
 
@@ -84,14 +84,14 @@ Every complex challenge can be broken down into smaller, more manageable decisio
   </div>
 </div>
 
-## SkafldSpark: The Technology Platform
+## SkafldTrailhead: The Technology Platform
 
-AI Studio Teams is powered by **SkafldSpark**, an AI-powered K-12 learning platform built specifically for educational environments requiring compliance, safety, and engagement.
+AI Studio Teams is powered by **SkafldTrailhead**, an AI-powered K-12 learning platform built specifically for educational environments requiring compliance, safety, and engagement.
 
 <div className="row">
   <div className="col col--6">
     <div className="highlight-box">
-      <h4>Sparky AI Assistant</h4>
+      <h4>Trailhead AI Assistant</h4>
       <p style={{fontSize: '0.9rem'}}>Project coaching, decomposition guidance, and AI collaboration practice within a safe sandbox.</p>
     </div>
   </div>

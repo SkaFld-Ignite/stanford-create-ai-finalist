@@ -9,7 +9,7 @@ sidebar_position: 9
 
 | Category | Amount | Percentage | Description |
 |----------|--------|------------|-------------|
-| **Platform Development** | $20,000 | 40% | SkaFld Spark feature completion, AI coaching engine, portfolio system |
+| **Platform Development** | $20,000 | 40% | SkaFld Trailhead feature completion, AI coaching engine, portfolio system |
 | **Pilot Implementation** | $12,000 | 24% | El Segundo coordination, employer onboarding, curriculum materials |
 | **Assessment & Measurement** | $8,000 | 16% | Learning outcome tracking, portfolio evaluation, research documentation |
 | **Operations & Contingency** | $10,000 | 20% | Legal/compliance, travel, admin overhead, and 6% buffer for unexpected costs |
@@ -19,7 +19,7 @@ sidebar_position: 9
 
 ### Platform Development ($20,000)
 
-**Purpose:** Building the "SkaFld Spark" infrastructure that makes the model scalable beyond a single district.
+**Purpose:** Building the "SkaFld Trailhead" infrastructure that makes the model scalable beyond a single district.
 
 - **AI Coaching Engine:** Completing the Socratic questioning module that guides students through problem decomposition.
 - **Portfolio System:** Developing the employer-facing review portal for validated assessment.
