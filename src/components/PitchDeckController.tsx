@@ -134,18 +134,17 @@ const PitchDeckController = () => {
       const html2canvas = (await import('html2canvas')).default;
       const { jsPDF } = await import('jspdf');
 
-      // Get deck container and all slides
-      const deckContainer = document.querySelector('.pitch-deck-container') as HTMLElement;
+      // Get all slides
       const slides = document.querySelectorAll('.pitch-slide');
-      if (!slides.length || !deckContainer) return;
+      if (!slides.length) return;
 
-      // PDF dimensions - 16:9 aspect ratio in mm (standard widescreen)
+      // Exact 16:9 dimensions for fullscreen presentation
+      const slideWidth = 1920;
+      const slideHeight = 1080;
+
+      // PDF dimensions in mm (16:9 ratio) - matches standard presentation aspect
       const pdfWidthMm = 338.67;
       const pdfHeightMm = 190.5;
-
-      // Capture dimensions (16:9)
-      const captureWidth = 1920;
-      const captureHeight = 1080;
 
       const pdf = new jsPDF({
         orientation: 'landscape',
@@ -154,75 +153,104 @@ const PitchDeckController = () => {
         compress: true
       });
 
-      // Enter presentation mode to get clean slides
-      document.body.classList.add('presentation-mode-active');
+      // Create offscreen container for rendering slides at exact dimensions
+      const offscreenContainer = document.createElement('div');
+      offscreenContainer.style.cssText = `
+        position: fixed;
+        left: -9999px;
+        top: 0;
+        width: ${slideWidth}px;
+        height: ${slideHeight}px;
+        overflow: hidden;
+        z-index: -9999;
+      `;
+      document.body.appendChild(offscreenContainer);
 
-      // Hide controls during capture
-      const controls = document.querySelector('.pitch-controls') as HTMLElement;
-      if (controls) controls.style.display = 'none';
-
-      // Store original scroll position
-      const originalScrollTop = deckContainer.scrollTop;
-
-      // Ensure all slides have in-view class for animations
-      slides.forEach((slide) => {
-        slide.classList.add('in-view');
-        // Force all animated elements visible
-        slide.querySelectorAll('.animate-enter, .layer-card, .funding-segment, .chat-message').forEach((el) => {
-          (el as HTMLElement).style.opacity = '1';
-          (el as HTMLElement).style.transform = 'none';
-        });
-      });
-
-      // Force funding segment widths
-      document.querySelectorAll('.funding-segment.fill-40').forEach((el) => {
-        (el as HTMLElement).style.width = '40%';
-      });
-      document.querySelectorAll('.funding-segment.fill-24').forEach((el) => {
-        (el as HTMLElement).style.width = '24%';
-      });
-      document.querySelectorAll('.funding-segment.fill-16').forEach((el) => {
-        (el as HTMLElement).style.width = '16%';
-      });
-      document.querySelectorAll('.funding-segment.fill-20').forEach((el) => {
-        (el as HTMLElement).style.width = '20%';
-      });
-
-      // Wait a moment for presentation mode and styles to apply
-      await new Promise((resolve) => setTimeout(resolve, 300));
-
-      // Capture each slide
+      // Process each slide
       for (let i = 0; i < slides.length; i++) {
-        const slide = slides[i] as HTMLElement;
+        const originalSlide = slides[i] as HTMLElement;
 
-        // Scroll to this slide (instant, no animation)
-        slide.scrollIntoView({ behavior: 'auto', block: 'start' });
+        // Clone the slide
+        const slideClone = originalSlide.cloneNode(true) as HTMLElement;
 
-        // Wait for scroll and render to complete
-        await new Promise((resolve) => setTimeout(resolve, 250));
+        // Get original computed styles for background
+        const computedStyle = window.getComputedStyle(originalSlide);
+        const originalBg = computedStyle.background;
+        const originalBgColor = computedStyle.backgroundColor;
 
-        // Get computed background
-        const computedStyle = window.getComputedStyle(slide);
-        let bgColor: string | null = computedStyle.backgroundColor;
+        // Apply exact dimensions and styling for PDF capture
+        slideClone.style.cssText = `
+          width: ${slideWidth}px !important;
+          height: ${slideHeight}px !important;
+          min-height: ${slideHeight}px !important;
+          max-height: ${slideHeight}px !important;
+          padding: 60px !important;
+          margin: 0 !important;
+          box-sizing: border-box !important;
+          display: flex !important;
+          flex-direction: column !important;
+          justify-content: center !important;
+          align-items: center !important;
+          overflow: hidden !important;
+          position: relative !important;
+          background: ${originalBg || originalBgColor} !important;
+        `;
 
-        // For gradient slides, we need to let html2canvas capture the gradient
-        if (slide.classList.contains('slide-gradient')) {
-          bgColor = null;
+        // Force all animations to complete state
+        slideClone.classList.add('in-view');
+        slideClone.querySelectorAll('.animate-enter, .layer-card, .funding-segment, .chat-message, [class*="animate"]').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.opacity = '1';
+          htmlEl.style.transform = 'none';
+          htmlEl.style.transition = 'none';
+          htmlEl.style.animation = 'none';
+        });
+
+        // Force funding segment widths
+        slideClone.querySelectorAll('.funding-segment.fill-40').forEach((el) => {
+          (el as HTMLElement).style.width = '40%';
+        });
+        slideClone.querySelectorAll('.funding-segment.fill-24').forEach((el) => {
+          (el as HTMLElement).style.width = '24%';
+        });
+        slideClone.querySelectorAll('.funding-segment.fill-16').forEach((el) => {
+          (el as HTMLElement).style.width = '16%';
+        });
+        slideClone.querySelectorAll('.funding-segment.fill-20').forEach((el) => {
+          (el as HTMLElement).style.width = '20%';
+        });
+
+        // Remove any controls from the clone
+        slideClone.querySelectorAll('.pitch-controls, .control-btn').forEach((el) => el.remove());
+
+        // Clear container and add this slide
+        offscreenContainer.innerHTML = '';
+        offscreenContainer.appendChild(slideClone);
+
+        // Wait for render
+        await new Promise((resolve) => setTimeout(resolve, 100));
+
+        // Determine background color for canvas
+        let bgColor: string | null = null;
+        if (originalSlide.classList.contains('slide-dark')) {
+          bgColor = '#121212';
+        } else if (originalSlide.classList.contains('slide-brand')) {
+          bgColor = '#8C1515';
+        } else if (originalSlide.classList.contains('slide-gradient')) {
+          bgColor = null; // Let html2canvas capture the gradient
+        } else {
+          bgColor = '#f8f9fa';
         }
 
-        // Capture the slide
-        const canvas = await html2canvas(slide, {
+        // Capture at exact dimensions
+        const canvas = await html2canvas(slideClone, {
+          width: slideWidth,
+          height: slideHeight,
           scale: 2,
           useCORS: true,
           allowTaint: true,
           backgroundColor: bgColor,
-          logging: false,
-          width: captureWidth,
-          height: captureHeight,
-          windowWidth: captureWidth,
-          windowHeight: captureHeight,
-          x: 0,
-          y: 0
+          logging: false
         });
 
         // Add page (except for first slide)
@@ -230,26 +258,18 @@ const PitchDeckController = () => {
           pdf.addPage();
         }
 
-        // Add the canvas image to PDF
+        // Add image to PDF - fills entire page
         const imgData = canvas.toDataURL('image/jpeg', 0.95);
         pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidthMm, pdfHeightMm);
       }
 
-      // Restore original scroll position
-      deckContainer.scrollTop = originalScrollTop;
-
-      // Exit presentation mode
-      document.body.classList.remove('presentation-mode-active');
-
-      // Show controls again
-      if (controls) controls.style.display = '';
+      // Cleanup
+      document.body.removeChild(offscreenContainer);
 
       // Save the PDF
       pdf.save('AI Studio Teams Deck.pdf');
     } catch (error) {
       console.error('PDF generation failed:', error);
-      // Make sure to exit presentation mode even on error
-      document.body.classList.remove('presentation-mode-active');
     } finally {
       setIsGeneratingPDF(false);
     }
