@@ -7,7 +7,7 @@ sidebar_position: 6
 
 ## The Equity Imperative
 
-AI's workforce disruption does not affect all populations equally. AI Studio Teams creates structured pathways that do not depend on existing privilege.
+AI's workforce disruption does not affect all populations equally. AI Studio Teams creates structured pathways that provide **access for all**—focusing on what you can do and unlocking your potential.
 
 ## Explicit Parity Targets
 

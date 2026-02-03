@@ -29,7 +29,7 @@ AI Studio Teams replaces the broken credential-to-career pipeline with a portfol
 
 ### Don't Give Them the Fish. Teach Them to Fish.
 
-Most AI education gives students prompts that expire in months. We teach metacognitive skills that transfer across any AI tool, forever.
+Most AI education gives students prompts that expire in months. We teach metacognitive skills that transfer across any AI tool—because tools change, but the way you THINK persists.
 
 ### The Paradigm Shift
 

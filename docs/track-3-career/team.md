@@ -38,8 +38,8 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
     <p><strong>Policy & strategy expertise for responsible AI deployment, Stanford collaboration, workforce development</strong></p>
     <p>Keith Coleman brings the policy and strategy awareness essential for responsible AI deployment—complementing technical AI skills with governance understanding and ethical considerations. His career spans workforce development and building bridges between education, industry, and policy.</p>
     <ul style={{fontSize: '0.9rem'}}>
-      <li><strong>Stanford BA Economics '86. Advisory Scholar, mediaX at Stanford (2019-2022).</strong> Deep ties to Stanford's innovation ecosystem and interdisciplinary approach to learning.</li>
-      <li><strong>UN Joint SDG Fund Co-Chair.</strong> Overseeing $290M+ portfolio across 150+ countries, bringing global perspective on education and workforce development.</li>
+      <li><strong>Stanford BA Economics '86. mediaX Advisory Scholar.</strong> Deep ties to Stanford's innovation ecosystem and interdisciplinary approach to learning.</li>
+      <li><strong>UN Joint SDG Fund Breakthrough Alliance Co-Chair.</strong> Overseeing $290M+ portfolio across 150+ countries, bringing global perspective on education and workforce development.</li>
       <li><strong>Capitol Partners General Partner.</strong> 17 years experience in economic opportunity, aerospace/defense coalition building, and policy-aware technology deployment.</li>
     </ul>
   </div>

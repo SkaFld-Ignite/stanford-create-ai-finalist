@@ -23,5 +23,5 @@ yarn-error.log*
 .claude/
 *.pdf
 
-# Internal analysis (not for public repo)
-internal/
+# Internal analysis - tracked but not on website
+# internal/

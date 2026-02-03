@@ -1,0 +1,557 @@
+Create+AI Challenge Sync
+Mon, Feb 2, 2026
+
+0:11 - Keith Coleman
+Let's see here. What's going on there, Mike?
+
+0:52 - Unidentified Speaker
+Hey, Keith, how's it going?
+
+0:53 - Unidentified Speaker
+Hey, what's going on? What's happening?
+
+0:57 - Unidentified Speaker
+much. All right, man. Recovering from whatever bug was going around.
+
+1:06 - Keith Coleman
+You know, not to sort of stretch into politics or whatever, but a lot of people are getting sick and one, it would be interesting to know, you know, how they may be related to folks may making choices about vaccinations and all that kind of stuff.
+
+1:30 - Mike Belloli
+Well, I was I recently went to Columbia for a friend's wedding, and we went to this national park there where it's technically in the yellow fever zone. So I got the I got the yellow fever shot before I went there. But I was thinking about getting a flu vaccine and a covid vaccine at the same time as my other shot. And the pharmacist was like, oh, yeah, just come back for the other ones. You know, don't get all three right now. And I think I might have picked up one, maybe COVID or something. I don't know. Probably maybe more like,
+
+2:08 - Keith Coleman
+Yeah, yeah.
+
+2:10 - Keith Coleman
+Yeah, I remember. I remember. Well, whenever one travels to whether it's, you know, certain parts of Southeast Asia, as you know, or some Latin and certainly a lot of countries on the continent. And we've got to take all sorts of stuff before you get out there. Because whether it's malaria related or whatever else, we don't want to get that stuff when we're out and about.
+
+2:46 - Charles Sims
+No, definitely not. Hey, Charles.
+
+2:52 - Keith Coleman
+Sorry about that.
+
+2:53 - Keith Coleman
+Yeah, you're good. We're just reciting travels in the past to countries where they've got some funky stuff floating around. Yeah. Yeah. All right. It'd be interesting to see what happens moving forward, because I don't know if I would want to have my kids in school with a lot of other kids, you know, that had no protection.
+
+3:24 - Mike Belloli
+Yeah, yeah, no, that's definitely fair.
+
+3:27 - Keith Coleman
+Yeah, you know, I mean, they have a polio vaccine, so kids don't get polio. Same for measles too. Measles outbreaks everywhere. So anyway, but no more, no more young kids. My kid's almost 6'6", and he's, he tells me he's ducking on me, so doesn't need a vaccine shot.
+
+3:50 - Charles Sims
+But both emotionally and physically, right? Yeah, exactly. All right, just getting situated. So, Mike, Keith and I chatted a little bit Saturday in regards to the Stanford event so we're all excited we we got maybe a little very very little a bit of uh potential capital coming to to help us jam but um wanted to quickly talk through some of the um things we want to do to prepare so has everybody had a chance to you guys both had a chance to Read everything correct yep oh yeah all right so Our biggest, I think our biggest thing to have ready is obviously the actual pitch, so the outline of what the pitch is, how we're doing it. The Thursday is the, is that just the deck that's due Thursday?
+
+5:05 - Unidentified Speaker
+Yeah, that's the deck.
+
+5:06 - Charles Sims
+Okay, and then Mike, did you have it, did you start, I couldn't remember if you had mentioned Did you start work on that, or that was one of our other?
+
+5:14 - Mike Belloli
+No, so I wanted to connect with you today on the work that you did, and then I can start generating the deck materials. But yeah, no, it'll definitely be done by Thursday. We'll have it. Ideally, we'll have it tomorrow or Wednesday to review for notes, and then we'll submit the final on Thursday.
+
+5:35 - Keith Coleman
+Yeah, let's kind of just shoot it. Talk through what folks' thoughts are about, you know, how the proposal is going to be synthesized into the deck. And then we could talk, you know, about the pitch, you know, as well.
+
+6:02 - Mike Belloli
+Yeah, well, so I sensed the – Charles, did you do anything on that? I can walk through my thoughts.
+
+6:10 - Charles Sims
+So I mean, I Read through it. I didn't actually have a chance to start putting together my outline just yet. Okay.
+
+6:21 - Mike Belloli
+But yeah, well, basically, Charles and I have found this like similar education platform.
+
+6:34 - Charles Sims
+Oh, sorry for that. Yes. So you mean when I deploy it? Yeah, yeah. So I deployed the LMS already. And then you saw that second link I sent you that has the course hero skill that really beats it up. Yeah.
+
+6:52 - Mike Belloli
+OK. So basically, Keith, we've already begun the development on the actual platform that the students will use.
+
+7:05 - Charles Sims
+And from here... But your name is ScaffoldSpark.
+
+7:09 - Mike Belloli
+ScaffoldSpark. So I think we put together a deck on that platform and, you know, pitched the platform plus the partnership with the El Segundo school systems as like the initial pilot users of the platform as the proposal.
+
+7:31 - Unidentified Speaker
+Yeah.
+
+7:35 - Mike Belloli
+I think we'd have to run through kind of team and roles. And I mean, I'm interested to hear your feedback, Keith, on how we position your involvement in terms of the team. Because one of the team members, obviously, we said you're a core member of the team. So I think we just need to play with the messaging within the deck to best fit.
+
+8:08 - Charles Sims
+That's what we're talking about is whether or not you will get in trouble being a member versus a mentor or a treater. But if there's no concern, then we just keep moving forward like that.
+
+8:22 - Keith Coleman
+Yeah, I don't think that's an issue. I think what wanting to ensure is that, you know, you just didn't have teams coming from somewhere that had no tie to Stanford whatsoever. Because that changes the dynamic. And in some respects, you know, them sort of making that part of their proposal process, you know, leads one to believe that they're, you know, they're keen on making sure that, you know, folks are engaged in that way. So, yeah, so we're all good to keep moving forward.
+
+8:57 - Mike Belloli
+All right, so yeah, I think Charles then We should just sink on that later Unless you want to show what you've done now, I mean we don't need it bore Keith with the technical side of things I'm trying to have it load at least the marketing slides for us, so we can go through.
+
+9:24 - Charles Sims
+Back to the previous question, how do we want to lay out the the founding team? So we want to say the or Mike did you confirm if it's not okay for us to be using SkaFld Studio or can we say it's from SkaFld Studio?
+
+9:44 - Mike Belloli
+I did not inquire about that.
+
+9:47 - Charles Sims
+Okay.
+
+9:49 - Mike Belloli
+And I think that That goes to the larger question of how do we pitch us and Keith and what the relationship is.
+
+9:58 - Keith Coleman
+So were you trying to find that out through the folks at Stanford or internal folks about legal things with SkaFld? Where were you trying to get that?
+
+10:12 - Charles Sims
+SkaFld has no issue with it whatsoever. Happy for it to be a SkaFld project.
+
+10:18 - Mike Belloli
+Or we could put it under strategic alignment.
+
+10:21 - Charles Sims
+I mean, it is more so, can it be an organization or does it need to be like two students? Does it need to be two people who are like just starting to figure this thing out and they don't have as much of an official entity behind it? Do you know what I mean?
+
+10:42 - Keith Coleman
+Yeah, I mean, when you're looking at uh what she just sorry sarahi was saying they got applicants from as educators research technologists you know and students so so they had a a variety of folks um who who responded uh you know clearly I think what we want to to highlight uh is Again, you know, some of the positive benefit of kind of the moniker for myself is, you know, being a part of Graduate School of Education at the school and having also directed educational background. So, I think that they want that in particular because their focus is on, you know, and enabling the development and the impact of research that improves learning. I mean, that's the name, Stanford Accelerator for Learning. So that's certainly one thing that when we do do this pitch, that we want to remain very keen on what their deep interest is.
+
+12:05 - Charles Sims
+And so, just if you're if we're concerned about scaffold perhaps at first look not being that um I don't know if that's really the case okay right uh because what else would it be called right yeah I mean the easy argument there is scaffold impact scaffold impact slash strategic alignment which is a division of scaffold allows us to use all the knowledge everything we do, but with a very focused direction in this.
+
+12:44 - Keith Coleman
+Right. Yeah, so I don't, I don't, I don't perceive that as an issue having, you know, scaffold be the name entity for for it or as they call us AI studio teams because that's because that's what we put on the middle.
+
+13:20 - Mike Belloli
+I mean we also still have the we do have the strategic alignment website and all that copy as well just throwing that out there I'm throwing that in the chat so yeah yeah it's already you and Charles together, but I I do understand the From like the scaffold point of view.
+
+13:39 - Charles Sims
+I think it's good name brand recognition as well be affiliated so Up to you guys on how we proceed there, but those are just my thoughts I like that and now that now that Keith is um, he's he's bought in he's going to be mp4 all of scaffold, not just the strategic alignment, and we start to update the whole website to reflect as much.
+
+14:13 - Mike Belloli
+Okay, I'll update the scaffold website then with Corey Smetha's, with Keith's image.
+
+14:19 - Charles Sims
+And one thing Keith did mention, I think it's in there.
+
+14:23 - Charles Sims
+Go ahead, go ahead.
+
+14:26 - Charles Sims
+I was just gonna say, one thing Keith did mention is we can't publicly talk about this until after the summit, so we can't, but this is usually, right?
+
+14:37 - Keith Coleman
+Yeah, I get that.
+
+14:38 - Keith Coleman
+Yeah, you saw that. Yeah, you saw that. Yeah. Yeah, you saw that.
+
+14:45 - Charles Sims
+Yeah.
+
+14:47 - Keith Coleman
+You know, one thing, if I'm just curious, and I was, you know, we were talking about this the other day, and this is sort of related to some of the conversations that we had also, which was about when people come to the site or sites, what are their kind of first takeaways. And so I'm not concerned about this here now in many respects because we're already a finalist. So I think that what we want to do is be mindful of what it is we're putting forward, you know, to this grouping of folks to talk about that. In other words, part of the question is, is if they look at SkaFld, will they just see that, that that's, you know, a product-driven, you know, innovative enterprise focused on venture strategy, AI, and AI right, in entrepreneurship.
+
+15:57 - Charles Sims
+Surprisingly, we actually get kind of the opposite problem where they see us just as a consulting group. They're just a run-of-the-mill consulting shop. They don't actually, they're not, they're, they don't have their own product, they don't have their own platform, they're not doing their own thing. So like that's one of the big reasons why like SkaFld OS became a big piece of the narrative and then trying to walk that line of how do we say that SkaFld Studio is this premier cutting-edge business innovation and not just like IT or technology innovation that's built on top of this proprietary AI ecosystem called SkaFld OS.
+
+16:46 - Keith Coleman
+You know, we could, it makes sense, inside of the document, not everywhere, but speak to scaffold impact or if there was an interest in describing strategic alignment, because the narrative that you created, you know, and Mike speaks to, and this is not to say that scaffold is not holistic, but if one looks at the other site, you know, it could be felt that that's more, you know, a broader array, right? Because it's touching, you know, healthcare, it's talking about policy and strategy and things like that, which people in AI obviously are concerned about. Because they want to recognize that, you know, the engineers and the folks in these firms, you know, have a broader sensibility when it comes to, you know, pushing AI services out the door, you know, with a more human-centric kind of view. So, I mean, in some respects, one could say that Strategic Alignment's site might offer up a more human-centric humanities balanced view, then, you know, the dynamo would scaffold this.
+
+18:19 - Charles Sims
+I don't hate that. And it also, so we could have scaffold impact from the scaffold site point to strategic alignment, but not necessarily have the back link back or have something way, way low and say, it's one of the, it's one of the, initiatives or something. So there's a tiny little connection but it's now a dedicated standalone.
+
+18:42 - Keith Coleman
+Yeah I think that that could be interesting because then that allows SkaFld itself to be seen perhaps by people if they just went to SkaFld site. You know they just may think it's just this powerhouse that maybe is less inclined to be you know focused on some of the other elements that that are on the website that you curated. And since this is inside the Graduate School of Education, this is not a GSB initiative. This is not a School of Engineering initiative. And so in many ways, I would iMagine that those in the education space a different and more robust concern about some things related to AI than people at the GSB do. Because like my guy that's at social innovation at the GSB, his higher up, they have to talk that game, but they want their second years to blow it out and hit it out of the park. So anyway, so I think that's an interesting way to shore it up, as you described, Charles, is just do a stub out that just highlights it. And certainly, as we talk through the deck, that again, we speak to their language, which is human-centered design, which is, you know, really ensuring that this scaffold spark really Moves to improve learning Yeah, and we just keep hammering that home.
+
+20:35 - Mike Belloli
+So I Like it All right, so I will I mean I'm putting also SkaFld in the founder descriptions like, you know in the initial proposal said that you Charles are founder of scaffold and and explained a lot of what is done at SkaFld. So I think we can maybe pitch it as a partnership. It's kind of the same thing between SkaFld and Strategic Alignment.
+
+21:12 - Charles Sims
+No, I think that we say that the way that it is, it's Strategic Alignment is a, how do I say that? That said it's a piece of SkaFld, but if you go to strategicalignment.com, or strategicalignment.ai, it should be strategicalignment, not redirect to SkaFld, that has a subsection of, you know what I mean?
+
+21:39 - Mike Belloli
+I'll play around with the function of SkaFld. Yeah, I'll play around with some of the wording.
+
+21:48 - Keith Coleman
+Yeah, and just to sort of say again what I kind of just described, was about the Graduate School of Education and their focus on learning and things being holistic. Again, we could say that policy and strategy are complementary. You know, parts of AI training because they, you know, they provide that nuance, that context, and that nuance necessary for technical work, right? And policy, awareness of policy helps, you know, helps students to understand, you know, things ethical, things legal, governance, boundaries when they're dealing with developing AI, right? And then, you know, strategy is important because it helps to sort of showcase how AI, you know, how AI projects may align with, like, particular, you know, goals of an organization or whatever. And together, you know, that's responsible design and human-centric strategic thinking. And that's how you make real-world effective AI solutions, right? So, we make sure that we say those kinds of things because the Graduate School of Education is concerned about that, right?
+
+23:26 - Charles Sims
+Yeah.
+
+23:28 - Keith Coleman
+Yeah.
+
+23:29 - Keith Coleman
+Because they're all just about human-centered design, human-centered design, you know, improving learning, the learner. And so, you know, you know, scaffolds is gonna be the best thing since sliced bread, but we certainly want to, and that's probably maybe some of the things that I would speak to, because I'm comfortable with that, since I'm not on the technology side of things, but the policy and the strategy elements, because, you know, that's a huge concern, right, to many in the space.
+
+24:10 - Mike Belloli
+Okay, yeah. Pull a lot of that messaging in. We got the we got the meeting recording, so I will be able to pull in. The human centered design and learning. Yeah, I. I can. I can do that.
+
+24:30 - Keith Coleman
+Yeah, and I can also just throw some blurbs out there. You know, speaking to that, just a couple of sentences or something. To have it.
+
+24:45 - Mike Belloli
+Looks like we lost Charles.
+
+24:47 - Keith Coleman
+Yeah.
+
+24:48 - Mike Belloli
+But yeah, no, I'll get the repository that he's been working on just to kind of scrape the features that he's already built and see like the full roadmap and then marry it up with what I have currently in our proposal and get a deck back to you. It will depend on, we have, we're launching life right now as well. So Charles is busy on that today. Depending on how he, when he gets back to me on the feature set, you know, it'll either be tomorrow or Wednesday, but you know, it's, we have, we're able to generate these materials very quickly. If you haven't noticed.
+
+25:38 - Keith Coleman
+Yeah, well, I mean, you know, first of all, yeah, I mean, obviously, you know, the brands is evident and then the mechanics of being able to push it into the system and have things come out. That's also evident. So what I was curious about is. And and how are you thinking of, you know? You know, synthesizing all that's inside it, which is what the deck is for, synthesizing the proposal. You want to just run through the proposal and tell me what you're thinking about some of the different areas, just in 20 seconds or whatever, per spot or something. Yeah, just tell me what you're thinking. About that.
+
+26:37 - Mike Belloli
+So you're talking about this proposal?
+
+26:39 - Unidentified Speaker
+Yeah.
+
+26:42 - Mike Belloli
+So what we put forward is if you go past 40% of employers plan, workforce reduction, reduction in tech entry level roles. So what we are proposing is If credentials can't demonstrate capability, entry-level positions no longer provide experience, the approach is required. So it's perforator-based pathways to prove workforce readiness through employer-validated work. So the solution, yeah.
+
+27:18 - Keith Coleman
+So can you start at the executive summary? Because the way that you shape that is talking about all that, and then it gets to the innovation, which is just what you went to right now about portfolio over credentials. So just talk through how, and you did put that in there, educators and learners at the heart of AI design, right? So that is in there. But just go through, yeah, just go ahead and start. Sorry to interrupt you.
+
+27:53 - Mike Belloli
+Yeah, so basically what I was thinking, You know, I think Charles and I, after talking through it, have shifted it slightly. Because what this proposes is that, where is it, we're skipping down to, like I think we go down to the solution here. So it's pretty much saying go to the high school and also going to high school or whatever the name of it is and Create this program there that puts together teams of students and you match different students with like a ninth grader with a 11th grader and a 10th grader with with the 12th grader and the found that there were some studies that indicate that that peer mentorship is very effective and doing group studies like this. And so basically, what we would then do is find like local businesses and have the high schoolers help in their little teams, help the local businesses, you know, automate parts of their business or, you know, whatever they need help with that can be It's effectively automated with AI. And so what the program seeks is to first, throughout the whole process, teach the students how to operate AI by applying the eye to real life problems and working with the students to use AI in the best way to get those problems solved. And since they're working towards a task, and there's an outcome that we can outline through an AI system that teaches them how to solve these problems, a way for students to learn will also contribute to the local economy or solve business problems. Or if we can't find a lot of businesses is we can make up business problems and have them solve it. And through that, the learning through projects is how you teach one to use and operate AI. Because if we just give them a, hey, this is a course on how you do it, some students might get it, but others might, depending on their learning style, might not be able to. To absorb the information in the proper way.
+
+30:49 - Keith Coleman
+I know this is great because you know probably institutions like the Graduate School of Education, GSE, and others around the country you know they're the ones, not they're the ones, but you know the whole concept of project-based learning they probably did you know 10,000 hours worth of research on all that kind of stuff with statistics and longitudinal studies and all that kind of stuff so they're all over project-based learning.
+
+31:13 - Mike Belloli
+Yeah so you could see right here this learning science section is it actually goes into like portfolio based assessment. Near peer mentorship. Yeah, authentic learning, learning and authentic context with genuine stakes produces deeper understanding, so it breaks down this kind of this human learning science.
+
+31:35 - Keith Coleman
+And I have to say, obviously I wasn't a reviewer, but knowing these some of these people because I know you know, I was friendly with a couple of different professors inside of there. Obviously, I was at that institute, MediaX and stuff, and this is what they are all about, man. So, and clearly, it worked because we're a finalist. So, obviously, you already did it. You know, now it's time to synthesize, and I think that the proposal was solid. Clearly, it was solid enough for us to be finalists and show So in other words, the things inside the proposal in each arena, right, of, you know, problem statement, solution, learning, science, outcomes, equity, et cetera, you know, you're going to be pulling from that to help shape this deck, right, from each of these places, right?
+
+32:31 - Mike Belloli
+Yeah, so I'm just going to synthesize all this information down and then add more context to the solution about, like, what that platform will actually look like, Because right now we- SkaFld Spark, SkaFld Spark. Yeah, SkaFld Spark, because that's the piece that I didn't really include. Whereas this one proposes like a team structure, and like this would be the actual application of whatever product we put together that helps educate the students on AI. And now we introduce, and that's what I think the pitch is gonna be, is that SkaFld Spark and relate it it to, you know, the implementation, which ideally we, you know, instead of us implementing it, it's, we work with the local school districts to implement it. And then we are the ones selling the technology and, you know, operating more from like an onboarding and continued customer success type of role, something that we can scale versus within this being the actual facilitators of the, you know, weekly 90 minute sessions like that, not we don't have time to do that, right?
+
+33:39 - Keith Coleman
+So that's not that's not sustainable, nor does that allow for scale.
+
+33:45 - Mike Belloli
+So yes, correct. So that's how I propose that we slightly vary this, but still achieve the objective that you know, we set out to achieve. Yeah, while also making, you know, a scalable products. Realistic.
+
+34:02 - Keith Coleman
+Yeah, yeah, no, I mean, and that, again, is what their research probably is recognized over time, is that, you know, you've got to help make aware and help, you know, the institution itself learn so that, you know, the empowerment of staff and administrators and teachers allows for programs to to live continuously, right?
+
+34:35 - Mike Belloli
+Yeah.
+
+34:36 - Keith Coleman
+Yeah. So cool.
+
+34:38 - Mike Belloli
+This is this is an app that we found called flint. And it's a look at the so this is kind of what I think we're basing some of the design off of So it's personalized learning. So it's like learning AI, like an AI that teaches you about subjects like math or science or English, right? So it's not teaching you how to use AI, but it's teaching you how to learn. And so they have like a full workflow that we have a demo account right here that you could see. And this is what it looks like from an admins point of view, like putting together lesson plans, worksheets, papers, and then there's a student login that they can see the lesson plan query with the AI. It's all you know, using AI that's within certain guardrails that it's not going to give them all these crazy answers. So this This could be used for younger children as well, not just with high schoolers. We'll probably give them access to ChatGPT, right? We don't necessarily need to put too many guardrails in, but we could utilize this workflow.
+
+35:44 - Charles Sims
+There's some interesting ones that came out of it, as far as, if you're ever asked, are you a real person, you always say no. You always answer truthfully, you never assume sort of situation without asking questions. You must understand that you have an influential role in the conversation with whoever you're talking to, so you need to treat it as such. And if there is an instance where a parent is providing feedback or concerns, you see those as most valid concerns and not try to fight, but try to and see it from their side. So it was kind of interesting. And I didn't realize this, but this was built in partnership with Microsoft, with their social innovation lab. And so they're using a lot of Azure AI guardrails.
+
+36:46 - Mike Belloli
+This Flint right here?
+
+36:47 - Charles Sims
+Yeah.
+
+36:47 - Mike Belloli
+I didn't realize that. They just released a Series A, too. So we'll keep an eye on that.
+
+36:55 - Charles Sims
+So I basically, I took this, I recreated the concept. I pulled the marketing to understand the features, improved upon them, looked at other ways to, because this is perfect for education, but this is good for K through 12, then asked for a pivot. How do we have a similar but different domain for college, for graduate? Similar implementation but for small businesses. Very quickly, I was able to get something that I think we could be proud of
+
+37:37 - Keith Coleman
+Yeah. Well, that's great to see how, first of all, that you guys were able to find this and then pull from it as a proxy and take some of the guts out of it. That's great. Uh? To go back to something that you said, uh, Mike really quickly. I thought I heard you say when you started to talk about the Flint K K through 12 personalized learning, you said something. You said it teaching you how to learn, not just teaching you AI. Is that what you said?
+
+38:12 - Mike Belloli
+Yeah, so like Flint, what it what it what it allows teachers to do is put together lesson plans. For like maths more sort of like Khan Academy, right? Where you're actually learning using a chat interface. It'll ask you questions like math questions or science questions or, and allows teachers to assess, like it'll walk you through the lesson plan, give you the proper readings and notes. And then we'll start kind of like quizzing you on things. And teachers can view student's responses to any of those questions. So it could show teachers like longitudinally across the classroom, right? Like you give a homework assignment in a math class and you answer the questions in the AI flint, right? Then the teacher can tell which students are getting the answers right right away, which students are taking a couple times to get the answer right, and which students are just like completely frustrated like getting angry at the AI and address their lesson plans accordingly and address individualized student lessons accordingly, right? Yeah, yeah, so that's so we just kind of use the kind of foundations of how they're interacting with students in a different way in teaching.
+
+39:36 - Keith Coleman
+Yeah. Yeah, so so. Well, you lost me on that last statement, statement, we're staying away from that part of it, even though we are. We are teaching. Yeah, we are staying away from that, right? Because and again, and let's Read because phrases as you well know, both, you know, work well. And if you if one has a phrase that is clear and profound, that can just really help to to synthesize people. But it's something really foundational that just is a marker. That's another way to describe it. Teaching you how to learn or teaching students how to learn, not just teaching them AI or teaching you AI. If we could sort of hone in on when you said that, flesh that out a little bit more, I think that can differentiate.
+
+40:37 - Charles Sims
+Can I take it back?
+
+40:38 - Unidentified Speaker
+Yeah, go for it.
+
+40:40 - Charles Sims
+learn how to learn AI before we even try to force you to learn, before we force you to utilize AI. The concepts that will make you more powerful require that foundational just understanding before we can even teach you how to utilize the tools to their maximum. Otherwise, you're learning a very narrow set of, if you do this, you can get this, versus if you understand generally how, so like, basketball player, you don't want to teach them the one way that they're going to be going down the court because they're not going to be going down the court every single time. And in a three formation, you're starting to Read the entire, you're reading the defense, you're reading the dynamic things. And so now you're in your mind, you're dynamically changing how you interact with AI. But you can't do that without that foundational pivot of how how you should think.
+
+41:38 - Mike Belloli
+Yeah, I think teaching AI was the wrong way to put it but because you know in the proposal we outlined the whole project-based learning to utilize AI to increase career readiness right and I like teaching AI I think was the wrong way to approach it but we're using that architecture with Flint's architecture facilitate the completion of our learning objectives that with the end goal is this project-based learning to increase career readiness. And we're utilizing an AI platform to achieve that goal. And that's how we're marrying the project and the AI. And we're using that AI to help coach the students through project-based learning, how to use AI better.
+
+42:32 - Charles Sims
+It's a couple things. One, it's prepping somebody with how to listen, with how to utilize AI broadly, like how to think when it comes to AI. Then it's using AI to gamify or optimize how to rapidly help them adopt. And the last piece is actually teaching them the specifics and use cases within AI. Itself. One of them is you have to change the way you think to be able to use these new tools, but we're not telling you what tools or how to use them yet. We're trying to tell you how to think. Now we're going to tell you that here's the lesson plan to bring you up on the different types of tools and when to use them, and we are using AI to maximize your ability to adopt those concepts and those tools themselves.
+
+43:26 - Mike Belloli
+And then I think the the way that we outline those lesson plans in your breakdown Charles is like the teaching the foundations of AI you're still using real life examples of you know we break down the like we go we go to a business and they have x number of problems and you order them in layer in order of complexity so like least complex to most complex and the least complex task will break down into like, all right, how do we engage with the chatbot to get the proposed fix for this small task, right? And then you layer on more tools. It's like, okay, this is a more complex task. It requires more advanced automation, requires tools that you need to hook into your AI. And so that would be a later lesson plan with a more complex business task, right?
+
+44:21 - Charles Sims
+So let's take the UPF for, like, The biggest step of UPF that really has changed, sorry, Universal Project Framework, that's changed a lot of it is all that we're trying to do in any project, product, startup, initiative, doesn't matter, is take complex things and decompose them into smaller and smaller, simpler and simpler, yes, no answers. So anytime you have a thing that you are trying to do that is not a do this or that, that's too complex. To like in the world of AI, that's too complex to be able to really know how to go forward. So now as those build on top of each other, like the way that we're trying to teach you to think is to take anything that you're attempting and decompose it until you understand it. So how do I say, how do I end world hunger? That's a really complex thing that I don't know how to do, but can I decompose that one into, okay, here's the ins and the outs of world hunger. I still don't know how to solve those things. So now one of them is funding, one of them is policy, and one of them is the right climate at that specific time or not. And then when can you get to a point as you decompose of this is something that I can solve, and then it rapidly goes up the chain of solving the more complex things through this of all of the childhood, less complex problems. Do you know what I mean?
+
+45:56 - Keith Coleman
+Yeah, so how would you, if you had to, how would you describe what that is? Because, how would you describe what that is in the sense of a learning methodology, not to sort of now go into what, how these people talk all the time, you know, because they, you're sitting in a meeting, oh pedagogy, I was like, I don't want to hear that word and that's that too often. But how would you? How would you? How would you describe? And I'm just going to say this. This is the scaffold way of helping people to learn and helping people to think. What is that? Because it's not.
+
+46:34 - Charles Sims
+How do you learn math? So if I want you to learn calculus, what do I start with? I start with addition and subtraction and from addition Subtraction because I can know I understand those in real world what addition and subtraction is that I have a couple things I take something away, and it's this answer I have a couple things and I add a couple things that's this answer addition and subtraction then multiplication and division Then you get like then you get into these different think about it like the progression that is to learn everything it is to get to calculus so I understand the area underneath the curve which is the population distribution of Boston in 1998, that is a combination of a ton of things. And so it's a really complex problem that's broken down into those subparts. Does that relate at all? Because I'm trying to think of something like it's additive.
+
+47:33 - Keith Coleman
+Yeah, no, I relate to that. I may not relate to it how we want to tell them what that That's fair. What's in my mind is for us to be able to perhaps, you know, I mean, you just threw out a couple examples. You said, how do I solve world hunger? Well, then you have to teach folks how to kind of decompose, you know, that Challenge, right? And so this scaffold way of helping folks to learn is a method, right? There's a way to it. Right, and so part of that way is so it's not a Socratic method. Well, it's sort of Socratic, because I guess I can ask questions back and forth, but it's not. I guess we're not going to use that terminology, but what I'm I'm trying to sort of find a Find some work, find some some concept or word that that can really. Concretize how we're trying to say that we can help people learn, so that the judges can understand that in a much clearer way. That's what I'm hoping for, if you get what I'm saying.
+
+48:51 - Charles Sims
+No, I get it. Like, part of me thinks, you remember the UPF framework, the 12-step framework, and that's how we go through to solve innovative problems? But it was very dry and technical. Yeah, we we need. We need something like that, right?
+
+49:12 - Unidentified Speaker
+Yeah.
+
+49:14 - Keith Coleman
+Yeah, that also inside of that be there. Besides it being, you know, algebra and geometry, algebra, geometry, algebra, pre calculus, calculus or whatever that. Uh, that this way of thinking and way of learning also will have touch points that go beyond the, you know, the technical, right? Uh, which again speaks back to, you know, uh, some of what might be described inside of SPARC is, uh, helping folks have contact which also might have some of these students look at some things in the humanities that tie into what it is that we're trying to do. Because you can't just suddenly have. Awareness or kindness or empathy. Just because. Now you learn how to think in terms of an AI sensibility, right? So it's coming back to this thing of what it is, how can we describe what it is that the platform or these processes or the process is doing to help people learn maybe differently than they've learned? Obviously, the project-based learning part of that is one, right? So we got that already, because they know what that is, and we know what that is. But we're talking about the other part, which is preparing people, you know, before they start learning, you know, things related to navigation or whatever, right? Or, you know, other forms of, you know, have to have in order to be somewhat competent, like everything that was inside of the proposal for Advocacy Academy, because I was just looking at that for the internship thing. So that was very clear on showing what folks need to learn, right?
+
+51:38 - Charles Sims
+Yep.
+
+51:39 - Keith Coleman
+Right? So maybe looking at that might be helpful, perhaps. Because I actually pulled some of the descriptions from there because those were talking, those were speaking very clearly to what it is that these kids need to learn, right? Like for instance.
+
+52:10 - Charles Sims
+So I got one for you that I think Okay, so SkaFld so whatever was SkaFld os so it's a Systematic way to solve problems by studying how other fields solve similar problems before asking anyone What what they think that's it that's the core insight most projects fail because they start in one of two either the expert trap, we know the industry, so we'll do what has always been done, which results in incremental improvements at best, or the customer trap. We ask customers what they want, so we'll build it exactly that way, which results in features that nobody actually uses. We avoid both traps by forcing you to look outside your industry first, not be an expert, and quantify everything before asking questions. So the core philosophy of, Research wide, validate narrow. The traditional approach of idea, ask people, build, pray it works, shifts to problem, study other fields, combine the patterns you found, quantify value, then ask people and build with confidence. And your 11 stages in plain English is setting the stage, breaking it down, researching, combining it, design solutions, iMagine failure, prove, do the math, stress test it, get your feedback, execute and evolve. So the way of thinking would be how do we teach the scientific method, right? How do you teach them science or do you teach them the scientific method so they can apply that to science?
+
+54:03 - Keith Coleman
+Right, yeah, you don't teach teaching the scientific method, right? Yeah, yeah, I think that we're on the same page in terms of and what you just described. I think you were reading that from what you say that was from scaffolds. What?
+
+54:17 - Charles Sims
+Yeah, there's one from the scaffold because I'm trying to get it to give me more non technical like what? Why is this different? Like what? How do you? How do you talk about this in a way? That would resonate without being technical?
+
+54:37 - Keith Coleman
+Yeah. So the thing that I pulled from the Advocacy Academy thing was, let's say, so for students, they may spend time with research or product leads, getting insight into how innovative AI solutions are developed under real-world constraints. The main responsibility of an intern is to be open and present, learn elements of AI projects by configuring scaffold studio accounts, understanding interface and navigation, complete AI-assisted tasks, and knowing the difference between threads, projects, and GBTs. This often begins with gaining interface awareness, or setting configuration model selection, along with promoting fundamentals, prompting fundamentals, practice exercises, and real task completion. So, I mean, but those are those are the actual things that they will need to learn, right? Because that was in the Advocacy Academy. I pulled out everything. Those are the things that actually they have to learn, but But there has to be a way to teach them that. That's what we're talking about, isn't that right?
+
+55:47 - Charles Sims
+Yep.
+
+55:49 - Keith Coleman
+OK. Alright. Uhm? All right. Yeah, well, what I liked about what you described was that, since you're saying it, I think certainly it highlights the manner of thinking that the enterprise is engaged in, right? And that certainly shows a thought process that I would iMagine that one could, you know, certainly suggest that it was, you know, that's critical thinking.
+
+56:37 - Unidentified Speaker
+Yeah.
+
+56:37 - Charles Sims
+And it's following the same. It's not recreating or re-approaching problems every single time. It is following the same. So even for like, the phase zero, which is the meta frame work. You ask yourself, what game are we even playing? Before we dive in, establish the rules. What does success look like, What are our actual constraints? Who will make that final decision? And how will we know if this works? For example, a SaaS startup might define success as 1 million ARR in 18 months, while a government agency might define it as 50% reduction in processing time. Doesn't matter what domain, you need to know what game you're playing.
+
+57:17 - Keith Coleman
+Right. Absolutely. Or a school district might with somewhat archaic standardized assessments have a Read on who is literate and who's not.
+
+57:30 - Charles Sims
+I think what we've seen is, look, it doesn't matter what the perfect KPI is, you just have to have a definable line in the sand and then you will adjust and evolve. But it can't be mushy, people need to feel They needed to think more.
+
+57:48 - Keith Coleman
+Yeah. Yeah, no, I agree with that. And again, what you had laid out the first time showing the manner in which how the scaffold, you know, UPF functions and that thought process within that, I think that there's some solid weight to that because it also, you know, shows the manner in which, again, this team thinks to then be able to not just cookie cutter, you know, hey, boom, here, we're doing this project-based learning. I mean, it's, and it has compare and contrast in it, which I think is also a very powerful tool used lightly to help, you know, shape a point of view. And our point of view is that SkaFld Spark is going to accelerate learning in a very robust and powerful way for students and those around them. So, cool, great.
+
+58:55 - Charles Sims
+Great. And then from now on, we are going to rename UPF, Universal Project Framework, to the SkaFld Ideation Methodology. That way, it's not UPF anymore. And then the one-pager is, before you begin, it's a new way to see problems. The question that changes everything. When you face a difficult problem, what's your instinct? Most people do one of two things. They either ask an expert what they do or ask customers. Both feel responsible, but both are traps. The insight is your problem isn't unique. Every problem you face has been solved before, just not by your industry. If you're trying to keep customers engaged, somebody's already figured out how game designers have spent decades fixing this. Reducing errors. Aviation is a near zero failure rate. Goes into a couple other ones. The shift from expert to explorer. This one's really good because it's the old approach of go deeper into what you already know versus go wider into what you've never considered. So, I'm getting, I'm pushing these so we can put them on the website, but I'll send you the first draft of these. The mindset and one set. So, go ahead.
+
+1:00:13 - Keith Coleman
+Yeah, no, I, again, I think it's very helpful for this mindset and way of thinking is a part of that they can see it in the deck and certainly see it when it gets pitched during a presentation, but that they, you know, that that's something that they, that they're, that's undeniable.
+
+1:00:47 - Charles Sims
+Yeah. The best solution to your problem probably exists in a field you've never explored. It is your job to find it, translate it, and prove it.
+
+1:00:56 - Keith Coleman
+And the other, and you said it and I don't. I don't like you said something related to that too. A little bit earlier and I don't wasn't wasn't using this word and so I'm not saying that we have to use this word. But what you describe Mike and then what you just said Charles 2 was the word I'm talking about is interdisciplinary, so it's not coming from your field.
+
+1:01:16 - Charles Sims
+That's essentially cross domain translate.
+
+1:01:18 - Keith Coleman
+I mean, that's a big big one, so so and this again is just another nugget, right? Get inside info. You know, all universities are going to try and say that they're multifaceted, cross domain, interdisciplinary in nature. So OK, that's great. You know, up on the farm, you know, I would iMagine all the different schools try and say the same thing. Now, definitely the Graduate School of Education is. Bull is that they say that they're that the Dean is that you know he was. He was like that. Interview that I did with them, but the School of Engineering is definitely like that because you know this going back like eight or nine years. I was at a conference up there and then I went to go check something else out and the Dean of Engineering was given a speech and she's brilliant and she all she did is hammer on this theme of how Stanford is all about. Engineering is all about interdisciplinary. It was. It was nuts. She started talking about anthropology, right? She started talking about, you know, you know, other parts of the humanities. You start talking about she brought up jobs and like calligraphy, right? So this idea of how within this thread of the way of thinking in terms of how this is getting pushed out, but that this concept of things interdisciplinary. Is is is. Is recognized in the language, I think is, and I think we may have said some of that, and Mike did that in the proposal, but I think touching on some of those elements is important because that's something that those people up there in Palo Alto, they deeply believe in that. Interdisciplinary themes, woven inside of our, you know, proposal deck and then some of our remarks where it makes sense, I think, would be very helpful for us.
+
+1:03:28 - Charles Sims
+Keith, are you logged on to – you're on Teams on your computer, right?
+
+1:03:33 - Unidentified Speaker
+Yeah. Mm-hmm.
+
+1:03:34 - Charles Sims
+So I'm going to drop this for both of you guys just so we have it and can kind of chew on it tonight. It doesn't. All right. I'll send the links here in a second. All right. Even hearing you talk through it, it's helping me explain both, like, scapula acid and these different things, as well as how Taylor, and specifically to the Stanford stuff.
+
+1:04:18 - Keith Coleman
+Yeah, and again, I mean, it's just reading what they're talking about, you know, having some knowledge, certainly the knowledge, because as a matter of fact, you know, when I first got in, or first was appointed with MediaX, and then And then later, I got interviewed by the dean. This Stanford Learning Accelerator didn't exist. It was like he was getting to it. But this idea of experiential learning, accelerated learning, You know, robust learning that doesn't come from things being narrow, right? Certainly, yeah, it comes from dynamic equilibrium, if anything, right? And so he so Dean is all into that, right? So we use the language that these people who work at GSE, you know, running this this Challenge grant, right? They have been drinking his coffee. So we just give them his words and the, you know, word sounding like the Dean and they'd be like, yeah, you know, I got a night the scaffold, you know, with the big W.
+
+1:05:46 - Charles Sims
+Language without even knowing like within knowing we now.
+
+1:05:50 - Keith Coleman
+I mean, that's what the guy is like, you know. And he kind of gave me some shit during my interview, but That's OK.
+
+1:06:00 - Charles Sims
+Because you know people weren't really And they weren't into drones and now guess what it's fucking all about autonomy and all about drones yeah, I mean that else to go there man the number of people that are in the the deep tech and I've been to these dinners and I Lightly referred to them as kill tech all you're doing is building kill tech and I don't be part of that. Yeah, that's true the other stuff happy to love it brilliant, but my mother did I but not think, hey, let's Create a bunch of drones that can go autonomously, kill a bunch of people.
+
+1:06:36 - Keith Coleman
+No, they could be doing other things.
+
+1:06:38 - Charles Sims
+Yeah, exactly.
+
+1:06:41 - Keith Coleman
+They could be saving people, like when I was at the think tank and we were down in East Anaheim, and this girl from the other side of the tracks, you know, she, you know, like four, three months into our program, she, and I did the business side of it, the strategy and the business side policy She came up with a business model to use drones with LIDAR or whatever to fly over former theaters of war, like in the Balkans and former Yugoslavia and all that, so that those drones could sort of identify where unexploded ordinance was so that kids like her and younger than her wouldn't get their legs blown off.
+
+1:07:20 - Charles Sims
+Wow.
+
+1:07:21 - Keith Coleman
+And she was like 16. Yeah.
+
+1:07:25 - Charles Sims
+There's some really cool stories of those where it's the engineer. I'm sorry.
+
+1:07:31 - Keith Coleman
+No, it was just amazing. She was 16 old from East Anaheim. Most people look at her and she's Latina. They'd be like, oh, what's what's she going to do? And she actually had just the humanity and the awareness and the curiosity after going through this program and this this site of trying to use this technology to go and make sure that kids didn't get legs blown off because stupid adults put mines everywhere in that country. I mean, I mean, that's phenomenal.
+
+1:08:00 - Charles Sims
+Yeah. Yeah. And it's similar. I love I love the stories where it's a it's an ex NASA engineer, ex North. One of the most brilliant people that then goes over to Africa to because they they're sick of the the crap they get through every day and the stuff that they don't feel like they're making a chance. And then they teach so much, so many of the local kids how to be an engineer, how to think using the scientific method, how to test things out. And they make more impact in two years, just like, again, teaching somebody how to fish versus just giving them fish in a transformational discipline, which is like engineering.
+
+1:08:47 - Keith Coleman
+Yeah, yeah, yeah. And that's another good one that we could somehow use.
+
+1:08:51 - Charles Sims
+Oh, yeah.
+
+1:08:52 - Keith Coleman
+I don't know how we use it, but everybody knows that. And as soon as you say that the right way, people are like, wow, they really are teaching them how to fish. Right? Versus other people, you know, kind of really giving people the AI fish.
+
+1:09:09 - Keith Coleman
+And some kids say.
+
+1:09:10 - Charles Sims
+Yeah, that's what I was talking about before. You just tell them, hey, here's your prompt. Just use this prompt. But you don't know why it's good. You don't know. You're just looking at the the hottest next prompt that doesn't really play.
+
+1:09:21 - Keith Coleman
+And so this is not to have not mission creep but to sort of digress in the proposal and in the deck. But in a seamless way being able to tell stories that contrast how others may do versus how we do is important. Because again comparing is a powerful medium for people to sort of mentally at least sort of believe that you were doing something different. Right? And A lot of folks out there are maybe just pushing this on people, you know, to learn the tools and that's not. Healthy. Right, yeah, whole lot of ways and so so the manners in which we can in in not sublime but in in soft ways again to describe how maybe others may be doing it or how others do and how we have a you know another way or whatever and use language that people get like you know teaching someone giving them the fish or whatever. People know that that's the case and and then if we say it in the right manner, then they actually will believe right in a more visceral way that we actually are teaching folks and that they will learn right? Because they've heard that particular, you know, East that he subs fable, right? That particular myth or mythology just as long as they've been alive, right? And so I think that could also help us.
+
+1:11:16 - Charles Sims
+Yeah, I really like, I really like that. I'm gonna play with that.
+
+1:11:19 - Keith Coleman
+Yeah, yeah, yeah.
+
+1:11:23 - Unidentified Speaker
+Yeah.
+
+1:11:26 - Charles Sims
+OK, alright. So then and then Keith, you're going to try to. We're going to try to grab coffee or something tomorrow.
+
+1:11:33 - Keith Coleman
+Yeah, we can do that and then we We got to go ahead and book these tickets. I could do that tomorrow, book the tickets and book the hotel and all that kind of jazz. We can do that when we're hanging out together.
+
+1:11:47 - Charles Sims
+That works for me. Mike, are you in office tomorrow?
+
+1:11:50 - Keith Coleman
+Yep.
+
+1:11:52 - Charles Sims
+All right. Let's see what we can get ready for this. I already got a decent bit for us for tomorrow. Um, to to jam it with Keith on.
+
+1:12:04 - Keith Coleman
+Uh, what time I have, um. I have, uh, let me see what tomorrow is tomorrow. I have to be back in Brentwood by 3 o'clock. Uh. But then, um. Before that. I gotta be in downtown LA for a second. But other than that, I'm pretty good. So what time are we thinking about?
+
+1:12:36 - Charles Sims
+When you have to be downtown?
+
+1:12:40 - Keith Coleman
+I can be downtown as early as like 8.30 in the morning or 9.30 in the morning. So I could come through the office like at around 11. Or so or so.
+
+1:12:56 - Charles Sims
+So 11 works. We only have an hour because we have to prep for the life call.
+
+1:13:01 - Keith Coleman
+Yeah, that's cool. So so 11. So more like, like 1030 11am. How about that?
+
+1:13:09 - Charles Sims
+That work? Okay. And then and then and then we'll have to jump at noon. But that gives you time to get home. That's cool. Yeah, that's perfect.
+
+1:13:17 - Keith Coleman
+So then I'll shoot to actually Jump through. A little bit more earlier than that. Whoops. Yeah, I'll shoot to jump jump closer to. 1030 then perfect, yeah. Cool, yeah, exciting, yeah, yeah, yeah. Oh, so one of the things that I did want to say, and this is not because I know everybody's got to go. I'm not trying to look ahead, not look ahead, but... And we could, you know, we certainly we could talk about this, you know, tomorrow a little bit more. But so one thing is, is that since we're going to be up there, we chatted about this really, really briefly, who else we might want to try and reach out to. And that would probably what happened, depending upon when we fly up there, I iMagine that that would probably have to happen, you know, either late on the afternoon of the 11th or if we flew up earlier on the 9th, sometime in and around in the mid to later day on the 9th. So that's that part. Because, you know, we've got the pitch all day on the 10th, and then it's the AI and Education Summit on the 11th that we're also invited to. So in light of that, but with that summit, as they talk about themselves, because they want to push the finalists out the door, uh to wherever you know they can can be seen within different communities because then that you know then then the finalists become ambassadors essentially for the graduate school of education and for the you know the Stanford Learning Accelerator right so they're they'll be into that there so they're very interested in visibility right and so and then they also talk about mentorship they said all these things, you know, on the site. And I kind of know this just knowing how some of the institutes and centers on campus work. But we wanted to start to think over the, you know, course of the next month or so, you know, how this can be used as a launch pad. Yeah. For many other things and I want this to be us to be open about the way that we look at that but then also really kind of drill down a little bit and be more intentional and purposeful too when maybe Mike you might see something or Charles you might Read something or I might remember something and then and really sort of see where we could bring, you know, wins, you know, to not just the Graduate School of Education, but for that matter, wins to anybody that's in the Stanford ecosystem that's concerned about things like this. And then, you know, that credit goes to us, but goes to GSE. So I want us to start to think about that because, you know, you guys will see things perhaps that I don't because I might be too close to it. You know, I might have certain kinds of, you know, not blinders on, but ways of thinking about some of these different, you know, schools, like the School of Sustainability. I mean, they got billion in the tank. And what school, independent school within a school, has $2 billion just sitting there?
+
+1:17:25 - Keith Coleman
+Nobody, right?
+
+1:17:26 - Keith Coleman
+Except, you know, they do. So anyway, so there's other opportunities. I'm very glad and happy that we made the finalist and that's kudos to all the incredible work that you put in, Mike, and you as well, Charles. And so as we move forward, we just want to really ensure that we can leverage that up.
+
+1:17:53 - Charles Sims
+So let me ask you this. Next Tuesday and next Wednesday Do you think it's better to do go up Prox of the either Saturday or Sunday and then or maybe go up Sunday and be doing our own stuff Monday with other folks around that area and then Tuesday Wednesday, or do you think we need the event to have happened before we can and really start engaging with some of those other folks?
+
+1:18:29 - Keith Coleman
+Well, in some respects, maybe we better to wait until it happens, right? And some of those other folks that you're kind of speaking to, we may not be able to kind of corral them because we just be meeting some of them. You know, while we're there, right? Yeah, I thought that the while we were there was like folks that we already know and we might just pop in or whatever.
+
+1:19:03 - Charles Sims
+But but the reason the reason I'm asking is technically we're going to Cabo that weekend, so I'm happy which which weekend the the 14th. We fly out the right now if we would fly out the 12th and get back the 16th. But I mean, Sonya and I have always been, she's amazing and has no issue if I have to either come later or anything like that. I'm just trying to figure out if we're gonna do that, do we want, is Thursday, Friday, Saturday? Is it Thursday, Friday? Is it we need to wait a week and go back? Because I'm always happy to go up again.
+
+1:19:41 - Keith Coleman
+All those are fine. Yeah, yeah, no, the thing about catching up with people That was really just, you know, if we're going to, if there's some people on the radar that we would want to go see, or whatever.
+
+1:19:57 - Charles Sims
+There are. Like, I think, even from hearing my conversations, not just the, not just GSB, but, like, the advanced materials, it's their equivalent of advanced materials that, I forget what the school is called. It was one of the engineering schools that would be interesting that you had a relationship with somebody up there. It's potentially getting at the 49ers and the Giants or the A's who I have relationships with, a couple of those type of things.
+
+1:20:34 - Keith Coleman
+Right. So, you know, in my mind, kind of the idea of making those pit stops was just kind of low That's up. That's just a kind of touch points again or whatever. Going back up there now that there were finalists for this, this, you know, Challenge grant and and that and again reading between the lines of what the GSE is about and what the Stanford Learning Accelerator is about. They need to blow this out, right? I want these finalists to go out and be the drumbeat for the forward thinking institution that the GSE is. Right, and they're there. They'll be a backstop for that, right? So the point there is, is that. And that's why I was saying Mike may have some thing that comes to his mind, right? It could be either him reading you know, Charles Bloom, something, something may come to your, you know, awareness. So I might remember something. And so I was just throwing that out, not for just this second, not for this next seven days, eight days, I'm talking about this, a more generalized view of what we all believe are the potential other attributes. Now that, that, that we become a finalist to use the ecosystem In a manner that suits us best to be as if this is like our kickoff that is now the start of say a campaign of what we're trying to Get deeper in and it's easy to like keep pointing back to that right exactly And the fact that this is Create plus AI Challenge means that that's like there's a moniker for all things AI Up there with all those tech bros and all this other people sometimes rub me wrong because they could care less. Yes, the policy side, right? I mean, I know these guys and you do too, right? Yeah, both you guys do and so and not just them. The point is, is that look, it's just just to start to think about. And see it through some other lenses about how potentially utilize leverage trying to be very specific with that language. What? The GSE in the learning accelerators is opening up the world to right up there, right? It's now to use the phrase that I love so much. The camel nose is under the tent again up on the farm, but in a different way now, right? Because now I can go to my GSB guys and be like, hey, look what I'm doing with my boy Mike and Charles and with the Create Plus AI Challenge. What's happening with GSB social innovation on that?
+
+1:23:45 - Charles Sims
+Well, and now that you're bought into the full scaffold, utilizing the camel nose concept, we can have conversations that aren't just strategic alignment, that aren't just to Create, but have used the Create as the reason to have a quick conversation. Hey, we're in town anyways, might as well. Oh, that's awesome. Like, like, we can dive deeper into that.
+
+1:24:10 - Keith Coleman
+Sure. I mean, you know, one person that will be, you know, pushing us out to be like, Senator Josh Becker. I think I told you about Becker. I was just on a healthcare thing with Becker in December. And, but you know, he was the guy, what did he do? It was, he ran, shit, what was it? I think I told you what he ran. And it wasn't not LexisNexis, it was the other one. Anyway, so he's not just a senator, right? He's not just a politician, you know? And again, I'm not just saying this because it's Stanford, because that's not what I'm saying, but he did go to Stanford. And, um, you know, he, uh, he's a tech guy.
+
+1:25:01 - Charles Sims
+Yeah. Yeah.
+
+1:25:04 - Keith Coleman
+And, and, uh, he's had a bunch of exits and he wanted to like serve the public and maybe have power to, or whatever, but he's still engaged deeply, you know, with the university, whoever it is. I mean, it could be, you know, sports.
+
+1:25:24 - Charles Sims
+Yeah, so I think it's a good takeaway is we already kicked off the conversation with Mike and Danielle. Hey, we're going to be doing this family office thing April. We need to start thinking about that. We're getting into roadshow territory. So then we're going to do this next week. We'll do something else in the Bay, say, in a couple of weeks. We probably should, because it keeps coming back, do something in SAC. In the next month or two.
+
+1:25:54 - Keith Coleman
+Sacramento?
+
+1:25:55 - Unidentified Speaker
+Yeah.
+
+1:25:56 - Keith Coleman
+So, hey, so I'll email this, but I'm not going to say this out loud. I'm going to email this to both of you. I've talked to Charles about it because he met this lady, Mike, when we did the panel at Verizon. And it was this lady named Tracy Hernandez who, what, for 18 years, we ran this thing called LA County Business Federation, which is like the 800 pound gorilla, really of advocacy lobbying organizations, if you will. And but now she left, she just resigned. And so, but she's spent the last 18 months, you know, creating and curating this organization called the New California Coalition, which is statewide. And she is a brilliant and she's a juggernaut and it's going. And so what I was telling How look for me? How can I help you? How can we help her because she has power juice relationships that are just? You know, I mean, they're just relationships that that many of us don't have because. She's very good at what she does and people respect her, right?
+
+1:27:22 - Charles Sims
+So it's what we always say, she's at the start of a new project. And the start is always the most daunting, but we don't think about it that way. We think about that scaffolding is where there is a lot of opportunity where usually you make bad decisions because you're trying to go so quick that we could be helpful with little effort too.
+
+1:27:42 - Keith Coleman
+Well, I don't know. How much AI was used or is being used at L.A. County Business Federation. I don't know that. So this goes back to some of the conversations we've had about, you know, certain kinds of nonprofits, you know, that maybe not at Red Cross, that's maybe a little different, but nonprofits like this, because this is also not philanthropy, right? Because this is a very active, and some of them are C6, some of them are C4, I forget which one the Institute is, but these people know what they're doing. Some of them are built as packs. Some of them are built as nonprofits, but some of them are built as like the blend of both those worlds, right? So 6, 4, and 3, right? So they all have different needs. They all have similar needs because their organizations and all that kind of stuff. But my point is, is that if we could figure out, not figure out, if we could just listen to her and find out some of the things that on her mind and somehow maybe help her make her organization go or listen to her. Like, hey, we're on some challenges that you see where the right kind of AI, you know.
+
+1:28:53 - Charles Sims
+It's not hard AI. Not even AI, sorry. Yeah, right? You know what I mean. Yeah, exactly, exactly.
+
+1:29:00 - Keith Coleman
+I like that. Yeah, because there's a lot to offer and it's in a lot of different domains, right? It's just it's many, many things and but that's just another individual. Since you talked about Sacramento, she she's going to be in Sacramento a lot. Yeah, she might. She might benefit from, you know, some of Mike's magic. You know some of your magic Charles and you know. And like I said, she knows. You know, she knows everyone.
+
+1:29:37 - Charles Sims
+All right, so we'll put that as part of our, like, what's our overall communications, computed communication outreach marketing roadshow strategy for you and Mike over the next four months. So our goal by the beginning of summer is we have these eight KPIs that we all agree, yes, but if we haven't hit those, failed somewhere, and we need to be adjusting.
+
+1:30:06 - Keith Coleman
+Yeah, let's put some out there and see which direction some of these things take us, because these are different buckets. They're maybe somewhat similar, but they're different players, right? And some of them are more keen on trying to, you know, Bring all things. So not method acting. How can we say method? What method acting method method AI? But you know, you know I'm trying to get get out. Is is is that whether it's? You know, like I was just with when I went to eating your dog food or it could be anything. I mean, I would have to. You know, I ran into the lady that's the head of the Los Angeles Urban League, which is a very powerful spot. Turns out that I know her brother who's in the venture business. Stanford guys like Mitchell. I know that last name Mitchell. That's why she kept talking about her brother. Anyway, she's trying to figure out how she could bring AI into one of the most prominent civil rights organizations in this country. So that scaffold when you go in there, listen to what she's interested in. She is a power broker, jerk or not, right? What is it? What's going on? Hey, how you doing? What's going on with Mark, your brother? Well, you know, blah, blah, blah. And then she's going to tell us. And then, you know, once that happens, right, she knows a ton of folks, right? Because she is too a power broker, right? You don't get that kind of job unless you're a rainmaker.
+
+1:31:46 - Charles Sims
+Yeah, that's true.
+
+1:31:47 - Keith Coleman
+And so you help those kind of folks, and that's in a form of, are they philanthropy? They surely benefit from philanthropy.
+
+1:31:58 - Charles Sims
+Or almost like more lobbying that comes from, not in a bad way lobbying, but you know what I mean? Like where they put the money where they want to make the most impact in their, what they want.
+
+1:32:12 - Keith Coleman
+Yeah, all I'm saying is, and this is the conversation that we had the other day, which was, and that just is asking a question, just trying to figure it out, Is it, you know, are we staying with startups? You know, where are we still finding the startups? We're going beyond startups now. And just sort of, you know, begin to sort of see the landscape, perhaps, for that may be ripe for, you know, having conversations where, you know, some of these concepts and solutions can benefit, you know, organizations in in those sectors right yeah so all right okay yeah yeah so all right we'll we'll chat tomorrow okay sounds good so yeah so I'll be through probably 10 30s 10 30s closer to 10 30 11 right sounds good sounds great all right thanks boss all right see you guys all right all right later Thanks.
