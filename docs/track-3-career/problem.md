@@ -3,11 +3,13 @@ title: "Problem Statement"
 sidebar_position: 2
 ---
 
-# The Entry-Level Job Crisis
+# The Experience Paradox
 
-## The Disappearing First Rung
+## The Crisis is Now
 
-The traditional pathway from education to employment is collapsing. Entry-level positions that once served as on-ramps to careers are disappearing as organizations deploy AI systems capable of performing tasks previously reserved for new workers.
+Young people can't gain experience because the **entry-level positions that provide experience are disappearing.**
+
+This isn't a future problem. This is the landscape TODAY's students will enter within 24-48 months.
 
 | Indicator | Impact |
 |-----------|--------|
@@ -15,7 +17,9 @@ The traditional pathway from education to employment is collapsing. Entry-level 
 | **Over 45%** reduction in tech entry-level roles | LinkedIn Workforce Report |
 | **78%** of hiring managers predict AI will displace recent graduates | Intelligent.com Survey, 2024 |
 
-These are not projections for a distant future. This is the employment landscape that today's high school students will enter within 24-48 months.
+## The Disappearing First Rung
+
+The traditional pathway from education to employment is collapsing. Entry-level positions that once served as on-ramps to careers are disappearing as organizations deploy AI systems capable of performing tasks previously reserved for new workers.
 
 ## The Experience Paradox
 

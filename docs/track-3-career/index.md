@@ -15,11 +15,15 @@ sidebar_position: 1
 
 ## Executive Summary
 
-The pathway from education to employment is breaking. As AI transforms the workforce, entry-level positions are disappearing at an alarming rate—creating an "experience paradox" where young people cannot gain experience because employers no longer offer the entry points that traditionally provided it.
+The pathway from education to employment is breaking. As AI transforms the workforce, entry-level positions are disappearing at an alarming rate—creating an **"experience paradox"** where young people cannot gain experience because employers no longer offer the entry points that traditionally provided it. This isn't a future problem—this is the landscape TODAY's students will enter within 24-48 months.
 
 **AI Studio Teams** addresses this crisis by creating a **farm system for talent development**—a structured approach to nurturing human potential that mirrors the sustained support model used in athletics. Our model replaces the broken credential-to-career pipeline with a portfolio-based pathway where cross-grade teams of 8-12 high school students complete authentic projects for local employers, building verified portfolios that prove their ability to work effectively alongside AI systems.
 
-This program puts **educators and learners at the heart of AI design**—ensuring these tools expand access, agency, and connection, and in turn advance learning, well-being, and opportunity.
+### Don't Give Them the Fish. Teach Them to Fish.
+
+Most AI education gives students prompts that expire in months. **We teach metacognitive skills that transfer across any AI tool, forever.** Through the SkaFld Ideation Methodology, students learn not just how to use AI tools, but how to THINK about problems—combining decomposition thinking, cross-domain pattern recognition, and responsible AI practices.
+
+This program puts **educators and learners at the heart of AI design**—ensuring these tools expand access, agency, and connection, and in turn advance learning, well-being, and opportunity. Like Stanford's commitment to interdisciplinary learning, we combine technical capability with policy awareness and strategic thinking for responsible AI deployment.
 
 ### The Innovation
 

@@ -28,54 +28,58 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   {/* Slide 2: The Crisis */}
   <div className="pitch-slide slide-dark">
     <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter">The Entry-Level Job<br/>is Disappearing.</h1>
-    
+    <h1 className="animate-enter">The Experience Paradox</h1>
+
     <div className="split-layout animate-enter delay-1" style={{marginTop: '2rem'}}>
       <div className="split-col">
-        <p className="text-left">
-          We are facing a crisis not of capability, but of <strong className="pitch-accent-text">access</strong>.
+        <p className="text-left" style={{fontSize: '1.5rem'}}>
+          Young people can't gain experience because the <strong className="pitch-accent-text">entry-level positions that provide experience are disappearing.</strong>
         </p>
-        <p className="text-left" style={{marginTop: '1rem'}}>
-          The traditional "credential-to-career" pipeline is broken because the entry-level jobs that used to provide training are being automated away.
+        <p className="text-left" style={{marginTop: '1.5rem', fontSize: '1.2rem', opacity: 0.8}}>
+          This isn't a future problem. This is the landscape TODAY's students will enter within 24-48 months.
         </p>
       </div>
       <div className="split-col">
-        <div className="metric-card" style={{marginBottom: '1rem'}}>
-          <span className="metric-val">40%</span>
-          <span className="metric-label">Employers plan AI workforce reductions (WEF 2024)</span>
+        <div className="metric-card" style={{marginBottom: '1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
+          <span className="metric-val" style={{color: '#ff6b6b'}}>40%</span>
+          <span className="metric-label" style={{color: 'rgba(255,255,255,0.7)'}}>Employers plan AI workforce reductions (WEF 2024)</span>
         </div>
-        <div className="metric-card" style={{marginBottom: '1rem'}}>
-          <span className="metric-val">45%</span>
-          <span className="metric-label">Reduction in entry-level roles since 2019</span>
+        <div className="metric-card" style={{marginBottom: '1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)'}}>
+          <span className="metric-val" style={{color: '#ff6b6b'}}>45%</span>
+          <span className="metric-label" style={{color: 'rgba(255,255,255,0.7)'}}>Reduction in tech entry-level roles (LinkedIn)</span>
         </div>
       </div>
     </div>
-    <div className="pitch-footer"><span className="pitch-footer-text">The "Why Now"</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">The Crisis is Now</span></div>
     <div className="slide-number" style={{color: 'rgba(255,255,255,0.5)'}}>2</div>
   </div>
 
   {/* Slide 3: The Gap */}
   <div className="pitch-slide">
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter">We Teach Tools. <br/><span className="pitch-accent-text">We Need to Teach Thinking.</span></h1>
-    
-    <div className="split-layout animate-enter delay-1" style={{marginTop: '4rem'}}>
+    <h1 className="animate-enter">Don't Give Them the Fish.<br/><span className="pitch-accent-text">Teach Them to Fish.</span></h1>
+
+    <p className="animate-enter delay-1" style={{maxWidth: '900px', fontSize: '1.4rem', marginBottom: '2rem'}}>
+      Most AI training teaches prompts that expire in months. <strong>We teach metacognitive skills that transfer across any AI tool, forever.</strong>
+    </p>
+
+    <div className="split-layout animate-enter delay-2" style={{marginTop: '2rem'}}>
       <div className="split-col" style={{opacity: 0.6, transform: 'scale(0.95)'}}>
-        <h2>The Old Way</h2>
+        <h2>Giving Fish</h2>
         <div className="metric-card">
           <p style={{fontSize: '1.8rem', fontWeight: 'bold', margin: 0}}>"Here is a prompt for ChatGPT."</p>
-          <p style={{fontSize: '1rem', marginTop: '1rem'}}>(Brittle. Expires quickly. Features change.)</p>
+          <p style={{fontSize: '1rem', marginTop: '1rem'}}>(Brittle. Expires quickly. Tool-specific.)</p>
         </div>
       </div>
       <div className="split-col">
-        <h2 className="pitch-accent-text" style={{fontWeight: 'bold'}}>The SkaFld Way</h2>
+        <h2 className="pitch-accent-text" style={{fontWeight: 'bold'}}>Teaching to Fish</h2>
         <div className="metric-card" style={{border: '2px solid var(--pitch-accent)', background: 'white'}}>
-          <p style={{fontSize: '1.8rem', fontWeight: 'bold', margin: 0, color: 'var(--pitch-accent)'}}>"Here is how to decompose a complex problem."</p>
-          <p style={{fontSize: '1rem', marginTop: '1rem', color: 'var(--pitch-accent)'}}>(Durable. Transfers across tools. Metacognitive.)</p>
+          <p style={{fontSize: '1.8rem', fontWeight: 'bold', margin: 0, color: 'var(--pitch-accent)'}}>"Here is how to THINK about any problem."</p>
+          <p style={{fontSize: '1rem', marginTop: '1rem', color: 'var(--pitch-accent)'}}>(Durable. Transfers everywhere. Human-centered.)</p>
         </div>
       </div>
     </div>
-    <div className="pitch-footer"><span className="pitch-footer-text">Don't give them the fish. Teach them to fish.</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Human-Centered AI Education</span></div>
     <div className="slide-number">3</div>
   </div>
 
@@ -84,15 +88,15 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
     <h1 className="animate-enter" style={{marginBottom: '0.5rem'}}>SkaFld Trailhead</h1>
     <h2 className="animate-enter delay-1">A Platform for Verified Capability</h2>
-    
+
     <div className="layer-stack animate-enter delay-2">
-      
+
       {/* Layer 3: Demonstration */}
       <div className="layer-card">
         <div className="layer-num">3</div>
         <div style={{textAlign: 'left'}}>
           <h3 style={{margin: 0, fontSize: '1.5rem', color: '#1a1a1a'}}>Demonstration (Weeks 9-12)</h3>
-          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>Employer-Validated Portfolios.</strong> Real client projects. Real feedback.</p>
+          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>Employer-Validated Portfolios.</strong> Real client projects. Real feedback. Minimum 7.0/10 quality threshold.</p>
         </div>
       </div>
 
@@ -101,7 +105,7 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
         <div className="layer-num">2</div>
         <div style={{textAlign: 'left'}}>
           <h3 style={{margin: 0, fontSize: '1.5rem', color: '#1a1a1a'}}>Application (Weeks 5-8)</h3>
-          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>AI-Coached Challenges.</strong> Socratic questioning engine guides thinking.</p>
+          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>AI-Coached Challenges.</strong> Socratic questioning guides problem decomposition.</p>
         </div>
       </div>
 
@@ -110,12 +114,12 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
         <div className="layer-num">1</div>
         <div style={{textAlign: 'left'}}>
           <h3 style={{margin: 0, fontSize: '1.5rem', color: '#1a1a1a'}}>Foundation (Weeks 1-4)</h3>
-          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>Learning to Decompose.</strong> Research wide, validate narrow.</p>
+          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>Decomposition + AI Discernment.</strong> Hallucination detection. Ethical boundaries. Research wide, validate narrow.</p>
         </div>
       </div>
 
     </div>
-    <div className="pitch-footer"><span className="pitch-footer-text">3-Layer Learning Architecture</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Human-Centered Architecture</span></div>
     <div className="slide-number">4</div>
   </div>
 
@@ -123,7 +127,7 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   <div className="pitch-slide slide-dark">
     <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
     <h1 className="animate-enter">AI as a Coach, Not a Crutch.</h1>
-    
+
     <div className="chat-window animate-enter delay-1" style={{marginTop: '2rem'}}>
       <div className="chat-header">
         <div className="window-dot dot-red"></div>
@@ -132,32 +136,30 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
         <span style={{fontSize: '0.9rem', color: '#888', marginLeft: '1rem'}}>SkaFld Trailhead Coach</span>
       </div>
       <div className="chat-body">
-        
+
         <div className="message-row animate-enter delay-2">
           <div className="chat-avatar">🤖</div>
           <div className="chat-message message-ai">
-            That's a big goal, Sarah. What are the first three decisions you need to make to get there?
+            Before we solve this, Sarah—what OTHER fields have already solved a similar problem? Let's research wide first.
           </div>
         </div>
 
         <div className="message-row animate-enter delay-3" style={{alignSelf: 'flex-end', justifyContent: 'flex-end'}}>
           <div className="chat-message message-user">
-            I think I need to decide on the target audience first, then the core feature set.
+            Hmm... game designers figured out engagement. Aviation solved error reduction.
           </div>
         </div>
 
         <div className="message-row animate-enter delay-4">
           <div className="chat-avatar">🤖</div>
-          <div className="typing-dots">
-            <div className="typing-dot"></div>
-            <div className="typing-dot"></div>
-            <div className="typing-dot"></div>
+          <div className="chat-message message-ai" style={{opacity: 1, transform: 'scale(1)'}}>
+            Now we're thinking! What can we borrow and translate? Decompose it into testable pieces.
           </div>
         </div>
 
       </div>
     </div>
-    <div className="pitch-footer"><span className="pitch-footer-text">SkaFld Trailhead Platform</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Socratic AI That Teaches Thinking</span></div>
     <div className="slide-number" style={{color: 'rgba(255,255,255,0.5)'}}>5</div>
   </div>
 
@@ -165,23 +167,28 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   <div className="pitch-slide">
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
     <h1 className="animate-enter">Built on Validated Learning Science</h1>
-    <h2 className="animate-enter delay-1">We aren't guessing. We're combining proven pillars.</h2>
-    
-    <div className="metric-grid animate-enter delay-2">
-      <div className="metric-card">
-        <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#1a1a1a'}}>Situated Cognition</h3>
-        <p style={{fontSize: '1.1rem', margin: '0 auto'}}>Learning in authentic contexts transfers better than classroom simulation.</p>
-        <small style={{display: 'block', marginTop: '1rem', color: '#999', textTransform: 'uppercase'}}>Lave & Wenger, 1991</small>
+    <h2 className="animate-enter delay-1">Humans at the center. Evidence at the foundation.</h2>
+
+    <div className="metric-grid animate-enter delay-2" style={{gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem'}}>
+      <div className="metric-card" style={{padding: '2rem 1.5rem'}}>
+        <h3 style={{fontSize: '1.3rem', marginBottom: '0.8rem', color: '#1a1a1a'}}>Situated Cognition</h3>
+        <p style={{fontSize: '1rem', margin: '0 auto'}}>Real projects with real stakes transfer better than simulation.</p>
+        <small style={{display: 'block', marginTop: '0.8rem', color: '#999', textTransform: 'uppercase', fontSize: '0.75rem'}}>Lave & Wenger, 1991</small>
       </div>
-      <div className="metric-card">
-        <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#1a1a1a'}}>Near-Peer Mentorship</h3>
-        <p style={{fontSize: '1.1rem', margin: '0 auto'}}>Seniors mentor Sophomores. "Learning by teaching" optimizes retention.</p>
-        <small style={{display: 'block', marginTop: '1rem', color: '#999', textTransform: 'uppercase'}}>Topping, 2005</small>
+      <div className="metric-card" style={{padding: '2rem 1.5rem'}}>
+        <h3 style={{fontSize: '1.3rem', marginBottom: '0.8rem', color: '#1a1a1a'}}>Near-Peer Mentorship</h3>
+        <p style={{fontSize: '1rem', margin: '0 auto'}}>Seniors mentor Sophomores. Teaching reinforces learning.</p>
+        <small style={{display: 'block', marginTop: '0.8rem', color: '#999', textTransform: 'uppercase', fontSize: '0.75rem'}}>Topping, 2005</small>
       </div>
-      <div className="metric-card">
-        <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#1a1a1a'}}>Portfolio Assessment</h3>
-        <p style={{fontSize: '1.1rem', margin: '0 auto'}}>Work samples predict job performance <strong>5x better</strong> than grades.</p>
-        <small style={{display: 'block', marginTop: '1rem', color: '#999', textTransform: 'uppercase'}}>Schmidt & Hunter, 1998</small>
+      <div className="metric-card" style={{padding: '2rem 1.5rem'}}>
+        <h3 style={{fontSize: '1.3rem', marginBottom: '0.8rem', color: '#1a1a1a'}}>Portfolio Assessment</h3>
+        <p style={{fontSize: '1rem', margin: '0 auto'}}>Work samples predict job success <strong>5x better</strong> than grades.</p>
+        <small style={{display: 'block', marginTop: '0.8rem', color: '#999', textTransform: 'uppercase', fontSize: '0.75rem'}}>Schmidt & Hunter, 1998</small>
+      </div>
+      <div className="metric-card" style={{padding: '2rem 1.5rem', border: '2px solid var(--pitch-accent)'}}>
+        <h3 style={{fontSize: '1.3rem', marginBottom: '0.8rem', color: 'var(--pitch-accent)'}}>Responsible AI Practices</h3>
+        <p style={{fontSize: '1rem', margin: '0 auto'}}>Hallucination detection and ethical use from day one.</p>
+        <small style={{display: 'block', marginTop: '0.8rem', color: '#999', textTransform: 'uppercase', fontSize: '0.75rem'}}>UNESCO, 2021</small>
       </div>
     </div>
     <div className="pitch-footer"><span className="pitch-footer-text">Human-Centered Design</span></div>
@@ -191,73 +198,81 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   {/* Slide 7: Methodology */}
   <div className="pitch-slide slide-gradient">
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter">The "SkaFld Way"</h1>
-    <h2 className="animate-enter delay-1">Interdisciplinary Thinking</h2>
-    
+    <h1 className="animate-enter">The SkaFld Ideation Methodology</h1>
+    <h2 className="animate-enter delay-1">Interdisciplinary Thinking — The Stanford Way</h2>
+
     <div className="highlight-box animate-enter delay-2" style={{maxWidth: '1000px', marginTop: '2rem'}}>
       <p style={{fontSize: '2.5rem', fontWeight: 'bold', color: '#1a1a1a', lineHeight: '1.2'}}>
         "Research Wide, Validate Narrow"
       </p>
       <div style={{height: '2px', background: '#eee', width: '100px', margin: '2rem auto'}}></div>
       <p style={{textAlign: 'center', fontSize: '1.5rem', color: '#4a4a4a'}}>
-        The best solution to your problem probably exists in a field you've never explored. 
+        The best solution to your problem probably exists in a field you've never explored.
         It is your job to find it, translate it, and prove it.
       </p>
     </div>
-    <p style={{marginTop: '3rem', fontSize: '1.2rem', color: '#666'}}>
-      We teach students to think like engineers and designers, using AI to accelerate their execution.
+    <p className="animate-enter delay-3" style={{marginTop: '2.5rem', fontSize: '1.3rem', color: '#444', maxWidth: '900px'}}>
+      Like Stanford's cross-disciplinary approach, we teach students to think across domains—combining <strong>technical capability</strong> with <strong>policy awareness</strong> and <strong>strategic thinking</strong> for responsible AI deployment.
     </p>
-    <div className="pitch-footer"><span className="pitch-footer-text">Metacognitive Skill Building</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Cross-Domain Problem Solving</span></div>
     <div className="slide-number">7</div>
   </div>
 
   {/* Slide 8: Traction */}
   <div className="pitch-slide">
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter">Proof of Concept: El Segundo Unified</h1>
-    <h2 className="animate-enter delay-1">Starting in the nation's most dense aerospace & tech corridor.</h2>
-    
-    <div className="metric-grid animate-enter delay-2" style={{maxWidth: '1200px'}}>
-      <div className="metric-card">
-        <span className="metric-val">96</span>
-        <span className="metric-label">Students<br/>(8 Teams)</span>
+    <h1 className="animate-enter">El Segundo: The Perfect Pilot</h1>
+    <h2 className="animate-enter delay-1">Nation's densest aerospace & tech corridor. 5 schools. 3,400 students.</h2>
+
+    <div className="metric-grid animate-enter delay-2" style={{maxWidth: '1400px', gridTemplateColumns: 'repeat(5, 1fr)', gap: '1.5rem'}}>
+      <div className="metric-card" style={{padding: '2rem 1rem'}}>
+        <span className="metric-val" style={{fontSize: '3rem'}}>96</span>
+        <span className="metric-label" style={{fontSize: '0.9rem'}}>Students<br/>(8 Teams)</span>
       </div>
-      <div className="metric-card">
-        <span className="metric-val">12</span>
-        <span className="metric-label">Employer Partners<br/>(Boeing, Northrop, Tech)</span>
+      <div className="metric-card" style={{padding: '2rem 1rem'}}>
+        <span className="metric-val" style={{fontSize: '3rem'}}>12</span>
+        <span className="metric-label" style={{fontSize: '0.9rem'}}>Employer Partners<br/>(Boeing, Northrop)</span>
       </div>
-      <div className="metric-card">
-        <span className="metric-val">24</span>
-        <span className="metric-label">Paid Micro-Internships<br/>(Year 1 Goal)</span>
+      <div className="metric-card" style={{padding: '2rem 1rem'}}>
+        <span className="metric-val" style={{fontSize: '3rem'}}>24</span>
+        <span className="metric-label" style={{fontSize: '0.9rem'}}>Paid Internships<br/>(Year 1 Goal)</span>
+      </div>
+      <div className="metric-card" style={{padding: '2rem 1rem'}}>
+        <span className="metric-val" style={{fontSize: '3rem'}}>7.0</span>
+        <span className="metric-label" style={{fontSize: '0.9rem'}}>Portfolio Min<br/>(Employer-Rated)</span>
+      </div>
+      <div className="metric-card" style={{padding: '2rem 1rem'}}>
+        <span className="metric-val" style={{fontSize: '3rem'}}>85%</span>
+        <span className="metric-label" style={{fontSize: '0.9rem'}}>Retention<br/>Target</span>
       </div>
     </div>
-    
-    <div className="animate-enter delay-3" style={{marginTop: '4rem', width: '100%', maxWidth: '800px', position: 'relative'}}>
+
+    <div className="animate-enter delay-3" style={{marginTop: '3rem', width: '100%', maxWidth: '800px', position: 'relative'}}>
       {/* Timeline Line */}
       <div style={{position: 'absolute', top: '50%', left: '0', right: '0', height: '4px', background: '#eee', zIndex: 0}}></div>
-      
+
       {/* Timeline Nodes */}
       <div style={{display: 'flex', justifyContent: 'space-between', position: 'relative', zIndex: 1}}>
-        
-        <div style={{background: 'white', padding: '1rem 2rem', borderRadius: '50px', border: '2px solid #ddd', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', textAlign: 'center'}}>
-           <div style={{fontWeight: 'bold', color: '#444'}}>El Segundo</div>
-           <div style={{fontSize: '0.8rem', color: '#888'}}>Pilot</div>
+
+        <div style={{background: 'white', padding: '1rem 2rem', borderRadius: '50px', border: '2px solid var(--pitch-accent)', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', textAlign: 'center'}}>
+           <div style={{fontWeight: 'bold', color: 'var(--pitch-accent)'}}>Year 1: El Segundo</div>
+           <div style={{fontSize: '0.8rem', color: '#888'}}>Proof of Concept</div>
         </div>
 
         <div style={{background: 'white', padding: '1rem 2rem', borderRadius: '50px', border: '2px solid #ddd', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', textAlign: 'center'}}>
-           <div style={{fontWeight: 'bold', color: '#444'}}>California</div>
-           <div style={{fontSize: '0.8rem', color: '#888'}}>Expansion</div>
+           <div style={{fontWeight: 'bold', color: '#444'}}>Year 2: California</div>
+           <div style={{fontSize: '0.8rem', color: '#888'}}>5-10 Districts</div>
         </div>
 
         <div style={{background: '#8C1515', padding: '1rem 2rem', borderRadius: '50px', boxShadow: '0 10px 20px rgba(140, 21, 21, 0.4)', textAlign: 'center', color: 'white'}}>
-           <div style={{fontWeight: 'bold'}}>National Model</div>
-           <div style={{fontSize: '0.8rem', opacity: 0.8}}>Goal</div>
+           <div style={{fontWeight: 'bold'}}>Year 3: National</div>
+           <div style={{fontSize: '0.8rem', opacity: 0.8}}>SaaS Model</div>
         </div>
 
       </div>
     </div>
 
-    <div className="pitch-footer"><span className="pitch-footer-text">Traction</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Farm System for Talent Development</span></div>
     <div className="slide-number">8</div>
   </div>
 
@@ -292,54 +307,47 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   <div className="pitch-slide">
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
     <h1 className="animate-enter">The Right Team to Execute</h1>
-    
-    <div className="metric-grid animate-enter delay-1" style={{marginTop: '3rem'}}>
+    <h2 className="animate-enter delay-1">Technology. Policy. Stanford DNA.</h2>
+
+    <div className="metric-grid animate-enter delay-2" style={{marginTop: '2rem'}}>
       <div className="metric-card">
         <div className="avatar-circle">
           <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" style={{objectPosition: 'center', transform: 'scale(1.08) translateX(5px)'}} />
         </div>
         <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Charles Sims</h3>
-        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '1rem'}}>Project Director</p>
-        <p style={{fontSize: '1rem', lineHeight: '1.4'}}>Tech transformation leader (LA Clippers, UTA). Expert in workforce systems.</p>
+        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '0.75rem'}}>Project Director</p>
+        <p style={{fontSize: '0.95rem', lineHeight: '1.4'}}>Tech transformation (LA Clippers, UTA). Creator of the SkaFld Ideation Methodology.</p>
       </div>
-      <div className="metric-card">
-        <div className="avatar-circle">
+      <div className="metric-card" style={{border: '2px solid var(--pitch-accent)'}}>
+        <div className="avatar-circle" style={{border: '4px solid var(--pitch-accent)'}}>
           <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" style={{objectPosition: '0 25%'}} />
         </div>
         <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Keith Coleman</h3>
-        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '1rem'}}>Stanford Liaison</p>
-        <p style={{fontSize: '1rem', lineHeight: '1.4'}}>Stanford BA '86, mediaX Advisory Scholar. UN Joint SDG Fund Co-Chair.</p>
+        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '0.75rem'}}>Stanford Liaison & Policy Lead</p>
+        <p style={{fontSize: '0.95rem', lineHeight: '1.4'}}><strong>Stanford BA '86. mediaX Advisory Scholar (2019-2022).</strong> UN Joint SDG Fund Co-Chair. Policy & strategy expertise for responsible AI.</p>
       </div>
       <div className="metric-card">
         <div className="avatar-circle">
           <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" style={{objectPosition: '10% 5%'}} />
         </div>
         <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Mike Belloli</h3>
-        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '1rem'}}>Technology & Operations</p>
-        <p style={{fontSize: '1rem', lineHeight: '1.4'}}>Full-stack developer managing financials, pitch strategy, and digital infrastructure.</p>
+        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '0.75rem'}}>Technology & Operations</p>
+        <p style={{fontSize: '0.95rem', lineHeight: '1.4'}}>Full-stack developer. COPPA/FERPA compliance expert. Platform architect.</p>
       </div>
     </div>
-    <div className="pitch-footer"><span className="pitch-footer-text">Team</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Interdisciplinary Expertise</span></div>
     <div className="slide-number">10</div>
   </div>
 
   {/* Slide 11: Vision & Ask */}
   <div className="pitch-slide slide-gradient">
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter">The Launchpad for a National Model</h1>
-    <h2 className="animate-enter delay-1">Success = A scalable SaaS platform ready for district adoption nationwide.</h2>
-    
-    <div className="animate-enter delay-2" style={{display: 'flex', gap: '2rem', alignItems: 'center', justifyContent: 'center', margin: '3rem 0'}}>
-      <div style={{padding: '1.5rem 3rem', background: 'white', borderRadius: '50px', boxShadow: 'var(--pitch-card-shadow)', fontWeight: 'bold', fontSize: '1.2rem'}}>El Segundo</div>
-      <div style={{fontSize: '2rem', color: '#ccc'}}>→</div>
-      <div style={{padding: '1.5rem 3rem', background: 'white', borderRadius: '50px', boxShadow: 'var(--pitch-card-shadow)', fontWeight: 'bold', fontSize: '1.2rem'}}>California</div>
-      <div style={{fontSize: '2rem', color: '#ccc'}}>→</div>
-      <div style={{padding: '1.5rem 3rem', background: 'var(--pitch-accent)', color: 'white', borderRadius: '50px', fontWeight: 'bold', fontSize: '1.2rem', boxShadow: '0 10px 20px rgba(140, 21, 21, 0.4)'}}>National Model</div>
-    </div>
+    <h1 className="animate-enter">A Farm System for Talent Development</h1>
+    <h2 className="animate-enter delay-1">Nurturing human potential the way athletics nurtures athletes.</h2>
 
-    <div className="highlight-box animate-enter delay-3" style={{background: 'white', width: '100%', maxWidth: '1000px'}}>
-      <h2 style={{margin: '0 0 1rem 0', color: '#1a1a1a'}}>The Ask: $50,000</h2>
-      
+    <div className="highlight-box animate-enter delay-2" style={{background: 'white', width: '100%', maxWidth: '1000px', marginTop: '2rem'}}>
+      <h2 style={{margin: '0 0 1.5rem 0', color: '#1a1a1a'}}>The Ask: $50,000</h2>
+
       <div className="funding-bar-container">
         <div className="funding-bar">
           <div className="funding-segment seg-1 fill-40">40%</div>
@@ -347,39 +355,48 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
           <div className="funding-segment seg-3 fill-16">16%</div>
           <div className="funding-segment seg-4 fill-20">20%</div>
         </div>
-        
+
         <div className="funding-legend">
           <div className="legend-item">
-            <span className="legend-val" style={{color: 'var(--pitch-accent)'}}>40%</span>
+            <span className="legend-val" style={{color: 'var(--pitch-accent)'}}>$20K</span>
             <span className="legend-label">Platform Dev</span>
           </div>
           <div className="legend-item">
-            <span className="legend-val" style={{color: '#2e2e2e'}}>24%</span>
+            <span className="legend-val" style={{color: '#2e2e2e'}}>$12K</span>
             <span className="legend-label">Pilot Impl.</span>
           </div>
           <div className="legend-item">
-            <span className="legend-val" style={{color: '#666'}}>16%</span>
+            <span className="legend-val" style={{color: '#666'}}>$8K</span>
             <span className="legend-label">Assessment</span>
           </div>
           <div className="legend-item">
-            <span className="legend-val" style={{color: '#999'}}>20%</span>
-            <span className="legend-label">Ops & Team</span>
+            <span className="legend-val" style={{color: '#999'}}>$10K</span>
+            <span className="legend-label">Ops & Buffer</span>
           </div>
         </div>
       </div>
 
+      <p style={{marginTop: '1.5rem', fontSize: '1rem', color: '#666', textAlign: 'center'}}>
+        <strong>Sustainability:</strong> Year 2+ funded by CTE integration, employer contributions, and SaaS revenue. <strong>$521 per student.</strong>
+      </p>
+
     </div>
-    <div className="pitch-footer"><span className="pitch-footer-text">Ask</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Investment in Human Potential</span></div>
     <div className="slide-number">11</div>
   </div>
 
   {/* Slide 12: Closing */}
   <div className="pitch-slide slide-dark">
     <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter" style={{fontSize: '6rem', marginBottom: '1rem'}}>AI Studio Teams</h1>
-    <h2 className="animate-enter delay-1" style={{fontWeight: '300', marginTop: '1rem', fontSize: '2.5rem', color: 'white'}}>Let's Build the Future of Work.</h2>
-    <div className="animate-enter delay-2" style={{marginTop: '5rem', fontSize: '1.4rem', color: '#888'}}>
-      charles@skafldstudio.com | keith.coleman@alumni.stanford.edu
+    <h1 className="animate-enter" style={{fontSize: '5rem', marginBottom: '1rem'}}>AI Studio Teams</h1>
+    <h2 className="animate-enter delay-1" style={{fontWeight: '300', marginTop: '1rem', fontSize: '2.2rem', color: 'white'}}>Teaching the Next Generation to Fish.</h2>
+
+    <p className="animate-enter delay-2" style={{fontSize: '1.5rem', color: 'rgba(255,255,255,0.8)', maxWidth: '800px', marginTop: '2rem'}}>
+      Human-centered. Interdisciplinary. Portfolio-proven.
+    </p>
+
+    <div className="animate-enter delay-3" style={{marginTop: '4rem', fontSize: '1.2rem', color: '#888'}}>
+      charles@skafldstudio.com | keith.coleman@alumni.stanford.edu | mike@skafldstudio.com
     </div>
     <div className="slide-number" style={{color: 'rgba(255,255,255,0.5)'}}>12</div>
   </div>
