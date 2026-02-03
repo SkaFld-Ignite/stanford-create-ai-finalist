@@ -22,3 +22,6 @@ yarn-error.log*
 # Local files
 .claude/
 *.pdf
+
+# Internal analysis (not for public repo)
+internal/

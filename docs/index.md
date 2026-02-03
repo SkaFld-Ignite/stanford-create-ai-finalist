@@ -24,11 +24,16 @@ This proposal puts **educators and learners at the heart of AI design**—ensuri
 
 ### The Innovation
 
-Unlike traditional career preparation that relies on classroom simulation, AI Studio Teams operates at the intersection of three transformative approaches:
+Unlike traditional career preparation that relies on classroom simulation, AI Studio Teams operates at the intersection of four transformative approaches:
 
-1. **Portfolio Over Credentials**: Students graduate with employer-validated work samples, not just transcripts
-2. **Near-Peer Mentorship**: 12th graders mentor 10th graders; 11th graders mentor 9th graders, creating sustainable learning communities
-3. **Employer Integration**: Local companies provide real projects, quarterly portfolio reviews, and micro-internship pathways
+1. **Teaching How to Think, Not Just Tools**: The SkaFld Ideation Methodology teaches students to decompose problems, research across domains, and apply systematic thinking—meta-skills that transfer to any AI tool or industry
+2. **Portfolio Over Credentials**: Students graduate with employer-validated work samples, not just transcripts
+3. **Near-Peer Mentorship**: 12th graders mentor 10th graders; 11th graders mentor 9th graders, creating sustainable learning communities
+4. **Employer Integration**: Local companies provide real projects, quarterly portfolio reviews, and micro-internship pathways
+
+### The Platform: SkafldSpark
+
+AI Studio Teams is powered by **SkafldSpark**, an AI-powered K-12 learning platform built for educational compliance (COPPA/FERPA), featuring an AI assistant (Sparky) for project coaching, portfolio building tools, analytics dashboards, and gamification to drive engagement. The platform enables scalable implementation across districts.
 
 ### Why El Segundo
 

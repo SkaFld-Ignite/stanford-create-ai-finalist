@@ -1,20 +1,14 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
-  mainSidebar: [
-    {
-      type: 'doc',
-      id: 'index',
-      label: 'Overview',
-    },
+  tutorialSidebar: [
+    'index', // Landing Page with Executive Summary
     {
       type: 'category',
       label: 'Proposal Details',
-      link: {
-        type: 'doc',
-        id: 'track-3-career/index',
-      },
+      collapsed: false,
       items: [
+        'track-3-career/index',
         'track-3-career/problem',
         'track-3-career/solution',
         'track-3-career/learning-science',
@@ -25,6 +19,11 @@ const sidebars: SidebarsConfig = {
         'track-3-career/budget',
       ],
     },
+    {
+      type: 'doc',
+      id: 'presentation-deck',
+      label: 'Pitch Deck'
+    }
   ],
 };
 

@@ -11,7 +11,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://stanford-create-ai.vercel.app',
+  url: 'https://stanford-create-ai-finalist.vercel.app',
   baseUrl: '/',
 
   organizationName: 'skafld',
@@ -55,7 +55,7 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'mainSidebar',
+          sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Proposal',
         },
