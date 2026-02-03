@@ -12,7 +12,7 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
 <div className="row margin-bottom--xl" style={{alignItems: 'center'}}>
   <div className="col col--3">
     <div className="avatar-circle" style={{width: '180px', height: '180px'}}>
-      <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" />
+      <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" style={{objectPosition: 'center', transform: 'scale(1.35) translateX(5px)'}} />
     </div>
   </div>
   <div className="col col--9">
@@ -30,7 +30,7 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
 <div className="row margin-bottom--xl" style={{alignItems: 'center'}}>
   <div className="col col--3">
     <div className="avatar-circle" style={{width: '180px', height: '180px'}}>
-      <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" />
+      <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" style={{objectPosition: '0 25%'}} />
     </div>
   </div>
   <div className="col col--9">
@@ -48,7 +48,7 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
 <div className="row margin-bottom--xl" style={{alignItems: 'center'}}>
   <div className="col col--3">
     <div className="avatar-circle" style={{width: '180px', height: '180px'}}>
-      <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" />
+      <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" style={{objectPosition: '10% 5%'}} />
     </div>
   </div>
   <div className="col col--9">
