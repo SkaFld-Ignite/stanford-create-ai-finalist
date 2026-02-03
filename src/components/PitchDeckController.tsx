@@ -136,8 +136,11 @@ const PitchDeckController = () => {
 
     // 3. Create a temporary container off-screen
     const container = document.createElement('div');
-    container.style.position = 'absolute';
-    container.style.top = '-10000px';
+    container.style.position = 'fixed';
+    container.style.top = '0';
+    container.style.zIndex = '-9999';
+    container.style.background = '#ffffff';
+    container.style.visibility = 'visible';
     container.style.left = '0';
     container.style.width = '1600px'; // Enforce context width
     container.appendChild(clone);

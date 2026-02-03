@@ -1,24 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from '@docusaurus/router';
 
-// Download icon SVG
-const DownloadIcon = () => (
-  <svg
-    width="18"
-    height="18"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-    <polyline points="7 10 12 15 17 10" />
-    <line x1="12" y1="15" x2="12" y2="3" />
-  </svg>
-);
-
 function Root({ children }) {
   const location = useLocation();
   const isPitchPage = location.pathname === '/pitch' || location.pathname === '/pitch/';
@@ -27,47 +9,50 @@ function Root({ children }) {
     // Only run on client and on pitch page
     if (typeof window === 'undefined' || !isPitchPage) {
       // Remove button if navigating away from pitch page
-      const existingBtn = document.querySelector('.navbar-download-btn');
+      const existingBtn = document.querySelector('.pitch-download-btn');
       if (existingBtn) {
         existingBtn.remove();
       }
       return;
     }
 
-    // Find the Pitch Deck navbar link
+    // Insert the download button into the pitch deck
     const insertDownloadButton = () => {
       // Check if button already exists
-      if (document.querySelector('.navbar-download-btn')) {
+      if (document.querySelector('.pitch-download-btn')) {
         return;
       }
 
-      // Find the Pitch Deck link in the navbar
-      const navbarLinks = document.querySelectorAll('.navbar__link');
-      let pitchDeckLink: Element | null = null;
-
-      navbarLinks.forEach((link) => {
-        if (link.textContent?.includes('Pitch Deck')) {
-          pitchDeckLink = link;
-        }
-      });
-
-      if (pitchDeckLink) {
-        // Create the download button
-        const button = document.createElement('button');
-        button.className = 'navbar-download-btn';
-        button.title = 'Download Pitch Deck as PDF';
-        button.setAttribute('aria-label', 'Download Pitch Deck as PDF');
-        button.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>`;
-
-        button.addEventListener('click', handleDownload);
-
-        // Insert after the Pitch Deck link
-        pitchDeckLink.parentNode?.insertBefore(button, pitchDeckLink.nextSibling);
+      // Find the pitch deck container
+      const pitchDeckContainer = document.querySelector('.pitch-deck-container');
+      if (!pitchDeckContainer) {
+        // Retry after a short delay if pitch deck isn't loaded yet
+        setTimeout(insertDownloadButton, 200);
+        return;
       }
+
+      // Create the download button
+      const button = document.createElement('button');
+      button.className = 'pitch-download-btn';
+      button.title = 'Download Pitch Deck as PDF';
+      button.setAttribute('aria-label', 'Download Pitch Deck as PDF');
+      button.innerHTML = `
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        <span>Download PDF</span>
+      `;
+
+      button.addEventListener('click', handleDownload);
+
+      // Insert at the beginning of the pitch deck container
+      pitchDeckContainer.insertBefore(button, pitchDeckContainer.firstChild);
     };
 
-    // Delay to ensure navbar is rendered
-    const timer = setTimeout(insertDownloadButton, 100);
+    // Delay to ensure pitch deck is rendered
+    const timer = setTimeout(insertDownloadButton, 300);
 
     return () => {
       clearTimeout(timer);
@@ -89,14 +74,20 @@ async function handleDownload() {
   }
 
   // Show loading state
-  const btn = document.querySelector('.navbar-download-btn') as HTMLButtonElement;
+  const btn = document.querySelector('.pitch-download-btn') as HTMLButtonElement;
   if (btn) {
     btn.disabled = true;
     btn.classList.add('loading');
+    const span = btn.querySelector('span');
+    if (span) span.textContent = 'Generating...';
   }
 
   // Clone the container to avoid modifying the original
   const clone = container.cloneNode(true) as HTMLElement;
+
+  // Remove the download button from the clone
+  const cloneBtn = clone.querySelector('.pitch-download-btn');
+  if (cloneBtn) cloneBtn.remove();
 
   // Remove the controller and any interactive elements
   clone.style.position = 'relative';
@@ -200,6 +191,8 @@ async function handleDownload() {
     if (btn) {
       btn.disabled = false;
       btn.classList.remove('loading');
+      const span = btn.querySelector('span');
+      if (span) span.textContent = 'Download PDF';
     }
   }
 }
