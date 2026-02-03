@@ -1,41 +1,53 @@
-# Website
+# AI Studio Teams | Stanford CREATE+AI Challenge
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+**Track 3: Augment Career Opportunities**
 
-## Installation
+This repository contains the full proposal and interactive pitch deck for **AI Studio Teams**—a portfolio-based farm system for the AI-augmented workforce.
 
-```bash
-yarn
-```
+Submitted by **SkaFld Studio** in partnership with **El Segundo Unified School District**.
 
-## Local Development
+🔗 **[Live Proposal & Pitch Deck](https://stanford-create-ai-finalist.vercel.app)**
 
-```bash
-yarn start
-```
+---
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## 🚀 Project Highlights
 
-## Build
+This isn't just a documentation site. It features a custom-built **Interactive Pitch Deck** optimized for high-stakes presentation:
 
-```bash
-yarn build
-```
+- **Interactive Slides:** Scroll-triggered animations and keyboard navigation (`Arrow Keys` / `Space`).
+- **React Components:** Custom-built visualizations for Timelines, Stack Diagrams, and Budget breakdowns.
+- **Glassmorphism UI:** A modern, high-fidelity design system built with custom CSS.
+- **Print-Ready:** Optimized CSS media queries for high-quality PDF export.
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## 🛠️ Tech Stack
 
-## Deployment
+- **Framework:** [Docusaurus 3](https://docusaurus.io/) (React-based static site generator)
+- **Styling:** Custom CSS3 (Variables, Animations, Flexbox/Grid)
+- **Components:** React Functional Components (`PitchDeckController`, etc.)
+- **Deployment:** Static generation for Vercel/Netlify
 
-Using SSH:
+## 🏃‍♂️ Quick Start
 
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
+To run the proposal and pitch deck locally:
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+# 1. Install dependencies
+npm install
+
+# 2. Start the development server
+npm start
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+The site will open at `http://localhost:3000`. 
+Navigate to **"Pitch Deck"** in the sidebar (or `/pitch`) to view the presentation.
+
+## 📂 Key Files
+
+- **Pitch Deck Content:** `docs/pitch.mdx`
+- **Presentation Logic:** `src/components/PitchDeckController.tsx`
+- **Design System:** `src/css/custom.css`
+- **Landing Page:** `docs/index.md`
+
+---
+
+*Built for the Stanford CREATE+AI Challenge 2026.*

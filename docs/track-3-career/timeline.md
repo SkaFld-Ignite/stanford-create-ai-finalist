@@ -49,6 +49,16 @@ Month:  1    2    3    4    5    6    7    8    9   10   11   12
 **Month 1 employer partnerships** are the critical path item. Without committed employer partners providing real projects, the entire model fails.
 :::
 
+## Long-Term Vision
+
+Our 12-month timeline is the launchpad for a scalable national model.
+
+| Phase | Scope | Goal |
+|-------|-------|------|
+| **Year 1: Pilot** | El Segundo Unified | **Proof of Concept.** Validate the "SkaFld Spark" platform and curriculum with 96 students and 12 employers. |
+| **Year 2: Expansion** | California (5-10 Districts) | **Regional Network.** Expand to diverse demographics across LA County and Silicon Valley. Integrate CTE funding streams. |
+| **Year 3: Scale** | National Model | **SaaS Platform.** Open the platform to districts nationwide. "SkaFld Certified" becomes a recognized standard for entry-level hiring. |
+
 ---
 
 **Next:** [Team - Project Leadership](./team)

@@ -60,6 +60,11 @@ const config: Config = {
           label: 'Proposal',
         },
         {
+          to: '/pitch',
+          label: 'Pitch Deck',
+          position: 'left',
+        },
+        {
           href: 'https://acceleratelearning.stanford.edu/funding/create-ai-challenge/',
           label: 'Stanford Challenge',
           position: 'right',

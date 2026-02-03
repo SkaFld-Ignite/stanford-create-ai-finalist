@@ -7,40 +7,54 @@ sidebar_position: 6
 
 ## The Equity Imperative
 
-AI's workforce disruption does not affect all populations equally. Entry-level job elimination disproportionately impacts:
+AI's workforce disruption does not affect all populations equally. AI Studio Teams creates structured pathways that do not depend on existing privilege.
 
-- **First-generation college students** who lack family networks for alternative pathways
-- **Students from lower-income households** who cannot afford unpaid internships
-- **Young women** already underrepresented in technology (29% of tech workforce)
-- **Students without professional connections** who rely on formal hiring processes
+## Explicit Parity Targets
 
-AI Studio Teams creates structured pathways that do not depend on existing privilege.
+We aren't just hoping for diversity; we are designing for it with specific cohort targets.
+
+<div className="metric-grid" style={{maxWidth: '100%'}}>
+  <div className="metric-card">
+    <span className="metric-val">50%</span>
+    <span className="metric-label">Female / Male</span>
+    <small style={{display: 'block', marginTop: '0.5rem', opacity: 0.8}}>Target Parity</small>
+  </div>
+  <div className="metric-card">
+    <span className="metric-val">40%</span>
+    <span className="metric-label">Free/Reduced Lunch</span>
+    <small style={{display: 'block', marginTop: '0.5rem', opacity: 0.8}}>Socioeconomic Access</small>
+  </div>
+  <div className="metric-card">
+    <span className="metric-val">30%</span>
+    <span className="metric-label">First-Generation</span>
+    <small style={{display: 'block', marginTop: '0.5rem', opacity: 0.8}}>College Path Status</small>
+  </div>
+</div>
 
 ## Equity Design Principles
 
-### Explicit Parity Targets
-
-| Dimension | Target |
-|-----------|--------|
-| Gender | 50/50 female/male ratio |
-| Socioeconomic | 40% free/reduced lunch eligible |
-| First-generation | 30% first-gen college students |
-| Prior tech exposure | No prerequisite requirements |
-
-### Remove Prerequisite Barriers
-
-- **No coding prerequisites**: AI tools enable contribution without programming skills
-- **No equipment requirements**: All technology provided during sessions
-- **No prior portfolio required**: Teams designed for building first portfolios
-- **No application essays**: Selection based on interest and commitment
-
-### Mentorship Counteracts Network Disadvantage
-
-Students from families without professional networks gain:
-- Visible role models who recently navigated similar transitions
-- Explicit knowledge transfer about professional norms
-- Practice with professional communication
-- Connections to employer partners regardless of family background
+<div className="row">
+  <div className="col col--6">
+    <div className="highlight-box" style={{height: '100%'}}>
+      <h3>Remove Barrier Entry</h3>
+      <ul style={{fontSize: '0.9rem', paddingLeft: '1rem'}}>
+        <li><strong>No coding prerequisites:</strong> AI tools enable contribution without programming skills.</li>
+        <li><strong>No equipment requirements:</strong> All technology provided during sessions.</li>
+        <li><strong>No application essays:</strong> Selection based on interest and commitment.</li>
+      </ul>
+    </div>
+  </div>
+  <div className="col col--6">
+    <div className="highlight-box" style={{height: '100%'}}>
+      <h3>Counteract Network Disadvantage</h3>
+      <ul style={{fontSize: '0.9rem', paddingLeft: '1rem'}}>
+        <li><strong>Visible Role Models:</strong> Near-peer mentors who recently navigated the transition.</li>
+        <li><strong>Professional Norms:</strong> Explicit knowledge transfer about professional communication.</li>
+        <li><strong>Direct Access:</strong> Connections to employers regardless of family background.</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 :::info Portfolio Assessment Reduces Bias
 Research demonstrates portfolio-based hiring reduces demographic bias compared to credential-based evaluation (Rivera, 2015). By emphasizing work samples over pedigree signals, portfolios enable evaluation based on capability rather than background.

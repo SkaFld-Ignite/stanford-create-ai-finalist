@@ -3,169 +3,214 @@ title: Pitch Deck
 hide_table_of_contents: true
 ---
 
+import PitchDeckController from '@site/src/components/PitchDeckController';
+
 <div className="pitch-deck-container">
+  <PitchDeckController />
 
   {/* Slide 1: Title */}
-  <div className="pitch-slide">
-    <div style={{textAlign: 'center'}}>
-      <img src="/img/logo.svg" alt="SkaFld Spark Logo" style={{height: '80px', marginBottom: '20px'}} />
-      <h1 style={{fontSize: '4rem', fontWeight: '800'}}>AI Studio Teams</h1>
-      <h2 style={{color: '#555', fontWeight: '300'}}>Portfolio-Based Pathways to AI-Era Careers</h2>
-      <div style={{marginTop: '3rem', padding: '1rem', borderTop: '2px solid #8c1515', width: '200px', margin: '3rem auto'}}>
-        <p style={{fontSize: '1.2rem', fontWeight: 'bold'}}>Stanford CREATE+AI Finals</p>
-        <p style={{fontSize: '1rem'}}>Track 3: Augment Career Opportunities</p>
-      </div>
+  <div className="pitch-slide slide-gradient animate-enter">
+    <img src="/img/logo.svg" alt="SkaFld Spark Logo" style={{height: '100px', marginBottom: '40px'}} />
+    <h1>AI Studio Teams</h1>
+    <h2>Portfolio-Based Pathways to AI-Era Careers</h2>
+    
+    <div className="highlight-box animate-enter delay-1" style={{marginTop: '4rem', width: 'auto', display: 'inline-block', minWidth: '400px', textAlign: 'center'}}>
+      <p style={{margin: 0, fontWeight: 'bold', fontSize: '1.2rem', color: '#1a1a1a'}}>Stanford CREATE+AI Finals</p>
+      <p style={{margin: 0, fontSize: '1rem', color: '#666', marginTop: '0.5rem'}}>Track 3: Augment Career Opportunities</p>
     </div>
+
     <div className="pitch-footer">
-      Charles Sims | Mike Belloli | Keith Coleman
+      <span className="pitch-footer-text">Charles Sims | Mike Belloli | Keith Coleman</span>
     </div>
   </div>
 
   {/* Slide 2: The Crisis */}
-  <div className="pitch-slide slide-dark" style={{backgroundColor: '#1a1a1a'}}>
-    <h1>The Entry-Level Job is Disappearing.</h1>
-    <div className="split-layout">
+  <div className="pitch-slide slide-dark">
+    <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
+    <h1 className="animate-enter">The Entry-Level Job<br/>is Disappearing.</h1>
+    
+    <div className="split-layout animate-enter delay-1" style={{marginTop: '2rem'}}>
       <div className="split-col">
-        <p style={{textAlign: 'left', fontSize: '1.8rem'}}>
-          We are facing a crisis not of capability, but of <strong>access</strong>.
-          <br/><br/>
+        <p className="text-left">
+          We are facing a crisis not of capability, but of <strong className="pitch-accent-text">access</strong>.
+        </p>
+        <p className="text-left" style={{marginTop: '1rem'}}>
           The traditional "credential-to-career" pipeline is broken because the entry-level jobs that used to provide training are being automated away.
         </p>
       </div>
       <div className="split-col">
-        <div className="metric-card" style={{color: '#333', marginBottom: '1rem'}}>
+        <div className="metric-card" style={{marginBottom: '1rem'}}>
           <span className="metric-val">40%</span>
-          <span className="metric-label">of employers plan AI-driven workforce reductions (WEF 2024)</span>
+          <span className="metric-label">Employers plan AI workforce reductions (WEF 2024)</span>
         </div>
-        <div className="metric-card" style={{color: '#333', marginBottom: '1rem'}}>
-          <span className="metric-val">>45%</span>
-          <span className="metric-label">reduction in tech entry-level roles since 2019</span>
-        </div>
-        <div className="metric-card" style={{color: '#333'}}>
-          <span className="metric-val">78%</span>
-          <span className="metric-label">of managers predict AI will displace recent graduates</span>
+        <div className="metric-card" style={{marginBottom: '1rem'}}>
+          <span className="metric-val">45%</span>
+          <span className="metric-label">Reduction in entry-level roles since 2019</span>
         </div>
       </div>
     </div>
-    <div className="pitch-footer">The "Why Now"</div>
+    <div className="pitch-footer"><span className="pitch-footer-text">The "Why Now"</span></div>
   </div>
 
   {/* Slide 3: The Gap */}
   <div className="pitch-slide">
-    <h1>We Teach Tools. <br/><span style={{color: '#8c1515'}}>We Need to Teach Thinking.</span></h1>
-    <div className="split-layout" style={{marginTop: '3rem'}}>
-      <div className="split-col" style={{textAlign: 'center', opacity: 0.6}}>
+    <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
+    <h1 className="animate-enter">We Teach Tools. <br/><span className="pitch-accent-text">We Need to Teach Thinking.</span></h1>
+    
+    <div className="split-layout animate-enter delay-1" style={{marginTop: '4rem'}}>
+      <div className="split-col" style={{opacity: 0.6, transform: 'scale(0.95)'}}>
         <h2>The Old Way</h2>
-        <div style={{background: '#eee', padding: '2rem', borderRadius: '8px'}}>
-          <p style={{fontSize: '1.5rem'}}>"Here is a prompt for ChatGPT."</p>
-          <p style={{fontSize: '1rem', color: '#666'}}>(Brittle. Expires quickly. Features change.)</p>
+        <div className="metric-card">
+          <p style={{fontSize: '1.8rem', fontWeight: 'bold', margin: 0}}>"Here is a prompt for ChatGPT."</p>
+          <p style={{fontSize: '1rem', marginTop: '1rem'}}>(Brittle. Expires quickly. Features change.)</p>
         </div>
       </div>
-      <div className="split-col" style={{textAlign: 'center'}}>
-        <h2 style={{color: '#8c1515', fontWeight: 'bold'}}>The SkaFld Way</h2>
-        <div style={{background: '#fff0f0', padding: '2rem', borderRadius: '8px', border: '2px solid #8c1515'}}>
-          <p style={{fontSize: '1.5rem'}}>"Here is how to <strong>decompose</strong> a complex problem."</p>
-          <p style={{fontSize: '1rem', color: '#8c1515'}}>(Durable. Transfers across tools. Metacognitive.)</p>
+      <div className="split-col">
+        <h2 className="pitch-accent-text" style={{fontWeight: 'bold'}}>The SkaFld Way</h2>
+        <div className="metric-card" style={{border: '2px solid var(--pitch-accent)', background: 'white'}}>
+          <p style={{fontSize: '1.8rem', fontWeight: 'bold', margin: 0, color: 'var(--pitch-accent)'}}>"Here is how to decompose a complex problem."</p>
+          <p style={{fontSize: '1rem', marginTop: '1rem', color: 'var(--pitch-accent)'}}>(Durable. Transfers across tools. Metacognitive.)</p>
         </div>
       </div>
     </div>
-    <div className="pitch-footer">Don't give them the fish. Teach them to fish.</div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Don't give them the fish. Teach them to fish.</span></div>
   </div>
 
   {/* Slide 4: The Solution */}
-  <div className="pitch-slide" style={{background: 'linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%)'}}>
-    <h1 style={{marginBottom: '0.5rem'}}>SkaFld Spark</h1>
-    <p style={{marginBottom: '3rem'}}>A Platform for Verified Capability</p>
+  <div className="pitch-slide slide-gradient">
+    <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
+    <h1 className="animate-enter" style={{marginBottom: '0.5rem'}}>SkaFld Spark</h1>
+    <h2 className="animate-enter delay-1">A Platform for Verified Capability</h2>
     
-    <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '800px', width: '100%'}}>
-      <div className="highlight-box" style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-        <div style={{fontSize: '2rem', fontWeight: 'bold', color: '#8c1515', width: '50px'}}>1</div>
-        <div>
-          <h3 style={{margin: 0}}>Foundation (Weeks 1-4)</h3>
-          <p style={{margin: 0, textAlign: 'left', fontSize: '1.1rem'}}><strong>Learning to Decompose.</strong> The "SkaFld Ideation Methodology". Research wide, validate narrow.</p>
+    <div className="layer-stack animate-enter delay-2">
+      
+      {/* Layer 3: Demonstration */}
+      <div className="layer-card">
+        <div className="layer-num">3</div>
+        <div style={{textAlign: 'left'}}>
+          <h3 style={{margin: 0, fontSize: '1.5rem', color: '#1a1a1a'}}>Demonstration (Weeks 9-12)</h3>
+          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>Employer-Validated Portfolios.</strong> Real client projects. Real feedback.</p>
         </div>
       </div>
-      <div className="highlight-box" style={{display: 'flex', alignItems: 'center', gap: '1rem', marginLeft: '2rem'}}>
-        <div style={{fontSize: '2rem', fontWeight: 'bold', color: '#8c1515', width: '50px'}}>2</div>
-        <div>
-          <h3 style={{margin: 0}}>Application (Weeks 5-8)</h3>
-          <p style={{margin: 0, textAlign: 'left', fontSize: '1.1rem'}}><strong>AI-Coached Challenges.</strong> Socratic questioning engine guides thinking, doesn't give answers.</p>
+
+      {/* Layer 2: Application */}
+      <div className="layer-card">
+        <div className="layer-num">2</div>
+        <div style={{textAlign: 'left'}}>
+          <h3 style={{margin: 0, fontSize: '1.5rem', color: '#1a1a1a'}}>Application (Weeks 5-8)</h3>
+          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>AI-Coached Challenges.</strong> Socratic questioning engine guides thinking.</p>
         </div>
       </div>
-      <div className="highlight-box" style={{display: 'flex', alignItems: 'center', gap: '1rem', marginLeft: '4rem'}}>
-        <div style={{fontSize: '2rem', fontWeight: 'bold', color: '#8c1515', width: '50px'}}>3</div>
-        <div>
-          <h3 style={{margin: 0}}>Demonstration (Weeks 9-12)</h3>
-          <p style={{margin: 0, textAlign: 'left', fontSize: '1.1rem'}}><strong>Employer-Validated Portfolios.</strong> Real client projects. Real feedback. Verified capability.</p>
+
+      {/* Layer 1: Foundation */}
+      <div className="layer-card">
+        <div className="layer-num">1</div>
+        <div style={{textAlign: 'left'}}>
+          <h3 style={{margin: 0, fontSize: '1.5rem', color: '#1a1a1a'}}>Foundation (Weeks 1-4)</h3>
+          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>Learning to Decompose.</strong> Research wide, validate narrow.</p>
         </div>
       </div>
+
     </div>
-    <div className="pitch-footer">3-Layer Learning Architecture</div>
+    <div className="pitch-footer"><span className="pitch-footer-text">3-Layer Learning Architecture</span></div>
   </div>
 
   {/* Slide 5: Platform Demo */}
-  <div className="pitch-slide slide-dark" style={{backgroundColor: '#222'}}>
-    <h1>AI as a Coach, Not a Crutch.</h1>
-    <div style={{border: '1px solid #444', borderRadius: '12px', padding: '20px', width: '80%', height: '50%', background: '#333', display: 'flex', justifyContent: 'center', alignItems: 'center', boxShadow: '0 20px 50px rgba(0,0,0,0.5)'}}>
-      <div style={{textAlign: 'center'}}>
-        <span style={{fontSize: '5rem', display: 'block'}}>🤖</span>
-        <p style={{fontStyle: 'italic', fontSize: '1.8rem', color: '#eee'}}>
-          "That's a big goal, Sarah. What are the first three decisions you need to make to get there?"
-        </p>
-        <p style={{color: '#888', marginTop: '1rem'}}>[Socratic Engine Demo]</p>
+  <div className="pitch-slide slide-dark">
+    <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
+    <h1 className="animate-enter">AI as a Coach, Not a Crutch.</h1>
+    
+    <div className="chat-window animate-enter delay-1" style={{marginTop: '2rem'}}>
+      <div className="chat-header">
+        <div className="window-dot dot-red"></div>
+        <div className="window-dot dot-yellow"></div>
+        <div className="window-dot dot-green"></div>
+        <span style={{fontSize: '0.9rem', color: '#888', marginLeft: '1rem'}}>SkaFld Spark Coach</span>
+      </div>
+      <div className="chat-body">
+        
+        <div className="message-row animate-enter delay-2">
+          <div className="chat-avatar">🤖</div>
+          <div className="chat-message message-ai">
+            That's a big goal, Sarah. What are the first three decisions you need to make to get there?
+          </div>
+        </div>
+
+        <div className="message-row animate-enter delay-3" style={{alignSelf: 'flex-end', justifyContent: 'flex-end'}}>
+          <div className="chat-message message-user">
+            I think I need to decide on the target audience first, then the core feature set.
+          </div>
+        </div>
+
+        <div className="message-row animate-enter delay-4">
+          <div className="chat-avatar">🤖</div>
+          <div className="typing-dots">
+            <div className="typing-dot"></div>
+            <div className="typing-dot"></div>
+            <div className="typing-dot"></div>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div className="pitch-footer">SkaFld Spark Platform</div>
+    <div className="pitch-footer"><span className="pitch-footer-text">SkaFld Spark Platform</span></div>
   </div>
 
   {/* Slide 6: Learning Science */}
   <div className="pitch-slide">
-    <h1>Built on Validated Learning Science</h1>
-    <p style={{marginBottom: '3rem'}}>We aren't guessing. We're combining proven pillars.</p>
-    <div className="metric-grid">
+    <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
+    <h1 className="animate-enter">Built on Validated Learning Science</h1>
+    <h2 className="animate-enter delay-1">We aren't guessing. We're combining proven pillars.</h2>
+    
+    <div className="metric-grid animate-enter delay-2">
       <div className="metric-card">
-        <h3>Situated Cognition</h3>
-        <p style={{fontSize: '1rem'}}>Learning in authentic contexts transfers better than classroom simulation.</p>
-        <small style={{color: '#888'}}>Lave & Wenger, 1991</small>
+        <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#1a1a1a'}}>Situated Cognition</h3>
+        <p style={{fontSize: '1.1rem', margin: '0 auto'}}>Learning in authentic contexts transfers better than classroom simulation.</p>
+        <small style={{display: 'block', marginTop: '1rem', color: '#999', textTransform: 'uppercase'}}>Lave & Wenger, 1991</small>
       </div>
       <div className="metric-card">
-        <h3>Near-Peer Mentorship</h3>
-        <p style={{fontSize: '1rem'}}>Seniors mentor Sophomores. "Learning by teaching" optimizes retention.</p>
-        <small style={{color: '#888'}}>Topping, 2005</small>
+        <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#1a1a1a'}}>Near-Peer Mentorship</h3>
+        <p style={{fontSize: '1.1rem', margin: '0 auto'}}>Seniors mentor Sophomores. "Learning by teaching" optimizes retention.</p>
+        <small style={{display: 'block', marginTop: '1rem', color: '#999', textTransform: 'uppercase'}}>Topping, 2005</small>
       </div>
       <div className="metric-card">
-        <h3>Portfolio Assessment</h3>
-        <p style={{fontSize: '1rem'}}>Work samples predict job performance <strong>5x better</strong> than grades.</p>
-        <small style={{color: '#888'}}>Schmidt & Hunter, 1998</small>
+        <h3 style={{fontSize: '1.5rem', marginBottom: '1rem', color: '#1a1a1a'}}>Portfolio Assessment</h3>
+        <p style={{fontSize: '1.1rem', margin: '0 auto'}}>Work samples predict job performance <strong>5x better</strong> than grades.</p>
+        <small style={{display: 'block', marginTop: '1rem', color: '#999', textTransform: 'uppercase'}}>Schmidt & Hunter, 1998</small>
       </div>
     </div>
-    <div className="pitch-footer">Human-Centered Design</div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Human-Centered Design</span></div>
   </div>
 
   {/* Slide 7: Methodology */}
-  <div className="pitch-slide" style={{background: '#f8f9fa'}}>
-    <h1>The "SkaFld Way"</h1>
-    <h2>Interdisciplinary Thinking</h2>
-    <div className="highlight-box" style={{background: 'white', padding: '3rem', maxWidth: '900px'}}>
-      <p style={{fontSize: '2rem', fontWeight: 'bold', color: '#2e2e2e'}}>
+  <div className="pitch-slide slide-gradient">
+    <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
+    <h1 className="animate-enter">The "SkaFld Way"</h1>
+    <h2 className="animate-enter delay-1">Interdisciplinary Thinking</h2>
+    
+    <div className="highlight-box animate-enter delay-2" style={{maxWidth: '1000px', marginTop: '2rem'}}>
+      <p style={{fontSize: '2.5rem', fontWeight: 'bold', color: '#1a1a1a', lineHeight: '1.2'}}>
         "Research Wide, Validate Narrow"
       </p>
-      <p style={{textAlign: 'left', marginTop: '1.5rem'}}>
+      <div style={{height: '2px', background: '#eee', width: '100px', margin: '2rem auto'}}></div>
+      <p style={{textAlign: 'center', fontSize: '1.5rem', color: '#4a4a4a'}}>
         The best solution to your problem probably exists in a field you've never explored. 
         It is your job to find it, translate it, and prove it.
       </p>
     </div>
-    <p style={{marginTop: '2rem'}}>
+    <p style={{marginTop: '3rem', fontSize: '1.2rem', color: '#666'}}>
       We teach students to think like engineers and designers, using AI to accelerate their execution.
     </p>
-    <div className="pitch-footer">Metacognitive Skill Building</div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Metacognitive Skill Building</span></div>
   </div>
 
   {/* Slide 8: Traction */}
   <div className="pitch-slide">
-    <h1>Proof of Concept: El Segundo Unified</h1>
-    <p>Starting in the nation's most dense aerospace & tech corridor.</p>
-    <div className="metric-grid" style={{maxWidth: '1200px'}}>
+    <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
+    <h1 className="animate-enter">Proof of Concept: El Segundo Unified</h1>
+    <h2 className="animate-enter delay-1">Starting in the nation's most dense aerospace & tech corridor.</h2>
+    
+    <div className="metric-grid animate-enter delay-2" style={{maxWidth: '1200px'}}>
       <div className="metric-card">
         <span className="metric-val">96</span>
         <span className="metric-label">Students<br/>(8 Teams)</span>
@@ -179,105 +224,150 @@ hide_table_of_contents: true
         <span className="metric-label">Paid Micro-Internships<br/>(Year 1 Goal)</span>
       </div>
     </div>
-    <div style={{marginTop: '3rem', padding: '1rem 2rem', background: '#e6fffa', color: '#00796b', borderRadius: '50px', fontWeight: 'bold'}}>
-      🚀 Pilot Launching 2026
+    
+    <div className="animate-enter delay-3" style={{marginTop: '4rem', width: '100%', maxWidth: '800px', position: 'relative'}}>
+      {/* Timeline Line */}
+      <div style={{position: 'absolute', top: '50%', left: '0', right: '0', height: '4px', background: '#eee', zIndex: 0}}></div>
+      
+      {/* Timeline Nodes */}
+      <div style={{display: 'flex', justifyContent: 'space-between', position: 'relative', zIndex: 1}}>
+        
+        <div style={{background: 'white', padding: '1rem 2rem', borderRadius: '50px', border: '2px solid #ddd', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', textAlign: 'center'}}>
+           <div style={{fontWeight: 'bold', color: '#444'}}>El Segundo</div>
+           <div style={{fontSize: '0.8rem', color: '#888'}}>Pilot</div>
+        </div>
+
+        <div style={{background: 'white', padding: '1rem 2rem', borderRadius: '50px', border: '2px solid #ddd', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', textAlign: 'center'}}>
+           <div style={{fontWeight: 'bold', color: '#444'}}>California</div>
+           <div style={{fontSize: '0.8rem', color: '#888'}}>Expansion</div>
+        </div>
+
+        <div style={{background: '#8C1515', padding: '1rem 2rem', borderRadius: '50px', boxShadow: '0 10px 20px rgba(140, 21, 21, 0.4)', textAlign: 'center', color: 'white'}}>
+           <div style={{fontWeight: 'bold'}}>National Model</div>
+           <div style={{fontSize: '0.8rem', opacity: 0.8}}>Goal</div>
+        </div>
+
+      </div>
     </div>
-    <div className="pitch-footer">Traction</div>
+
+    <div className="pitch-footer"><span className="pitch-footer-text">Traction</span></div>
   </div>
 
   {/* Slide 9: Equity */}
-  <div className="pitch-slide slide-dark" style={{backgroundColor: '#8c1515'}}>
-    <h1>Access for All. Not Just the Privileged.</h1>
-    <p>Portfolios are the great equalizer. Focusing on <em>what you can do</em>, not who you know.</p>
+  <div className="pitch-slide slide-brand">
+    <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
+    <h1 className="animate-enter">Access for All.<br/>Not Just the Privileged.</h1>
+    <p className="animate-enter delay-1" style={{color: 'rgba(255,255,255,0.9)'}}>Portfolios are the great equalizer. Focusing on <em>what you can do</em>, not who you know.</p>
     
-    <div className="split-layout" style={{marginTop: '2rem'}}>
+    <div className="split-layout animate-enter delay-2" style={{marginTop: '3rem'}}>
       <div className="split-col">
-        <ul style={{textAlign: 'left', color: 'white'}}>
-          <li><strong>50%</strong> Female / Male Ratio Target</li>
-          <li><strong>40%</strong> Free/Reduced Lunch Eligible</li>
-          <li><strong>30%</strong> First-Generation College</li>
+        <ul style={{textAlign: 'left', color: 'white', listStyle: 'none', padding: 0}}>
+          <li style={{fontSize: '2rem', marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '0.5rem'}}><strong>50%</strong> <span style={{fontSize: '1.2rem', opacity: 0.8}}>Female / Male Ratio Target</span></li>
+          <li style={{fontSize: '2rem', marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '0.5rem'}}><strong>40%</strong> <span style={{fontSize: '1.2rem', opacity: 0.8}}>Free/Reduced Lunch Eligible</span></li>
+          <li style={{fontSize: '2rem', marginBottom: '1.5rem'}}><strong>30%</strong> <span style={{fontSize: '1.2rem', opacity: 0.8}}>First-Generation College</span></li>
         </ul>
       </div>
       <div className="split-col">
-        <div style={{border: '2px solid white', padding: '2rem', borderRadius: '8px'}}>
-          <h3>ZERO BARRIERS</h3>
-          <p style={{color: 'white', margin: 0}}>No Coding Prerequisites.</p>
-          <p style={{color: 'white', margin: 0}}>No GPA Hurdles.</p>
-          <p style={{color: 'white', margin: 0}}>No Equipment Costs.</p>
+        <div style={{border: '4px solid white', padding: '3rem', borderRadius: '24px', background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)'}}>
+          <h3 style={{fontSize: '2.5rem', marginBottom: '2rem', color: 'white'}}>ZERO BARRIERS</h3>
+          <p style={{color: 'white', margin: '0.5rem 0', fontSize: '1.5rem'}}>No Coding Prerequisites.</p>
+          <p style={{color: 'white', margin: '0.5rem 0', fontSize: '1.5rem'}}>No GPA Hurdles.</p>
+          <p style={{color: 'white', margin: '0.5rem 0', fontSize: '1.5rem'}}>No Equipment Costs.</p>
         </div>
       </div>
     </div>
-    <div className="pitch-footer" style={{color: 'rgba(255,255,255,0.6)'}}>Equity by Design</div>
+    <div className="pitch-footer"><span className="pitch-footer-text" style={{color: 'rgba(255,255,255,0.5)'}}>Equity by Design</span></div>
   </div>
 
   {/* Slide 10: Team */}
   <div className="pitch-slide">
-    <h1>The Right Team to Execute</h1>
-    <div className="metric-grid" style={{marginTop: '2rem'}}>
-      <div className="metric-card" style={{textAlign: 'left'}}>
-        <div style={{height: '100px', width: '100px', background: '#ccc', borderRadius: '50%', marginBottom: '1rem', margin: '0 auto'}}></div>
-        <h3 style={{textAlign: 'center'}}>Charles Sims</h3>
-        <p style={{textAlign: 'center', fontSize: '0.9rem', color: '#666'}}>Project Director</p>
-        <p style={{fontSize: '0.9rem'}}>Tech transformation leader (LA Clippers, UTA). Expert in workforce systems.</p>
+    <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
+    <h1 className="animate-enter">The Right Team to Execute</h1>
+    
+    <div className="metric-grid animate-enter delay-1" style={{marginTop: '3rem'}}>
+      <div className="metric-card">
+        <div className="avatar-circle">
+          <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" />
+        </div>
+        <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Charles Sims</h3>
+        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '1rem'}}>Project Director</p>
+        <p style={{fontSize: '1rem', lineHeight: '1.4'}}>Tech transformation leader (LA Clippers, UTA). Expert in workforce systems.</p>
       </div>
-      <div className="metric-card" style={{textAlign: 'left'}}>
-        <div style={{height: '100px', width: '100px', background: '#ccc', borderRadius: '50%', marginBottom: '1rem', margin: '0 auto'}}></div>
-        <h3 style={{textAlign: 'center'}}>Keith Coleman</h3>
-        <p style={{textAlign: 'center', fontSize: '0.9rem', color: '#666'}}>Stanford Liaison</p>
-        <p style={{fontSize: '0.9rem'}}>Stanford BA '86, mediaX Advisory Scholar. UN Joint SDG Fund Co-Chair.</p>
+      <div className="metric-card">
+        <div className="avatar-circle">
+          <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" />
+        </div>
+        <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Keith Coleman</h3>
+        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '1rem'}}>Stanford Liaison</p>
+        <p style={{fontSize: '1rem', lineHeight: '1.4'}}>Stanford BA '86, mediaX Advisory Scholar. UN Joint SDG Fund Co-Chair.</p>
       </div>
-      <div className="metric-card" style={{textAlign: 'left'}}>
-        <div style={{height: '100px', width: '100px', background: '#ccc', borderRadius: '50%', marginBottom: '1rem', margin: '0 auto'}}></div>
-        <h3 style={{textAlign: 'center'}}>Mike Belloli</h3>
-        <p style={{textAlign: 'center', fontSize: '0.9rem', color: '#666'}}>Technology Lead</p>
-        <p style={{fontSize: '0.9rem'}}>Full-stack architect building the SkaFld Spark platform.</p>
+      <div className="metric-card">
+        <div className="avatar-circle">
+          <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" />
+        </div>
+        <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Mike Belloli</h3>
+        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '1rem'}}>Technology Lead</p>
+        <p style={{fontSize: '1rem', lineHeight: '1.4'}}>Full-stack architect building the SkaFld Spark platform.</p>
       </div>
     </div>
-    <div className="pitch-footer">Team</div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Team</span></div>
   </div>
 
   {/* Slide 11: Vision & Ask */}
-  <div className="pitch-slide">
-    <h1>The Launchpad for a National Model</h1>
-    <p>Success = A scalable SaaS platform ready for district adoption nationwide.</p>
+  <div className="pitch-slide slide-gradient">
+    <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
+    <h1 className="animate-enter">The Launchpad for a National Model</h1>
+    <h2 className="animate-enter delay-1">Success = A scalable SaaS platform ready for district adoption nationwide.</h2>
     
-    <div style={{display: 'flex', gap: '1rem', alignItems: 'center', justifyContent: 'center', margin: '2rem 0'}}>
-      <div style={{padding: '1rem 2rem', background: '#eee', borderRadius: '50px'}}>El Segundo</div>
-      <div style={{fontSize: '2rem'}}>→</div>
-      <div style={{padding: '1rem 2rem', background: '#eee', borderRadius: '50px'}}>California</div>
-      <div style={{fontSize: '2rem'}}>→</div>
-      <div style={{padding: '1rem 2rem', background: '#8c1515', color: 'white', borderRadius: '50px', fontWeight: 'bold'}}>National Model</div>
+    <div className="animate-enter delay-2" style={{display: 'flex', gap: '2rem', alignItems: 'center', justifyContent: 'center', margin: '3rem 0'}}>
+      <div style={{padding: '1.5rem 3rem', background: 'white', borderRadius: '50px', boxShadow: 'var(--pitch-card-shadow)', fontWeight: 'bold', fontSize: '1.2rem'}}>El Segundo</div>
+      <div style={{fontSize: '2rem', color: '#ccc'}}>→</div>
+      <div style={{padding: '1.5rem 3rem', background: 'white', borderRadius: '50px', boxShadow: 'var(--pitch-card-shadow)', fontWeight: 'bold', fontSize: '1.2rem'}}>California</div>
+      <div style={{fontSize: '2rem', color: '#ccc'}}>→</div>
+      <div style={{padding: '1.5rem 3rem', background: 'var(--pitch-accent)', color: 'white', borderRadius: '50px', fontWeight: 'bold', fontSize: '1.2rem', boxShadow: '0 10px 20px rgba(140, 21, 21, 0.4)'}}>National Model</div>
     </div>
 
-    <div className="highlight-box" style={{background: '#fff', border: '2px solid #333'}}>
-      <h2 style={{margin: 0, color: '#333'}}>The Ask: $50,000</h2>
-      <div style={{display: 'flex', justifyContent: 'space-between', width: '100%', marginTop: '1rem', gap: '2rem'}}>
-        <div style={{flex: 1, textAlign: 'center'}}>
-          <div style={{fontSize: '1.5rem', fontWeight: 'bold'}}>40%</div>
-          <div style={{fontSize: '0.9rem'}}>Platform Dev</div>
+    <div className="highlight-box animate-enter delay-3" style={{background: 'white', width: '100%', maxWidth: '1000px'}}>
+      <h2 style={{margin: '0 0 1rem 0', color: '#1a1a1a'}}>The Ask: $50,000</h2>
+      
+      <div className="funding-bar-container">
+        <div className="funding-bar">
+          <div className="funding-segment seg-1 fill-40">40%</div>
+          <div className="funding-segment seg-2 fill-24">24%</div>
+          <div className="funding-segment seg-3 fill-16">16%</div>
+          <div className="funding-segment seg-4 fill-20">20%</div>
         </div>
-        <div style={{flex: 1, textAlign: 'center'}}>
-          <div style={{fontSize: '1.5rem', fontWeight: 'bold'}}>24%</div>
-          <div style={{fontSize: '0.9rem'}}>Pilot Implementation</div>
-        </div>
-        <div style={{flex: 1, textAlign: 'center'}}>
-          <div style={{fontSize: '1.5rem', fontWeight: 'bold'}}>16%</div>
-          <div style={{fontSize: '0.9rem'}}>Assessment</div>
-        </div>
-        <div style={{flex: 1, textAlign: 'center'}}>
-          <div style={{fontSize: '1.5rem', fontWeight: 'bold'}}>20%</div>
-          <div style={{fontSize: '0.9rem'}}>Ops & Team</div>
+        
+        <div className="funding-legend">
+          <div className="legend-item">
+            <span className="legend-val" style={{color: 'var(--pitch-accent)'}}>40%</span>
+            <span className="legend-label">Platform Dev</span>
+          </div>
+          <div className="legend-item">
+            <span className="legend-val" style={{color: '#2e2e2e'}}>24%</span>
+            <span className="legend-label">Pilot Impl.</span>
+          </div>
+          <div className="legend-item">
+            <span className="legend-val" style={{color: '#666'}}>16%</span>
+            <span className="legend-label">Assessment</span>
+          </div>
+          <div className="legend-item">
+            <span className="legend-val" style={{color: '#999'}}>20%</span>
+            <span className="legend-label">Ops & Team</span>
+          </div>
         </div>
       </div>
+
     </div>
-    <div className="pitch-footer">Ask</div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Ask</span></div>
   </div>
 
   {/* Slide 12: Closing */}
-  <div className="pitch-slide slide-dark" style={{backgroundColor: '#000', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-    <h1 style={{fontSize: '5rem', marginBottom: '0'}}>SkaFld Spark</h1>
-    <h2 style={{color: '#fff', fontWeight: '300', marginTop: '1rem'}}>Let's Build the Future of Work.</h2>
-    <div style={{marginTop: '4rem', fontSize: '1.2rem', color: '#888'}}>
+  <div className="pitch-slide slide-dark">
+    <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
+    <h1 className="animate-enter" style={{fontSize: '6rem', marginBottom: '1rem'}}>SkaFld Spark</h1>
+    <h2 className="animate-enter delay-1" style={{fontWeight: '300', marginTop: '1rem', fontSize: '2.5rem', color: 'white'}}>Let's Build the Future of Work.</h2>
+    <div className="animate-enter delay-2" style={{marginTop: '5rem', fontSize: '1.4rem', color: '#888'}}>
       charles@skafld.studio | keith.coleman@stanford.edu
     </div>
   </div>

@@ -5,76 +5,100 @@ sidebar_position: 8
 
 # Project Leadership
 
+AI Studio Teams is led by a multi-disciplinary team with deep expertise in technology transformation, workforce development, and Stanford's innovation ecosystem.
+
 ## Core Team
 
-### Charles Sims | Project Director
+<div className="row margin-bottom--xl" style={{alignItems: 'center'}}>
+  <div className="col col--3">
+    <div className="avatar-circle" style={{width: '180px', height: '180px'}}>
+      <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" />
+    </div>
+  </div>
+  <div className="col col--9">
+    <h3>Charles Sims | Project Director</h3>
+    <p><strong>Strategic direction, employer partnership development, program design</strong></p>
+    <p>Charles Sims is a technology transformation leader and founder of Skafld Studio, where he developed the "Hurricane Methodology" for executing high-pressure transformation projects within tight timeframes. His approach emphasizes rapid iteration, stakeholder alignment, and measurable outcome delivery.</p>
+    <ul style={{fontSize: '0.9rem'}}>
+      <li>Led technology transformation initiatives at the LA Clippers and UTA (United Talent Agency).</li>
+      <li>Developed frameworks for integrating emerging technology into established organizational workflows.</li>
+      <li>NYU-educated with deep understanding of educational systems and workforce development.</li>
+    </ul>
+  </div>
+</div>
 
-**Role:** Strategic direction, employer partnership development, program design
+<div className="row margin-bottom--xl" style={{alignItems: 'center'}}>
+  <div className="col col--3">
+    <div className="avatar-circle" style={{width: '180px', height: '180px'}}>
+      <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" />
+    </div>
+  </div>
+  <div className="col col--9">
+    <h3>Keith Coleman | Strategic Partnerships & Stanford Liaison</h3>
+    <p><strong>Workforce development strategy, Stanford collaboration</strong></p>
+    <p>Keith Coleman is Co-Chair of the UN Joint SDG Fund Breakthrough Alliance and Founding Co-President Emeritus of Stanford Angels & Entrepreneurs of Southern California. His career spans workforce development and building bridges between education and industry.</p>
+    <ul style={{fontSize: '0.9rem'}}>
+      <li><strong>Stanford BA Economics '86.</strong> Advisory Scholar, mediaX at Stanford (2019-2022).</li>
+      <li><strong>UN Joint SDG Fund Co-Chair.</strong> Overseeing $290M+ portfolio across 150+ countries.</li>
+      <li><strong>Capitol Partners General Partner.</strong> 17 years experience in economic opportunity and aerospace/defense coalition building.</li>
+    </ul>
+  </div>
+</div>
 
-Charles Sims is a technology transformation leader and founder of Skafld Studio, where he developed the "Hurricane Methodology" for executing high-pressure transformation projects within tight timeframes. His approach emphasizes rapid iteration, stakeholder alignment, and measurable outcome delivery.
+<div className="row margin-bottom--xl" style={{alignItems: 'center'}}>
+  <div className="col col--3">
+    <div className="avatar-circle" style={{width: '180px', height: '180px'}}>
+      <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" />
+    </div>
+  </div>
+  <div className="col col--9">
+    <h3>Mike Belloli | Technology Lead</h3>
+    <p><strong>Platform architecture, AI engineering, compliance</strong></p>
+    <p>Mike Belloli is a full-stack architect specializing in high-security, high-scale educational platforms. He is responsible for the technical development of the SkaFld Spark platform.</p>
+    <ul style={{fontSize: '0.9rem'}}>
+      <li>Lead Architect for the SkaFld Spark platform.</li>
+      <li>Expert in educational data privacy (COPPA/FERPA) and secure AI implementation.</li>
+      <li>Experienced in building socratic coaching engines and portfolio assessment tools.</li>
+    </ul>
+  </div>
+</div>
 
-**Relevant Experience:**
-- Led technology transformation initiatives at the LA Clippers and UTA (United Talent Agency)
-- Developed frameworks for integrating emerging technology into established organizational workflows
-- NYU-educated with deep understanding of educational systems and workforce development
-- Track record of building cross-functional partnerships between technology and traditional industries
+## Advisory & Support
 
-**AI Studio Teams Role:**
-- Lead employer partnership recruitment and relationship management
-- Design program structure and portfolio assessment frameworks
-- Coordinate with district leadership for implementation alignment
-- Oversee quality assurance and outcome measurement
-
-### Keith Coleman | Strategic Partnerships & Stanford Liaison
-
-**Role:** Employer partnerships, workforce development strategy, Stanford collaboration
-
-Keith Coleman is Co-Chair of the UN Joint SDG Fund Breakthrough Alliance and Founding Co-President Emeritus of Stanford Angels & Entrepreneurs of Southern California. His career spans workforce development, economic opportunity, and building bridges between education and industry.
-
-**Stanford Affiliation:**
-- **B.A. Economics, Stanford University** (1986)
-- **Advisory Scholar, mediaX at Stanford University** (2019-2022) - Industry Affiliate Program of Stanford's H-STAR Institute extended from the Stanford Graduate School of Education
-- **Active Leadership** in Stanford Angels & Entrepreneurs, TomKat Center for Sustainable Energy, Stanford Alumni in AI—connecting entrepreneurs with investors and mentorship platforms
-- **Active Connections** to Stanford Technology Ventures Program, Stanford GSB Center for Social Innovation
-
-**Relevant Experience:**
-- **UN Joint SDG Fund Breakthrough Alliance Co-Chair** - Creating opportunities for all through tech, media, and markets; $290M+ portfolio across 150+ countries
-- **Capitol Partners General Partner** (17 years) - Workforce development, economic opportunity, and coalition building with aerospace/defense community (AMP SoCal) and education pathways
-- **Alta Sea Partnership** - Public-private partnership convening organizations in science, business, education and career pathways
-- **Climate Action Pathways for Schools** - Green jobs and career pathway development
-- Extensive consultancy with U.S. Department of Commerce, Department of Labor, DoD, and educational institutions on workforce development strategies
-
-**Education:** Stanford University (B.A. Economics), University of Pennsylvania (M.A. Applied Positive Psychology)
-
-**AI Studio Teams Role:** Oversee district/workforce alignment and credential validation, connect program to Stanford entrepreneurship and innovation networks, facilitate industry advisory council and micro-internship partnerships.
-
-## Advisory Support
-
-### District Partnership
-
-El Segundo Unified School District provides institutional support including:
-- Teacher mentor recruitment and professional development coordination
-- Student recruitment access and demographic data for equity monitoring
-- Facility access for weekly sessions and employer panel events
-- Administrative oversight for student-employer interactions
-
-### Employer Advisory Council
-
-A council of 12 employer partners will provide ongoing guidance on:
-- Portfolio quality standards and industry relevance
-- Skill requirements and assessment criteria
-- Micro-internship program design
-- Post-graduation pathway opportunities
+<div className="row">
+  <div className="col col--6">
+    <div className="highlight-box" style={{height: '100%'}}>
+      <h3>District Partnership</h3>
+      <p style={{fontSize: '0.9rem'}}>El Segundo Unified School District provides institutional support including teacher mentor recruitment, student access, facility management, and administrative oversight.</p>
+    </div>
+  </div>
+  <div className="col col--6">
+    <div className="highlight-box" style={{height: '100%'}}>
+      <h3>Employer Council</h3>
+      <p style={{fontSize: '0.9rem'}}>A council of 12 employer partners (Boeing, Northrop Grumman, Tech/Media firms) providing guidance on portfolio standards and micro-internship design.</p>
+    </div>
+  </div>
+</div>
 
 ## Team Capacity
 
-| Function | Lead | Time Allocation |
-|----------|------|-----------------|
-| Program Direction | Charles Sims | 50% FTE |
-| Technical Development | Keith Coleman | 40% FTE |
-| Mentor Coordination | District Liaison (TBD) | 25% FTE |
-| Employer Relations | Charles Sims + Coordinator | 30% FTE |
-| Evaluation | External Partner (TBD) | 15% FTE |
+<div className="metric-grid" style={{maxWidth: '100%'}}>
+  <div className="metric-card" style={{padding: '1.5rem'}}>
+    <span className="metric-val" style={{fontSize: '2rem'}}>50%</span>
+    <span className="metric-label">Program Direction</span>
+    <small style={{display: 'block', marginTop: '0.5rem'}}>Charles Sims</small>
+  </div>
+  <div className="metric-card" style={{padding: '1.5rem'}}>
+    <span className="metric-val" style={{fontSize: '2rem'}}>40%</span>
+    <span className="metric-label">Partnerships</span>
+    <small style={{display: 'block', marginTop: '0.5rem'}}>Keith Coleman</small>
+  </div>
+  <div className="metric-card" style={{padding: '1.5rem'}}>
+    <span className="metric-val" style={{fontSize: '2rem'}}>30%</span>
+    <span className="metric-label">Technology</span>
+    <small style={{display: 'block', marginTop: '0.5rem'}}>Mike Belloli</small>
+  </div>
+</div>
 
 ---
 

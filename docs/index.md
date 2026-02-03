@@ -1,136 +1,164 @@
 ---
-title: AI Studio Teams
+title: Proposal Overview
 sidebar_position: 1
 slug: /
+hide_table_of_contents: true
 ---
 
-# AI Studio Teams: Portfolio-Based Pathways to AI-Era Careers
-
-**Stanford CREATE AI Challenge | Track 3: Augment Career Opportunities**
-
-**Funding Request:** $50,000
-**Implementation Partner:** El Segundo Unified School District
-**Project Duration:** 12 months
-
----
-
-## Executive Summary
-
-The pathway from education to employment is breaking. As AI transforms the workforce, entry-level positions are disappearing at an alarming rate—creating an "experience paradox" where young people cannot gain experience because employers no longer offer the entry points that traditionally provided it.
-
-**AI Studio Teams** addresses this crisis by creating a **farm system for talent development**—a structured approach to nurturing human potential that mirrors the sustained support model used in athletics. Our program replaces the broken credential-to-career pipeline with a portfolio-based pathway where high school students complete authentic projects for local employers, building verified evidence of their capability to work effectively in AI-augmented environments.
-
-This proposal puts **educators and learners at the heart of AI design**—ensuring these tools expand access, agency, and connection, and in turn advance learning, well-being, and opportunity.
-
-### The Innovation
-
-Unlike traditional career preparation that relies on classroom simulation, AI Studio Teams operates at the intersection of four transformative approaches:
-
-1. **Teaching How to Think, Not Just Tools**: The SkaFld Ideation Methodology teaches students to decompose problems, research across domains, and apply systematic thinking—meta-skills that transfer to any AI tool or industry
-2. **Portfolio Over Credentials**: Students graduate with employer-validated work samples, not just transcripts
-3. **Near-Peer Mentorship**: 12th graders mentor 10th graders; 11th graders mentor 9th graders, creating sustainable learning communities
-4. **Employer Integration**: Local companies provide real projects, quarterly portfolio reviews, and micro-internship pathways
-
-### The Platform: SkafldSpark
-
-AI Studio Teams is powered by **SkafldSpark**, an AI-powered K-12 learning platform built for educational compliance (COPPA/FERPA), featuring an AI assistant (Sparky) for project coaching, portfolio building tools, analytics dashboards, and gamification to drive engagement. The platform enables scalable implementation across districts.
-
-### Why El Segundo
-
-**El Segundo Unified School District** serves 3,400+ students in a compact district (5 schools) with direct access to major employers including aerospace leaders (Boeing, Northrop Grumman), technology companies, and entertainment industry headquarters. This concentration enables authentic employer partnerships and **interdisciplinary practice** that would be impossible in larger, more dispersed districts.
-
----
-
-## The Problem
-
-The data reveals a crisis in entry-level employment:
-
-| Indicator | Impact |
-|-----------|--------|
-| **40%** of employers plan workforce reductions due to AI | World Economic Forum, 2024 |
-| **50%** reduction in tech entry-level roles since 2019 | LinkedIn Workforce Report |
-| **80%** of hiring managers predict cuts to internships | Intelligent.com Survey, 2024 |
-
-Students entering high school today will graduate into a workforce where traditional entry-level jobs are significantly reduced, AI will be standard in most knowledge work environments, and demonstrated capability—not credentials alone—will be the primary selection criterion.
-
-**We have a 4-year window to prepare students for this reality.**
-
----
-
-## Expected Outcomes (12 months)
-
-| Metric | Target |
-|--------|--------|
-| Students with employer-validated portfolios | 96 students (8 teams of 12) |
-| Employer partners providing real projects | 12 companies |
-| Micro-internship placements | 24 students (25%) |
-| Portfolio quality score (employer-rated) | 7.0/10 minimum |
-| Gender parity in participation | 50/50 target |
-
----
-
-## Team
-
-### Charles Sims | Project Director
-
-**Role:** Strategic direction, employer partnership development, program design
-
-Charles Sims is a technology transformation leader and founder of Skafld Studio, where he developed the "Hurricane Methodology" for executing high-pressure transformation projects within tight timeframes.
-
-**Relevant Experience:**
-- Led technology transformation initiatives at the LA Clippers and UTA (United Talent Agency)
-- NYU-educated with deep understanding of educational systems and workforce development
-- Track record of building cross-functional partnerships between technology and traditional industries
-
-**AI Studio Teams Role:** Lead employer partnership recruitment, design program structure and portfolio assessment frameworks, coordinate with district leadership, oversee quality assurance and outcome measurement.
-
----
-
-### Keith Coleman | Strategic Partnerships & Stanford Liaison
-
-**Role:** Employer partnerships, workforce development strategy, Stanford collaboration
-
-Keith Coleman is Co-Chair of the UN Joint SDG Fund Breakthrough Alliance and Founding Co-President Emeritus of Stanford Angels & Entrepreneurs of Southern California.
-
-**Stanford Affiliation:**
-- **B.A. Economics, Stanford University** (1986)
-- **Advisory Scholar, mediaX at Stanford University** (2019-2022) - Industry Affiliate Program of Stanford's H-STAR Institute extended from the Stanford Graduate School of Education
-- **Active Leadership** in Stanford Angels & Entrepreneurs, TomKat Center for Sustainable Energy, Stanford Alumni in AI—connecting entrepreneurs with investors and mentorship platforms
-- **Active Connections** to Stanford Technology Ventures Program, Stanford GSB Center for Social Innovation
-
-**Relevant Experience:**
-- **UN Joint SDG Fund Breakthrough Alliance Co-Chair** - Creating opportunities for all through tech, media, and markets; $290M+ portfolio across 150+ countries
-- **Capitol Partners General Partner** (17 years) - Workforce development, economic opportunity, and coalition building with aerospace/defense community (AMP SoCal) and education pathways
-- **Alta Sea Partnership** - Public-private partnership convening organizations in science, business, education and career pathways
-- **Climate Action Pathways for Schools** - Green jobs and career pathway development
-- Extensive consultancy with U.S. Department of Commerce, Department of Labor, DoD, and educational institutions on workforce development strategies
-
-**Education:** Stanford University (B.A. Economics), University of Pennsylvania (M.A. Applied Positive Psychology)
-
-**AI Studio Teams Role:** Oversee district/workforce alignment and credential validation, connect program to Stanford entrepreneurship and innovation networks, facilitate industry advisory council and micro-internship partnerships.
-
----
-
-## Proposal Contents
-
-1. [Problem Statement](./track-3-career/problem) - The Entry-Level Job Crisis
-2. [Solution](./track-3-career/solution) - AI Studio Teams Model
-3. [Learning Science](./track-3-career/learning-science) - Evidence Base
-4. [Outcomes](./track-3-career/outcomes) - Measurement Plan
-5. [Equity](./track-3-career/equity) - Fairness & Inclusion
-6. [Timeline](./track-3-career/timeline) - Implementation Roadmap
-7. [Team](./track-3-career/team) - Full Team Details
-8. [Budget](./track-3-career/budget) - Resource Allocation
-
----
-
-<div className="funding-box">
-<h3>Funding Request: $50,000</h3>
-<p>Deadline: January 12, 2026 at 12 PM PST</p>
+<div className="landing-hero">
+  <div className="landing-title">AI Studio Teams</div>
+  <div className="landing-subtitle">
+    A portfolio-based farm system for the AI-augmented workforce.
+    <br/>
+    <strong>Stanford CREATE+AI Challenge • Track 3</strong>
+  </div>
+  
+  <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem'}}>
+    <a className="button button--primary button--lg" href="/pitch">View Pitch Deck</a>
+    <a className="button button--secondary button--lg" href="#proposal-details">Read Proposal</a>
+  </div>
 </div>
 
----
+<div className="container">
 
-*This proposal directly addresses CREATE AI's Track 3 focus on "AI solutions that support skill-building, mentorship, and pathways to meaningful work."*
+  {/* Key Metrics Row */}
+  <div className="row" style={{justifyContent: 'center', gap: '2rem', marginBottom: '4rem'}}>
+    <div className="col col--3">
+      <div className="text--center">
+        <div style={{fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--ifm-color-primary)'}}>$50,000</div>
+        <div style={{color: '#666', fontWeight: '600'}}>Funding Request</div>
+      </div>
+    </div>
+    <div className="col col--3">
+      <div className="text--center">
+        <div style={{fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--ifm-color-primary)'}}>12 Mo</div>
+        <div style={{color: '#666', fontWeight: '600'}}>Project Duration</div>
+      </div>
+    </div>
+    <div className="col col--3">
+      <div className="text--center">
+        <div style={{fontSize: '2.5rem', fontWeight: 'bold', color: 'var(--ifm-color-primary)'}}>El Segundo</div>
+        <div style={{color: '#666', fontWeight: '600'}}>Implementation Partner</div>
+      </div>
+    </div>
+  </div>
 
-[Stanford CREATE AI Challenge →](https://acceleratelearning.stanford.edu/funding/create-ai-challenge/)
+  {/* Executive Summary Section */}
+  <div className="row">
+    <div className="col col--8 col--offset-2">
+      <h2 className="text--center margin-bottom--lg">The "Experience Paradox"</h2>
+      <p className="text--center padding-horiz--md" style={{fontSize: '1.2rem', lineHeight: '1.6'}}>
+        Entry-level jobs are disappearing. Young people can't get experience because employers no longer offer the roles that used to provide it.
+        <br/><br/>
+        <strong>AI Studio Teams</strong> solves this by creating a structured "farm system" where high school students build <strong>employer-validated portfolios</strong> by solving real problems for local companies using AI.
+      </p>
+    </div>
+  </div>
+
+  {/* The Innovation Grid */}
+  <h2 className="text--center margin-top--xl margin-bottom--lg">Core Innovations</h2>
+  <div className="feature-grid">
+    <div className="feature-card">
+      <div className="feature-icon">🧠</div>
+      <h3>Cognitive Architecture</h3>
+      <p>We teach the <strong>SkaFld Ideation Methodology</strong>: how to decompose complex problems and research across domains. Thinking skills that outlast any specific tool.</p>
+    </div>
+    <div className="feature-card">
+      <div className="feature-icon">📂</div>
+      <h3>Verified Portfolios</h3>
+      <p>Grades are a black box. Portfolios are proof. Students graduate with a body of work validated by industry professionals.</p>
+    </div>
+    <div className="feature-card">
+      <div className="feature-icon">🤝</div>
+      <h3>Near-Peer Mentorship</h3>
+      <p>Seniors mentor Sophomores. Juniors mentor Freshmen. A sustainable learning community that mimics the tiered structure of professional teams.</p>
+    </div>
+    <div className="feature-card">
+      <div className="feature-icon">🏢</div>
+      <h3>Employer Integration</h3>
+      <p>Not just "guest speakers." Real projects. Quarterly reviews. Micro-internships. Direct connection to the local economy.</p>
+    </div>
+  </div>
+
+  {/* Team Section */}
+  <h2 className="text--center margin-top--xl margin-bottom--lg">Project Leadership</h2>
+  <div className="row" style={{justifyContent: 'center', gap: '2rem'}}>
+    <div className="col col--3">
+      <div className="feature-card text--center" style={{height: '100%'}}>
+        <div className="avatar-circle">
+          <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" />
+        </div>
+        <h3>Charles Sims</h3>
+        <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Project Director</p>
+      </div>
+    </div>
+    <div className="col col--3">
+      <div className="feature-card text--center" style={{height: '100%'}}>
+        <div className="avatar-circle">
+          <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" />
+        </div>
+        <h3>Keith Coleman</h3>
+        <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Stanford Liaison</p>
+      </div>
+    </div>
+    <div className="col col--3">
+      <div className="feature-card text--center" style={{height: '100%'}}>
+        <div className="avatar-circle">
+          <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" />
+        </div>
+        <h3>Mike Belloli</h3>
+        <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Technology Lead</p>
+      </div>
+    </div>
+  </div>
+
+  {/* Navigation Grid */}
+  <h2 id="proposal-details" className="text--center margin-top--xl margin-bottom--lg">Full Proposal Details</h2>
+  <div className="nav-grid">
+    <a href="/track-3-career/problem" className="nav-card">
+      <span className="nav-card-num">01</span>
+      The Problem
+    </a>
+    <a href="/track-3-career/solution" className="nav-card">
+      <span className="nav-card-num">02</span>
+      The Solution
+    </a>
+    <a href="/track-3-career/learning-science" className="nav-card">
+      <span className="nav-card-num">03</span>
+      Learning Science
+    </a>
+    <a href="/track-3-career/outcomes" className="nav-card">
+      <span className="nav-card-num">04</span>
+      Outcomes
+    </a>
+    <a href="/track-3-career/equity" className="nav-card">
+      <span className="nav-card-num">05</span>
+      Equity
+    </a>
+    <a href="/track-3-career/timeline" className="nav-card">
+      <span className="nav-card-num">06</span>
+      Timeline
+    </a>
+    <a href="/track-3-career/team" className="nav-card">
+      <span className="nav-card-num">07</span>
+      Team
+    </a>
+    <a href="/track-3-career/budget" className="nav-card">
+      <span className="nav-card-num">08</span>
+      Budget
+    </a>
+  </div>
+
+  {/* CTA Footer */}
+  <div className="hero hero--dark margin-top--xl" style={{borderRadius: '16px', background: '#1a1a1a'}}>
+    <div className="container">
+      <div className="text--center">
+        <h2>Ready to see the vision in action?</h2>
+        <div className="margin-top--md">
+          <a className="button button--primary button--lg" href="/pitch">Launch Pitch Deck</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

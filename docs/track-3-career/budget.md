@@ -12,8 +12,7 @@ sidebar_position: 9
 | **Platform Development** | $20,000 | 40% | SkaFld Spark feature completion, AI coaching engine, portfolio system |
 | **Pilot Implementation** | $12,000 | 24% | El Segundo coordination, employer onboarding, curriculum materials |
 | **Assessment & Measurement** | $8,000 | 16% | Learning outcome tracking, portfolio evaluation, research documentation |
-| **Team & Operations** | $7,000 | 14% | Travel, meetings, coordination, legal/compliance |
-| **Contingency** | $3,000 | 6% | Buffer for unexpected costs |
+| **Operations & Contingency** | $10,000 | 20% | Legal/compliance, travel, admin overhead, and 6% buffer for unexpected costs |
 | **Total** | **$50,000** | **100%** | |
 
 ## Budget Justification
@@ -44,14 +43,12 @@ sidebar_position: 9
 - **Portfolio Evaluation:** Managing the external review process to ensure objectivity.
 - **Research Documentation:** Capturing data for future grant applications and policy papers.
 
-### Team & Operations ($7,000)
+### Operations & Contingency ($10,000)
 
-**Purpose:** Essential logistics to keep the project moving.
+**Purpose:** Essential logistics and risk management.
 
-- Covers travel for team coordination, legal compliance for student data privacy (COPPA/FERPA), and administrative overhead.
-
-### Contingency ($3,000)
-Standard 6% buffer for unforeseen expenses during the 12-month pilot.
+- **Operations ($7k):** Covers travel for team coordination, legal compliance for student data privacy (COPPA/FERPA), and administrative overhead.
+- **Contingency ($3k):** A standard buffer for unforeseen expenses during the 12-month pilot to ensure uninterrupted execution.
 
 ## Sustainability Plan
 
