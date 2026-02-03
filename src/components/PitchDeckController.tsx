@@ -123,85 +123,288 @@ const PitchDeckController = () => {
   }, [isPresentationMode]);
 
   // Handle PDF Download
+  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
+
   const handleDownloadPDF = async () => {
-    // Dynamically import html2pdf to avoid SSR issues
-    const html2pdf = (await import('html2pdf.js')).default;
+    if (isGeneratingPDF) return;
+    setIsGeneratingPDF(true);
 
-    // 1. Get original element
-    const original = document.querySelector('.pitch-deck-container');
-    if (!original) return;
+    try {
+      // Dynamically import libraries
+      const html2canvas = (await import('html2canvas')).default;
+      const { jsPDF } = await import('jspdf');
 
-    // 2. Clone it to avoid messing with the live view
-    const clone = original.cloneNode(true) as HTMLElement;
+      // Get all slides
+      const originalSlides = document.querySelectorAll('.pitch-slide');
+      if (!originalSlides.length) return;
 
-    // 3. Create a temporary container off-screen
-    const container = document.createElement('div');
-    container.style.position = 'fixed';
-    container.style.top = '0';
-    container.style.zIndex = '-9999';
-    container.style.background = '#ffffff';
-    container.style.visibility = 'visible';
-    container.style.left = '0';
-    container.style.width = '1600px'; // Enforce context width
-    container.appendChild(clone);
-    document.body.appendChild(container);
+      // 16:9 aspect ratio for presentation decks
+      // Using 1280x720 as base (standard 720p), scaled up for quality
+      const slideWidth = 1280;
+      const slideHeight = 720;
 
-    // 4. Sanitize the clone's styles for perfect PDF capture
-    clone.style.width = '1600px';
-    clone.style.height = 'auto';
-    clone.style.overflow = 'visible';
-    clone.style.scrollSnapType = 'none';
-    clone.style.position = 'static';
-    clone.style.transform = 'none';
+      // PDF dimensions in mm (16:9 ratio)
+      // A4 landscape is 297x210mm, but we'll use custom 16:9 dimensions
+      const pdfWidthMm = 338.67; // ~13.33 inches = 720p aspect at good print size
+      const pdfHeightMm = 190.5; // 338.67 / 16 * 9
 
-    // Enforce slide dimensions and visibility
-    const slides = clone.querySelectorAll('.pitch-slide');
-    slides.forEach((slide: any) => {
-      slide.style.width = '1600px';
-      slide.style.height = '900px'; // Strict 16:9
-      slide.style.minHeight = '900px';
-      slide.style.opacity = '1';
-      slide.style.transform = 'none';
-      slide.style.display = 'flex'; // Maintain layout
-      slide.style.pageBreakAfter = 'always';
-
-      // Ensure specific internal layouts (split columns) are visible
-      const splitCols = slide.querySelectorAll('.split-col');
-      splitCols.forEach((col: any) => {
-        col.style.opacity = '1';
-        col.style.transform = 'none';
+      const pdf = new jsPDF({
+        orientation: 'landscape',
+        unit: 'mm',
+        format: [pdfWidthMm, pdfHeightMm],
+        compress: true
       });
-    });
 
-    // Force all animations to their final "entered" state
-    const animated = clone.querySelectorAll('.animate-enter');
-    animated.forEach((el: any) => {
-      el.style.opacity = '1';
-      el.style.transform = 'none';
-      el.style.transition = 'none';
-      el.style.animation = 'none';
-      el.classList.add('in-view');
-    });
+      // Process each slide individually
+      for (let i = 0; i < originalSlides.length; i++) {
+        const originalSlide = originalSlides[i] as HTMLElement;
 
-    // 5. Generate PDF
-    const opt = {
-      margin: 0,
-      filename: 'AI Studio Teams Deck.pdf',
-      image: { type: 'jpeg', quality: 0.98 },
-      html2canvas: {
-        scale: 2,
-        useCORS: true,
-        letterRendering: true,
-        windowWidth: 1600,
-        windowHeight: 900
-      },
-      jsPDF: { unit: 'in', format: [16, 9], orientation: 'landscape', compress: true }
-    } as const;
+        // Create a temporary container for this slide
+        const container = document.createElement('div');
+        container.style.position = 'fixed';
+        container.style.left = '-9999px';
+        container.style.top = '0';
+        container.style.width = `${slideWidth}px`;
+        container.style.height = `${slideHeight}px`;
+        container.style.zIndex = '-9999';
+        container.style.overflow = 'hidden';
+        container.style.visibility = 'hidden';
 
-    // 6. Save and Cleanup
-    (html2pdf() as any).set(opt).from(clone).save().then(() => {
-      document.body.removeChild(container);
-    });
+        // Clone the slide
+        const slideClone = originalSlide.cloneNode(true) as HTMLElement;
+
+        // Get original background
+        const originalBg = window.getComputedStyle(originalSlide).background;
+        const originalBgColor = window.getComputedStyle(originalSlide).backgroundColor;
+
+        // Apply PDF-specific styles to the clone
+        slideClone.style.width = `${slideWidth}px`;
+        slideClone.style.height = `${slideHeight}px`;
+        slideClone.style.minHeight = `${slideHeight}px`;
+        slideClone.style.maxHeight = `${slideHeight}px`;
+        slideClone.style.overflow = 'hidden';
+        slideClone.style.opacity = '1';
+        slideClone.style.transform = 'none';
+        slideClone.style.position = 'relative';
+        slideClone.style.display = 'flex';
+        slideClone.style.flexDirection = 'column';
+        slideClone.style.justifyContent = 'center';
+        slideClone.style.alignItems = 'center';
+        slideClone.style.padding = '40px';
+        slideClone.style.boxSizing = 'border-box';
+        slideClone.style.scrollSnapAlign = 'none';
+        slideClone.style.background = originalBg || originalBgColor;
+
+        // Scale typography for PDF - using viewport-relative to fixed conversion
+        // Original viewport is ~1920px wide, we're rendering at 1280px (0.67x)
+        const scaleFactor = 0.65;
+
+        slideClone.querySelectorAll('h1').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.fontSize = `${4.5 * scaleFactor}rem`;
+          htmlEl.style.marginBottom = '0.75rem';
+          htmlEl.style.lineHeight = '1.1';
+        });
+
+        slideClone.querySelectorAll('h2').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.fontSize = `${2 * scaleFactor}rem`;
+          htmlEl.style.marginBottom = '1rem';
+        });
+
+        slideClone.querySelectorAll('h3').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.fontSize = `${1.5 * scaleFactor}rem`;
+        });
+
+        slideClone.querySelectorAll('p').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          const currentSize = parseFloat(window.getComputedStyle(el).fontSize);
+          htmlEl.style.fontSize = `${Math.max(currentSize * scaleFactor, 12)}px`;
+          htmlEl.style.lineHeight = '1.4';
+        });
+
+        // Scale metric values and labels
+        slideClone.querySelectorAll('.metric-val').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.fontSize = `${4 * scaleFactor}rem`;
+        });
+
+        slideClone.querySelectorAll('.metric-label').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.fontSize = `${1.1 * scaleFactor}rem`;
+        });
+
+        // Scale metric grid gaps
+        slideClone.querySelectorAll('.metric-grid').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.gap = '1rem';
+          htmlEl.style.marginTop = '1.5rem';
+        });
+
+        // Scale metric cards
+        slideClone.querySelectorAll('.metric-card').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.padding = '1.5rem 1rem';
+        });
+
+        // Scale split layout gaps
+        slideClone.querySelectorAll('.split-layout').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.gap = '2rem';
+        });
+
+        // Scale layer cards
+        slideClone.querySelectorAll('.layer-card').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.width = '500px';
+          htmlEl.style.padding = '1rem';
+          htmlEl.style.gap = '1rem';
+        });
+
+        // Scale layer stack
+        slideClone.querySelectorAll('.layer-stack').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.marginTop = '1rem';
+        });
+
+        // Scale chat window
+        slideClone.querySelectorAll('.chat-window').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.maxWidth = '550px';
+        });
+
+        slideClone.querySelectorAll('.chat-body').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.minHeight = '280px';
+          htmlEl.style.padding = '1.5rem';
+        });
+
+        slideClone.querySelectorAll('.chat-message').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.fontSize = '1rem';
+          htmlEl.style.padding = '0.8rem 1.2rem';
+        });
+
+        // Scale highlight boxes
+        slideClone.querySelectorAll('.highlight-box').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.padding = '1.5rem';
+        });
+
+        // Scale avatar circles
+        slideClone.querySelectorAll('.avatar-circle').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.width = '80px';
+          htmlEl.style.height = '80px';
+          htmlEl.style.marginBottom = '1rem';
+        });
+
+        // Scale footer
+        slideClone.querySelectorAll('.pitch-footer').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.bottom = '15px';
+          htmlEl.style.padding = '0 2rem';
+        });
+
+        slideClone.querySelectorAll('.pitch-footer-text').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.fontSize = '0.7rem';
+        });
+
+        // Scale slide number
+        slideClone.querySelectorAll('.slide-number').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.bottom = '10px';
+          htmlEl.style.right = '15px';
+          htmlEl.style.fontSize = '0.7rem';
+        });
+
+        // Scale logo corner
+        slideClone.querySelectorAll('.logo-corner').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.top = '20px';
+          htmlEl.style.right = '20px';
+          htmlEl.style.height = '40px';
+        });
+
+        // Ensure all animated elements are visible
+        slideClone.querySelectorAll('.animate-enter, [class*="animate"], .split-col, .layer-card, .funding-segment').forEach((el) => {
+          const htmlEl = el as HTMLElement;
+          htmlEl.style.opacity = '1';
+          htmlEl.style.transform = 'none';
+          htmlEl.style.transition = 'none';
+          htmlEl.style.animation = 'none';
+        });
+        slideClone.classList.add('in-view');
+
+        // Force funding bar segment widths
+        slideClone.querySelectorAll('.funding-segment.fill-40').forEach((el) => {
+          (el as HTMLElement).style.width = '40%';
+        });
+        slideClone.querySelectorAll('.funding-segment.fill-24').forEach((el) => {
+          (el as HTMLElement).style.width = '24%';
+        });
+        slideClone.querySelectorAll('.funding-segment.fill-16').forEach((el) => {
+          (el as HTMLElement).style.width = '16%';
+        });
+        slideClone.querySelectorAll('.funding-segment.fill-20').forEach((el) => {
+          (el as HTMLElement).style.width = '20%';
+        });
+
+        // Remove UI controls that shouldn't appear in PDF
+        slideClone.querySelectorAll('.pitch-controls, .control-btn').forEach((el) => el.remove());
+
+        container.appendChild(slideClone);
+        document.body.appendChild(container);
+
+        // Make visible for rendering
+        container.style.visibility = 'visible';
+
+        // Wait for fonts and images to load
+        await new Promise((resolve) => setTimeout(resolve, 150));
+
+        // Determine background color for canvas
+        let bgColor = '#ffffff';
+        if (originalSlide.classList.contains('slide-dark')) {
+          bgColor = '#121212';
+        } else if (originalSlide.classList.contains('slide-brand')) {
+          bgColor = '#8C1515';
+        } else if (originalSlide.classList.contains('slide-gradient')) {
+          bgColor = '#fdfbfb';
+        }
+
+        // Capture the slide as canvas
+        const canvas = await html2canvas(container, {
+          width: slideWidth,
+          height: slideHeight,
+          scale: 2, // 2x for better quality
+          useCORS: true,
+          allowTaint: true,
+          backgroundColor: bgColor,
+          logging: false
+        });
+
+        // Add page (except for first slide)
+        if (i > 0) {
+          pdf.addPage();
+        }
+
+        // Add the canvas image to PDF (full page)
+        const imgData = canvas.toDataURL('image/jpeg', 0.95);
+        pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidthMm, pdfHeightMm);
+
+        // Cleanup
+        document.body.removeChild(container);
+      }
+
+      // Save the PDF
+      pdf.save('AI Studio Teams Deck.pdf');
+    } catch (error) {
+      console.error('PDF generation failed:', error);
+    } finally {
+      setIsGeneratingPDF(false);
+    }
   };
 
   // Calculate progress percentage
@@ -229,13 +432,21 @@ const PitchDeckController = () => {
       <button
         onClick={handleDownloadPDF}
         className="control-btn"
-        title="Download PDF"
+        title={isGeneratingPDF ? "Generating PDF..." : "Download PDF"}
+        disabled={isGeneratingPDF}
+        style={{ opacity: isGeneratingPDF ? 0.6 : 1 }}
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-          <polyline points="7 10 12 15 17 10" />
-          <line x1="12" y1="15" x2="12" y2="3" />
-        </svg>
+        {isGeneratingPDF ? (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="spin">
+            <circle cx="12" cy="12" r="10" strokeDasharray="32" strokeDashoffset="12" />
+          </svg>
+        ) : (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+        )}
       </button>
 
     </div>
