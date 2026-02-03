@@ -1074,76 +1074,150 @@ table tr:hover {
 
 }
 
-/* Navbar Download Button */
-.navbar-download-btn {
-  display: inline-flex;
+/* Pitch Deck Controls */
+/* Pitch Deck Controls */
+.pitch-controls {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 2100;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   align-items: center;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  /* Hidden by default */
+}
+
+/* Show controls on hover */
+.pitch-controls:hover {
+  opacity: 1;
+}
+
+/* Hide controls in presentation mode unless hovered - same rule applies */
+body.presentation-mode-active .pitch-controls {
+  opacity: 0;
+}
+
+body.presentation-mode-active .pitch-controls:hover {
+  opacity: 1;
+}
+
+.control-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  margin-left: 8px;
-  padding: 0;
-  background: transparent;
-  border: 2px solid var(--ifm-color-primary);
-  border-radius: 8px;
-  color: var(--ifm-color-primary);
+  align-items: center;
   cursor: pointer;
+  color: #333;
   transition: all 0.2s ease;
-  vertical-align: middle;
+  backdrop-filter: blur(10px);
 }
 
-.navbar-download-btn:hover {
-  background: var(--ifm-color-primary);
-  color: white;
-  transform: translateY(-1px);
+.control-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: var(--pitch-accent);
 }
 
-.navbar-download-btn:active {
+.control-btn:active {
   transform: translateY(0);
 }
 
-.navbar-download-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
+/* Progress Ring */
+.progress-ring {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar-download-btn.loading {
-  animation: pulse 1.5s infinite;
+.progress-ring svg {
+  transform: rotate(-90deg);
 }
 
-.navbar-download-btn svg {
-  width: 18px;
-  height: 18px;
+/* Presentation Mode Active State */
+body.presentation-mode-active {
+  overflow: hidden !important;
 }
 
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
+body.presentation-mode-active .navbar,
+body.presentation-mode-active .footer,
+body.presentation-mode-active .pagination-nav,
+body.presentation-mode-active .theme-doc-sidebar-container {
+  display: none !important;
 }
 
-/* Dark mode adjustments */
-[data-theme='dark'] .navbar-download-btn {
-  border-color: var(--ifm-color-primary-light);
-  color: var(--ifm-color-primary-light);
+body.presentation-mode-active .main-wrapper {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-[data-theme='dark'] .navbar-download-btn:hover {
-  background: var(--ifm-color-primary-light);
-  color: #1a1a1a;
+body.presentation-mode-active article {
+  max-width: 100vw !important;
+  width: 100vw !important;
 }
 
-/* Hide download button when pitch deck is in fullscreen mode */
-.pitch-deck-container ~ .navbar-download-btn {
-  display: none;
+body.presentation-mode-active .pitch-deck-container {
+  z-index: 9999;
 }
 
-/* Print styles - hide download button */
+/* PDF Generation State */
+/* Force exact 16:9 aspect ratio logic for high-quality export */
+body.pdf-generating .pitch-deck-container {
+  width: 1600px !important;
+  height: auto !important;
+  overflow: visible !important;
+  position: absolute !important;
+  /* Take out of flow to avoid screen interference */
+  top: 0;
+  left: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body.pdf-generating .pitch-slide {
+  width: 1600px !important;
+  height: 900px !important;
+  /* Exact 16:9 ratio of 1600 */
+  page-break-after: always;
+  page-break-inside: avoid;
+  opacity: 1 !important;
+  transform: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  /* Remove padding if necessary, or keep and ensure content fits */
+  display: flex !important;
+  box-sizing: border-box !important;
+  border: none !important;
+}
+
+body.pdf-generating .animate-enter {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+body.pdf-generating h1 {
+  page-break-before: auto !important;
+}
+
+/* Hide controls during print/PDF */
 @media print {
-  .navbar-download-btn {
+  .pitch-controls {
     display: none !important;
   }
+}
+
+body.pdf-generating .pitch-controls {
+  display: none !important;
 }
