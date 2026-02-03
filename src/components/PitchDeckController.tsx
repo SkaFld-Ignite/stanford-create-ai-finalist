@@ -134,19 +134,18 @@ const PitchDeckController = () => {
       const html2canvas = (await import('html2canvas')).default;
       const { jsPDF } = await import('jspdf');
 
-      // Get all slides
-      const originalSlides = document.querySelectorAll('.pitch-slide');
-      if (!originalSlides.length) return;
+      // Get deck container and all slides
+      const deckContainer = document.querySelector('.pitch-deck-container') as HTMLElement;
+      const slides = document.querySelectorAll('.pitch-slide');
+      if (!slides.length || !deckContainer) return;
 
-      // 16:9 aspect ratio for presentation decks
-      // Using 1280x720 as base (standard 720p), scaled up for quality
-      const slideWidth = 1280;
-      const slideHeight = 720;
+      // PDF dimensions - 16:9 aspect ratio in mm (standard widescreen)
+      const pdfWidthMm = 338.67;
+      const pdfHeightMm = 190.5;
 
-      // PDF dimensions in mm (16:9 ratio)
-      // A4 landscape is 297x210mm, but we'll use custom 16:9 dimensions
-      const pdfWidthMm = 338.67; // ~13.33 inches = 720p aspect at good print size
-      const pdfHeightMm = 190.5; // 338.67 / 16 * 9
+      // Capture dimensions (16:9)
+      const captureWidth = 1920;
+      const captureHeight = 1080;
 
       const pdf = new jsPDF({
         orientation: 'landscape',
@@ -155,234 +154,75 @@ const PitchDeckController = () => {
         compress: true
       });
 
-      // Process each slide individually
-      for (let i = 0; i < originalSlides.length; i++) {
-        const originalSlide = originalSlides[i] as HTMLElement;
+      // Enter presentation mode to get clean slides
+      document.body.classList.add('presentation-mode-active');
 
-        // Create a temporary container for this slide
-        const container = document.createElement('div');
-        container.style.position = 'fixed';
-        container.style.left = '-9999px';
-        container.style.top = '0';
-        container.style.width = `${slideWidth}px`;
-        container.style.height = `${slideHeight}px`;
-        container.style.zIndex = '-9999';
-        container.style.overflow = 'hidden';
-        container.style.visibility = 'hidden';
+      // Hide controls during capture
+      const controls = document.querySelector('.pitch-controls') as HTMLElement;
+      if (controls) controls.style.display = 'none';
 
-        // Clone the slide
-        const slideClone = originalSlide.cloneNode(true) as HTMLElement;
+      // Store original scroll position
+      const originalScrollTop = deckContainer.scrollTop;
 
-        // Get original background
-        const originalBg = window.getComputedStyle(originalSlide).background;
-        const originalBgColor = window.getComputedStyle(originalSlide).backgroundColor;
-
-        // Apply PDF-specific styles to the clone
-        slideClone.style.width = `${slideWidth}px`;
-        slideClone.style.height = `${slideHeight}px`;
-        slideClone.style.minHeight = `${slideHeight}px`;
-        slideClone.style.maxHeight = `${slideHeight}px`;
-        slideClone.style.overflow = 'hidden';
-        slideClone.style.opacity = '1';
-        slideClone.style.transform = 'none';
-        slideClone.style.position = 'relative';
-        slideClone.style.display = 'flex';
-        slideClone.style.flexDirection = 'column';
-        slideClone.style.justifyContent = 'center';
-        slideClone.style.alignItems = 'center';
-        slideClone.style.padding = '40px';
-        slideClone.style.boxSizing = 'border-box';
-        slideClone.style.scrollSnapAlign = 'none';
-        slideClone.style.background = originalBg || originalBgColor;
-
-        // Scale typography for PDF - using viewport-relative to fixed conversion
-        // Original viewport is ~1920px wide, we're rendering at 1280px (0.67x)
-        const scaleFactor = 0.65;
-
-        slideClone.querySelectorAll('h1').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.fontSize = `${4.5 * scaleFactor}rem`;
-          htmlEl.style.marginBottom = '0.75rem';
-          htmlEl.style.lineHeight = '1.1';
+      // Ensure all slides have in-view class for animations
+      slides.forEach((slide) => {
+        slide.classList.add('in-view');
+        // Force all animated elements visible
+        slide.querySelectorAll('.animate-enter, .layer-card, .funding-segment, .chat-message').forEach((el) => {
+          (el as HTMLElement).style.opacity = '1';
+          (el as HTMLElement).style.transform = 'none';
         });
+      });
 
-        slideClone.querySelectorAll('h2').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.fontSize = `${2 * scaleFactor}rem`;
-          htmlEl.style.marginBottom = '1rem';
-        });
+      // Force funding segment widths
+      document.querySelectorAll('.funding-segment.fill-40').forEach((el) => {
+        (el as HTMLElement).style.width = '40%';
+      });
+      document.querySelectorAll('.funding-segment.fill-24').forEach((el) => {
+        (el as HTMLElement).style.width = '24%';
+      });
+      document.querySelectorAll('.funding-segment.fill-16').forEach((el) => {
+        (el as HTMLElement).style.width = '16%';
+      });
+      document.querySelectorAll('.funding-segment.fill-20').forEach((el) => {
+        (el as HTMLElement).style.width = '20%';
+      });
 
-        slideClone.querySelectorAll('h3').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.fontSize = `${1.5 * scaleFactor}rem`;
-        });
+      // Wait a moment for presentation mode and styles to apply
+      await new Promise((resolve) => setTimeout(resolve, 300));
 
-        slideClone.querySelectorAll('p').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          const currentSize = parseFloat(window.getComputedStyle(el).fontSize);
-          htmlEl.style.fontSize = `${Math.max(currentSize * scaleFactor, 12)}px`;
-          htmlEl.style.lineHeight = '1.4';
-        });
+      // Capture each slide
+      for (let i = 0; i < slides.length; i++) {
+        const slide = slides[i] as HTMLElement;
 
-        // Scale metric values and labels
-        slideClone.querySelectorAll('.metric-val').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.fontSize = `${4 * scaleFactor}rem`;
-        });
+        // Scroll to this slide (instant, no animation)
+        slide.scrollIntoView({ behavior: 'auto', block: 'start' });
 
-        slideClone.querySelectorAll('.metric-label').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.fontSize = `${1.1 * scaleFactor}rem`;
-        });
+        // Wait for scroll and render to complete
+        await new Promise((resolve) => setTimeout(resolve, 250));
 
-        // Scale metric grid gaps
-        slideClone.querySelectorAll('.metric-grid').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.gap = '1rem';
-          htmlEl.style.marginTop = '1.5rem';
-        });
+        // Get computed background
+        const computedStyle = window.getComputedStyle(slide);
+        let bgColor: string | null = computedStyle.backgroundColor;
 
-        // Scale metric cards
-        slideClone.querySelectorAll('.metric-card').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.padding = '1.5rem 1rem';
-        });
-
-        // Scale split layout gaps
-        slideClone.querySelectorAll('.split-layout').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.gap = '2rem';
-        });
-
-        // Scale layer cards
-        slideClone.querySelectorAll('.layer-card').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.width = '500px';
-          htmlEl.style.padding = '1rem';
-          htmlEl.style.gap = '1rem';
-        });
-
-        // Scale layer stack
-        slideClone.querySelectorAll('.layer-stack').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.marginTop = '1rem';
-        });
-
-        // Scale chat window
-        slideClone.querySelectorAll('.chat-window').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.maxWidth = '550px';
-        });
-
-        slideClone.querySelectorAll('.chat-body').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.minHeight = '280px';
-          htmlEl.style.padding = '1.5rem';
-        });
-
-        slideClone.querySelectorAll('.chat-message').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.fontSize = '1rem';
-          htmlEl.style.padding = '0.8rem 1.2rem';
-        });
-
-        // Scale highlight boxes
-        slideClone.querySelectorAll('.highlight-box').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.padding = '1.5rem';
-        });
-
-        // Scale avatar circles
-        slideClone.querySelectorAll('.avatar-circle').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.width = '80px';
-          htmlEl.style.height = '80px';
-          htmlEl.style.marginBottom = '1rem';
-        });
-
-        // Scale footer
-        slideClone.querySelectorAll('.pitch-footer').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.bottom = '15px';
-          htmlEl.style.padding = '0 2rem';
-        });
-
-        slideClone.querySelectorAll('.pitch-footer-text').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.fontSize = '0.7rem';
-        });
-
-        // Scale slide number
-        slideClone.querySelectorAll('.slide-number').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.bottom = '10px';
-          htmlEl.style.right = '15px';
-          htmlEl.style.fontSize = '0.7rem';
-        });
-
-        // Scale logo corner
-        slideClone.querySelectorAll('.logo-corner').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.top = '20px';
-          htmlEl.style.right = '20px';
-          htmlEl.style.height = '40px';
-        });
-
-        // Ensure all animated elements are visible
-        slideClone.querySelectorAll('.animate-enter, [class*="animate"], .split-col, .layer-card, .funding-segment').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.opacity = '1';
-          htmlEl.style.transform = 'none';
-          htmlEl.style.transition = 'none';
-          htmlEl.style.animation = 'none';
-        });
-        slideClone.classList.add('in-view');
-
-        // Force funding bar segment widths
-        slideClone.querySelectorAll('.funding-segment.fill-40').forEach((el) => {
-          (el as HTMLElement).style.width = '40%';
-        });
-        slideClone.querySelectorAll('.funding-segment.fill-24').forEach((el) => {
-          (el as HTMLElement).style.width = '24%';
-        });
-        slideClone.querySelectorAll('.funding-segment.fill-16').forEach((el) => {
-          (el as HTMLElement).style.width = '16%';
-        });
-        slideClone.querySelectorAll('.funding-segment.fill-20').forEach((el) => {
-          (el as HTMLElement).style.width = '20%';
-        });
-
-        // Remove UI controls that shouldn't appear in PDF
-        slideClone.querySelectorAll('.pitch-controls, .control-btn').forEach((el) => el.remove());
-
-        container.appendChild(slideClone);
-        document.body.appendChild(container);
-
-        // Make visible for rendering
-        container.style.visibility = 'visible';
-
-        // Wait for fonts and images to load
-        await new Promise((resolve) => setTimeout(resolve, 150));
-
-        // Determine background color for canvas
-        let bgColor = '#ffffff';
-        if (originalSlide.classList.contains('slide-dark')) {
-          bgColor = '#121212';
-        } else if (originalSlide.classList.contains('slide-brand')) {
-          bgColor = '#8C1515';
-        } else if (originalSlide.classList.contains('slide-gradient')) {
-          bgColor = '#fdfbfb';
+        // For gradient slides, we need to let html2canvas capture the gradient
+        if (slide.classList.contains('slide-gradient')) {
+          bgColor = null;
         }
 
-        // Capture the slide as canvas
-        const canvas = await html2canvas(container, {
-          width: slideWidth,
-          height: slideHeight,
-          scale: 2, // 2x for better quality
+        // Capture the slide
+        const canvas = await html2canvas(slide, {
+          scale: 2,
           useCORS: true,
           allowTaint: true,
           backgroundColor: bgColor,
-          logging: false
+          logging: false,
+          width: captureWidth,
+          height: captureHeight,
+          windowWidth: captureWidth,
+          windowHeight: captureHeight,
+          x: 0,
+          y: 0
         });
 
         // Add page (except for first slide)
@@ -390,18 +230,26 @@ const PitchDeckController = () => {
           pdf.addPage();
         }
 
-        // Add the canvas image to PDF (full page)
+        // Add the canvas image to PDF
         const imgData = canvas.toDataURL('image/jpeg', 0.95);
         pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidthMm, pdfHeightMm);
-
-        // Cleanup
-        document.body.removeChild(container);
       }
+
+      // Restore original scroll position
+      deckContainer.scrollTop = originalScrollTop;
+
+      // Exit presentation mode
+      document.body.classList.remove('presentation-mode-active');
+
+      // Show controls again
+      if (controls) controls.style.display = '';
 
       // Save the PDF
       pdf.save('AI Studio Teams Deck.pdf');
     } catch (error) {
       console.error('PDF generation failed:', error);
+      // Make sure to exit presentation mode even on error
+      document.body.classList.remove('presentation-mode-active');
     } finally {
       setIsGeneratingPDF(false);
     }
