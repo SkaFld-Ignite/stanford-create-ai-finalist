@@ -91,50 +91,49 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   </div>
 
   {/* Slide 4: The Solution */}
-  <div className="pitch-slide slide-gradient" style={{justifyContent: 'flex-start', paddingTop: '2.5rem'}}>
+  <div className="pitch-slide slide-gradient" style={{justifyContent: 'center', padding: '4rem 5vw'}}>
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter" style={{marginBottom: '0.25rem', fontSize: '2.6rem'}}>SkaFld Trailhead</h1>
-    <h2 className="animate-enter delay-1" style={{marginBottom: '1.25rem', fontSize: '1.2rem', fontWeight: 400}}>A Platform for Verified Capability</h2>
+    <h1 className="animate-enter" style={{fontSize: '3.5rem', marginBottom: '0.5rem'}}>SkaFld Trailhead</h1>
+    <h2 className="animate-enter delay-1" style={{marginBottom: '2.5rem'}}>A Platform for Verified Capability</h2>
 
     {/* Two-Column Layout: Features Left, Timeline Right */}
-    <div className="animate-enter delay-2" style={{
-      display: 'grid',
-      gridTemplateColumns: '1fr 1.3fr',
-      gap: '2rem',
-      maxWidth: '1100px',
-      width: '100%',
-      alignItems: 'start'
+    <div className="split-layout animate-enter delay-2" style={{
+      gap: '2.5rem',
+      maxWidth: '1200px',
+      alignItems: 'stretch'
     }}>
 
       {/* LEFT: Platform Features */}
-      <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
+      <div style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
 
         {/* AI Coach Card */}
-        <div style={{
-          background: 'white',
-          borderRadius: '12px',
-          padding: '1.25rem 1.5rem',
-          boxShadow: '0 4px 24px rgba(140, 21, 21, 0.15)',
-          borderLeft: '4px solid var(--pitch-accent)',
-          textAlign: 'left'
+        <div className="metric-card" style={{
+          padding: '2rem',
+          borderRadius: '16px',
+          borderLeft: '6px solid var(--pitch-accent)',
+          textAlign: 'left',
+          flex: 1
         }}>
-          <h3 style={{margin: '0 0 0.5rem 0', fontSize: '1.3rem', color: 'var(--pitch-accent)', fontWeight: 700}}>🤖 Trailhead AI Coach</h3>
-          <p style={{margin: 0, fontSize: '0.95rem', color: '#444', lineHeight: 1.5}}>
+          <h3 style={{margin: '0 0 0.75rem 0', fontSize: '1.4rem', color: 'var(--pitch-accent)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+            <span style={{fontSize: '1.5rem'}}>🤖</span> Trailhead AI Coach
+          </h3>
+          <p style={{margin: 0, fontSize: '1.1rem', color: '#444', lineHeight: 1.6, textAlign: 'left'}}>
             Guides problem decomposition through <strong>Socratic questioning</strong>—teaches thinking, not answers.
           </p>
         </div>
 
         {/* Employer Portal Card */}
-        <div style={{
-          background: 'white',
-          borderRadius: '12px',
-          padding: '1.25rem 1.5rem',
-          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
-          borderLeft: '4px solid #555',
-          textAlign: 'left'
+        <div className="metric-card" style={{
+          padding: '2rem',
+          borderRadius: '16px',
+          borderLeft: '6px solid #555',
+          textAlign: 'left',
+          flex: 1
         }}>
-          <h3 style={{margin: '0 0 0.5rem 0', fontSize: '1.3rem', color: '#333', fontWeight: 700}}>📋 Employer Review Portal</h3>
-          <p style={{margin: 0, fontSize: '0.95rem', color: '#444', lineHeight: 1.5}}>
+          <h3 style={{margin: '0 0 0.75rem 0', fontSize: '1.4rem', color: '#333', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+            <span style={{fontSize: '1.5rem'}}>📋</span> Employer Review Portal
+          </h3>
+          <p style={{margin: 0, fontSize: '1.1rem', color: '#444', lineHeight: 1.6, textAlign: 'left'}}>
             Industry partners <strong>validate work samples</strong>—real feedback from real professionals.
           </p>
         </div>
@@ -142,62 +141,65 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
       </div>
 
       {/* RIGHT: 12-Week Timeline */}
-      <div style={{
-        background: 'white',
-        borderRadius: '12px',
-        padding: '1.25rem 1.5rem',
-        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)'
+      <div className="metric-card" style={{
+        padding: '2rem',
+        borderRadius: '16px',
+        display: 'flex',
+        flexDirection: 'column'
       }}>
-        <h3 style={{margin: '0 0 1rem 0', fontSize: '1.1rem', color: '#666', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px'}}>12-Week Journey</h3>
+        <h3 style={{margin: '0 0 1.5rem 0', fontSize: '1rem', color: '#666', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center'}}>12-Week Journey</h3>
 
         {/* Phase 1 */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.9rem', paddingBottom: '0.9rem', borderBottom: '1px solid #eee'}}>
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1.25rem', marginBottom: '1.25rem', paddingBottom: '1.25rem', borderBottom: '1px solid #eee'}}>
           <span style={{
             background: 'var(--pitch-accent)',
             color: 'white',
-            padding: '0.2rem 0.5rem',
-            borderRadius: '4px',
-            fontSize: '0.7rem',
+            padding: '0.4rem 0.75rem',
+            borderRadius: '6px',
+            fontSize: '0.75rem',
             fontWeight: 700,
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            flexShrink: 0
           }}>WK 1-4</span>
-          <div>
-            <strong style={{color: 'var(--pitch-accent)', fontSize: '1rem'}}>Foundation</strong>
-            <p style={{margin: '0.2rem 0 0 0', fontSize: '0.85rem', color: '#666'}}>Decomposition thinking · AI discernment · Research wide, validate narrow</p>
+          <div style={{textAlign: 'left'}}>
+            <strong style={{color: 'var(--pitch-accent)', fontSize: '1.15rem', display: 'block', marginBottom: '0.25rem'}}>Foundation</strong>
+            <p style={{margin: 0, fontSize: '0.95rem', color: '#666', lineHeight: 1.5}}>Decomposition thinking · AI discernment</p>
           </div>
         </div>
 
         {/* Phase 2 */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.9rem', paddingBottom: '0.9rem', borderBottom: '1px solid #eee'}}>
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1.25rem', marginBottom: '1.25rem', paddingBottom: '1.25rem', borderBottom: '1px solid #eee'}}>
           <span style={{
             background: '#555',
             color: 'white',
-            padding: '0.2rem 0.5rem',
-            borderRadius: '4px',
-            fontSize: '0.7rem',
+            padding: '0.4rem 0.75rem',
+            borderRadius: '6px',
+            fontSize: '0.75rem',
             fontWeight: 700,
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            flexShrink: 0
           }}>WK 5-8</span>
-          <div>
-            <strong style={{color: '#333', fontSize: '1rem'}}>Application</strong>
-            <p style={{margin: '0.2rem 0 0 0', fontSize: '0.85rem', color: '#666'}}>AI-coached challenges · Real business problems · Increasing complexity</p>
+          <div style={{textAlign: 'left'}}>
+            <strong style={{color: '#333', fontSize: '1.15rem', display: 'block', marginBottom: '0.25rem'}}>Application</strong>
+            <p style={{margin: 0, fontSize: '0.95rem', color: '#666', lineHeight: 1.5}}>AI-coached real business challenges</p>
           </div>
         </div>
 
         {/* Phase 3 */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem'}}>
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1.25rem'}}>
           <span style={{
-            background: '#777',
+            background: '#888',
             color: 'white',
-            padding: '0.2rem 0.5rem',
-            borderRadius: '4px',
-            fontSize: '0.7rem',
+            padding: '0.4rem 0.75rem',
+            borderRadius: '6px',
+            fontSize: '0.75rem',
             fontWeight: 700,
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            flexShrink: 0
           }}>WK 9-12</span>
-          <div>
-            <strong style={{color: '#333', fontSize: '1rem'}}>Demonstration</strong>
-            <p style={{margin: '0.2rem 0 0 0', fontSize: '0.85rem', color: '#666'}}>Employer projects · Portfolio building · Min 7.0/10 quality threshold</p>
+          <div style={{textAlign: 'left'}}>
+            <strong style={{color: '#333', fontSize: '1.15rem', display: 'block', marginBottom: '0.25rem'}}>Demonstration</strong>
+            <p style={{margin: 0, fontSize: '0.95rem', color: '#666', lineHeight: 1.5}}>Employer projects · Portfolio building</p>
           </div>
         </div>
 
@@ -205,8 +207,8 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
 
     </div>
 
-    <p className="animate-enter delay-3" style={{marginTop: '1.25rem', fontSize: '1.05rem', color: '#555', maxWidth: '800px'}}>
-      <strong>Result:</strong> Portfolios that <em>prove</em> capability—not credentials that claim it.
+    <p className="animate-enter delay-3" style={{marginTop: '2rem', fontSize: '1.3rem', color: '#444', maxWidth: '800px'}}>
+      <strong style={{color: 'var(--pitch-accent)'}}>Result:</strong> Portfolios that <em>prove</em> capability—not credentials that claim it.
     </p>
 
     <div className="pitch-footer"><span className="pitch-footer-text">Human-Centered Architecture</span></div>
