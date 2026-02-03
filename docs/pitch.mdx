@@ -91,116 +91,123 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   </div>
 
   {/* Slide 4: The Solution */}
-  <div className="pitch-slide slide-gradient" style={{justifyContent: 'flex-start', paddingTop: '3rem'}}>
+  <div className="pitch-slide slide-gradient" style={{justifyContent: 'flex-start', paddingTop: '2.5rem'}}>
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter" style={{marginBottom: '0.25rem', fontSize: '2.8rem'}}>SkaFld Trailhead</h1>
-    <h2 className="animate-enter delay-1" style={{marginBottom: '1.5rem', fontSize: '1.3rem', fontWeight: 400}}>A Platform for Verified Capability</h2>
+    <h1 className="animate-enter" style={{marginBottom: '0.25rem', fontSize: '2.6rem'}}>SkaFld Trailhead</h1>
+    <h2 className="animate-enter delay-1" style={{marginBottom: '1.25rem', fontSize: '1.2rem', fontWeight: 400}}>A Platform for Verified Capability</h2>
 
-    {/* 12-Week Journey - Three Columns */}
+    {/* Two-Column Layout: Features Left, Timeline Right */}
     <div className="animate-enter delay-2" style={{
       display: 'grid',
-      gridTemplateColumns: 'repeat(3, 1fr)',
-      gap: '1.25rem',
-      maxWidth: '1150px',
-      width: '100%'
+      gridTemplateColumns: '1fr 1.3fr',
+      gap: '2rem',
+      maxWidth: '1100px',
+      width: '100%',
+      alignItems: 'start'
     }}>
 
-      {/* Phase 1: Foundation */}
-      <div style={{
-        background: 'white',
-        borderRadius: '12px',
-        padding: '1.25rem 1.25rem 1.5rem',
-        boxShadow: '0 4px 24px rgba(140, 21, 21, 0.12)',
-        borderLeft: '4px solid var(--pitch-accent)',
-        textAlign: 'left'
-      }}>
-        <span style={{
-          background: 'var(--pitch-accent)',
-          color: 'white',
-          padding: '0.25rem 0.6rem',
-          borderRadius: '4px',
-          fontSize: '0.7rem',
-          fontWeight: 700,
-          textTransform: 'uppercase',
-          letterSpacing: '0.5px'
-        }}>Weeks 1-4</span>
-        <h3 style={{margin: '0.75rem 0 0.4rem 0', fontSize: '1.35rem', color: 'var(--pitch-accent)', fontWeight: 700}}>Foundation</h3>
-        <p style={{margin: 0, fontSize: '0.95rem', color: '#333', lineHeight: 1.45, fontWeight: 500}}>Decomposition + AI Discernment</p>
-        <p style={{margin: '0.4rem 0 0 0', fontSize: '0.85rem', color: '#666', lineHeight: 1.4}}>
-          Hallucination detection · Ethical boundaries · Research wide, validate narrow
-        </p>
+      {/* LEFT: Platform Features */}
+      <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
+
+        {/* AI Coach Card */}
+        <div style={{
+          background: 'white',
+          borderRadius: '12px',
+          padding: '1.25rem 1.5rem',
+          boxShadow: '0 4px 24px rgba(140, 21, 21, 0.15)',
+          borderLeft: '4px solid var(--pitch-accent)',
+          textAlign: 'left'
+        }}>
+          <h3 style={{margin: '0 0 0.5rem 0', fontSize: '1.3rem', color: 'var(--pitch-accent)', fontWeight: 700}}>🤖 Trailhead AI Coach</h3>
+          <p style={{margin: 0, fontSize: '0.95rem', color: '#444', lineHeight: 1.5}}>
+            Guides problem decomposition through <strong>Socratic questioning</strong>—teaches thinking, not answers.
+          </p>
+        </div>
+
+        {/* Employer Portal Card */}
+        <div style={{
+          background: 'white',
+          borderRadius: '12px',
+          padding: '1.25rem 1.5rem',
+          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
+          borderLeft: '4px solid #555',
+          textAlign: 'left'
+        }}>
+          <h3 style={{margin: '0 0 0.5rem 0', fontSize: '1.3rem', color: '#333', fontWeight: 700}}>📋 Employer Review Portal</h3>
+          <p style={{margin: 0, fontSize: '0.95rem', color: '#444', lineHeight: 1.5}}>
+            Industry partners <strong>validate work samples</strong>—real feedback from real professionals.
+          </p>
+        </div>
+
       </div>
 
-      {/* Phase 2: Application */}
+      {/* RIGHT: 12-Week Timeline */}
       <div style={{
         background: 'white',
         borderRadius: '12px',
-        padding: '1.25rem 1.25rem 1.5rem',
-        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
-        borderLeft: '4px solid #555',
-        textAlign: 'left'
+        padding: '1.25rem 1.5rem',
+        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)'
       }}>
-        <span style={{
-          background: '#555',
-          color: 'white',
-          padding: '0.25rem 0.6rem',
-          borderRadius: '4px',
-          fontSize: '0.7rem',
-          fontWeight: 700,
-          textTransform: 'uppercase',
-          letterSpacing: '0.5px'
-        }}>Weeks 5-8</span>
-        <h3 style={{margin: '0.75rem 0 0.4rem 0', fontSize: '1.35rem', color: '#333', fontWeight: 700}}>Application</h3>
-        <p style={{margin: 0, fontSize: '0.95rem', color: '#333', lineHeight: 1.45, fontWeight: 500}}>AI-Coached Challenges</p>
-        <p style={{margin: '0.4rem 0 0 0', fontSize: '0.85rem', color: '#666', lineHeight: 1.4}}>
-          Socratic questioning guides problem decomposition through real scenarios
-        </p>
-      </div>
+        <h3 style={{margin: '0 0 1rem 0', fontSize: '1.1rem', color: '#666', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px'}}>12-Week Journey</h3>
 
-      {/* Phase 3: Demonstration */}
-      <div style={{
-        background: 'white',
-        borderRadius: '12px',
-        padding: '1.25rem 1.25rem 1.5rem',
-        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
-        borderLeft: '4px solid #888',
-        textAlign: 'left'
-      }}>
-        <span style={{
-          background: '#777',
-          color: 'white',
-          padding: '0.25rem 0.6rem',
-          borderRadius: '4px',
-          fontSize: '0.7rem',
-          fontWeight: 700,
-          textTransform: 'uppercase',
-          letterSpacing: '0.5px'
-        }}>Weeks 9-12</span>
-        <h3 style={{margin: '0.75rem 0 0.4rem 0', fontSize: '1.35rem', color: '#333', fontWeight: 700}}>Demonstration</h3>
-        <p style={{margin: 0, fontSize: '0.95rem', color: '#333', lineHeight: 1.45, fontWeight: 500}}>Employer-Validated Portfolios</p>
-        <p style={{margin: '0.4rem 0 0 0', fontSize: '0.85rem', color: '#666', lineHeight: 1.4}}>
-          Real client projects · Real feedback · Min 7.0/10 quality threshold
-        </p>
+        {/* Phase 1 */}
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.9rem', paddingBottom: '0.9rem', borderBottom: '1px solid #eee'}}>
+          <span style={{
+            background: 'var(--pitch-accent)',
+            color: 'white',
+            padding: '0.2rem 0.5rem',
+            borderRadius: '4px',
+            fontSize: '0.7rem',
+            fontWeight: 700,
+            whiteSpace: 'nowrap'
+          }}>WK 1-4</span>
+          <div>
+            <strong style={{color: 'var(--pitch-accent)', fontSize: '1rem'}}>Foundation</strong>
+            <p style={{margin: '0.2rem 0 0 0', fontSize: '0.85rem', color: '#666'}}>Decomposition thinking · AI discernment · Research wide, validate narrow</p>
+          </div>
+        </div>
+
+        {/* Phase 2 */}
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.9rem', paddingBottom: '0.9rem', borderBottom: '1px solid #eee'}}>
+          <span style={{
+            background: '#555',
+            color: 'white',
+            padding: '0.2rem 0.5rem',
+            borderRadius: '4px',
+            fontSize: '0.7rem',
+            fontWeight: 700,
+            whiteSpace: 'nowrap'
+          }}>WK 5-8</span>
+          <div>
+            <strong style={{color: '#333', fontSize: '1rem'}}>Application</strong>
+            <p style={{margin: '0.2rem 0 0 0', fontSize: '0.85rem', color: '#666'}}>AI-coached challenges · Real business problems · Increasing complexity</p>
+          </div>
+        </div>
+
+        {/* Phase 3 */}
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem'}}>
+          <span style={{
+            background: '#777',
+            color: 'white',
+            padding: '0.2rem 0.5rem',
+            borderRadius: '4px',
+            fontSize: '0.7rem',
+            fontWeight: 700,
+            whiteSpace: 'nowrap'
+          }}>WK 9-12</span>
+          <div>
+            <strong style={{color: '#333', fontSize: '1rem'}}>Demonstration</strong>
+            <p style={{margin: '0.2rem 0 0 0', fontSize: '0.85rem', color: '#666'}}>Employer projects · Portfolio building · Min 7.0/10 quality threshold</p>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
-    {/* Platform Components - Below cards */}
-    <div className="animate-enter delay-3" style={{
-      display: 'flex',
-      gap: '2.5rem',
-      marginTop: '1.5rem',
-      justifyContent: 'center'
-    }}>
-      <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
-        <div style={{width: '8px', height: '8px', borderRadius: '50%', background: 'var(--pitch-accent)'}}></div>
-        <span style={{fontSize: '0.95rem', color: '#444'}}><strong>AI Coach</strong> — Socratic questioning</span>
-      </div>
-      <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
-        <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#666'}}></div>
-        <span style={{fontSize: '0.95rem', color: '#444'}}><strong>Employer Portal</strong> — Real-time validation</span>
-      </div>
-    </div>
+    <p className="animate-enter delay-3" style={{marginTop: '1.25rem', fontSize: '1.05rem', color: '#555', maxWidth: '800px'}}>
+      <strong>Result:</strong> Portfolios that <em>prove</em> capability—not credentials that claim it.
+    </p>
 
     <div className="pitch-footer"><span className="pitch-footer-text">Human-Centered Architecture</span></div>
     <div className="slide-number">4</div>
@@ -442,27 +449,29 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   {/* Slide 9: Equity */}
   <div className="pitch-slide slide-brand">
     <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter">Access for All.</h1>
-    <p className="animate-enter delay-1" style={{color: 'rgba(255,255,255,0.9)', fontSize: '1.5rem'}}>Portfolios are the great equalizer. Focus on <em>what you can do</em>—unlock your potential.</p>
+    <h1 className="animate-enter">Equity by Design</h1>
+    <p className="animate-enter delay-1" style={{color: 'rgba(255,255,255,0.9)', fontSize: '1.5rem'}}>Portfolios are the great equalizer—evaluation based on capability, not background.</p>
 
     <div className="split-layout animate-enter delay-2" style={{marginTop: '3rem'}}>
       <div className="split-col">
+        <h3 style={{color: 'white', fontSize: '1.4rem', marginBottom: '1.5rem', textAlign: 'left', opacity: 0.9}}>Explicit Parity Targets</h3>
         <ul style={{textAlign: 'left', color: 'white', listStyle: 'none', padding: 0}}>
-          <li style={{fontSize: '2rem', marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '0.5rem'}}><strong>50%</strong> <span style={{fontSize: '1.2rem', opacity: 0.8}}>Female / Male Ratio Target</span></li>
-          <li style={{fontSize: '2rem', marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '0.5rem'}}><strong>40%</strong> <span style={{fontSize: '1.2rem', opacity: 0.8}}>Free/Reduced Lunch Eligible</span></li>
+          <li style={{fontSize: '2rem', marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '0.5rem'}}><strong>50%</strong> <span style={{fontSize: '1.2rem', opacity: 0.8}}>Female / Male Ratio</span></li>
+          <li style={{fontSize: '2rem', marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '0.5rem'}}><strong>40%</strong> <span style={{fontSize: '1.2rem', opacity: 0.8}}>Free/Reduced Lunch</span></li>
           <li style={{fontSize: '2rem', marginBottom: '1.5rem'}}><strong>30%</strong> <span style={{fontSize: '1.2rem', opacity: 0.8}}>First-Generation College</span></li>
         </ul>
       </div>
       <div className="split-col">
-        <div style={{border: '4px solid white', padding: '3rem', borderRadius: '24px', background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)'}}>
-          <h3 style={{fontSize: '2.5rem', marginBottom: '2rem', color: 'white'}}>ZERO BARRIERS</h3>
-          <p style={{color: 'white', margin: '0.5rem 0', fontSize: '1.5rem'}}>No Coding Prerequisites.</p>
-          <p style={{color: 'white', margin: '0.5rem 0', fontSize: '1.5rem'}}>No GPA Hurdles.</p>
-          <p style={{color: 'white', margin: '0.5rem 0', fontSize: '1.5rem'}}>No Equipment Costs.</p>
+        <div style={{border: '4px solid white', padding: '2.5rem', borderRadius: '24px', background: 'rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)'}}>
+          <h3 style={{fontSize: '1.8rem', marginBottom: '1.5rem', color: 'white'}}>Barrier-Free Entry</h3>
+          <p style={{color: 'white', margin: '0.75rem 0', fontSize: '1.3rem'}}>No coding prerequisites</p>
+          <p style={{color: 'white', margin: '0.75rem 0', fontSize: '1.3rem'}}>No GPA requirements</p>
+          <p style={{color: 'white', margin: '0.75rem 0', fontSize: '1.3rem'}}>No equipment costs</p>
+          <p style={{color: 'rgba(255,255,255,0.7)', margin: '1.25rem 0 0 0', fontSize: '1rem', fontStyle: 'italic'}}>Selection based on interest and commitment</p>
         </div>
       </div>
     </div>
-    <div className="pitch-footer"><span className="pitch-footer-text" style={{color: 'rgba(255,255,255,0.5)'}}>Equity by Design</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text" style={{color: 'rgba(255,255,255,0.5)'}}>Designing for Inclusion</span></div>
     <div className="slide-number" style={{color: 'rgba(255,255,255,0.5)'}}>9</div>
   </div>
 
