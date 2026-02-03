@@ -1,4 +1,4 @@
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
@@ -21,7 +21,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'doc',
-      id: 'presentation-deck',
+      id: 'pitch',
       label: 'Pitch Deck'
     }
   ],
