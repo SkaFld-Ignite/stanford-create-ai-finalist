@@ -21,6 +21,7 @@ yarn-error.log*
 
 # Local files
 .claude/
+.serena/
 *.pdf
 
 # Internal analysis - tracked but not on website

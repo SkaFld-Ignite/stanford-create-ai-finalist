@@ -91,85 +91,237 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   </div>
 
   {/* Slide 4: The Solution */}
-  <div className="pitch-slide slide-gradient">
+  <div className="pitch-slide slide-gradient" style={{justifyContent: 'flex-start', paddingTop: '3rem'}}>
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter" style={{marginBottom: '0.5rem'}}>SkaFld Trailhead</h1>
-    <h2 className="animate-enter delay-1">A Platform for Verified Capability</h2>
+    <h1 className="animate-enter" style={{marginBottom: '0.25rem', fontSize: '2.8rem'}}>SkaFld Trailhead</h1>
+    <h2 className="animate-enter delay-1" style={{marginBottom: '1.5rem', fontSize: '1.3rem', fontWeight: 400}}>A Platform for Verified Capability</h2>
 
-    <p className="animate-enter delay-1" style={{maxWidth: '850px', marginBottom: '1.5rem', fontSize: '1.1rem', color: '#444'}}>
-      <strong>Trailhead AI Coach</strong> guides problem decomposition through Socratic questioning. <strong>Employer Review Portal</strong> enables industry partners to validate student work samples in real-time.
-    </p>
+    {/* 12-Week Journey - Three Columns */}
+    <div className="animate-enter delay-2" style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(3, 1fr)',
+      gap: '1.25rem',
+      maxWidth: '1150px',
+      width: '100%'
+    }}>
 
-    <div className="layer-stack animate-enter delay-2">
-
-      {/* Layer 3: Demonstration */}
-      <div className="layer-card">
-        <div className="layer-num">3</div>
-        <div style={{textAlign: 'left'}}>
-          <h3 style={{margin: 0, fontSize: '1.5rem', color: '#1a1a1a'}}>Demonstration (Weeks 9-12)</h3>
-          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>Employer-Validated Portfolios.</strong> Real client projects. Real feedback. Minimum 7.0/10 quality threshold.</p>
-        </div>
+      {/* Phase 1: Foundation */}
+      <div style={{
+        background: 'white',
+        borderRadius: '12px',
+        padding: '1.25rem 1.25rem 1.5rem',
+        boxShadow: '0 4px 24px rgba(140, 21, 21, 0.12)',
+        borderLeft: '4px solid var(--pitch-accent)',
+        textAlign: 'left'
+      }}>
+        <span style={{
+          background: 'var(--pitch-accent)',
+          color: 'white',
+          padding: '0.25rem 0.6rem',
+          borderRadius: '4px',
+          fontSize: '0.7rem',
+          fontWeight: 700,
+          textTransform: 'uppercase',
+          letterSpacing: '0.5px'
+        }}>Weeks 1-4</span>
+        <h3 style={{margin: '0.75rem 0 0.4rem 0', fontSize: '1.35rem', color: 'var(--pitch-accent)', fontWeight: 700}}>Foundation</h3>
+        <p style={{margin: 0, fontSize: '0.95rem', color: '#333', lineHeight: 1.45, fontWeight: 500}}>Decomposition + AI Discernment</p>
+        <p style={{margin: '0.4rem 0 0 0', fontSize: '0.85rem', color: '#666', lineHeight: 1.4}}>
+          Hallucination detection · Ethical boundaries · Research wide, validate narrow
+        </p>
       </div>
 
-      {/* Layer 2: Application */}
-      <div className="layer-card">
-        <div className="layer-num">2</div>
-        <div style={{textAlign: 'left'}}>
-          <h3 style={{margin: 0, fontSize: '1.5rem', color: '#1a1a1a'}}>Application (Weeks 5-8)</h3>
-          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>AI-Coached Challenges.</strong> Socratic questioning guides problem decomposition.</p>
-        </div>
+      {/* Phase 2: Application */}
+      <div style={{
+        background: 'white',
+        borderRadius: '12px',
+        padding: '1.25rem 1.25rem 1.5rem',
+        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
+        borderLeft: '4px solid #555',
+        textAlign: 'left'
+      }}>
+        <span style={{
+          background: '#555',
+          color: 'white',
+          padding: '0.25rem 0.6rem',
+          borderRadius: '4px',
+          fontSize: '0.7rem',
+          fontWeight: 700,
+          textTransform: 'uppercase',
+          letterSpacing: '0.5px'
+        }}>Weeks 5-8</span>
+        <h3 style={{margin: '0.75rem 0 0.4rem 0', fontSize: '1.35rem', color: '#333', fontWeight: 700}}>Application</h3>
+        <p style={{margin: 0, fontSize: '0.95rem', color: '#333', lineHeight: 1.45, fontWeight: 500}}>AI-Coached Challenges</p>
+        <p style={{margin: '0.4rem 0 0 0', fontSize: '0.85rem', color: '#666', lineHeight: 1.4}}>
+          Socratic questioning guides problem decomposition through real scenarios
+        </p>
       </div>
 
-      {/* Layer 1: Foundation */}
-      <div className="layer-card">
-        <div className="layer-num">1</div>
-        <div style={{textAlign: 'left'}}>
-          <h3 style={{margin: 0, fontSize: '1.5rem', color: '#1a1a1a'}}>Foundation (Weeks 1-4)</h3>
-          <p style={{margin: '0.5rem 0 0 0', fontSize: '1.1rem', color: '#444'}}><strong>Decomposition + AI Discernment.</strong> Hallucination detection. Ethical boundaries. Research wide, validate narrow.</p>
-        </div>
+      {/* Phase 3: Demonstration */}
+      <div style={{
+        background: 'white',
+        borderRadius: '12px',
+        padding: '1.25rem 1.25rem 1.5rem',
+        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
+        borderLeft: '4px solid #888',
+        textAlign: 'left'
+      }}>
+        <span style={{
+          background: '#777',
+          color: 'white',
+          padding: '0.25rem 0.6rem',
+          borderRadius: '4px',
+          fontSize: '0.7rem',
+          fontWeight: 700,
+          textTransform: 'uppercase',
+          letterSpacing: '0.5px'
+        }}>Weeks 9-12</span>
+        <h3 style={{margin: '0.75rem 0 0.4rem 0', fontSize: '1.35rem', color: '#333', fontWeight: 700}}>Demonstration</h3>
+        <p style={{margin: 0, fontSize: '0.95rem', color: '#333', lineHeight: 1.45, fontWeight: 500}}>Employer-Validated Portfolios</p>
+        <p style={{margin: '0.4rem 0 0 0', fontSize: '0.85rem', color: '#666', lineHeight: 1.4}}>
+          Real client projects · Real feedback · Min 7.0/10 quality threshold
+        </p>
       </div>
 
     </div>
+
+    {/* Platform Components - Below cards */}
+    <div className="animate-enter delay-3" style={{
+      display: 'flex',
+      gap: '2.5rem',
+      marginTop: '1.5rem',
+      justifyContent: 'center'
+    }}>
+      <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+        <div style={{width: '8px', height: '8px', borderRadius: '50%', background: 'var(--pitch-accent)'}}></div>
+        <span style={{fontSize: '0.95rem', color: '#444'}}><strong>AI Coach</strong> — Socratic questioning</span>
+      </div>
+      <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+        <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#666'}}></div>
+        <span style={{fontSize: '0.95rem', color: '#444'}}><strong>Employer Portal</strong> — Real-time validation</span>
+      </div>
+    </div>
+
     <div className="pitch-footer"><span className="pitch-footer-text">Human-Centered Architecture</span></div>
     <div className="slide-number">4</div>
   </div>
 
   {/* Slide 5: Platform Demo */}
-  <div className="pitch-slide slide-dark">
+  <div className="pitch-slide slide-dark" style={{justifyContent: 'flex-start', paddingTop: '2.5rem'}}>
     <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter">AI as a Coach, Not a Crutch.</h1>
+    <h1 className="animate-enter" style={{fontSize: '2.6rem', marginBottom: '1rem'}}>AI as Coach, Not Crutch</h1>
+    <p className="animate-enter delay-1" style={{color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', marginBottom: '1.25rem'}}>
+      The AI doesn't give answers—it teaches thinking through guided questions
+    </p>
 
-    <div className="chat-window animate-enter delay-1" style={{marginTop: '2rem'}}>
-      <div className="chat-header">
-        <div className="window-dot dot-red"></div>
-        <div className="window-dot dot-yellow"></div>
-        <div className="window-dot dot-green"></div>
-        <span style={{fontSize: '0.9rem', color: '#888', marginLeft: '1rem'}}>SkaFld Trailhead Coach</span>
+    {/* Compact Chat Demo */}
+    <div className="animate-enter delay-2" style={{
+      width: '100%',
+      maxWidth: '750px',
+      background: '#1a1a1a',
+      borderRadius: '12px',
+      border: '1px solid #333',
+      overflow: 'hidden',
+      boxShadow: '0 20px 60px rgba(0,0,0,0.5)'
+    }}>
+      {/* Header */}
+      <div style={{
+        background: '#252525',
+        padding: '0.6rem 1rem',
+        borderBottom: '1px solid #333',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '6px'
+      }}>
+        <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#ff5f56'}}></div>
+        <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#ffbd2e'}}></div>
+        <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#27c93f'}}></div>
+        <span style={{fontSize: '0.8rem', color: '#666', marginLeft: '0.75rem'}}>SkaFld Trailhead Coach</span>
       </div>
-      <div className="chat-body">
 
-        <div className="message-row animate-enter delay-2">
-          <div className="chat-avatar">🤖</div>
-          <div className="chat-message message-ai">
-            Before we solve this, Sarah—what OTHER fields have already solved a similar problem? Let's research wide first.
+      {/* Messages */}
+      <div style={{padding: '1rem 1.25rem', display: 'flex', flexDirection: 'column', gap: '0.75rem', background: '#121212'}}>
+
+        {/* AI Message 1 */}
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.6rem'}}>
+          <div style={{
+            width: '28px', height: '28px', borderRadius: '50%', background: '#333',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', flexShrink: 0
+          }}>🤖</div>
+          <div style={{
+            background: '#2a2a2a',
+            color: '#eee',
+            padding: '0.7rem 1rem',
+            borderRadius: '12px',
+            borderBottomLeftRadius: '4px',
+            fontSize: '0.95rem',
+            lineHeight: 1.4,
+            maxWidth: '85%'
+          }}>
+            Before we solve this, Sarah—what <strong style={{color: 'var(--pitch-accent)'}}>OTHER fields</strong> have already solved a similar problem? Let's research wide first.
           </div>
         </div>
 
-        <div className="message-row animate-enter delay-3" style={{alignSelf: 'flex-end', justifyContent: 'flex-end'}}>
-          <div className="chat-message message-user">
+        {/* User Message */}
+        <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+          <div style={{
+            background: 'var(--pitch-accent)',
+            color: 'white',
+            padding: '0.7rem 1rem',
+            borderRadius: '12px',
+            borderBottomRightRadius: '4px',
+            fontSize: '0.95rem',
+            lineHeight: 1.4,
+            maxWidth: '75%'
+          }}>
             Hmm... game designers figured out engagement. Aviation solved error reduction.
           </div>
         </div>
 
-        <div className="message-row animate-enter delay-4">
-          <div className="chat-avatar">🤖</div>
-          <div className="chat-message message-ai" style={{opacity: 1, transform: 'scale(1)'}}>
-            Now we're thinking! What can we borrow and translate? Decompose it into testable pieces.
+        {/* AI Message 2 */}
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.6rem'}}>
+          <div style={{
+            width: '28px', height: '28px', borderRadius: '50%', background: '#333',
+            display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', flexShrink: 0
+          }}>🤖</div>
+          <div style={{
+            background: '#2a2a2a',
+            color: '#eee',
+            padding: '0.7rem 1rem',
+            borderRadius: '12px',
+            borderBottomLeftRadius: '4px',
+            fontSize: '0.95rem',
+            lineHeight: 1.4,
+            maxWidth: '85%'
+          }}>
+            Now we're thinking! What can we <strong style={{color: '#27c93f'}}>borrow and translate</strong>? Decompose it into testable pieces.
           </div>
         </div>
 
       </div>
     </div>
+
+    {/* Key insight callout */}
+    <div className="animate-enter delay-3" style={{
+      marginTop: '1.25rem',
+      display: 'flex',
+      gap: '2rem',
+      justifyContent: 'center'
+    }}>
+      <div style={{textAlign: 'center'}}>
+        <div style={{fontSize: '1.5rem', marginBottom: '0.25rem'}}>🎯</div>
+        <div style={{fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)'}}>Guides thinking</div>
+      </div>
+      <div style={{textAlign: 'center'}}>
+        <div style={{fontSize: '1.5rem', marginBottom: '0.25rem'}}>🔍</div>
+        <div style={{fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)'}}>Cross-domain research</div>
+      </div>
+      <div style={{textAlign: 'center'}}>
+        <div style={{fontSize: '1.5rem', marginBottom: '0.25rem'}}>🧩</div>
+        <div style={{fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)'}}>Problem decomposition</div>
+      </div>
+    </div>
+
     <div className="pitch-footer"><span className="pitch-footer-text">Socratic AI That Teaches Thinking</span></div>
     <div className="slide-number" style={{color: 'rgba(255,255,255,0.5)'}}>5</div>
   </div>
