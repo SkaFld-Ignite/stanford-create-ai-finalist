@@ -216,114 +216,81 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   {/* Slide 5: Platform Demo */}
   <div className="pitch-slide slide-dark">
     <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter" style={{fontSize: '3rem', marginBottom: '0.5rem'}}>AI as Coach, Not Crutch</h1>
-    <p className="animate-enter delay-1" style={{color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', marginBottom: '1.5rem'}}>
+    <h1 className="animate-enter" style={{fontSize: '2.5rem', marginBottom: '0.25rem'}}>AI as Coach, Not Crutch</h1>
+    <p className="animate-enter delay-1" style={{color: 'rgba(255,255,255,0.6)', fontSize: '1rem', marginBottom: '1rem'}}>
       Socratic questioning guides problem decomposition
     </p>
 
-    {/* Chat Demo - Real Business Problem */}
+    {/* Chat Demo - Compact */}
     <div className="animate-enter delay-2" style={{
       width: '100%',
-      maxWidth: '800px',
+      maxWidth: '750px',
       background: '#1a1a1a',
-      borderRadius: '12px',
+      borderRadius: '10px',
       border: '1px solid #333',
       overflow: 'hidden',
-      boxShadow: '0 20px 60px rgba(0,0,0,0.5)'
+      boxShadow: '0 15px 40px rgba(0,0,0,0.5)'
     }}>
-      {/* Header with context */}
+      {/* Header */}
       <div style={{
         background: '#252525',
-        padding: '0.5rem 1rem',
+        padding: '0.35rem 0.75rem',
         borderBottom: '1px solid #333',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between'
       }}>
-        <div style={{display: 'flex', alignItems: 'center', gap: '6px'}}>
-          <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#ff5f56'}}></div>
-          <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#ffbd2e'}}></div>
-          <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#27c93f'}}></div>
-          <span style={{fontSize: '0.8rem', color: '#888', marginLeft: '0.5rem'}}>SkaFld Trailhead Coach</span>
+        <div style={{display: 'flex', alignItems: 'center', gap: '5px'}}>
+          <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#ff5f56'}}></div>
+          <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#ffbd2e'}}></div>
+          <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#27c93f'}}></div>
+          <span style={{fontSize: '0.7rem', color: '#777', marginLeft: '0.4rem'}}>Trailhead Coach</span>
         </div>
-        <span style={{fontSize: '0.7rem', color: '#555', background: '#333', padding: '0.2rem 0.6rem', borderRadius: '10px'}}>Week 6 · Boeing Project</span>
+        <span style={{fontSize: '0.65rem', color: '#555', background: '#333', padding: '0.15rem 0.5rem', borderRadius: '8px'}}>Week 6 · Boeing</span>
       </div>
 
       {/* Messages */}
-      <div style={{padding: '0.75rem 1rem', display: 'flex', flexDirection: 'column', gap: '0.6rem', background: '#121212'}}>
+      <div style={{padding: '0.5rem 0.75rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', background: '#121212'}}>
 
-        {/* Context: The business problem */}
+        {/* Challenge */}
         <div style={{
           background: 'rgba(140, 21, 21, 0.15)',
           border: '1px solid rgba(140, 21, 21, 0.3)',
-          borderRadius: '6px',
-          padding: '0.5rem 0.75rem',
-          fontSize: '0.8rem',
+          borderRadius: '5px',
+          padding: '0.35rem 0.6rem',
+          fontSize: '0.75rem',
           color: '#ccc'
         }}>
-          <strong style={{color: 'var(--pitch-accent)'}}>Challenge:</strong> Boeing wants to reduce documentation errors in QC. How might we approach this?
+          <strong style={{color: 'var(--pitch-accent)'}}>Challenge:</strong> Boeing wants to reduce documentation errors in QC.
         </div>
 
-        {/* AI Message 1 */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.5rem'}}>
-          <div style={{
-            width: '26px', height: '26px', borderRadius: '50%', background: '#333',
-            display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', flexShrink: 0
-          }}>🤖</div>
-          <div style={{
-            background: '#2a2a2a',
-            color: '#eee',
-            padding: '0.6rem 0.85rem',
-            borderRadius: '10px',
-            borderBottomLeftRadius: '4px',
-            fontSize: '0.9rem',
-            lineHeight: 1.4,
-            maxWidth: '88%'
-          }}>
-            Before we jump to solutions—what <strong style={{color: 'var(--pitch-accent)'}}>other industries</strong> have solved documentation errors? Research wide first.
+        {/* AI 1 */}
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.4rem'}}>
+          <div style={{width: '22px', height: '22px', borderRadius: '50%', background: '#333', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.75rem', flexShrink: 0}}>🤖</div>
+          <div style={{background: '#2a2a2a', color: '#eee', padding: '0.4rem 0.65rem', borderRadius: '8px', borderBottomLeftRadius: '3px', fontSize: '0.8rem', lineHeight: 1.35}}>
+            What <strong style={{color: 'var(--pitch-accent)'}}>other industries</strong> have solved this? Research wide first.
           </div>
         </div>
 
-        {/* User Message */}
+        {/* User */}
         <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-          <div style={{
-            background: 'var(--pitch-accent)',
-            color: 'white',
-            padding: '0.6rem 0.85rem',
-            borderRadius: '10px',
-            borderBottomRightRadius: '4px',
-            fontSize: '0.9rem',
-            lineHeight: 1.4,
-            maxWidth: '80%'
-          }}>
+          <div style={{background: 'var(--pitch-accent)', color: 'white', padding: '0.4rem 0.65rem', borderRadius: '8px', borderBottomRightRadius: '3px', fontSize: '0.8rem', lineHeight: 1.35}}>
             Healthcare uses surgical checklists. Aviation has preflight verification.
           </div>
         </div>
 
-        {/* AI Message 2 */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.5rem'}}>
-          <div style={{
-            width: '26px', height: '26px', borderRadius: '50%', background: '#333',
-            display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', flexShrink: 0
-          }}>🤖</div>
-          <div style={{
-            background: '#2a2a2a',
-            color: '#eee',
-            padding: '0.6rem 0.85rem',
-            borderRadius: '10px',
-            borderBottomLeftRadius: '4px',
-            fontSize: '0.9rem',
-            lineHeight: 1.4,
-            maxWidth: '88%'
-          }}>
-            Excellent! Now <strong style={{color: '#27c93f'}}>decompose</strong>: What specific elements could translate to Boeing's workflow?
+        {/* AI 2 */}
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.4rem'}}>
+          <div style={{width: '22px', height: '22px', borderRadius: '50%', background: '#333', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.75rem', flexShrink: 0}}>🤖</div>
+          <div style={{background: '#2a2a2a', color: '#eee', padding: '0.4rem 0.65rem', borderRadius: '8px', borderBottomLeftRadius: '3px', fontSize: '0.8rem', lineHeight: 1.35}}>
+            Excellent! Now <strong style={{color: '#27c93f'}}>decompose</strong>: What elements could translate to Boeing?
           </div>
         </div>
 
       </div>
     </div>
 
-    <p className="animate-enter delay-3" style={{marginTop: '1.25rem', fontSize: '1.1rem', color: 'rgba(255,255,255,0.6)', maxWidth: '600px'}}>
+    <p className="animate-enter delay-3" style={{marginTop: '1rem', fontSize: '1rem', color: 'rgba(255,255,255,0.5)'}}>
       The AI never gives the answer—it teaches <em>how to find it</em>.
     </p>
 
