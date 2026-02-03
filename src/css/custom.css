@@ -1073,3 +1073,77 @@ table tr:hover {
   display: block;
 
 }
+
+/* Navbar Download Button */
+.navbar-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 8px;
+  padding: 0;
+  background: transparent;
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  color: var(--ifm-color-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+}
+
+.navbar-download-btn:hover {
+  background: var(--ifm-color-primary);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.navbar-download-btn:active {
+  transform: translateY(0);
+}
+
+.navbar-download-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.navbar-download-btn.loading {
+  animation: pulse 1.5s infinite;
+}
+
+.navbar-download-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .navbar-download-btn {
+  border-color: var(--ifm-color-primary-light);
+  color: var(--ifm-color-primary-light);
+}
+
+[data-theme='dark'] .navbar-download-btn:hover {
+  background: var(--ifm-color-primary-light);
+  color: #1a1a1a;
+}
+
+/* Hide download button when pitch deck is in fullscreen mode */
+.pitch-deck-container ~ .navbar-download-btn {
+  display: none;
+}
+
+/* Print styles - hide download button */
+@media print {
+  .navbar-download-btn {
+    display: none !important;
+  }
+}
