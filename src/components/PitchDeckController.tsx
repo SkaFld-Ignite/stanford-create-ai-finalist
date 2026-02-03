@@ -16,7 +16,7 @@ const PitchDeckController = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('in-view');
-          
+
           // Update active index based on the slide's index
           const slides = document.querySelectorAll('.pitch-slide');
           const index = Array.from(slides).indexOf(entry.target);
@@ -29,7 +29,7 @@ const PitchDeckController = () => {
     };
 
     observerRef.current = new IntersectionObserver(handleIntersect, options);
-    
+
     const slides = document.querySelectorAll('.pitch-slide');
     slides.forEach((slide) => {
       if (observerRef.current) observerRef.current.observe(slide);
@@ -79,42 +79,8 @@ const PitchDeckController = () => {
   const totalSlides = typeof document !== 'undefined' ? document.querySelectorAll('.pitch-slide').length : 12; // default to 12 if SSR
   const progress = ((activeSlideIndex + 1) / totalSlides) * 100;
 
-  return (
-    <div className="pitch-controls">
-      {/* Progress Bar */}
-      <div 
-        style={{
-          position: 'fixed',
-          bottom: 0,
-          left: 0,
-          height: '6px',
-          backgroundColor: '#8C1515',
-          width: `${progress}%`,
-          transition: 'width 0.3s ease',
-          zIndex: 3000
-        }}
-      />
-      
-      {/* Navigation Hint (fades out after a few seconds? - keeping simple for now) */}
-      <div style={{
-        position: 'fixed',
-        bottom: '20px',
-        right: '20px',
-        zIndex: 3000,
-        background: 'rgba(255,255,255,0.2)',
-        backdropFilter: 'blur(5px)',
-        padding: '8px 12px',
-        borderRadius: '8px',
-        fontSize: '0.8rem',
-        color: '#888',
-        pointerEvents: 'none',
-        opacity: activeSlideIndex === 0 ? 1 : 0.3,
-        transition: 'opacity 0.5s'
-      }}>
-        Use Arrow Keys or Space to Navigate
-      </div>
-    </div>
-  );
+  // UI elements removed as requested
+  return null;
 };
 
 export default PitchDeckController;

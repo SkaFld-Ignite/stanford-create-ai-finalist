@@ -107,7 +107,7 @@ hide_table_of_contents: true
           <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" />
         </div>
         <h3>Mike Belloli</h3>
-        <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Technology Lead</p>
+        <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Technology & Operations</p>
       </div>
     </div>
   </div>

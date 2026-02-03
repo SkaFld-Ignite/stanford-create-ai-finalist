@@ -17,7 +17,7 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
   </div>
   <div className="col col--9">
     <h3>Charles Sims | Project Director</h3>
-    <p><strong>Strategic direction, employer partnership development, program design</strong></p>
+    <p><strong>Strategic direction, technology leadership, employer partnerships, program design</strong></p>
     <p>Charles Sims is a technology transformation leader and founder of Skafld Studio, where he developed the "Hurricane Methodology" for executing high-pressure transformation projects within tight timeframes. His approach emphasizes rapid iteration, stakeholder alignment, and measurable outcome delivery.</p>
     <ul style={{fontSize: '0.9rem'}}>
       <li>Led technology transformation initiatives at the LA Clippers and UTA (United Talent Agency).</li>
@@ -52,13 +52,13 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
     </div>
   </div>
   <div className="col col--9">
-    <h3>Mike Belloli | Technology Lead</h3>
-    <p><strong>Platform architecture, AI engineering, compliance</strong></p>
-    <p>Mike Belloli is a full-stack architect specializing in high-security, high-scale educational platforms. He is responsible for the technical development of the SkaFld Spark platform.</p>
+    <h3>Mike Belloli | Technology & Operations</h3>
+    <p><strong>Platform strategy, financial modeling, digital infrastructure</strong></p>
+    <p>Mike Belloli is a full-stack developer managing financials, pitch strategy, and digital infrastructure for the SkaFld Spark platform. He ensures operational excellence across all technical and business domains.</p>
     <ul style={{fontSize: '0.9rem'}}>
-      <li>Lead Architect for the SkaFld Spark platform.</li>
+      <li>Full-stack development and technical operations for the SkaFld Spark platform.</li>
+      <li>Management of financial models, investor materials, and digital presence.</li>
       <li>Expert in educational data privacy (COPPA/FERPA) and secure AI implementation.</li>
-      <li>Experienced in building socratic coaching engines and portfolio assessment tools.</li>
     </ul>
   </div>
 </div>
