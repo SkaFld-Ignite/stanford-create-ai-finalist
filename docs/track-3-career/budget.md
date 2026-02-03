@@ -9,64 +9,49 @@ sidebar_position: 9
 
 | Category | Amount | Percentage | Description |
 |----------|--------|------------|-------------|
-| **Portfolio Platform** | $12,000 | 24% | Platform licensing, configuration, employer review features |
-| **Employer Engagement** | $10,000 | 20% | Partnership events, employer panel stipends, relationship management |
-| **Micro-Internship Coordination** | $8,000 | 16% | Placement matching, supervision coordination, wage subsidies |
-| **Teacher Mentor Stipends** | $8,000 | 16% | 8 mentors x $1,000 annual stipend for additional responsibilities |
-| **Curriculum Development** | $5,000 | 10% | Session guides, mentor training materials, AI tool resources |
-| **Student Materials** | $4,000 | 8% | Portfolio supplies, presentation materials, certificates |
-| **Evaluation** | $3,000 | 6% | External assessment, data analysis, outcome tracking |
+| **Platform Development** | $20,000 | 40% | SkaFld Spark feature completion, AI coaching engine, portfolio system |
+| **Pilot Implementation** | $12,000 | 24% | El Segundo coordination, employer onboarding, curriculum materials |
+| **Assessment & Measurement** | $8,000 | 16% | Learning outcome tracking, portfolio evaluation, research documentation |
+| **Team & Operations** | $7,000 | 14% | Travel, meetings, coordination, legal/compliance |
+| **Contingency** | $3,000 | 6% | Buffer for unexpected costs |
 | **Total** | **$50,000** | **100%** | |
 
 ## Budget Justification
 
-### Portfolio Platform ($12,000)
+### Platform Development ($20,000)
 
-**Purpose:** Central infrastructure enabling the entire portfolio-based pathway model
+**Purpose:** Building the "SkaFld Spark" infrastructure that makes the model scalable beyond a single district.
 
-- Platform licensing with employer review capability: $8,000
-- Configuration and customization for ESUSD context: $2,500
-- Training and documentation development: $1,500
+- **AI Coaching Engine:** Completing the Socratic questioning module that guides students through problem decomposition.
+- **Portfolio System:** Developing the employer-facing review portal for validated assessment.
+- **Student Journey:** Finalizing the gamified progression paths for the pilot cohort.
 
-**Why This Investment Matters:** The portfolio platform is the persistent record of student capability. It must enable seamless employer access, structured feedback, and professional presentation. This is not a generic learning management system, but a purpose-built portfolio environment.
+**Why This Investment Matters:** This is the highest leverage investment. By digitizing the methodology into a platform, we move from a service-heavy consulting model to a scalable SaaS product that can reach thousands of districts.
 
-### Employer Engagement ($10,000)
+### Pilot Implementation ($12,000)
 
-**Purpose:** Securing and maintaining the employer partnerships that make authentic projects possible
+**Purpose:** Ensuring the El Segundo pilot (96 students, 8 teams) is a resounding success.
 
-- Partnership kickoff event (12 employers): $3,000
-- Quarterly portfolio review panel hosting (4 events): $4,000
-- Employer appreciation and recognition: $2,000
-- Relationship management materials: $1,000
+- **Coordination:** On-the-ground management of weekly sessions and teacher mentor support.
+- **Employer Onboarding:** Structured intake for the 12 employer partners providing projects.
+- **Curriculum:** Adapting the "SkaFld Ideation Methodology" into classroom-ready guides.
 
-**Why This Investment Matters:** Employer commitment is the critical success factor. Without real projects and employer validation, the model fails. This investment ensures employers receive professional engagement commensurate with their contribution.
+### Assessment & Measurement ($8,000)
 
-### Micro-Internship Coordination ($8,000)
+**Purpose:** Validating learning outcomes to prove the model works (crucial for Stanford alignment).
 
-**Purpose:** Connecting top performers with paid work experiences
+- **Outcome Tracking:** Measuring "decomposition thinking" and "AI literacy" gains.
+- **Portfolio Evaluation:** Managing the external review process to ensure objectivity.
+- **Research Documentation:** Capturing data for future grant applications and policy papers.
 
-- Placement matching and logistics: $3,000
-- Supervision and quality assurance: $2,500
-- Wage subsidies for pilot placements: $2,500
+### Team & Operations ($7,000)
 
-**Why This Investment Matters:** Micro-internships convert portfolio quality into actual employment pathway experience. These 10-20 hour placements demonstrate the direct connection between program participation and career opportunity.
+**Purpose:** Essential logistics to keep the project moving.
 
-### Teacher Mentor Stipends ($8,000)
+- Covers travel for team coordination, legal compliance for student data privacy (COPPA/FERPA), and administrative overhead.
 
-**Purpose:** Recognizing the additional responsibilities of teacher mentors
-
-- 8 teacher mentors at $1,000 each for annual program commitment
-- Covers weekly session facilitation, student guidance, employer coordination
-
-**Why This Investment Matters:** Teacher mentors are the consistent adult presence in the program. Their commitment extends beyond regular teaching duties and merits appropriate recognition.
-
-### Additional Categories
-
-**Curriculum Development ($5,000):** Session guides, mentor training, and AI tool integration materials that ensure consistent program quality across all 8 teams.
-
-**Student Materials ($4,000):** Portfolio presentation supplies, professional headshots for portfolios, AI-Ready Certificate production, and team resources.
-
-**Evaluation ($3,000):** External assessment support for objective outcome measurement and employer satisfaction analysis.
+### Contingency ($3,000)
+Standard 6% buffer for unforeseen expenses during the 12-month pilot.
 
 ## Sustainability Plan
 
