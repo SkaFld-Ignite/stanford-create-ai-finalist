@@ -29,8 +29,8 @@ sidebar_position: 10
 
 **Key Stats:**
 - **40%** of employers plan workforce reductions due to AI (WEF, 2024).
-- **50%** reduction in tech entry-level roles since 2019.
-- **The Experience Paradox:** You need experience to get experience, but the entry-level rungs are gone.
+- **Over 45%** reduction in tech entry-level roles since 2019.
+- **78%** of hiring managers predict AI will displace recent graduates (Intelligent.com).
 
 **Narrative:** "We are facing a crisis not of capability, but of access. The traditional 'credential-to-career' pipeline is broken because the entry-level jobs that used to provide training are being automated away."
 

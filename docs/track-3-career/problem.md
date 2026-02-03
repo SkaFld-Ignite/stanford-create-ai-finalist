@@ -12,8 +12,8 @@ The traditional pathway from education to employment is collapsing. Entry-level 
 | Indicator | Impact |
 |-----------|--------|
 | **40%** of employers plan workforce reductions due to AI | World Economic Forum, 2024 |
-| **50%** reduction in tech entry-level roles since 2019 | LinkedIn Workforce Report |
-| **80%** of hiring managers predict cuts to internships | Intelligent.com Survey, 2024 |
+| **Over 45%** reduction in tech entry-level roles | LinkedIn Workforce Report |
+| **78%** of hiring managers predict AI will displace recent graduates | Intelligent.com Survey, 2024 |
 
 These are not projections for a distant future. This is the employment landscape that today's high school students will enter within 24-48 months.
 
