@@ -213,85 +213,103 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
     <div className="slide-number">4</div>
   </div>
 
-  {/* Slide 5: Platform Demo */}
+  {/* Slide 5: Platform Demo - Coaching Dialogue Flow */}
   <div className="pitch-slide slide-dark">
     <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter" style={{fontSize: '2.5rem', marginBottom: '0.25rem'}}>AI as Coach, Not Crutch</h1>
-    <p className="animate-enter delay-1" style={{color: 'rgba(255,255,255,0.6)', fontSize: '1rem', marginBottom: '1rem'}}>
-      Socratic questioning guides problem decomposition
+    <h1 className="animate-enter" style={{fontSize: '2.8rem', marginBottom: '0.5rem'}}>AI as Coach, Not Crutch</h1>
+    <p className="animate-enter delay-1" style={{color: 'rgba(255,255,255,0.5)', fontSize: '1.1rem', marginBottom: '1.5rem', letterSpacing: '0.05em'}}>
+      Real Boeing Project · Week 6
     </p>
 
-    {/* Chat Demo - Compact */}
+    {/* Coaching Dialogue - Clean Step Format */}
     <div className="animate-enter delay-2" style={{
       width: '100%',
-      maxWidth: '750px',
-      background: '#1a1a1a',
-      borderRadius: '10px',
-      border: '1px solid #333',
-      overflow: 'hidden',
-      boxShadow: '0 15px 40px rgba(0,0,0,0.5)'
+      maxWidth: '900px',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '1.25rem'
     }}>
-      {/* Header */}
+
+      {/* Challenge Banner */}
       <div style={{
-        background: '#252525',
-        padding: '0.35rem 0.75rem',
-        borderBottom: '1px solid #333',
+        background: 'linear-gradient(135deg, rgba(140, 21, 21, 0.2) 0%, rgba(140, 21, 21, 0.05) 100%)',
+        border: '1px solid rgba(140, 21, 21, 0.4)',
+        borderRadius: '8px',
+        padding: '0.75rem 1.25rem',
+        textAlign: 'center'
+      }}>
+        <span style={{color: 'rgba(255,255,255,0.5)', fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em'}}>Challenge</span>
+        <p style={{color: '#fff', fontSize: '1.1rem', margin: '0.25rem 0 0 0', fontWeight: 500}}>
+          Boeing wants to reduce documentation errors in QC
+        </p>
+      </div>
+
+      {/* Dialogue Flow - Two Column */}
+      <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', alignItems: 'start'}}>
+
+        {/* Left: AI Coach */}
+        <div style={{display: 'flex', flexDirection: 'column', gap: '0.75rem'}}>
+          <div style={{
+            background: 'rgba(255,255,255,0.03)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            borderRadius: '8px',
+            padding: '1rem',
+            borderLeft: '3px solid #666'
+          }}>
+            <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
+              <span style={{fontSize: '1rem'}}>🤖</span>
+              <span style={{color: '#888', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>AI Coach</span>
+            </div>
+            <p style={{color: '#eee', fontSize: '1rem', margin: 0, lineHeight: 1.5}}>
+              "What <strong style={{color: 'var(--pitch-accent)'}}>other industries</strong> have solved this problem?"
+            </p>
+            <span style={{color: '#555', fontSize: '0.7rem', fontStyle: 'italic', marginTop: '0.5rem', display: 'block'}}>→ Guides cross-domain research</span>
+          </div>
+        </div>
+
+        {/* Right: Student */}
+        <div style={{display: 'flex', flexDirection: 'column', gap: '0.75rem'}}>
+          <div style={{
+            background: 'rgba(140, 21, 21, 0.15)',
+            border: '1px solid rgba(140, 21, 21, 0.3)',
+            borderRadius: '8px',
+            padding: '1rem',
+            borderLeft: '3px solid var(--pitch-accent)'
+          }}>
+            <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
+              <span style={{fontSize: '1rem'}}>👤</span>
+              <span style={{color: '#888', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Student</span>
+            </div>
+            <p style={{color: '#eee', fontSize: '1rem', margin: 0, lineHeight: 1.5}}>
+              "Healthcare uses surgical checklists. Aviation has preflight verification."
+            </p>
+            <span style={{color: '#555', fontSize: '0.7rem', fontStyle: 'italic', marginTop: '0.5rem', display: 'block'}}>→ Applies research-wide thinking</span>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Follow-up - Full Width */}
+      <div style={{
+        background: 'rgba(39, 201, 63, 0.08)',
+        border: '1px solid rgba(39, 201, 63, 0.25)',
+        borderRadius: '8px',
+        padding: '0.85rem 1.25rem',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        gap: '1rem'
       }}>
-        <div style={{display: 'flex', alignItems: 'center', gap: '5px'}}>
-          <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#ff5f56'}}></div>
-          <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#ffbd2e'}}></div>
-          <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#27c93f'}}></div>
-          <span style={{fontSize: '0.7rem', color: '#777', marginLeft: '0.4rem'}}>Trailhead Coach</span>
-        </div>
-        <span style={{fontSize: '0.65rem', color: '#555', background: '#333', padding: '0.15rem 0.5rem', borderRadius: '8px'}}>Week 6 · Boeing</span>
+        <span style={{fontSize: '1.1rem'}}>🤖</span>
+        <p style={{color: '#eee', fontSize: '1rem', margin: 0, flex: 1}}>
+          "Excellent! Now <strong style={{color: '#27c93f'}}>decompose</strong>: What specific elements could translate to Boeing's workflow?"
+        </p>
+        <span style={{color: 'rgba(39, 201, 63, 0.6)', fontSize: '0.7rem', fontStyle: 'italic', whiteSpace: 'nowrap'}}>→ Guides validation</span>
       </div>
 
-      {/* Messages */}
-      <div style={{padding: '0.5rem 0.75rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', background: '#121212'}}>
-
-        {/* Challenge */}
-        <div style={{
-          background: 'rgba(140, 21, 21, 0.15)',
-          border: '1px solid rgba(140, 21, 21, 0.3)',
-          borderRadius: '5px',
-          padding: '0.35rem 0.6rem',
-          fontSize: '0.75rem',
-          color: '#ccc'
-        }}>
-          <strong style={{color: 'var(--pitch-accent)'}}>Challenge:</strong> Boeing wants to reduce documentation errors in QC.
-        </div>
-
-        {/* AI 1 */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.4rem'}}>
-          <div style={{width: '22px', height: '22px', borderRadius: '50%', background: '#333', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.75rem', flexShrink: 0}}>🤖</div>
-          <div style={{background: '#2a2a2a', color: '#eee', padding: '0.4rem 0.65rem', borderRadius: '8px', borderBottomLeftRadius: '3px', fontSize: '0.8rem', lineHeight: 1.35}}>
-            What <strong style={{color: 'var(--pitch-accent)'}}>other industries</strong> have solved this? Research wide first.
-          </div>
-        </div>
-
-        {/* User */}
-        <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-          <div style={{background: 'var(--pitch-accent)', color: 'white', padding: '0.4rem 0.65rem', borderRadius: '8px', borderBottomRightRadius: '3px', fontSize: '0.8rem', lineHeight: 1.35}}>
-            Healthcare uses surgical checklists. Aviation has preflight verification.
-          </div>
-        </div>
-
-        {/* AI 2 */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.4rem'}}>
-          <div style={{width: '22px', height: '22px', borderRadius: '50%', background: '#333', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.75rem', flexShrink: 0}}>🤖</div>
-          <div style={{background: '#2a2a2a', color: '#eee', padding: '0.4rem 0.65rem', borderRadius: '8px', borderBottomLeftRadius: '3px', fontSize: '0.8rem', lineHeight: 1.35}}>
-            Excellent! Now <strong style={{color: '#27c93f'}}>decompose</strong>: What elements could translate to Boeing?
-          </div>
-        </div>
-
-      </div>
     </div>
 
-    <p className="animate-enter delay-3" style={{marginTop: '1rem', fontSize: '1rem', color: 'rgba(255,255,255,0.5)'}}>
-      The AI never gives the answer—it teaches <em>how to find it</em>.
+    <p className="animate-enter delay-3" style={{marginTop: '1.5rem', fontSize: '1.15rem', color: 'rgba(255,255,255,0.4)', fontStyle: 'italic'}}>
+      The AI never gives answers—it teaches how to find them.
     </p>
 
     <div className="pitch-footer"><span className="pitch-footer-text">Teaching Students to Think</span></div>
