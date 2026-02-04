@@ -189,7 +189,8 @@ Building capability that employers can actually verify.
 PORTFOLIO over credentials: Work samples predict job success FIVE TIMES better
 than grades. Schmidt and Hunter's meta-analysis.
 
-NEAR-PEER mentorship: Seniors mentor sophomores. Teaching reinforces learning.
+SOCIAL LEARNING & MENTORSHIP: We use AI to scaffold human connection. Seniors
+mentor sophomores.
 
 EMPLOYER integration: Real projects with real stakes. Lave and Wenger proved
 authentic context produces deeper understanding.
@@ -267,13 +268,13 @@ The $50,000 from Stanford CREATE+AI is the leverage that makes all of this possi
 
 ## EQUITY & TEAM (60 seconds total)
 
-### Slide 9: Equity - Access for All (30 seconds)
+### Slide 9: Equity - Universal Design (30 seconds)
 
 **Speaker:** [Can transition speakers here]
 
 **Narrative:**
 ```
-"Who gets access to these opportunities?
+"We're moving beyond simple access to UNIVERSAL LEARNING.
 
 Our answer: EVERYONE.
 
@@ -282,7 +283,7 @@ Our answer: EVERYONE.
 40% free and reduced lunch eligible.
 30% first-generation college.
 
-And we mean ZERO BARRIERS.
+We apply UNIVERSAL DESIGN principles.
 
 No coding prerequisites. No GPA hurdles. No equipment costs.
 
@@ -291,7 +292,7 @@ school to what you can DO. Focus on what you can do. Unlock your potential."
 ```
 
 **Key Emphasis:**
-- "Access for ALL" - positive framing (removed "privilege" language per team discussion)
+- "Universal Learning" - aligns with summit themes
 - Concrete parity targets demonstrate commitment
 - "Portfolios are the great equalizer" - connects equity to thesis
 
