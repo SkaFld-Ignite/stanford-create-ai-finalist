@@ -145,13 +145,13 @@ The result? Portfolios that PROVE capability—not credentials that claim it."
 
 ---
 
-### Slide 5: AI as Coach Demo (30 seconds)
+### Slide 5: From Crutch to Catalyst (30 seconds)
 
 **Speaker:** [Continue or visual only]
 
 **Narrative:**
 ```
-"Here's how our Socratic AI coach works in practice.
+"This is how we move from Crutch to Catalyst.
 
 [Reference chat demo visual]
 
@@ -163,12 +163,12 @@ engagement, aviation for error reduction.
 
 The AI encourages: 'Now we're thinking! Decompose it into testable pieces.'
 
-This is ACTIVE learning. The AI is a coach, not a crutch."
+This is ACTIVE learning. The AI is a catalyst for critical thinking."
 ```
 
 **Key Emphasis:**
-- "Coach, not a crutch" - memorable phrase
-- Demonstrates practical implementation of "teach to fish"
+- "From Crutch to Catalyst" - direct answer to summit theme
+- Demonstrates practical implementation
 - Quick slide - keep momentum
 
 **[CLICK to Slide 6]**
