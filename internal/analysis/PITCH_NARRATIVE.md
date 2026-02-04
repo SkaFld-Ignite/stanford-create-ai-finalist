@@ -115,26 +115,25 @@ We're not just teaching AI. We're teaching students how to LEARN."
 
 [Point to three layers, bottom to top]
 
-In the FOUNDATION phase, weeks 1-4, students learn decomposition thinking and AI
-discernment. That means hallucination detection. Ethical boundaries. Research wide,
-validate narrow—the same interdisciplinary approach that drives innovation at
-institutions like Stanford.
+It's a scaffolded journey. In the FOUNDATION phase, weeks 1-4, students learn
+decomposition thinking and basic AI discernment.
 
-In the APPLICATION phase, weeks 5-8, AI coaches guide students through real
-challenges using Socratic questioning. The AI doesn't give answers—it guides
-problem decomposition.
+Then, we ramp up the difficulty.
 
-In the DEMONSTRATION phase, weeks 9-12, students complete actual projects for
-local employers. These aren't simulations. Real client briefs. Real feedback.
-Minimum 7.0 out of 10 quality threshold from employer panels.
+In the APPLICATION phase, weeks 5-8, students solve INCREASINGLY DIFFICULT
+business simulations. They have to expand their AI toolset—adapting to new models
+and techniques—to solve problems that simple prompts can't handle.
+
+Finally, in the DEMONSTRATION phase, weeks 9-12, they prove mastery by delivering
+actual projects for local employers.
 
 The result? Portfolios that PROVE capability—not credentials that claim it."
 ```
 
 **Key Emphasis:**
-- Connect to Stanford's interdisciplinary philosophy
-- Emphasize "real" repeatedly - authenticity is our differentiator
-- Close with portfolio vs credential thesis
+- Emphasize "increasingly difficult" - show the progression
+- "Expand their toolset" - connects to adaptability
+- "Simple prompts can't handle" - reinforces "Teach to Fish"
 
 **[CLICK to Slide 5]**
 
@@ -170,33 +169,33 @@ This is ACTIVE learning. The AI is a coach, not a crutch."
 
 ---
 
-### Slide 6: Learning Science (30 seconds)
+### Slide 6: Four Pillars (30 seconds)
 
 **Speaker:** [Continue]
 
 **Narrative:**
 ```
-"Everything we do is built on validated learning science.
+"Our approach is built on four pillars—each backed by validated learning science.
+Building capability that employers can actually verify.
 
 [Quick overview of four pillars]
 
-Situated cognition: Real projects with real stakes transfer better than simulation.
-That's Lave and Wenger.
+PORTFOLIO over credentials: Work samples predict job success FIVE TIMES better
+than grades. Schmidt and Hunter's meta-analysis.
 
-Near-peer mentorship: Seniors mentor sophomores. Teaching reinforces learning.
-Topping, 2005.
+NEAR-PEER mentorship: Seniors mentor sophomores. Teaching reinforces learning.
 
-Portfolio assessment: Work samples predict job success FIVE TIMES better than
-grades. Schmidt and Hunter's landmark meta-analysis.
+EMPLOYER integration: Real projects with real stakes. Lave and Wenger proved
+authentic context produces deeper understanding.
 
-And responsible AI practices—hallucination detection and ethical use from day one.
-Not as guardrails imposed on students, but as ACTIVE understanding they develop."
+And RESPONSIBLE AI practices—students learn WHY ethical boundaries matter.
+Active judgment, not just guardrails."
 ```
 
 **Key Emphasis:**
-- Rattles through research citations to establish credibility
-- "Humans at the center. Evidence at the foundation."
-- Connect back to human-centered design
+- Say "four pillars" to establish the framework
+- Quickly cite the research—establishes credibility without dwelling
+- Connect back to employer verification (thesis: portfolios prove capability)
 
 **[CLICK to Slide 7]**
 
@@ -204,30 +203,29 @@ Not as guardrails imposed on students, but as ACTIVE understanding they develop.
 
 ## THE METHODOLOGY & DIFFERENTIATION (60 seconds total)
 
-### Slide 7: SkaFld Ideation Methodology (30 seconds)
+### Slide 7: SkaFld Ideation Methodology (20 seconds)
 
 **Speaker:** [Keith or Charles - methodology ownership]
 
 **Narrative:**
 ```
-"Our methodology is built on a principle: 'Research wide, validate narrow.'
+"This is the methodology we teach. A three-step process to innovation.
 
-The best solution to your problem probably exists in a field you've never explored.
-It is the student's job to find it, translate it, and PROVE it.
+First, ESCAPE the 'Expert Trap'—stop assuming you know the answer.
 
-This cross-disciplinary thinking combines technical capability with policy
-awareness and strategic thinking for responsible AI deployment.
+Second, RESEARCH WIDE. We guide students to explore INVERSE, ANALOGOUS, and
+EXTREME domains.
 
-Why does this matter? Because Stanford's Accelerator Studio 'enables development
-and impact of research that improves learning.'
+Third, VALIDATE NARROW. Translate those patterns back to the problem and prove
+they work.
 
-That's exactly what AI Studio Teams does—but with AUTHENTIC practice, not just research."
+That's how students generate breakthroughs on demand."
 ```
 
 **Key Emphasis:**
-- Mirror Stanford Accelerator language back to judges
-- Interdisciplinary approach resonates with Stanford's philosophy
-- Human-centered design = policy + ethics + technical capability
+- Walk through the visual steps: Escape -> Research -> Validate
+- Emphasize the "Research Wide" phase as the core differentiator
+- "Breakthroughs on demand" creates a sense of repeatable capability
 
 **[CLICK to Slide 8]**
 
@@ -303,14 +301,15 @@ school to what you can DO. Focus on what you can do. Unlock your potential."
 ```
 "We're the right team to execute this.
 
-[Charles] Charles Sims—Project Director. Tech transformation leader at the LA
-Clippers and UTA. Creator of the SkaFld Ideation Methodology.
+[Charles] Charles Sims—Project Director. Former CTO of the LA Clippers and United
+Talent Agency. Creator of the SkaFld Ideation Methodology.
 
-[Keith] Keith Coleman—Stanford liaison and policy lead. Stanford BA, Class of '86.
-mediaX Advisory Scholar. Co-Chair of the UN SDG Fund Breakthrough Alliance.
+[Keith] Keith Coleman—Stanford Liaison. Distinguished Visiting Scholar at Stanford
+mediaX. Co-Chair of the UN SDG Fund Breakthrough Alliance.
 
-[Mike] Mike Belloli—Technology and operations. Full-stack developer. Platform
-architect. COPPA and FERPA compliance expert.
+[Mike] Mike Belloli—Technology Lead. COO of SkaFld Studio. Co-Founder of
+Lyfe AI and Defy Mortgage. A full-stack developer and platform architect
+expert in scaling operations and data security.
 
 Technology. Design. Policy. We bring interdisciplinary expertise to match our
 interdisciplinary methodology."
@@ -333,24 +332,27 @@ interdisciplinary methodology."
 
 **Narrative:**
 ```
-"$50,000 funds Year 1 implementation.
+"The first dollar is the hardest. This is that dollar.
 
-40% platform development. 24% pilot implementation. 16% assessment. 20% operations.
+To do this right—to build a scalable national platform—takes $500K to a million.
+Stanford CREATE+AI is the LEVERAGE that unlocks the rest.
 
-At $521 per student, this is highly efficient. And it's leveraged.
+[Gesture to funding bar]
+$50,000 funds Year 1: platform development, pilot implementation, assessment,
+and operations. $521 per student.
 
-$50,000 from Stanford CREATE+AI enables conversations with district partners,
-industry sponsors, and impact investors that turn a $50,000 pilot into a
-multi-million dollar national initiative.
+This award proves the model. It enables conversations with district partners,
+industry sponsors, and impact investors that turn a pilot into a movement.
 
 Year 2 and beyond is funded by CTE integration, employer contributions, and
-platform SaaS revenue."
+platform SaaS revenue. This $50K is the seed that proves it works."
 ```
 
 **Key Emphasis:**
-- Frame $50K as "leverage," not as the full solution
-- Demonstrate sustainability path
-- Note: Team discussed potentially removing this slide if time is tight
+- "First dollar is hardest" - creates emotional resonance
+- Frame $50K as LEVERAGE, not the full solution (per team discussion)
+- Stanford backing unlocks larger funding conversations
+- Demonstrate clear sustainability path
 
 **[CLICK to Slide 12]**
 
@@ -457,14 +459,14 @@ Thank you. We're ready for your questions."
 | 4 | Trailhead Platform | 0:45 | 2:15 |
 | 5 | AI Coach Demo | 0:30 | 2:45 |
 | 6 | Learning Science | 0:30 | 3:15 |
-| 7 | Methodology | 0:30 | 3:45 |
-| 8 | El Segundo Pilot | 0:30 | 4:15 |
-| 9 | Equity | 0:30 | 4:45 |
-| 10 | Team | 0:30 | 5:15 |
-| 11 | The Ask | 0:30 | 5:45 |
-| 12 | Closing | 0:15 | 6:00 |
+| 7 | Methodology | 0:20 | 3:35 |
+| 8 | El Segundo Pilot | 0:30 | 4:05 |
+| 9 | Equity | 0:30 | 4:35 |
+| 10 | Team | 0:30 | 5:05 |
+| 11 | The Ask | 0:30 | 5:35 |
+| 12 | Closing | 0:15 | 5:50 |
 
-**Total:** 6:00 exactly (with buffer built into transitions)
+**Total:** 5:50 (10 seconds buffer for natural pauses)
 
 ---
 
@@ -477,7 +479,7 @@ Ensure these three documents stay aligned:
 | Experience Paradox | Slide 2 stats | "45% reduction..." | problem.md |
 | Credential Crisis | Slide 2 (added) | "Credentials losing value" | problem.md |
 | Portfolio vs Credentials | Slides 3, 4, 6 | Core thesis throughout | solution.md, index.md |
-| Three/Four Pillars | Slide 6 | Learning science section | solution.md |
+| Four Pillars | Slide 6 | "Four pillars, backed by learning science" | solution.md |
 | SkaFld Methodology | Slide 7 | "Research wide, validate narrow" | solution.md |
 | Equity Targets | Slide 9 | 50/40/30 targets | equity.md |
 | Team Formatting | Slide 10 | Tech/Design/Policy | team.md |

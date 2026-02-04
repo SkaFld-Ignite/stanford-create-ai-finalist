@@ -1,0 +1,276 @@
+npm warn Unknown user config "shamefully-hoist". This will stop working in the next major version of npm.
+npm warn Unknown user config "node-linker". This will stop working in the next major version of npm.
+npm warn Unknown user config "auto-install-peers". This will stop working in the next major version of npm.
+npm warn Unknown user config "strict-peer-dependencies". This will stop working in the next major version of npm.
+npm warn Unknown user config "ignore-workspace-root-check". This will stop working in the next major version of npm.
+npm warn Unknown user config "public-hoist-pattern". This will stop working in the next major version of npm.
+
+> stanford-create-ai-proposal@0.0.0 start
+> docusaurus start
+
+[INFO] Starting the development server...
+[SUCCESS] Docusaurus website is running at: http://localhost:3000/
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 1.04s
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 350.02ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 1.66s
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 490.14ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 396.35ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 654.76ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 311.54ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 334.64ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 628.39ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 282.01ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 315.91ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 798.83ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 162.32ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 292.62ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 730.55ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 275.48ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 327.17ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 653.19ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 265.96ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 304.42ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 618.96ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 280.32ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 312.32ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 674.73ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 347.14ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 314.12ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 662.56ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 308.56ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 189.11ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 373.02ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 604.56ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 276.70ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 301.85ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 616.47ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 292.37ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 290.35ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 686.16ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 250.56ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 267.70ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 904.78ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 318.06ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 319.62ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 660.87ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 268.09ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 291.51ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 672.95ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 263.62ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 345.75ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 670.39ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 263.30ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 706.78ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 266.11ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 266.31ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 225.37ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 579.80ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 259.83ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 268.83ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 541.39ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 394.17ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 928.89ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 341.81ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 686.73ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 255.94ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 675.47ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 278.69ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 791.66ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 354.25ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 1.22s
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 296.25ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 251.36ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 225.38ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 309.04ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 809.40ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 945.49ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 386.82ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 393.48ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 731.22ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 349.01ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 513.61ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 641.29ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 455.51ms
+client (webpack 5.104.1) compiled successfully
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/mikebelloli/Development/projects/stanford-create-ai-finalist/node_modules/.cache/webpack/client-development-en/3.pack_' -> '/Users/mikebelloli/Development/projects/stanford-create-ai-finalist/node_modules/.cache/webpack/client-development-en/3.pack'
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 493.25ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 380.35ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 756.14ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 474.00ms
+client (webpack 5.104.1) compiled successfully
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 356.23ms
+client (webpack 5.104.1) compiled successfully
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/mikebelloli/Development/projects/stanford-create-ai-finalist/node_modules/.cache/webpack/client-development-en/5.pack_' -> '/Users/mikebelloli/Development/projects/stanford-create-ai-finalist/node_modules/.cache/webpack/client-development-en/5.pack'
+[webpackbar] ℹ Compiling Client
+[webpackbar] ✔ Client: Compiled successfully in 436.50ms
+client (webpack 5.104.1) compiled successfully
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/mikebelloli/Development/projects/stanford-create-ai-finalist/node_modules/.cache/webpack/client-development-en/5.pack_' -> '/Users/mikebelloli/Development/projects/stanford-create-ai-finalist/node_modules/.cache/webpack/client-development-en/5.pack'

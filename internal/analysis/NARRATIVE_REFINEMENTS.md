@@ -171,9 +171,10 @@ The team discussed potentially combining the Pillars and Learning Science into o
 - [x] Privilege language removed from Slide 9
 - [x] Team slide reformatted with Keith's updates on Slide 10
 - [x] "Farm System" footers changed to "Rebuilding the Bridge"
-- [ ] Optional: Add platform component descriptions to Slide 4
-- [ ] Optional: Enhance Stanford Accelerator language mirror on Slide 7
-- [ ] Optional: Enhance "HOW" explanation on Responsible AI pillar
+- [x] Slide 11 updated with "first dollar is hardest" leverage framing
+- [x] Platform component descriptions added to Slide 4 (AI Coach + Employer Portal)
+- [x] Stanford Accelerator language mirrored on Slide 7
+- [x] "HOW" explanation enhanced on Responsible AI pillar (Slide 6)
 
 ---
 
