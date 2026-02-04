@@ -78,7 +78,7 @@ Students progress through three distinct phases, each building on the previous t
 
 ### Don't Give Them the Fish. Teach Them to Fish.
 
-Most AI education gives students prompts that expire in months. We teach metacognitive skills that transfer across any AI tool—because tools change, but the way you THINK persists.
+Most AI education gives students prompts that expire in months. We teach metacognitive skills through real business challenges—skills that transfer across any AI tool, because tools change, but the way you THINK persists.
 
 ### The Paradigm Shift
 

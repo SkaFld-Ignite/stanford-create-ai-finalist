@@ -88,8 +88,8 @@ DON'T give them the fish. Teach them to FISH.
 Most AI training teaches prompts that expire in months. ChatGPT prompts from last
 year are already obsolete.
 
-We teach METACOGNITIVE SKILLS that transfer across ANY AI tool—because tools
-change, but the way you THINK persists.
+We teach METACOGNITIVE SKILLS THROUGH REAL BUSINESS CHALLENGES—skills that
+transfer across ANY AI tool, because tools change, but the way you THINK persists.
 
 We're not just teaching AI. We're teaching students how to LEARN."
 ```
