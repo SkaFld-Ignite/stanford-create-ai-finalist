@@ -949,57 +949,6 @@ table tr:hover {
   object-fit: cover;
 }
 
-/* Team Card Typography - Slide 10 */
-.pitch-slide .metric-card.team-card {
-  padding: 2rem 1.5rem !important;
-  min-height: 280px !important;
-  height: 280px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-}
-
-.pitch-slide .team-card .avatar-circle {
-  width: 80px !important;
-  height: 80px !important;
-  min-width: 80px !important;
-  min-height: 80px !important;
-  margin: 0 auto 1rem auto !important;
-  flex-shrink: 0 !important;
-}
-
-.pitch-slide .team-card h3.team-name {
-  font-size: 1.4rem !important;
-  font-weight: 700 !important;
-  color: #1a1a1a !important;
-  margin: 0 0 0.25rem 0 !important;
-  padding: 0 !important;
-  letter-spacing: -0.01em !important;
-  line-height: 1.2 !important;
-}
-
-.pitch-slide .team-card p.team-title {
-  font-size: 0.55rem !important;
-  font-weight: 700 !important;
-  color: var(--pitch-accent) !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.12em !important;
-  margin: 0 0 1rem 0 !important;
-  padding: 0 !important;
-  line-height: 1.2 !important;
-}
-
-.pitch-slide .team-card p.team-bio {
-  font-size: 0.6rem !important;
-  line-height: 1.7 !important;
-  color: #aaa !important;
-  font-weight: 400 !important;
-  text-align: center !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 /* Landing Page Styles */
 
 .landing-hero {
