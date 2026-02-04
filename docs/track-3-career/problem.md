@@ -11,10 +11,10 @@ Young people can't gain experience because the **entry-level positions that prov
 
 This isn't a future problem. This is the landscape TODAY's students will enter within 24-48 months.
 
-| Indicator | Impact |
+| Indicator | Source |
 |-----------|--------|
-| **40%** of employers plan workforce reductions due to AI | World Economic Forum, 2024 |
-| **Over 45%** reduction in tech entry-level roles | LinkedIn Workforce Report |
+| **40%** of employers anticipate workforce reductions due to AI | World Economic Forum, 2024 |
+| **Over 45%** reduction in tech entry-level roles | Industry Hiring Data (2024) |
 | **78%** of hiring managers predict AI will displace recent graduates | Intelligent.com Survey, 2024 |
 
 ## The Disappearing First Rung

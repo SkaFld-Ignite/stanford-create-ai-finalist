@@ -50,7 +50,7 @@ Students learn to direct AI systems, evaluate output quality, and add human judg
 | Finding | Source | Implication |
 |---------|--------|-------------|
 | AI literacy requires critical evaluation skills | Long & Magerko, 2020 | Students must verify AI outputs, not accept blindly |
-| Effective AI use requires epistemic fluency | Markauskaite & Goodyear, 2017 | Hallucination detection is foundational skill |
+| Effective AI use requires epistemic fluency | Markauskaite & Goodyear, 2017 | **True AI Literacy** requires evaluating the nature of knowledge itself |
 | Ethical AI interaction improves long-term outcomes | UNESCO, 2021 | Early guardrails prevent problematic habits |
 
 **Teaching AI Discernment:** Students develop the ability to recognize AI hallucinations—plausible-sounding but factually incorrect outputs—through systematic verification practices. This critical skill prevents the common trap of over-trusting AI-generated content.

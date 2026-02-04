@@ -76,7 +76,11 @@ Students progress through three distinct phases, each building on the previous t
 
 ## The SkaFld Ideation Methodology
 
-### Don't Give Them the Fish. Teach Them to Fish.
+### Moving from Crutch to Catalyst
+
+**Don't Give Them the Fish. Teach Them to Fish.**
+
+Traditional AI tools can be a crutch (giving the fish). We turn AI into a catalyst for critical thinking (teaching to fish).
 
 Most AI education gives students prompts that expire in months. We teach metacognitive skills through real business challenges—skills that transfer across any AI tool, because tools change, but the way you THINK persists.
 
@@ -131,9 +135,9 @@ Students develop critical skills for responsible AI use: hallucination detection
     <p>Students build portfolios demonstrating actual capability through documented work. Minimum 7.0/10 rating required from employer panels.</p>
   </div>
   <div className="feature-card">
-    <div className="feature-icon">🤝</div>
-    <h3>Near-Peer Mentorship</h3>
-    <p>12th Graders → 10th Graders. 11th Graders → 9th Graders. recreate developmental relationships disappearing from workplaces.</p>
+    <div class="feature-icon">🤝</div>
+    <h3>Social Learning & Mentorship</h3>
+    <p>We use AI to scaffold human connection. 12th Graders → 10th Graders. 11th Graders → 9th Graders. Recreating developmental relationships.</p>
   </div>
   <div className="feature-card">
     <div className="feature-icon">🏢</div>

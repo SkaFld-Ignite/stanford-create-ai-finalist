@@ -7,7 +7,7 @@ sidebar_position: 6
 
 ## The Equity Imperative
 
-AI's workforce disruption does not affect all populations equally. AI Studio Teams creates structured pathways that provide **access for all**—focusing on what you can do and unlocking your potential.
+AI's workforce disruption does not affect all populations equally. AI Studio Teams moves beyond access to **Universal Learning**. We create structured pathways designed *with* and *for* learners of all backgrounds—focusing on what you can do and unlocking your potential.
 
 ## Explicit Parity Targets
 
@@ -31,7 +31,7 @@ We aren't just hoping for diversity; we are designing for it with specific cohor
   </div>
 </div>
 
-## Equity Design Principles
+## Universal Design Principles
 
 <div className="row">
   <div className="col col--6">
