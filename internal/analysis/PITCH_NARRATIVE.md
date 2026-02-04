@@ -344,8 +344,8 @@ and operations. $521 per student.
 This award proves the model. It enables conversations with district partners,
 industry sponsors, and impact investors that turn a pilot into a movement.
 
-Year 2 and beyond is sustainable: District CTE funding and Employer partners
-cover the program cost. This $50K is the seed that proves it works."
+Year 2 and beyond is sustainable: Recurring District Contracts and Employer
+partners cover the program cost. This $50K is the seed that proves it works."
 ```
 
 **Key Emphasis:**
