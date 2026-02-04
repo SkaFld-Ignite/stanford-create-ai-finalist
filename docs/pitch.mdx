@@ -546,48 +546,45 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
     <div className="metric-grid animate-enter delay-2" style={{marginTop: '3rem', alignItems: 'start', gap: '1.5rem'}}>
       
       {/* Charles Sims */}
-      <div className="metric-card" style={{padding: '2rem 1.5rem', background: 'white', border: '1px solid #eee', minHeight: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <div className="avatar-circle" style={{width: '100px', height: '100px', marginBottom: '1.25rem'}}>
+      <div className="metric-card team-card">
+        <div className="avatar-circle">
           <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" style={{objectPosition: 'center', transform: 'scale(1.08) translateX(5px)'}} />
         </div>
-        <h3 style={{fontSize: '1.6rem', marginBottom: '0.3rem', color: '#1a1a1a', fontWeight: 700, letterSpacing: '-0.02em'}}>Charles Sims</h3>
-        <p style={{fontSize: '0.7rem', color: 'var(--pitch-accent)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '1.2rem'}}>Project Director</p>
-
-        <div style={{textAlign: 'center', fontSize: '0.65rem', lineHeight: 1.8, color: '#888', fontWeight: 400}}>
+        <h3 className="team-name">Charles Sims</h3>
+        <p className="team-title">Project Director</p>
+        <p className="team-bio">
           Former CTO, LA Clippers & UTA<br/>
           Creator, SkaFld Ideation Methodology<br/>
           Founder, SkaFld Venture Studio
-        </div>
+        </p>
       </div>
 
       {/* Keith Coleman */}
-      <div className="metric-card" style={{padding: '2rem 1.5rem', background: 'white', border: '1px solid #eee', minHeight: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <div className="avatar-circle" style={{width: '100px', height: '100px', marginBottom: '1.25rem'}}>
+      <div className="metric-card team-card">
+        <div className="avatar-circle">
           <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" style={{objectPosition: '0 25%'}} />
         </div>
-        <h3 style={{fontSize: '1.6rem', marginBottom: '0.3rem', color: '#1a1a1a', fontWeight: 700, letterSpacing: '-0.02em'}}>Keith Coleman</h3>
-        <p style={{fontSize: '0.7rem', color: 'var(--pitch-accent)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '1.2rem'}}>Stanford Liaison & Policy</p>
-
-        <div style={{textAlign: 'center', fontSize: '0.65rem', lineHeight: 1.8, color: '#888', fontWeight: 400}}>
+        <h3 className="team-name">Keith Coleman</h3>
+        <p className="team-title">Stanford Liaison & Policy</p>
+        <p className="team-bio">
           Stanford BA '86<br/>
           Distinguished Scholar, Stanford mediaX<br/>
           Co-Chair, UN SDG Fund Alliance
-        </div>
+        </p>
       </div>
 
       {/* Mike Belloli */}
-      <div className="metric-card" style={{padding: '2rem 1.5rem', background: 'white', border: '1px solid #eee', minHeight: '300px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <div className="avatar-circle" style={{width: '100px', height: '100px', marginBottom: '1.25rem'}}>
+      <div className="metric-card team-card">
+        <div className="avatar-circle">
           <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" style={{objectPosition: '10% 5%'}} />
         </div>
-        <h3 style={{fontSize: '1.6rem', marginBottom: '0.3rem', color: '#1a1a1a', fontWeight: 700, letterSpacing: '-0.02em'}}>Mike Belloli</h3>
-        <p style={{fontSize: '0.7rem', color: 'var(--pitch-accent)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '1.2rem'}}>Technology Lead</p>
-
-        <div style={{textAlign: 'center', fontSize: '0.65rem', lineHeight: 1.8, color: '#888', fontWeight: 400}}>
+        <h3 className="team-name">Mike Belloli</h3>
+        <p className="team-title">Technology Lead</p>
+        <p className="team-bio">
           COO, SkaFld Studio<br/>
           Co-Founder, Lyfe AI & Defy Mortgage<br/>
           Full-stack Developer & Architect
-        </div>
+        </p>
       </div>
 
     </div>
