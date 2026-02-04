@@ -949,6 +949,18 @@ table tr:hover {
   object-fit: cover;
 }
 
+/* Team Bio Text - forced styling */
+.team-bio-text {
+  display: block !important;
+  text-align: center !important;
+  font-size: 10px !important;
+  line-height: 1.7 !important;
+  color: #999 !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 /* Landing Page Styles */
 
 .landing-hero {
