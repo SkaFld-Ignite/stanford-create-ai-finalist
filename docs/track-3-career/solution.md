@@ -25,6 +25,55 @@ AI Studio Teams replaces the broken credential-to-career pipeline with a portfol
 - **Real client projects** and **Quarterly portfolio reviews**.
 - **Platform support** via SkafldTrailhead AI-powered environment.
 
+## 12-Week Learning Journey
+
+Students progress through three distinct phases, each building on the previous to develop durable, transferable AI collaboration skills.
+
+<div className="row margin-bottom--lg">
+  <div className="col col--4">
+    <div style={{background: 'linear-gradient(135deg, #f0f7ff 0%, #e0efff 100%)', padding: '1.5rem', borderRadius: '12px', border: '2px solid #2563eb', height: '100%'}}>
+      <div style={{fontSize: '0.75rem', fontWeight: 'bold', color: '#2563eb', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Phase 1</div>
+      <h4 style={{color: '#1a1a1a', marginTop: '0.5rem', marginBottom: '0.75rem'}}>Foundation & Fluency</h4>
+      <div style={{fontSize: '1.5rem', fontWeight: 'bold', color: '#2563eb', marginBottom: '0.75rem'}}>Weeks 1-4</div>
+      <ul style={{fontSize: '0.9rem', paddingLeft: '1.25rem', marginBottom: '0'}}>
+        <li><strong>Decomposition thinking</strong> — Breaking complex problems into actionable questions</li>
+        <li><strong>AI discernment</strong> — Hallucination detection, ethical boundaries</li>
+        <li><strong>Tool agnostic fundamentals</strong> — Skills that transfer across any AI</li>
+      </ul>
+    </div>
+  </div>
+  <div className="col col--4">
+    <div style={{background: 'linear-gradient(135deg, #f0fff4 0%, #dcfce7 100%)', padding: '1.5rem', borderRadius: '12px', border: '2px solid #059669', height: '100%'}}>
+      <div style={{fontSize: '0.75rem', fontWeight: 'bold', color: '#059669', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Phase 2</div>
+      <h4 style={{color: '#1a1a1a', marginTop: '0.5rem', marginBottom: '0.75rem'}}>Increasing Complexity</h4>
+      <div style={{fontSize: '1.5rem', fontWeight: 'bold', color: '#059669', marginBottom: '0.75rem'}}>Weeks 5-8</div>
+      <ul style={{fontSize: '0.9rem', paddingLeft: '1.25rem', marginBottom: '0'}}>
+        <li><strong>AI-coached challenges</strong> — Real business simulations with increasing difficulty</li>
+        <li><strong>Cross-domain application</strong> — Pattern recognition across industries</li>
+        <li><strong>Collaborative problem-solving</strong> — Team-based project work</li>
+      </ul>
+    </div>
+  </div>
+  <div className="col col--4">
+    <div style={{background: 'linear-gradient(135deg, #faf5ff 0%, #ede9fe 100%)', padding: '1.5rem', borderRadius: '12px', border: '2px solid #7c3aed', height: '100%'}}>
+      <div style={{fontSize: '0.75rem', fontWeight: 'bold', color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Phase 3</div>
+      <h4 style={{color: '#1a1a1a', marginTop: '0.5rem', marginBottom: '0.75rem'}}>Real-World Mastery</h4>
+      <div style={{fontSize: '1.5rem', fontWeight: 'bold', color: '#7c3aed', marginBottom: '0.75rem'}}>Weeks 9-12</div>
+      <ul style={{fontSize: '0.9rem', paddingLeft: '1.25rem', marginBottom: '0'}}>
+        <li><strong>Employer projects</strong> — Authentic deliverables for local businesses</li>
+        <li><strong>Portfolio building</strong> — Documented evidence of capability</li>
+        <li><strong>Panel reviews</strong> — Industry validation of student work</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div className="highlight-box" style={{textAlign: 'center', marginTop: '1rem'}}>
+  <p style={{fontSize: '1.1rem', fontStyle: 'italic', margin: 0}}>
+    <strong>The Progression:</strong> Learn to think → Apply under pressure → Prove mastery with real work
+  </p>
+</div>
+
 ## The SkaFld Ideation Methodology
 
 ### Don't Give Them the Fish. Teach Them to Fish.
@@ -73,7 +122,7 @@ Every complex challenge can be broken down into smaller, more manageable decisio
 **3. AI Discernment**
 Students develop critical skills for responsible AI use: hallucination detection, ethical boundary recognition, and knowing when human judgment must override AI suggestions. This prevents the common trap of over-trusting AI-generated content.
 
-## The Three Pillars
+## The Four Pillars
 
 <div className="feature-grid">
   <div className="feature-card">
@@ -90,6 +139,11 @@ Students develop critical skills for responsible AI use: hallucination detection
     <div className="feature-icon">🏢</div>
     <h3>Employer Integration</h3>
     <p>Real project briefs, quarterly review panels, and micro-internship slots (10-20 hour paid experiences) with aerospace and tech leaders.</p>
+  </div>
+  <div className="feature-card" style={{border: '2px solid var(--pitch-accent)'}}>
+    <div className="feature-icon">🛡️</div>
+    <h3>Responsible AI Practices</h3>
+    <p>Students learn WHY ethical boundaries matter—active judgment, not just rules. <em>(UNESCO, 2021)</em></p>
   </div>
 </div>
 

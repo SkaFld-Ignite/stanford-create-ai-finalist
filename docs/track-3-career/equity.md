@@ -36,11 +36,12 @@ We aren't just hoping for diversity; we are designing for it with specific cohor
 <div className="row">
   <div className="col col--6">
     <div className="highlight-box" style={{height: '100%'}}>
-      <h3>Remove Barrier Entry</h3>
+      <h3>Barrier-Free Entry</h3>
       <ul style={{fontSize: '0.9rem', paddingLeft: '1rem'}}>
         <li><strong>No coding prerequisites:</strong> AI tools enable contribution without programming skills.</li>
-        <li><strong>No equipment requirements:</strong> All technology provided during sessions.</li>
-        <li><strong>No application essays:</strong> Selection based on interest and commitment.</li>
+        <li><strong>No GPA requirements:</strong> Academic grades do not predict AI collaboration ability.</li>
+        <li><strong>No equipment costs:</strong> All technology provided during sessions.</li>
+        <li><strong>Selection based on interest and commitment:</strong> Not background or credentials.</li>
       </ul>
     </div>
   </div>
@@ -56,8 +57,8 @@ We aren't just hoping for diversity; we are designing for it with specific cohor
   </div>
 </div>
 
-:::info Portfolio Assessment Reduces Bias
-Research demonstrates portfolio-based hiring reduces demographic bias compared to credential-based evaluation (Rivera, 2015). By emphasizing work samples over pedigree signals, portfolios enable evaluation based on capability rather than background.
+:::info Portfolios Are the Great Equalizer
+**Portfolios are the great equalizer—evaluation based on capability, not background.** Research demonstrates portfolio-based hiring reduces demographic bias compared to credential-based evaluation (Rivera, 2015). By emphasizing work samples over pedigree signals, students from any background can demonstrate their abilities through tangible evidence of what they can do.
 :::
 
 ## Outcome Equity Monitoring

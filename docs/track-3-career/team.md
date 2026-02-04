@@ -5,6 +5,8 @@ sidebar_position: 8
 
 # Project Leadership
 
+**Technology • Design • Policy**
+
 AI Studio Teams is led by a multi-disciplinary team with deep expertise in technology transformation, workforce development, and Stanford's innovation ecosystem.
 
 ## Core Team
@@ -18,9 +20,9 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
   <div className="col col--9">
     <h3>Charles Sims | Project Director</h3>
     <p><strong>Strategic direction, technology leadership, employer partnerships, program design</strong></p>
-    <p>Charles Sims is a technology transformation leader and founder of Skafld Studio, where he developed the "Hurricane Methodology" for executing high-pressure transformation projects within tight timeframes. His approach emphasizes rapid iteration, stakeholder alignment, and measurable outcome delivery.</p>
+    <p>Charles Sims is the Founder & CEO of SkaFld Studio and creator of the SkaFld Ideation Methodology for executing high-pressure transformation projects within tight timeframes. His approach emphasizes rapid iteration, stakeholder alignment, and measurable outcome delivery.</p>
     <ul style={{fontSize: '0.9rem'}}>
-      <li>Led technology transformation initiatives at the LA Clippers and UTA (United Talent Agency).</li>
+      <li><strong>Former CTO, LA Clippers & UTA (United Talent Agency).</strong> Led technology transformation initiatives across major sports and entertainment organizations.</li>
       <li>Developed frameworks for integrating emerging technology into established organizational workflows.</li>
       <li>NYU-educated with deep understanding of educational systems and workforce development.</li>
     </ul>
@@ -34,11 +36,11 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
     </div>
   </div>
   <div className="col col--9">
-    <h3>Keith Coleman | Stanford Liaison & Policy Lead</h3>
+    <h3>Keith Coleman | Stanford Liaison & Policy</h3>
     <p><strong>Policy & strategy expertise for responsible AI deployment, Stanford collaboration, workforce development</strong></p>
-    <p>Keith Coleman brings the policy and strategy awareness essential for responsible AI deployment—complementing technical AI skills with governance understanding and ethical considerations. His career spans workforce development and building bridges between education, industry, and policy.</p>
+    <p><strong>Distinguished Scholar, Stanford mediaX.</strong> Keith Coleman brings the policy and strategy awareness essential for responsible AI deployment—complementing technical AI skills with governance understanding and ethical considerations. His career spans workforce development and building bridges between education, industry, and policy.</p>
     <ul style={{fontSize: '0.9rem'}}>
-      <li><strong>Stanford BA Economics '86. mediaX Advisory Scholar.</strong> Deep ties to Stanford's innovation ecosystem and interdisciplinary approach to learning.</li>
+      <li><strong>Stanford BA Economics '86.</strong> Deep ties to Stanford's innovation ecosystem and interdisciplinary approach to learning.</li>
       <li><strong>UN Joint SDG Fund Breakthrough Alliance Co-Chair.</strong> Overseeing $290M+ portfolio across 150+ countries, bringing global perspective on education and workforce development.</li>
       <li><strong>Capitol Partners General Partner.</strong> 17 years experience in economic opportunity, aerospace/defense coalition building, and policy-aware technology deployment.</li>
     </ul>
@@ -52,11 +54,11 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
     </div>
   </div>
   <div className="col col--9">
-    <h3>Mike Belloli | Technology & Operations</h3>
+    <h3>Mike Belloli | Technology Lead</h3>
     <p><strong>Platform strategy, financial modeling, digital infrastructure</strong></p>
-    <p>Mike Belloli is a full-stack developer managing financials, pitch strategy, and digital infrastructure for the SkaFld Trailhead platform. He ensures operational excellence across all technical and business domains.</p>
+    <p>Mike Belloli is COO of SkaFld Studio, Co-Founder of Lyfe AI & Defy Mortgage, and a full-stack developer and architect. He manages financials, pitch strategy, and digital infrastructure for the SkaFld Trailhead platform, ensuring operational excellence across all technical and business domains.</p>
     <ul style={{fontSize: '0.9rem'}}>
-      <li>Full-stack development and technical operations for the SkaFld Trailhead platform.</li>
+      <li>Full-stack development and technical architecture for the SkaFld Trailhead platform.</li>
       <li>Management of financial models, investor materials, and digital presence.</li>
       <li>Expert in educational data privacy (COPPA/FERPA) and secure AI implementation.</li>
     </ul>

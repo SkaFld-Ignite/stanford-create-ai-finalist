@@ -5,6 +5,10 @@ sidebar_position: 9
 
 # Budget
 
+:::tip The First Dollar is the Hardest
+**This is that dollar.** To build AI Studio Teams right—to create a scalable national platform that transforms how students prepare for AI-shaped careers—takes $500K to $1M. Stanford CREATE+AI is the **leverage** that unlocks the rest. This $50,000 investment provides the proof-of-concept that makes the larger vision fundable.
+:::
+
 ## $50,000 Resource Allocation
 
 | Category | Amount | Percentage | Description |
@@ -50,19 +54,23 @@ sidebar_position: 9
 - **Operations ($7k):** Covers travel for team coordination, legal compliance for student data privacy (COPPA/FERPA), and administrative overhead.
 - **Contingency ($3k):** A standard buffer for unforeseen expenses during the 12-month pilot to ensure uninterrupted execution.
 
-## Sustainability Plan
+## Sustainability Plan: Year 2 and Beyond
 
-Year 1 Stanford funding establishes the model. Beyond Year 1:
+Year 1 Stanford funding establishes the model and generates the evidence. **Year 2+ becomes self-sustaining** because we've proven the model works.
 
-| Revenue Source | Projected Contribution |
-|----------------|----------------------|
-| District integration into CTE budget | $20,000 |
-| Employer partnership contributions | $15,000 |
-| Grant funding (workforce development) | $10,000 |
-| In-kind employer contributions | $10,000 |
+### Why This Becomes Fundable
 
-**Target:** Full operational sustainability by Year 3 through diversified funding and district integration.
+The $521/student program cost (96 students / $50,000) is the key metric that unlocks sustainable funding. Districts and employers can budget for this—it's comparable to other CTE programs but with validated outcomes they can't get elsewhere.
 
-:::info Cost Efficiency
-At $521 per student (96 students / $50,000), AI Studio Teams delivers employer-validated career preparation at a fraction of traditional workforce development program costs. The per-student investment produces documented, verified capability that directly translates to employment opportunity.
+| Revenue Source | Year 2+ Contribution | Rationale |
+|----------------|----------------------|-----------|
+| **District CTE Budget Integration** | $20,000 | Districts allocate CTE funds for programs with proven employment outcomes |
+| **Employer Partnership Contributions** | $15,000 | Companies invest in pipeline programs that deliver job-ready candidates |
+| **Workforce Development Grants** | $10,000 | DOL and state workforce boards fund validated career pathways |
+| **In-Kind Employer Contributions** | $10,000 | Project mentorship, facility access, internship slots |
+
+**The Stanford CREATE+AI investment isn't the whole budget—it's the leverage.** With Year 1 evidence in hand, we approach district superintendents and employer partners with a proven model at a fundable price point.
+
+:::info Cost Efficiency Enables Scale
+At **$521 per student** (96 students / $50,000), AI Studio Teams delivers employer-validated career preparation at a fraction of traditional workforce development program costs. This price point is the unlock: it's low enough for district CTE budgets, attractive enough for employer co-investment, and proven enough for workforce development grants. The per-student investment produces documented, verified capability that directly translates to employment opportunity—and that's the evidence that makes Year 2+ funding conversations possible.
 :::
