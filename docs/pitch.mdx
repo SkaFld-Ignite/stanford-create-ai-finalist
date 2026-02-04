@@ -28,34 +28,83 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   {/* Slide 2: The Crisis */}
   <div className="pitch-slide slide-dark">
     <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter">The Experience Paradox</h1>
+    
+    <div style={{maxWidth: '1200px', width: '100%', display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'center'}}>
+        
+        <div className="animate-enter" style={{marginBottom: '3rem', textAlign: 'center'}}>
+            <h1 style={{fontSize: '4rem', marginBottom: '0.5rem'}}>The Experience Paradox</h1>
+            <p style={{fontSize: '1.5rem', color: '#ff6b6b', opacity: 0.9, letterSpacing: '0.05em', textTransform: 'uppercase'}}>System Failure Detected</p>
+        </div>
 
-    <div className="split-layout animate-enter delay-1" style={{marginTop: '2rem'}}>
-      <div className="split-col">
-        <p className="text-left" style={{fontSize: '1.4rem'}}>
-          Young people can't gain experience because the <strong className="pitch-accent-text">entry-level positions that provide experience are disappearing.</strong>
-        </p>
-        <p className="text-left" style={{marginTop: '1.2rem', fontSize: '1.1rem', opacity: 0.9}}>
-          Meanwhile, <strong>credentials are losing value</strong>—a degree shows coursework completion, not workplace capability in AI-transformed environments.
-        </p>
-        <p className="text-left" style={{marginTop: '1rem', fontSize: '1rem', opacity: 0.7}}>
-          This isn't a future problem. This is NOW.
-        </p>
-      </div>
-      <div className="split-col">
-        <div className="metric-card" style={{marginBottom: '0.8rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', padding: '1rem'}}>
-          <span className="metric-val" style={{color: '#ff6b6b', fontSize: '2.5rem'}}>40%</span>
-          <span className="metric-label" style={{color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem'}}>Employers plan AI workforce reductions (WEF 2024)</span>
+        <div className="split-layout animate-enter delay-1" style={{alignItems: 'stretch', gap: '3rem'}}>
+            
+            {/* Left: The Narrative - Styled as a "Terminal" or "Report" */}
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '2rem'}}>
+                <div style={{borderLeft: '4px solid #ff6b6b', paddingLeft: '2rem'}}>
+                    <h3 style={{color: 'white', fontSize: '2rem', marginBottom: '1rem'}}>The Ladder is Broken.</h3>
+                    <p className="text-left" style={{fontSize: '1.2rem', color: '#ccc', lineHeight: 1.6}}>
+                        Entry-level roles—the traditional first rung of the career ladder—are being automated away.
+                    </p>
+                </div>
+                
+                <div style={{background: 'rgba(255,255,255,0.05)', padding: '1.5rem', borderRadius: '12px', border: '1px dashed rgba(255,255,255,0.2)'}}>
+                    <strong style={{color: '#fff', fontSize: '1.3rem', display: 'block', marginBottom: '0.5rem'}}>The Catch-22:</strong>
+                    <p style={{margin: 0, fontSize: '1.1rem', color: '#aaa', fontStyle: 'italic'}}>
+                        "You need experience to get the job... but you need the job to get experience."
+                    </p>
+                </div>
+            </div>
+
+            {/* Right: The Data - Styled as "Alert Cards" */}
+            <div style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
+                
+                {/* Card 1: 40% Reduction */}
+                <div className="metric-card" style={{
+                    background: 'linear-gradient(90deg, rgba(255,107,107,0.1) 0%, rgba(255,255,255,0.02) 100%)', 
+                    border: '1px solid rgba(255,107,107,0.3)',
+                    padding: '1.5rem',
+                    textAlign: 'left',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between'
+                }}>
+                    <div>
+                        <span style={{color: '#ff6b6b', fontSize: '3.5rem', fontWeight: 800, lineHeight: 1, display: 'block'}}>40%</span>
+                        <span style={{color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.05em'}}>Workforce Reduction</span>
+                    </div>
+                    <div style={{fontSize: '2rem'}}>📉</div>
+                </div>
+
+                 {/* Card 2: 78% Displacement */}
+                 <div className="metric-card" style={{
+                    background: 'rgba(255,255,255,0.05)', 
+                    border: '1px solid rgba(255,255,255,0.1)',
+                    padding: '1.5rem',
+                    textAlign: 'left'
+                }}>
+                    <div style={{display: 'flex', alignItems: 'baseline', gap: '1rem', marginBottom: '0.5rem'}}>
+                         <span style={{color: 'white', fontSize: '3.5rem', fontWeight: 800, lineHeight: 1}}>78%</span>
+                         <span style={{color: '#ff6b6b', fontSize: '1.2rem', fontWeight: 600}}>Hiring Managers</span>
+                    </div>
+                    <p style={{margin: 0, color: '#aaa', fontSize: '1rem'}}>Predict AI will displace fresh graduates.</p>
+                </div>
+
+                {/* Card 3: New Reality */}
+                <div className="metric-card" style={{
+                    background: 'rgba(255,255,255,0.05)', 
+                    border: '1px solid rgba(255,255,255,0.1)',
+                    padding: '1.5rem',
+                    textAlign: 'left'
+                }}>
+                    <div style={{display: 'flex', alignItems: 'baseline', gap: '1rem', marginBottom: '0.5rem'}}>
+                         <span style={{color: 'white', fontSize: '3.5rem', fontWeight: 800, lineHeight: 1}}>45%</span>
+                         <span style={{color: '#ff6b6b', fontSize: '1.2rem', fontWeight: 600}}>Fewer Entry Roles</span>
+                    </div>
+                     <p style={{margin: 0, color: '#aaa', fontSize: '1rem'}}>Decline in entry-level tech postings (LinkedIn).</p>
+                </div>
+
+            </div>
         </div>
-        <div className="metric-card" style={{marginBottom: '0.8rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', padding: '1rem'}}>
-          <span className="metric-val" style={{color: '#ff6b6b', fontSize: '2.5rem'}}>45%</span>
-          <span className="metric-label" style={{color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem'}}>Reduction in tech entry-level roles (LinkedIn)</span>
-        </div>
-        <div className="metric-card" style={{background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', padding: '1rem'}}>
-          <span className="metric-val" style={{color: '#ff6b6b', fontSize: '2.5rem'}}>78%</span>
-          <span className="metric-label" style={{color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem'}}>Hiring managers predict AI will displace grads (Intelligent.com)</span>
-        </div>
-      </div>
     </div>
     <div className="pitch-footer"><span className="pitch-footer-text">The Crisis is Now</span></div>
     <div className="slide-number" style={{color: 'rgba(255,255,255,0.5)'}}>2</div>
@@ -93,15 +142,15 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   {/* Slide 4: The Solution */}
   <div className="pitch-slide slide-gradient">
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter">SkaFld Trailhead</h1>
-    <h2 className="animate-enter delay-1">A Platform for Verified Capability</h2>
+    <h1 className="animate-enter" style={{marginBottom: '0.2rem', marginTop: '0'}}>SkaFld Trailhead</h1>
+    <h2 className="animate-enter delay-1" style={{marginBottom: '1.5rem', fontSize: '1.4rem'}}>The Platform for Building Adaptive AI Skills Through Project-Based Learning</h2>
 
     {/* Two-Column Layout: Features Left, Timeline Right */}
     <div className="split-layout animate-enter delay-2" style={{
-      gap: '2rem',
-      maxWidth: '1100px',
+      gap: '1.5rem',
+      maxWidth: '1150px',
       alignItems: 'stretch',
-      marginTop: '1rem'
+      marginTop: '0'
     }}>
 
       {/* LEFT: Platform Features */}
@@ -109,30 +158,38 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
 
         {/* AI Coach Card */}
         <div className="metric-card" style={{
-          padding: '1.5rem',
+          padding: '1.2rem',
           borderLeft: '5px solid var(--pitch-accent)',
           textAlign: 'left',
-          flex: 1
+          flex: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          minHeight: '140px'
         }}>
-          <h3 style={{margin: '0 0 0.5rem 0', fontSize: '1.3rem', color: 'var(--pitch-accent)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.4rem'}}>
-            <span style={{fontSize: '1.3rem'}}>🤖</span> Trailhead AI Coach
+          <h3 style={{margin: '0 0 0.4rem 0', fontSize: '1.2rem', color: 'var(--pitch-accent)', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.6rem'}}>
+            <span style={{fontSize: '0.9rem', background: 'rgba(140, 21, 21, 0.1)', padding: '5px', borderRadius: '5px', fontWeight: 'bold', color: 'var(--pitch-accent)', width: '28px', height: '28px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>AI</span> Trailhead AI Coach
           </h3>
-          <p style={{margin: 0, fontSize: '1rem', color: '#444', lineHeight: 1.5, textAlign: 'left'}}>
+          <p style={{margin: 0, fontSize: '0.95rem', color: '#444', lineHeight: 1.3, textAlign: 'left'}}>
             Guides problem decomposition through <strong>Socratic questioning</strong>—teaches thinking, not answers.
           </p>
         </div>
 
         {/* Employer Portal Card */}
         <div className="metric-card" style={{
-          padding: '1.5rem',
-          borderLeft: '5px solid #555',
+          padding: '1.2rem',
+          borderLeft: '5px solid #333',
           textAlign: 'left',
-          flex: 1
+          flex: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          minHeight: '140px'
         }}>
-          <h3 style={{margin: '0 0 0.5rem 0', fontSize: '1.3rem', color: '#333', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.4rem'}}>
-            <span style={{fontSize: '1.3rem'}}>📋</span> Employer Review Portal
+          <h3 style={{margin: '0 0 0.4rem 0', fontSize: '1.2rem', color: '#333', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.6rem'}}>
+            <span style={{fontSize: '0.9rem', background: 'rgba(0, 0, 0, 0.05)', padding: '5px', borderRadius: '5px', fontWeight: 'bold', color: '#333', width: '28px', height: '28px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>✓</span> Employer Review Portal
           </h3>
-          <p style={{margin: 0, fontSize: '1rem', color: '#444', lineHeight: 1.5, textAlign: 'left'}}>
+          <p style={{margin: 0, fontSize: '0.95rem', color: '#444', lineHeight: 1.3, textAlign: 'left'}}>
             Industry partners <strong>validate work samples</strong>—real feedback from real professionals.
           </p>
         </div>
@@ -141,63 +198,70 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
 
       {/* RIGHT: 12-Week Timeline */}
       <div className="metric-card" style={{
-        padding: '1.5rem',
+        padding: '1.5rem 1.2rem',
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        justifyContent: 'space-between'
       }}>
-        <h3 style={{margin: '0 0 1rem 0', fontSize: '0.9rem', color: '#666', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center'}}>12-Week Journey</h3>
+        <h3 style={{margin: '0 0 0.8rem 0', fontSize: '0.85rem', color: '#666', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center'}}>12-Week Scaffolded Journey</h3>
 
         {/* Phase 1 */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '1rem', paddingBottom: '1rem', borderBottom: '1px solid #eee'}}>
+        <div style={{display: 'flex', alignItems: 'center', gap: '0.8rem', paddingBottom: '0.8rem', borderBottom: '1px solid #eee'}}>
           <span style={{
             background: 'var(--pitch-accent)',
             color: 'white',
             padding: '0.3rem 0.6rem',
-            borderRadius: '4px',
-            fontSize: '0.7rem',
+            borderRadius: '5px',
+            fontSize: '0.75rem',
             fontWeight: 700,
             whiteSpace: 'nowrap',
-            flexShrink: 0
+            flexShrink: 0,
+            minWidth: '70px',
+            textAlign: 'center'
           }}>WK 1-4</span>
           <div style={{textAlign: 'left'}}>
-            <strong style={{color: 'var(--pitch-accent)', fontSize: '1.05rem', display: 'block', marginBottom: '0.2rem'}}>Foundation</strong>
-            <p style={{margin: 0, fontSize: '0.9rem', color: '#666', lineHeight: 1.4}}>Decomposition thinking · AI discernment</p>
+            <strong style={{color: 'var(--pitch-accent)', fontSize: '1rem', display: 'block', marginBottom: '0.1rem'}}>Foundation & Fluency</strong>
+            <p style={{margin: 0, fontSize: '0.85rem', color: '#666', lineHeight: 1.2}}>Decomposition thinking · AI discernment</p>
           </div>
         </div>
 
         {/* Phase 2 */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '1rem', paddingBottom: '1rem', borderBottom: '1px solid #eee'}}>
+        <div style={{display: 'flex', alignItems: 'center', gap: '0.8rem', paddingBottom: '0.8rem', borderBottom: '1px solid #eee'}}>
           <span style={{
             background: '#555',
             color: 'white',
             padding: '0.3rem 0.6rem',
-            borderRadius: '4px',
-            fontSize: '0.7rem',
+            borderRadius: '5px',
+            fontSize: '0.75rem',
             fontWeight: 700,
             whiteSpace: 'nowrap',
-            flexShrink: 0
+            flexShrink: 0,
+            minWidth: '70px',
+            textAlign: 'center'
           }}>WK 5-8</span>
           <div style={{textAlign: 'left'}}>
-            <strong style={{color: '#333', fontSize: '1.05rem', display: 'block', marginBottom: '0.2rem'}}>Application</strong>
-            <p style={{margin: 0, fontSize: '0.9rem', color: '#666', lineHeight: 1.4}}>AI-coached real business challenges</p>
+            <strong style={{color: '#333', fontSize: '1rem', display: 'block', marginBottom: '0.1rem'}}>Increasing Complexity</strong>
+            <p style={{margin: 0, fontSize: '0.85rem', color: '#666', lineHeight: 1.2}}>AI-coached real business challenges</p>
           </div>
         </div>
 
         {/* Phase 3 */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '1rem'}}>
+        <div style={{display: 'flex', alignItems: 'center', gap: '0.8rem'}}>
           <span style={{
             background: '#888',
             color: 'white',
             padding: '0.3rem 0.6rem',
-            borderRadius: '4px',
-            fontSize: '0.7rem',
+            borderRadius: '5px',
+            fontSize: '0.75rem',
             fontWeight: 700,
             whiteSpace: 'nowrap',
-            flexShrink: 0
+            flexShrink: 0,
+            minWidth: '70px',
+            textAlign: 'center'
           }}>WK 9-12</span>
           <div style={{textAlign: 'left'}}>
-            <strong style={{color: '#333', fontSize: '1.05rem', display: 'block', marginBottom: '0.2rem'}}>Demonstration</strong>
-            <p style={{margin: 0, fontSize: '0.9rem', color: '#666', lineHeight: 1.4}}>Employer projects · Portfolio building</p>
+            <strong style={{color: '#333', fontSize: '1rem', display: 'block', marginBottom: '0.1rem'}}>Real-World Mastery</strong>
+            <p style={{margin: 0, fontSize: '0.85rem', color: '#666', lineHeight: 1.2}}>Employer projects · Portfolio building</p>
           </div>
         </div>
 
@@ -205,60 +269,62 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
 
     </div>
 
-    <p className="animate-enter delay-3" style={{marginTop: '1.5rem', fontSize: '1.2rem', color: '#444', maxWidth: '800px'}}>
+    <p className="animate-enter delay-3" style={{marginTop: '1.5rem', fontSize: '1.1rem', color: '#444', maxWidth: '800px'}}>
       <strong style={{color: 'var(--pitch-accent)'}}>Result:</strong> Portfolios that <em>prove</em> capability—not credentials that claim it.
     </p>
 
-    <div className="pitch-footer"><span className="pitch-footer-text">Human-Centered Architecture</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">A Scaffolded Journey to Mastery</span></div>
     <div className="slide-number">4</div>
   </div>
 
   {/* Slide 5: Platform Demo */}
-  <div className="pitch-slide slide-dark" style={{padding: '3.5vw 6vw'}}>
+  <div className="pitch-slide slide-dark" style={{padding: '1vw 6vw', justifyContent: 'center', display: 'flex', flexDirection: 'column'}}>
     <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter" style={{fontSize: '2.2rem', marginBottom: '0.3rem'}}>AI as Coach, Not Crutch</h1>
-    <p className="animate-enter delay-1" style={{color: 'rgba(255,255,255,0.5)', fontSize: '0.95rem', marginBottom: '0.6rem'}}>
+    <h1 className="animate-enter" style={{fontSize: '3.2rem', marginBottom: '0.2rem', lineHeight: 1.1, marginTop: '1rem'}}>AI as Coach, Not Crutch</h1>
+    <p className="animate-enter delay-1" style={{color: 'rgba(255,255,255,0.5)', fontSize: '1rem', marginBottom: '1rem'}}>
       Teaching how to think—AI guides, students discover
     </p>
 
     {/* Chat Interface */}
     <div className="animate-enter delay-2" style={{
       width: '100%',
-      maxWidth: '620px',
+      maxWidth: '680px',
       background: '#1a1a1a',
       borderRadius: '12px',
       border: '1px solid #333',
       overflow: 'hidden',
-      boxShadow: '0 20px 50px rgba(0,0,0,0.6)'
+      boxShadow: '0 20px 50px rgba(0,0,0,0.6)',
+      marginBottom: '2rem',
+      maxHeight: '65vh'
     }}>
       {/* Header */}
       <div style={{
         background: '#252525',
-        padding: '0.4rem 0.85rem',
+        padding: '0.5rem 1rem',
         borderBottom: '1px solid #333',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between'
       }}>
-        <div style={{display: 'flex', alignItems: 'center', gap: '5px'}}>
-          <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#ff5f56'}}></div>
-          <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#ffbd2e'}}></div>
-          <div style={{width: '8px', height: '8px', borderRadius: '50%', background: '#27c93f'}}></div>
-          <span style={{fontSize: '0.75rem', color: '#888', marginLeft: '0.5rem', fontWeight: 500}}>Trailhead AI Coach</span>
+        <div style={{display: 'flex', alignItems: 'center', gap: '6px'}}>
+          <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#ff5f56'}}></div>
+          <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#ffbd2e'}}></div>
+          <div style={{width: '10px', height: '10px', borderRadius: '50%', background: '#27c93f'}}></div>
+          <span style={{fontSize: '0.85rem', color: '#888', marginLeft: '0.8rem', fontWeight: 500}}>Trailhead AI Coach</span>
         </div>
-        <span style={{fontSize: '0.65rem', color: '#666', background: '#333', padding: '0.15rem 0.5rem', borderRadius: '8px'}}>Week 6 · Boeing</span>
+        <span style={{fontSize: '0.75rem', color: '#666', background: '#333', padding: '0.2rem 0.6rem', borderRadius: '8px'}}>Week 6 · Boeing</span>
       </div>
 
       {/* Messages */}
-      <div style={{padding: '0.6rem 0.85rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', background: '#121212'}}>
+      <div style={{padding: '1rem', display: 'flex', flexDirection: 'column', gap: '0.8rem', background: '#121212'}}>
 
         {/* Challenge */}
         <div style={{
           background: 'rgba(140, 21, 21, 0.12)',
           border: '1px solid rgba(140, 21, 21, 0.25)',
           borderRadius: '6px',
-          padding: '0.4rem 0.75rem',
-          fontSize: '0.8rem',
+          padding: '0.5rem 1rem',
+          fontSize: '0.9rem',
           color: '#ccc',
           textAlign: 'center'
         }}>
@@ -266,24 +332,24 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
         </div>
 
         {/* AI 1 - Decompose */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.4rem'}}>
-          <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#2a2a2a', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', flexShrink: 0, border: '1px solid #444'}}>🤖</div>
-          <div style={{background: '#2a2a2a', color: '#eee', padding: '0.5rem 0.75rem', borderRadius: '10px', borderTopLeftRadius: '3px', fontSize: '0.88rem', lineHeight: 1.4}}>
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.6rem'}}>
+          <div style={{width: '32px', height: '32px', borderRadius: '50%', background: '#2a2a2a', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', flexShrink: 0, border: '1px solid #444'}}>🤖</div>
+          <div style={{background: '#2a2a2a', color: '#eee', padding: '0.6rem 1rem', borderRadius: '12px', borderTopLeftRadius: '2px', fontSize: '0.95rem', lineHeight: 1.4}}>
             Let's <strong style={{color: 'var(--pitch-accent)'}}>decompose</strong> this. What are the key failure points in QC documentation?
           </div>
         </div>
 
         {/* Student - Thinks */}
         <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-          <div style={{background: 'var(--pitch-accent)', color: 'white', padding: '0.5rem 0.75rem', borderRadius: '10px', borderTopRightRadius: '3px', fontSize: '0.88rem', lineHeight: 1.4}}>
+          <div style={{background: 'var(--pitch-accent)', color: 'white', padding: '0.6rem 1rem', borderRadius: '12px', borderTopRightRadius: '2px', fontSize: '0.95rem', lineHeight: 1.4}}>
             Handoffs between shifts, manual data entry, time pressure...
           </div>
         </div>
 
         {/* AI 2 - Cross-domain research */}
-        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.4rem'}}>
-          <div style={{width: '26px', height: '26px', borderRadius: '50%', background: '#2a2a2a', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', flexShrink: 0, border: '1px solid #444'}}>🤖</div>
-          <div style={{background: '#2a2a2a', color: '#eee', padding: '0.5rem 0.75rem', borderRadius: '10px', borderTopLeftRadius: '3px', fontSize: '0.88rem', lineHeight: 1.4}}>
+        <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.6rem'}}>
+          <div style={{width: '32px', height: '32px', borderRadius: '50%', background: '#2a2a2a', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', flexShrink: 0, border: '1px solid #444'}}>🤖</div>
+          <div style={{background: '#2a2a2a', color: '#eee', padding: '0.6rem 1rem', borderRadius: '12px', borderTopLeftRadius: '2px', fontSize: '0.95rem', lineHeight: 1.4}}>
             Good breakdown. <strong style={{color: '#27c93f'}}>Research wide:</strong> Healthcare and aviation solved similar handoff errors. What patterns do you see?
           </div>
         </div>
@@ -291,21 +357,21 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
       </div>
     </div>
 
-    <div className="pitch-footer"><span className="pitch-footer-text">Teaching Students to Think</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Active Learning through Socratic AI</span></div>
     <div className="slide-number" style={{color: 'rgba(255,255,255,0.5)'}}>5</div>
   </div>
 
-  {/* Slide 6: Learning Science */}
+  {/* Slide 6: Four Pillars */}
   <div className="pitch-slide">
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter">Built on Validated Learning Science</h1>
-    <h2 className="animate-enter delay-1">Humans at the center. Evidence at the foundation.</h2>
+    <h1 className="animate-enter">Four Pillars, Backed by Learning Science</h1>
+    <h2 className="animate-enter delay-1">Building capability that employers can verify.</h2>
 
     <div className="metric-grid animate-enter delay-2" style={{gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem'}}>
       <div className="metric-card" style={{padding: '2rem 1.5rem'}}>
-        <h3 style={{fontSize: '1.3rem', marginBottom: '0.8rem', color: '#1a1a1a'}}>Situated Cognition</h3>
-        <p style={{fontSize: '1rem', margin: '0 auto'}}>Real projects with real stakes transfer better than simulation.</p>
-        <small style={{display: 'block', marginTop: '0.8rem', color: '#999', textTransform: 'uppercase', fontSize: '0.75rem'}}>Lave & Wenger, 1991</small>
+        <h3 style={{fontSize: '1.3rem', marginBottom: '0.8rem', color: '#1a1a1a'}}>Portfolio Over Credentials</h3>
+        <p style={{fontSize: '1rem', margin: '0 auto'}}>Work samples predict job success <strong>5x better</strong> than grades.</p>
+        <small style={{display: 'block', marginTop: '0.8rem', color: '#999', textTransform: 'uppercase', fontSize: '0.75rem'}}>Schmidt & Hunter, 1998</small>
       </div>
       <div className="metric-card" style={{padding: '2rem 1.5rem'}}>
         <h3 style={{fontSize: '1.3rem', marginBottom: '0.8rem', color: '#1a1a1a'}}>Near-Peer Mentorship</h3>
@@ -313,9 +379,9 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
         <small style={{display: 'block', marginTop: '0.8rem', color: '#999', textTransform: 'uppercase', fontSize: '0.75rem'}}>Topping, 2005</small>
       </div>
       <div className="metric-card" style={{padding: '2rem 1.5rem'}}>
-        <h3 style={{fontSize: '1.3rem', marginBottom: '0.8rem', color: '#1a1a1a'}}>Portfolio Assessment</h3>
-        <p style={{fontSize: '1rem', margin: '0 auto'}}>Work samples predict job success <strong>5x better</strong> than grades.</p>
-        <small style={{display: 'block', marginTop: '0.8rem', color: '#999', textTransform: 'uppercase', fontSize: '0.75rem'}}>Schmidt & Hunter, 1998</small>
+        <h3 style={{fontSize: '1.3rem', marginBottom: '0.8rem', color: '#1a1a1a'}}>Employer Integration</h3>
+        <p style={{fontSize: '1rem', margin: '0 auto'}}>Real projects with real stakes transfer better than simulation.</p>
+        <small style={{display: 'block', marginTop: '0.8rem', color: '#999', textTransform: 'uppercase', fontSize: '0.75rem'}}>Lave & Wenger, 1991</small>
       </div>
       <div className="metric-card" style={{padding: '2rem 1.5rem', border: '2px solid var(--pitch-accent)'}}>
         <h3 style={{fontSize: '1.3rem', marginBottom: '0.8rem', color: 'var(--pitch-accent)'}}>Responsible AI Practices</h3>
@@ -323,29 +389,63 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
         <small style={{display: 'block', marginTop: '0.8rem', color: '#999', textTransform: 'uppercase', fontSize: '0.75rem'}}>UNESCO, 2021</small>
       </div>
     </div>
-    <div className="pitch-footer"><span className="pitch-footer-text">Human-Centered Design</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">Evidence-Based Program Design</span></div>
     <div className="slide-number">6</div>
   </div>
 
   {/* Slide 7: Methodology */}
   <div className="pitch-slide slide-gradient">
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter">The SkaFld Ideation Methodology</h1>
-    <h2 className="animate-enter delay-1">Interdisciplinary Thinking for AI-Era Careers</h2>
+    <h1 className="animate-enter" style={{fontSize: '3.5rem', marginBottom: '1rem'}}>The SkaFld Ideation Methodology</h1>
+    <h2 className="animate-enter delay-1" style={{color: '#666', fontSize: '1.5rem', fontWeight: '400', marginBottom: '3rem'}}>Research Wide. Validate Narrow.</h2>
 
-    <div className="highlight-box animate-enter delay-2" style={{maxWidth: '1000px', marginTop: '2rem'}}>
-      <p style={{fontSize: '2.5rem', fontWeight: 'bold', color: '#1a1a1a', lineHeight: '1.2'}}>
-        "Research Wide, Validate Narrow"
-      </p>
-      <div style={{height: '2px', background: '#eee', width: '100px', margin: '2rem auto'}}></div>
-      <p style={{textAlign: 'center', fontSize: '1.5rem', color: '#4a4a4a'}}>
-        The best solution to your problem probably exists in a field you've never explored.
-        It is your job to find it, translate it, and prove it.
-      </p>
+    <div className="split-layout animate-enter delay-2" style={{
+        display: 'grid', 
+        gridTemplateColumns: '1fr auto 1fr auto 1fr', 
+        gap: '1rem', 
+        maxWidth: '1400px', 
+        alignItems: 'center'
+    }}>
+        
+        {/* Step 1: Escape */}
+        <div className="metric-card" style={{padding: '2rem 1.5rem', opacity: 0.7, background: '#f8f9fa', border: '1px dashed #ccc'}}>
+            <div style={{fontSize: '2.5rem', marginBottom: '1rem', filter: 'grayscale(100%)'}}>🔒</div>
+            <h3 style={{fontSize: '1.2rem', marginBottom: '0.5rem', color: '#666'}}>1. Escape the Trap</h3>
+            <p style={{fontSize: '0.9rem', color: '#888', margin: 0}}>"We know our industry."</p>
+            <div style={{marginTop: '1rem', fontSize: '0.8rem', fontWeight: 'bold', color: '#aaa', textTransform: 'uppercase'}}>Incrementalism</div>
+        </div>
+
+        {/* Arrow */}
+        <div style={{color: 'var(--pitch-accent)', fontSize: '2rem'}}>→</div>
+
+        {/* Step 2: Explore (The Hero Phase) */}
+        <div className="metric-card" style={{padding: '2.5rem 1.5rem', background: 'white', border: '2px solid var(--pitch-accent)', transform: 'scale(1.1)', boxShadow: '0 20px 40px rgba(140,21,21,0.15)', zIndex: 10}}>
+            <div style={{fontSize: '3rem', marginBottom: '1rem'}}>🔭</div>
+            <h3 style={{fontSize: '1.4rem', marginBottom: '1rem', color: 'var(--pitch-accent)'}}>2. Research Wide</h3>
+            <div style={{display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'center'}}>
+                <span style={{background: '#f0f0f0', padding: '0.3rem 0.8rem', borderRadius: '4px', fontSize: '0.9rem', fontWeight: 'bold'}}>Inverse Domains</span>
+                <span style={{background: '#f0f0f0', padding: '0.3rem 0.8rem', borderRadius: '4px', fontSize: '0.9rem', fontWeight: 'bold'}}>Analogous Domains</span>
+                <span style={{background: '#f0f0f0', padding: '0.3rem 0.8rem', borderRadius: '4px', fontSize: '0.9rem', fontWeight: 'bold'}}>Extreme Domains</span>
+            </div>
+        </div>
+
+        {/* Arrow */}
+        <div style={{color: 'var(--pitch-accent)', fontSize: '2rem'}}>→</div>
+
+        {/* Step 3: Execute */}
+        <div className="metric-card" style={{padding: '2rem 1.5rem', background: 'white'}}>
+            <div style={{fontSize: '2.5rem', marginBottom: '1rem'}}>💎</div>
+            <h3 style={{fontSize: '1.2rem', marginBottom: '0.5rem', color: '#1a1a1a'}}>3. Validate Narrow</h3>
+            <p style={{fontSize: '0.9rem', color: '#666', margin: 0}}>Translate patterns back to the problem.</p>
+            <div style={{marginTop: '1rem', fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--pitch-accent)', textTransform: 'uppercase'}}>Breakthrough</div>
+        </div>
+
     </div>
-    <p className="animate-enter delay-3" style={{marginTop: '2.5rem', fontSize: '1.3rem', color: '#444', maxWidth: '900px'}}>
-      Like Stanford's Accelerator Studio, AI Studio Teams <strong>enables development and impact</strong> of authentic practice <strong>that improves learning</strong>—combining technical capability with policy awareness for responsible AI deployment.
+
+    <p className="animate-enter delay-3" style={{marginTop: '4rem', fontSize: '1.3rem', color: '#444', maxWidth: '800px', fontStyle: 'italic'}}>
+        "The best solution to your problem likely exists in a field you've never explored."
     </p>
+
     <div className="pitch-footer"><span className="pitch-footer-text">Cross-Domain Problem Solving</span></div>
     <div className="slide-number">7</div>
   </div>
@@ -384,7 +484,7 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
       <div style={{position: 'absolute', top: '50%', left: '0', right: '0', height: '4px', background: '#eee', zIndex: 0}}></div>
 
       {/* Timeline Nodes */}
-      <div style={{display: 'flex', justifyContent: 'space-between', position: 'relative', zIndex: 1}}>
+      <div style={{display: 'flex', justifyContent: 'center', gap: '2rem', position: 'relative', zIndex: 1}}>
 
         <div style={{background: 'white', padding: '1rem 2rem', borderRadius: '50px', border: '2px solid var(--pitch-accent)', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', textAlign: 'center'}}>
            <div style={{fontWeight: 'bold', color: 'var(--pitch-accent)'}}>Year 1: El Segundo</div>
@@ -404,7 +504,7 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
       </div>
     </div>
 
-    <div className="pitch-footer"><span className="pitch-footer-text">Rebuilding the Bridge to Careers</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">From Pilot to National Scale</span></div>
     <div className="slide-number">8</div>
   </div>
 
@@ -443,31 +543,53 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
     <h1 className="animate-enter">The Right Team to Execute</h1>
     <h2 className="animate-enter delay-1">Technology. Design. Policy.</h2>
 
-    <div className="metric-grid animate-enter delay-2" style={{marginTop: '2rem'}}>
-      <div className="metric-card">
-        <div className="avatar-circle">
+    <div className="metric-grid animate-enter delay-2" style={{marginTop: '3rem', alignItems: 'start', gap: '1.5rem'}}>
+      
+      {/* Charles Sims */}
+      <div className="metric-card" style={{padding: '2rem 1.25rem', background: 'white', border: '1px solid #eee', minHeight: '280px'}}>
+        <div className="avatar-circle" style={{width: '90px', height: '90px', marginBottom: '1rem'}}>
           <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" style={{objectPosition: 'center', transform: 'scale(1.08) translateX(5px)'}} />
         </div>
-        <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Charles Sims</h3>
-        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '0.75rem'}}>Project Director</p>
-        <p style={{fontSize: '0.95rem', lineHeight: '1.4'}}>Tech transformation leader (LA Clippers, UTA).<br/>Creator of SkaFld Ideation Methodology.</p>
+        <h3 style={{fontSize: '1.3rem', marginBottom: '0.2rem'}}>Charles Sims</h3>
+        <p style={{fontSize: '0.75rem', color: 'var(--pitch-accent)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '1rem'}}>Project Director</p>
+        
+        <div style={{textAlign: 'center', fontSize: '0.55rem', lineHeight: 1.6, color: '#555'}}>
+          <strong>Former CTO, LA Clippers & UTA.</strong> <br/>
+          Creator of the SkaFld Ideation Methodology. <br/>
+          Founder of SkaFld Venture Studio.
+        </div>
       </div>
-      <div className="metric-card" style={{border: '2px solid var(--pitch-accent)'}}>
-        <div className="avatar-circle" style={{border: '4px solid var(--pitch-accent)'}}>
+
+      {/* Keith Coleman */}
+      <div className="metric-card" style={{padding: '2rem 1.25rem', background: 'white', border: '1px solid #eee', minHeight: '280px'}}>
+        <div className="avatar-circle" style={{width: '90px', height: '90px', marginBottom: '1rem'}}>
           <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" style={{objectPosition: '0 25%'}} />
         </div>
-        <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Keith Coleman</h3>
-        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '0.75rem'}}>Stanford Liaison & Policy Lead</p>
-        <p style={{fontSize: '0.95rem', lineHeight: '1.4'}}><strong>Stanford BA '86. mediaX Advisory Scholar.</strong><br/>UN SDG Fund Breakthrough Alliance Co-Chair.</p>
+        <h3 style={{fontSize: '1.3rem', marginBottom: '0.2rem'}}>Keith Coleman</h3>
+        <p style={{fontSize: '0.75rem', color: 'var(--pitch-accent)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '1rem'}}>Stanford Liaison & Policy</p>
+        
+        <div style={{textAlign: 'center', fontSize: '0.55rem', lineHeight: 1.6, color: '#555'}}>
+          <strong>Stanford BA '86.</strong> <br/>
+          Distinguished Visiting Scholar, <strong>Stanford mediaX</strong>. <br/>
+          Co-Chair, UN SDG Fund Breakthrough Alliance.
+        </div>
       </div>
-      <div className="metric-card">
-        <div className="avatar-circle">
+
+      {/* Mike Belloli */}
+      <div className="metric-card" style={{padding: '2rem 1.25rem', background: 'white', border: '1px solid #eee', minHeight: '280px'}}>
+        <div className="avatar-circle" style={{width: '90px', height: '90px', marginBottom: '1rem'}}>
           <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" style={{objectPosition: '10% 5%'}} />
         </div>
-        <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Mike Belloli</h3>
-        <p style={{fontSize: '1rem', color: 'var(--pitch-accent)', fontWeight: 'bold', marginBottom: '0.75rem'}}>Technology & Operations</p>
-        <p style={{fontSize: '0.95rem', lineHeight: '1.4'}}>Full-stack developer. Platform architect.<br/>COPPA/FERPA compliance expert.</p>
+        <h3 style={{fontSize: '1.3rem', marginBottom: '0.2rem'}}>Mike Belloli</h3>
+        <p style={{fontSize: '0.75rem', color: 'var(--pitch-accent)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '1rem'}}>Technology Lead</p>
+        
+        <div style={{textAlign: 'center', fontSize: '0.55rem', lineHeight: 1.6, color: '#555'}}>
+          <strong>COO, SkaFld Studio.</strong> <br/>
+          Co-Founder, <strong>Lyfe AI</strong> & <strong>Defy Mortgage</strong>. <br/>
+          Full-stack developer and platform architect.
+        </div>
       </div>
+
     </div>
     <div className="pitch-footer"><span className="pitch-footer-text">Interdisciplinary Expertise</span></div>
     <div className="slide-number">10</div>
@@ -477,10 +599,13 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
   <div className="pitch-slide slide-gradient">
     <img src="/img/logo.svg" className="logo-corner" alt="SkaFld Logo" />
     <h1 className="animate-enter">Rebuilding the Bridge to Careers</h1>
-    <h2 className="animate-enter delay-1">Nurturing human potential through verified capability.</h2>
+    <h2 className="animate-enter delay-1">The first dollar is the hardest. This is that dollar.</h2>
 
     <div className="highlight-box animate-enter delay-2" style={{background: 'white', width: '100%', maxWidth: '1000px', marginTop: '2rem'}}>
-      <h2 style={{margin: '0 0 1.5rem 0', color: '#1a1a1a'}}>The Ask: $50,000</h2>
+      <h2 style={{margin: '0 0 0.5rem 0', color: '#1a1a1a'}}>The Ask: $50,000</h2>
+      <p style={{margin: '0 0 1.5rem 0', fontSize: '1rem', color: '#666'}}>
+        To do this right takes $500K–$1M. Stanford CREATE+AI is the <strong style={{color: 'var(--pitch-accent)'}}>leverage</strong> that unlocks the rest.
+      </p>
 
       <div className="funding-bar-container">
         <div className="funding-bar">
@@ -511,28 +636,63 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
       </div>
 
       <p style={{marginTop: '1.5rem', fontSize: '1rem', color: '#666', textAlign: 'center'}}>
-        <strong>Sustainability:</strong> Year 2+ funded by CTE integration, employer contributions, and SaaS revenue. <strong>$521 per student.</strong>
+        <strong>Year 2+:</strong> CTE integration, employer contributions, SaaS revenue. <strong style={{color: 'var(--pitch-accent)'}}>$521 per student.</strong>
       </p>
 
     </div>
-    <div className="pitch-footer"><span className="pitch-footer-text">$50K Enables Leverage for Greater Impact</span></div>
+    <div className="pitch-footer"><span className="pitch-footer-text">$50K Proves the Model → Unlocks District & Industry Partners</span></div>
     <div className="slide-number">11</div>
   </div>
 
   {/* Slide 12: Closing */}
   <div className="pitch-slide slide-dark">
-    <img src="/img/logo-white.svg" className="logo-corner" alt="SkaFld Logo" />
-    <h1 className="animate-enter" style={{fontSize: '5rem', marginBottom: '1rem'}}>AI Studio Teams</h1>
-    <h2 className="animate-enter delay-1" style={{fontWeight: '300', marginTop: '1rem', fontSize: '2.2rem', color: 'white'}}>Teaching the Next Generation to Fish.</h2>
-
-    <p className="animate-enter delay-2" style={{fontSize: '1.5rem', color: 'rgba(255,255,255,0.8)', maxWidth: '800px', marginTop: '2rem'}}>
-      Human-centered. Interdisciplinary. Portfolio-proven.
-    </p>
-
-    <div className="animate-enter delay-3" style={{marginTop: '4rem', fontSize: '1.2rem', color: '#888'}}>
-      charles@skafldstudio.com | keith.coleman@alumni.stanford.edu | mike@skafldstudio.com
+    <div className="animate-enter" style={{zIndex: 1, textAlign: 'center'}}>
+        <img src="/img/logo-white.svg" alt="SkaFld Logo" style={{height: '80px', marginBottom: '2rem'}} />
+        <h1 style={{fontSize: '5rem', marginBottom: '0.5rem', letterSpacing: '-0.03em'}}>AI Studio Teams</h1>
+        <h2 style={{fontWeight: '300', fontSize: '2.4rem', color: 'rgba(255,255,255,0.7)', textTransform: 'none', letterSpacing: '0'}}>
+            Teaching the Next Generation to <span style={{color: 'white', fontWeight: '500'}}>Fish.</span>
+        </h2>
     </div>
-    <div className="slide-number" style={{color: 'rgba(255,255,255,0.5)'}}>12</div>
+
+    <div className="animate-enter delay-1" style={{
+        marginTop: '4rem', 
+        padding: '1.5rem 3rem', 
+        border: '1px solid rgba(255,255,255,0.1)', 
+        borderRadius: '50px', 
+        background: 'rgba(255,255,255,0.03)',
+        backdropFilter: 'blur(10px)',
+        zIndex: 1
+    }}>
+        <p style={{margin: 0, fontSize: '1.4rem', color: 'rgba(255,255,255,0.9)', letterSpacing: '0.05em', textTransform: 'uppercase', fontWeight: '600'}}>
+            Human-centered <span style={{color: '#ff6b6b', opacity: 0.5}}>·</span> Interdisciplinary <span style={{color: '#ff6b6b', opacity: 0.5}}>·</span> Portfolio-proven
+        </p>
+    </div>
+
+    <div className="animate-enter delay-2" style={{
+        marginTop: '5rem', 
+        display: 'grid', 
+        gridTemplateColumns: 'repeat(3, 1fr)', 
+        gap: '4rem', 
+        width: '100%', 
+        maxWidth: '1000px',
+        zIndex: 1
+    }}>
+        <div style={{textAlign: 'center'}}>
+            <div style={{color: 'white', fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '0.2rem'}}>Charles Sims</div>
+            <div style={{color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem'}}>charles@skafldstudio.com</div>
+        </div>
+        <div style={{textAlign: 'center'}}>
+            <div style={{color: 'white', fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '0.2rem'}}>Keith Coleman</div>
+            <div style={{color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem'}}>keith.coleman@alumni.stanford.edu</div>
+        </div>
+        <div style={{textAlign: 'center'}}>
+            <div style={{color: 'white', fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '0.2rem'}}>Mike Belloli</div>
+            <div style={{color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem'}}>mike@skafldstudio.com</div>
+        </div>
+    </div>
+
+    <div className="pitch-footer"><span className="pitch-footer-text" style={{color: 'rgba(255,255,255,0.3)'}}>Stanford CREATE+AI 2026</span></div>
+    <div className="slide-number" style={{color: 'rgba(255,255,255,0.2)'}}>12</div>
   </div>
 
 </div>
