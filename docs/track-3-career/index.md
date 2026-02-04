@@ -23,7 +23,7 @@ The pathway from education to employment is breaking. As AI transforms the workf
 
 Most AI education gives students prompts that expire in months. **We teach metacognitive skills through real business challenges**—skills that transfer across any AI tool, because tools change, but the way you THINK persists. Through the SkaFld Ideation Methodology, students learn not just how to use AI tools, but how to THINK about problems—combining decomposition thinking, cross-domain pattern recognition, and responsible AI practices.
 
-This program puts **educators and learners at the heart of AI design**—leveraging **"Social Learning"** to ensure these tools expand access, agency, and connection rather than replacing the human relationships essential to learning. We answer the "AI Inflection Point" by focusing on the **Why** of learning—agency, connection, and flourishing. Like Stanford's commitment to interdisciplinary learning, we combine technical capability with policy awareness and strategic thinking for responsible AI deployment.
+This program puts **educators and learners at the heart of Human-Centered AI design**—leveraging **"Social Learning"** to ensure these tools expand access, agency, and connection rather than replacing the human relationships essential to learning. We answer the "AI Inflection Point" by focusing on the **Why** of learning—agency, connection, and flourishing. Like Stanford's commitment to interdisciplinary learning, we combine technical capability with policy awareness and strategic thinking for responsible AI deployment.
 
 ### The Innovation
 

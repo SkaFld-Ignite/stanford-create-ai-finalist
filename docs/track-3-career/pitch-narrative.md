@@ -196,13 +196,14 @@ EMPLOYER integration: Real projects with real stakes. Lave and Wenger proved
 authentic context produces deeper understanding.
 
 And RESPONSIBLE AI practices—students learn WHY ethical boundaries matter.
-Active judgment, not just guardrails."
+Active judgment, not just guardrails. This is Human-Centered AI."
 ```
 
 **Key Emphasis:**
 - Say "four pillars" to establish the framework
 - Quickly cite the research—establishes credibility without dwelling
 - Connect back to employer verification (thesis: portfolios prove capability)
+- **Emphasize "Human-Centered AI"** - aligns with slide footer
 
 **[CLICK to Slide 7]**
 

@@ -174,8 +174,8 @@ AI Studio Teams is powered by **SkafldTrailhead**, an AI-powered K-12 learning p
 - **Content Moderation**: AI-powered safety monitoring with human review.
 - **Enterprise SSO**: Microsoft and Google authentication for district integration.
 
-:::tip Human-Centered Design
-This program puts **educators and learners at the heart of AI design**—ensuring these tools expand access, agency, and connection rather than replacing the human relationships essential to learning and development.
+:::tip Human-Centered AI
+This program puts **educators and learners at the heart of Human-Centered AI**—ensuring these tools expand access, agency, and connection rather than replacing the human relationships essential to learning and development.
 :::
 
 ---

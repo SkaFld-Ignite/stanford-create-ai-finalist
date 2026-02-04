@@ -43,7 +43,7 @@ Learning in authentic contexts with genuine stakes produces deeper understanding
 
 **Why Simulation Falls Short:** Traditional CTE simulates workplaces but cannot replicate real stakes, real audiences, and real quality standards.
 
-## AI Collaboration Principles
+## Human-Centered AI Principles
 
 Students learn to direct AI systems, evaluate output quality, and add human judgment—developing the collaboration skills employers increasingly require.
 
