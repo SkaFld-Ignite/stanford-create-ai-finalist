@@ -23,6 +23,11 @@ const sidebars: SidebarsConfig = {
       type: 'doc',
       id: 'pitch',
       label: 'Pitch Deck'
+    },
+    {
+      type: 'doc',
+      id: 'track-3-career/pitch-narrative',
+      label: 'Pitch Deck Presentation Narrative'
     }
   ],
 };
