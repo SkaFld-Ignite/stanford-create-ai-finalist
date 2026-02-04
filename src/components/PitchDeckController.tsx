@@ -193,16 +193,30 @@ const PitchDeckController = () => {
         });
 
         // FIX: Image Distortion
-        // Specifically target images to ensure they don't stretch
-        slideClone.querySelectorAll('img').forEach((img) => {
-          // If it's an avatar/headshot or general image
-          img.style.objectFit = 'cover';
-          
-          // If it is inside an avatar-circle, force fill
-          if (img.closest('.avatar-circle')) {
-             img.style.width = '100%';
-             img.style.height = '100%';
+        // Replace avatar images with background-image divs for perfect object-fit in html2canvas
+        slideClone.querySelectorAll('.avatar-circle').forEach((avatar) => {
+          const img = avatar.querySelector('img');
+          if (img) {
+            const src = img.getAttribute('src');
+            // Create a replacement div
+            const replacementDiv = document.createElement('div');
+            replacementDiv.style.width = '100%';
+            replacementDiv.style.height = '100%';
+            replacementDiv.style.borderRadius = '50%';
+            replacementDiv.style.backgroundImage = `url(${src})`;
+            replacementDiv.style.backgroundSize = 'cover';
+            replacementDiv.style.backgroundPosition = img.style.objectPosition || 'center'; // Preserve custom object-position
+            replacementDiv.style.transform = img.style.transform || 'none'; // Preserve scale transforms
+            
+            // Clear the avatar container and append the new div
+            avatar.innerHTML = '';
+            avatar.appendChild(replacementDiv);
           }
+        });
+
+        // Ensure other images have object-fit cover
+        slideClone.querySelectorAll('img:not(.avatar-circle img)').forEach((img) => {
+           img.style.objectFit = 'cover';
         });
 
         // Force funding segment widths if they are percentage based
