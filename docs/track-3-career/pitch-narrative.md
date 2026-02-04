@@ -155,20 +155,23 @@ The result? Portfolios that PROVE capability—not credentials that claim it."
 
 [Reference chat demo visual]
 
-Notice the AI doesn't provide the answer. It asks: 'What OTHER fields have already
-solved a similar problem?'
+In this pilot scenario with Boeing, the AI coach doesn't provide the answer. 
+It asks the student to DECOMPOSE the problem: 'What are the key failure points 
+in quality control documentation?'
 
-The student responds by looking outside their immediate domain—game designers for
-engagement, aviation for error reduction.
+The student identifies the real-world friction: handoffs between shifts and 
+manual entry errors.
 
-The AI encourages: 'Now we're thinking! Decompose it into testable pieces.'
+Then, the AI nudges them to RESEARCH WIDE—looking at how healthcare and aviation 
+have solved similar handoff challenges.
 
 This is ACTIVE learning. The AI is a catalyst for critical thinking."
 ```
 
 **Key Emphasis:**
 - "From Crutch to Catalyst" - direct answer to summit theme
-- Demonstrates practical implementation
+- "AI coach doesn't provide the answer" - mechanism of catalyst
+- "Research wide" - core SkaFld methodology
 - Quick slide - keep momentum
 
 **[CLICK to Slide 6]**
