@@ -190,7 +190,8 @@ table tr:hover {
   .pitch-slide {
     /* 16:9 aspect ratio using viewport width */
     width: 100vw !important;
-    height: 56.25vw !important; /* 9/16 = 0.5625 */
+    height: 56.25vw !important;
+    /* 9/16 = 0.5625 */
     max-height: 100vh !important;
     page-break-after: always !important;
     page-break-inside: avoid !important;
@@ -492,10 +493,10 @@ table tr:hover {
 }
 
 .pitch-footer-text {
-  font-size: 0.9rem;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 /* Utilities */
@@ -994,13 +995,13 @@ table tr:hover {
 /* Slide Number */
 .slide-number {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-size: 0.8rem;
+  bottom: 25px;
+  right: 25px;
+  font-size: 18px;
   color: #888;
   z-index: 100;
   font-family: 'Inter', sans-serif;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 
@@ -1221,6 +1222,7 @@ body.presentation-mode-active .pitch-controls:hover {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -1285,7 +1287,8 @@ body.pdf-generating .pitch-deck-container {
 
 body.pdf-generating .pitch-slide {
   width: 1280px !important;
-  height: 720px !important; /* Exact 16:9 ratio */
+  height: 720px !important;
+  /* Exact 16:9 ratio */
   page-break-after: always;
   page-break-inside: avoid;
   opacity: 1 !important;
