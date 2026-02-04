@@ -5,6 +5,31 @@ hide_table_of_contents: true
 
 import PitchDeckController from '@site/src/components/PitchDeckController';
 
+<style>{`
+  .team-bio-text {
+    display: block !important;
+    text-align: center !important;
+    font-size: 10px !important;
+    line-height: 1.6 !important;
+    color: #aaa !important;
+    font-weight: 400 !important;
+  }
+  .team-name-text {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #1a1a1a !important;
+    margin-bottom: 4px !important;
+  }
+  .team-title-text {
+    font-size: 9px !important;
+    font-weight: 700 !important;
+    color: #8C1515 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 12px !important;
+  }
+`}</style>
+
 <div className="pitch-deck-container">
   <PitchDeckController />
 
@@ -550,8 +575,8 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
         <div className="avatar-circle" style={{width: '90px', height: '90px', marginBottom: '1rem'}}>
           <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" style={{objectPosition: 'center', transform: 'scale(1.08) translateX(5px)'}} />
         </div>
-        <h3 style={{fontSize: '1.5rem', marginBottom: '0.3rem', color: '#1a1a1a', fontWeight: 700}}>Charles Sims</h3>
-        <p style={{fontSize: '0.7rem', color: 'var(--pitch-accent)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '1rem'}}>Project Director</p>
+        <div className="team-name-text">Charles Sims</div>
+        <div className="team-title-text">Project Director</div>
         <span className="team-bio-text">
           Former CTO, LA Clippers & UTA<br/>
           Creator, SkaFld Ideation Methodology<br/>
@@ -564,8 +589,8 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
         <div className="avatar-circle" style={{width: '90px', height: '90px', marginBottom: '1rem'}}>
           <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" style={{objectPosition: '0 25%'}} />
         </div>
-        <h3 style={{fontSize: '1.5rem', marginBottom: '0.3rem', color: '#1a1a1a', fontWeight: 700}}>Keith Coleman</h3>
-        <p style={{fontSize: '0.7rem', color: 'var(--pitch-accent)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '1rem'}}>Stanford Liaison & Policy</p>
+        <div className="team-name-text">Keith Coleman</div>
+        <div className="team-title-text">Stanford Liaison & Policy</div>
         <span className="team-bio-text">
           Stanford BA '86<br/>
           Distinguished Scholar, Stanford mediaX<br/>
@@ -578,8 +603,8 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
         <div className="avatar-circle" style={{width: '90px', height: '90px', marginBottom: '1rem'}}>
           <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" style={{objectPosition: '10% 5%'}} />
         </div>
-        <h3 style={{fontSize: '1.5rem', marginBottom: '0.3rem', color: '#1a1a1a', fontWeight: 700}}>Mike Belloli</h3>
-        <p style={{fontSize: '0.7rem', color: 'var(--pitch-accent)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '1rem'}}>Technology Lead</p>
+        <div className="team-name-text">Mike Belloli</div>
+        <div className="team-title-text">Technology Lead</div>
         <span className="team-bio-text">
           COO, SkaFld Studio<br/>
           Co-Founder, Lyfe AI & Defy Mortgage<br/>
