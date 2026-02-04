@@ -6,13 +6,16 @@ hide_table_of_contents: true
 import PitchDeckController from '@site/src/components/PitchDeckController';
 
 <style>{`
-  .team-bio-text {
+  .team-bio-text,
+  .team-bio-text p {
     display: block !important;
     text-align: center !important;
-    font-size: 10px !important;
-    line-height: 1.6 !important;
-    color: #aaa !important;
+    font-size: 11px !important;
+    line-height: 1.5 !important;
+    color: #999 !important;
     font-weight: 400 !important;
+    margin: 0 !important;
+    max-width: none !important;
   }
   .team-name-text {
     font-size: 22px !important;
@@ -21,7 +24,7 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
     margin-bottom: 4px !important;
   }
   .team-title-text {
-    font-size: 9px !important;
+    font-size: 10px !important;
     font-weight: 700 !important;
     color: #8C1515 !important;
     text-transform: uppercase !important;
@@ -228,7 +231,7 @@ import PitchDeckController from '@site/src/components/PitchDeckController';
         flexDirection: 'column',
         justifyContent: 'space-between'
       }}>
-        <h3 style={{margin: '0 0 0.8rem 0', fontSize: '0.85rem', color: '#666', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center'}}>12-Week Scaffolded Journey</h3>
+        <h3 style={{margin: '0 0 0.8rem 0', fontSize: '0.85rem', color: '#666', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center'}}>12-Week Learning Journey</h3>
 
         {/* Phase 1 */}
         <div style={{display: 'flex', alignItems: 'center', gap: '0.8rem', paddingBottom: '0.8rem', borderBottom: '1px solid #eee'}}>
