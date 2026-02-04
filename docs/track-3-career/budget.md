@@ -8,7 +8,7 @@ sidebar_position: 9
 :::tip The First Dollar is the Hardest
 **This is that dollar.** To build AI Studio Teams right—to create a scalable national platform that transforms how students prepare for AI-shaped careers—takes $500K to $1M. Stanford CREATE+AI is the **pre-seed leverage** that unlocks the rest.
 
-This $50,000 investment provides the proof-of-concept that makes the larger vision fundable. And even if scaling doesn't happen immediately, nothing is wasted—every dollar builds usable, ready infrastructure that delivers value to the pilot students and employers.
+This $50,000 investment provides the proof-of-concept that makes the larger vision fundable. Nothing is overhead—every dollar builds real infrastructure that delivers immediate value to pilot students and employers.
 :::
 
 ## $50,000 Resource Allocation
