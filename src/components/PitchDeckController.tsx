@@ -21,9 +21,6 @@ const PitchDeckController = () => {
           const slides = document.querySelectorAll('.pitch-slide');
           const index = Array.from(slides).indexOf(entry.target);
           if (index !== -1) setActiveSlideIndex(index);
-        } else {
-          // Optional: Remove class to re-animate when scrolling back up
-          // entry.target.classList.remove('in-view'); 
         }
       });
     };
@@ -40,8 +37,6 @@ const PitchDeckController = () => {
       const slides = document.querySelectorAll('.pitch-slide');
       if (!slides.length) return;
 
-      // Find current scroll position to determine roughly where we are
-      // (State might be slightly desynced if user scrolled manually)
       let currentSlideIndex = -1;
       let minDistance = Infinity;
 
@@ -84,7 +79,6 @@ const PitchDeckController = () => {
     setIsPresentationMode(nextState);
 
     if (nextState) {
-      // Enter Fullscreen directly on click
       const elem = document.documentElement;
       if (elem.requestFullscreen) {
         elem.requestFullscreen().catch((err) => {
@@ -92,7 +86,6 @@ const PitchDeckController = () => {
         });
       }
     } else {
-      // Exit Fullscreen directly on click
       if (document.fullscreenElement) {
         document.exitFullscreen().catch((err) => {
           console.warn(`Error attempting to exit fullscreen: ${err.message}`);
@@ -101,7 +94,6 @@ const PitchDeckController = () => {
     }
   };
 
-  // Sync state if user exits fullscreen via Esc key
   useEffect(() => {
     const handleFullscreenChange = () => {
       if (!document.fullscreenElement && isPresentationMode) {
@@ -113,7 +105,6 @@ const PitchDeckController = () => {
     return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
   }, [isPresentationMode]);
 
-  // Handle CSS class toggle side effect
   useEffect(() => {
     if (isPresentationMode) {
       document.body.classList.add('presentation-mode-active');
@@ -130,19 +121,17 @@ const PitchDeckController = () => {
     setIsGeneratingPDF(true);
 
     try {
-      // Dynamically import libraries
       const html2canvas = (await import('html2canvas')).default;
       const { jsPDF } = await import('jspdf');
 
-      // Get all slides
       const slides = document.querySelectorAll('.pitch-slide');
       if (!slides.length) return;
 
-      // Exact 16:9 dimensions for fullscreen presentation
+      // Force 1920x1080 resolution for capture
       const slideWidth = 1920;
       const slideHeight = 1080;
 
-      // PDF dimensions in mm (16:9 ratio) - matches standard presentation aspect
+      // PDF dimensions in mm (16:9 ratio)
       const pdfWidthMm = 338.67;
       const pdfHeightMm = 190.5;
 
@@ -153,27 +142,23 @@ const PitchDeckController = () => {
         compress: true
       });
 
-      // Create offscreen container for rendering slides at exact dimensions
+      // Offscreen container to render slides at exact target dimensions
       const offscreenContainer = document.createElement('div');
       offscreenContainer.style.cssText = `
         position: fixed;
-        left: -9999px;
+        left: -10000px;
         top: 0;
         width: ${slideWidth}px;
         height: ${slideHeight}px;
+        z-index: 99999;
         overflow: hidden;
-        z-index: -9999;
       `;
       document.body.appendChild(offscreenContainer);
 
-      // Process each slide
       for (let i = 0; i < slides.length; i++) {
-        const originalSlide = slides[i] as HTMLElement;
+        const originalSlide = slides[i];
+        const slideClone = originalSlide.cloneNode(true);
 
-        // Clone the slide
-        const slideClone = originalSlide.cloneNode(true) as HTMLElement;
-
-        // Get original computed styles for background
         const computedStyle = window.getComputedStyle(originalSlide);
         const originalBg = computedStyle.background;
         const originalBgColor = computedStyle.backgroundColor;
@@ -192,92 +177,78 @@ const PitchDeckController = () => {
           justify-content: center !important;
           align-items: center !important;
           overflow: hidden !important;
-          position: relative !important;
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
           background: ${originalBg || originalBgColor} !important;
         `;
 
-        // Force all animations to complete state
+        // Force animations to complete state
         slideClone.classList.add('in-view');
         slideClone.querySelectorAll('.animate-enter, .layer-card, .funding-segment, .chat-message, [class*="animate"]').forEach((el) => {
-          const htmlEl = el as HTMLElement;
-          htmlEl.style.opacity = '1';
-          htmlEl.style.transform = 'none';
-          htmlEl.style.transition = 'none';
-          htmlEl.style.animation = 'none';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+          el.style.transition = 'none';
+          el.style.animation = 'none';
         });
 
-        // Force funding segment widths
-        slideClone.querySelectorAll('.funding-segment.fill-40').forEach((el) => {
-          (el as HTMLElement).style.width = '40%';
-        });
-        slideClone.querySelectorAll('.funding-segment.fill-24').forEach((el) => {
-          (el as HTMLElement).style.width = '24%';
-        });
-        slideClone.querySelectorAll('.funding-segment.fill-16').forEach((el) => {
-          (el as HTMLElement).style.width = '16%';
-        });
-        slideClone.querySelectorAll('.funding-segment.fill-20').forEach((el) => {
-          (el as HTMLElement).style.width = '20%';
+        // FIX: Image Distortion
+        // Specifically target images to ensure they don't stretch
+        slideClone.querySelectorAll('img').forEach((img) => {
+          // If it's an avatar/headshot or general image
+          img.style.objectFit = 'cover';
+          
+          // If it is inside an avatar-circle, force fill
+          if (img.closest('.avatar-circle')) {
+             img.style.width = '100%';
+             img.style.height = '100%';
+          }
         });
 
-        // Remove any controls from the clone
+        // Force funding segment widths if they are percentage based
+        slideClone.querySelectorAll('.funding-segment.fill-40').forEach(el => el.style.width = '40%');
+        slideClone.querySelectorAll('.funding-segment.fill-24').forEach(el => el.style.width = '24%');
+        slideClone.querySelectorAll('.funding-segment.fill-16').forEach(el => el.style.width = '16%');
+        slideClone.querySelectorAll('.funding-segment.fill-20').forEach(el => el.style.width = '20%');
+
+        // Remove controls
         slideClone.querySelectorAll('.pitch-controls, .control-btn').forEach((el) => el.remove());
 
-        // Clear container and add this slide
         offscreenContainer.innerHTML = '';
         offscreenContainer.appendChild(slideClone);
 
-        // Wait for render
-        await new Promise((resolve) => setTimeout(resolve, 100));
+        // Wait for render stability
+        await new Promise((resolve) => setTimeout(resolve, 150));
 
-        // Determine background color for canvas
-        let bgColor: string | null = null;
-        if (originalSlide.classList.contains('slide-dark')) {
-          bgColor = '#121212';
-        } else if (originalSlide.classList.contains('slide-brand')) {
-          bgColor = '#8C1515';
-        } else if (originalSlide.classList.contains('slide-gradient')) {
-          bgColor = null; // Let html2canvas capture the gradient
-        } else {
-          bgColor = '#f8f9fa';
-        }
-
-        // Capture at exact dimensions
+        // Use windowWidth/windowHeight to ensure relative units (vw/vh) resolve to our fixed dimensions
         const canvas = await html2canvas(slideClone, {
           width: slideWidth,
           height: slideHeight,
-          scale: 2,
+          windowWidth: slideWidth,
+          windowHeight: slideHeight,
+          scale: 2, // 2x scale for crisp text on PDF
           useCORS: true,
           allowTaint: true,
-          backgroundColor: bgColor,
-          logging: false
+          backgroundColor: null,
+          logging: false,
+          scrollX: 0,
+          scrollY: 0
         });
 
-        // Add page (except for first slide)
-        if (i > 0) {
-          pdf.addPage();
-        }
-
-        // Add image to PDF - fills entire page
+        if (i > 0) pdf.addPage();
         const imgData = canvas.toDataURL('image/jpeg', 0.95);
         pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidthMm, pdfHeightMm);
       }
 
-      // Cleanup
       document.body.removeChild(offscreenContainer);
-
-      // Save the PDF
-      pdf.save('AI Studio Teams Deck.pdf');
+      pdf.save('AI_Studio_Teams_Presentation.pdf');
     } catch (error) {
       console.error('PDF generation failed:', error);
+      alert('PDF Generation failed. Please try again.');
     } finally {
       setIsGeneratingPDF(false);
     }
   };
-
-  // Calculate progress percentage
-  const totalSlides = typeof document !== 'undefined' ? document.querySelectorAll('.pitch-slide').length : 12; // default to 12 if SSR
-  const progress = ((activeSlideIndex + 1) / totalSlides) * 100;
 
   return (
     <div className="pitch-controls">
