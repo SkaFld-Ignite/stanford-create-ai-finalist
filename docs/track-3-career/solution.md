@@ -76,9 +76,7 @@ Students progress through three distinct phases, each building on the previous t
 
 ## The SkaFld Ideation Methodology
 
-### Moving from Crutch to Catalyst
-
-**Don't Give Them the Fish. Teach Them to Fish.**
+### Don't Give Them the Fish. Teach Them to Fish.
 
 Traditional AI tools can be a crutch (giving the fish). We turn AI into a catalyst for critical thinking (teaching to fish).
 

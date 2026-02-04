@@ -85,9 +85,7 @@ This isn't a future problem. This is happening RIGHT NOW."
 
 **Narrative:**
 ```
-"The central question of this era is: Will AI be a crutch or a catalyst?
-
-So what's the solution?
+"So what's the solution?
 
 [Pause, then with conviction]
 
