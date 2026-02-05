@@ -174,6 +174,9 @@ This is ACTIVE learning. The AI is a catalyst for critical thinking."
 - "Research wide" - core SkaFld methodology
 - Quick slide - keep momentum
 
+**Optional addition if time permits:**
+> "And crucially—the AI can be wrong. Students learn to verify, not just accept. That's the difference between AI as crutch and AI as catalyst."
+
 **[CLICK to Slide 6]**
 
 ---
@@ -385,6 +388,9 @@ young people need a new pathway to careers.
 We're rebuilding that bridge—through portfolios that prove capability,
 mentorship that develops potential, and AI that teaches HOW to learn.
 
+This isn't another supplement to existing pathways. It's a transformation of
+how students prove what they can do.
+
 Human-centered. Interdisciplinary. Portfolio-proven.
 
 Thank you. We're ready for your questions."
@@ -392,6 +398,7 @@ Thank you. We're ready for your questions."
 
 **Key Emphasis:**
 - Circle back to opening ("bridge collapsing")
+- "Transformation, not supplement" - signals systemic change, not incremental
 - Triple tagline: "Human-centered. Interdisciplinary. Portfolio-proven."
 - Confident close
 
