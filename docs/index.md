@@ -98,7 +98,7 @@ hide_table_of_contents: true
           <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" />
         </div>
         <h3>Keith Coleman</h3>
-        <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Stanford Liaison</p>
+        <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Strategic Partnerships</p>
       </div>
     </div>
     <div className="col col--3">

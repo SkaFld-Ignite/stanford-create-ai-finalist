@@ -13,12 +13,14 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
 
 <div className="row margin-bottom--xl" style={{alignItems: 'center'}}>
   <div className="col col--3">
-    <div className="avatar-circle" style={{width: '180px', height: '180px'}}>
-      <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" style={{objectPosition: 'center', transform: 'scale(1.08) translateX(5px)'}} />
-    </div>
+    <a href="https://www.linkedin.com/in/charlessims/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+      <div className="avatar-circle team-card-link" style={{width: '180px', height: '180px', cursor: 'pointer'}}>
+        <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" style={{objectPosition: 'center', transform: 'scale(1.08) translateX(5px)'}} />
+      </div>
+    </a>
   </div>
   <div className="col col--9">
-    <h3>Charles Sims | Project Director</h3>
+    <h3><a href="https://www.linkedin.com/in/charlessims/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}} className="team-card-link">Charles Sims | Project Director</a></h3>
     <p><strong>Strategic direction, technology leadership, employer partnerships, program design</strong></p>
     <p>Charles Sims is the Founder & CEO of SkaFld Studio and creator of the SkaFld Ideation Methodology for executing high-pressure transformation projects within tight timeframes. His approach emphasizes rapid iteration, stakeholder alignment, and measurable outcome delivery.</p>
     <ul style={{fontSize: '0.9rem'}}>
@@ -31,12 +33,14 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
 
 <div className="row margin-bottom--xl" style={{alignItems: 'center'}}>
   <div className="col col--3">
-    <div className="avatar-circle" style={{width: '180px', height: '180px'}}>
-      <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" style={{objectPosition: '0 25%'}} />
-    </div>
+    <a href="https://www.linkedin.com/in/keith-coleman-9000973/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+      <div className="avatar-circle team-card-link" style={{width: '180px', height: '180px', cursor: 'pointer'}}>
+        <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" style={{objectPosition: '0 25%'}} />
+      </div>
+    </a>
   </div>
   <div className="col col--9">
-    <h3>Keith Coleman | Stanford Liaison & Policy</h3>
+    <h3><a href="https://www.linkedin.com/in/keith-coleman-9000973/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}} className="team-card-link">Keith Coleman | Strategic Partnerships</a></h3>
     <p><strong>Policy & strategy expertise for responsible AI deployment, Stanford collaboration, workforce development</strong></p>
     <p>Keith Coleman brings the policy and strategy awareness essential for responsible AI deployment—complementing technical AI skills with governance understanding and ethical considerations. His career spans workforce development and building bridges between education, industry, and policy.</p>
     <ul style={{fontSize: '0.9rem'}}>
@@ -50,12 +54,14 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
 
 <div className="row margin-bottom--xl" style={{alignItems: 'center'}}>
   <div className="col col--3">
-    <div className="avatar-circle" style={{width: '180px', height: '180px'}}>
-      <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" style={{objectPosition: '10% 5%'}} />
-    </div>
+    <a href="https://www.linkedin.com/in/mikebelloli/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+      <div className="avatar-circle team-card-link" style={{width: '180px', height: '180px', cursor: 'pointer'}}>
+        <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" style={{objectPosition: '10% 5%'}} />
+      </div>
+    </a>
   </div>
   <div className="col col--9">
-    <h3>Mike Belloli | Technology Lead</h3>
+    <h3><a href="https://www.linkedin.com/in/mikebelloli/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}} className="team-card-link">Mike Belloli | Technology Lead</a></h3>
     <p><strong>Platform strategy, financial modeling, digital infrastructure</strong></p>
     <p>Mike Belloli is COO of SkaFld Studio, Co-Founder of Lyfe AI & Defy Mortgage, and a full-stack developer and architect. He manages financials, pitch strategy, and digital infrastructure for the SkaFld Trailhead platform, ensuring operational excellence across all technical and business domains.</p>
     <ul style={{fontSize: '0.9rem'}}>

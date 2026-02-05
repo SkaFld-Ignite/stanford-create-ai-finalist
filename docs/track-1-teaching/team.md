@@ -22,7 +22,7 @@ Charles Sims is a technology transformation leader at **Skafld Studio** with ext
 
 ---
 
-### Keith Coleman - Strategic Partnerships & Stanford Liaison
+### Keith Coleman - Strategic Partnerships
 
 Keith Coleman is Co-Chair of the UN Joint SDG Fund Breakthrough Alliance and Founding Co-President Emeritus of Stanford Angels & Entrepreneurs of Southern California. He brings decades of experience in education, workforce development, and public-private partnerships.
 
