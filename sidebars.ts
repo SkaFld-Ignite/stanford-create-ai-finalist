@@ -33,6 +33,11 @@ const sidebars: SidebarsConfig = {
       type: 'doc',
       id: 'track-3-career/qa-preparation',
       label: 'Q&A Preparation'
+    },
+    {
+      type: 'doc',
+      id: 'track-3-career/judge-analysis',
+      label: 'Judge Analysis: Strategic Briefing'
     }
   ],
 };
