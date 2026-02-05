@@ -119,10 +119,15 @@ We're not just teaching AI. We're teaching students how to LEARN."
 ```
 "This is SkaFld Trailhead—our platform for verified capability.
 
-[Point to three layers, bottom to top]
+[Point to platform components]
 
-It's a scaffolded journey. In the FOUNDATION phase, weeks 1-4, students learn
-decomposition thinking and basic AI discernment.
+Three tools working together: an AI COACH for Socratic guidance. A TEACHER
+DASHBOARD giving educators real-time visibility into student progress. And an
+EMPLOYER PORTAL where industry validates real work.
+
+Teachers lead weekly 90-minute sessions through a scaffolded journey. In the
+FOUNDATION phase, weeks 1-4, students learn decomposition thinking and basic
+AI discernment.
 
 Then, we ramp up the difficulty.
 
@@ -165,7 +170,9 @@ manual entry errors.
 Then, the AI nudges them to RESEARCH WIDE—looking at how healthcare and aviation 
 have solved similar handoff challenges.
 
-This is ACTIVE learning. The AI is a catalyst for critical thinking."
+This is ACTIVE learning. The AI is a catalyst for critical thinking—and it
+frees TEACHERS to do what humans do best: build relationships and provide
+the motivation that no AI can replicate."
 ```
 
 **Key Emphasis:**
@@ -195,8 +202,8 @@ Building capability that employers can actually verify.
 PORTFOLIO over credentials: Work samples predict job success FIVE TIMES better
 than grades. Schmidt and Hunter's meta-analysis.
 
-SOCIAL LEARNING & MENTORSHIP: We use AI to scaffold human connection. Seniors
-mentor sophomores.
+SOCIAL LEARNING & MENTORSHIP: Teachers lead. Seniors mentor sophomores. AI
+scaffolds the connections between them—amplifying what humans do best.
 
 EMPLOYER integration: Real projects with real stakes. Lave and Wenger proved
 authentic context produces deeper understanding.
@@ -257,7 +264,8 @@ That's how students generate breakthroughs on demand."
 "Why El Segundo?
 
 The nation's densest aerospace and tech corridor. Boeing. Northrop Grumman.
-Entertainment headquarters. 5 schools. 3,400 students.
+Entertainment headquarters. 5 schools. 3,400 students. We're already
+co-designing with district teachers—built WITH educators, not imposed on them.
 
 Year 1: 96 students in 8 teams. 12 employer partners. 24 paid internships.
 
