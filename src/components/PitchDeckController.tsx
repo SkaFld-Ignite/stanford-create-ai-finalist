@@ -231,21 +231,33 @@ const PitchDeckController = () => {
         // Wait for rendering to stabilize
         await new Promise((resolve) => setTimeout(resolve, 150));
 
+        // Use windowWidth/windowHeight to ensure relative units (vw/vh) resolve to our fixed dimensions
         const canvas = await html2canvas(slideClone, {
           width: slideWidth,
           height: slideHeight,
-          windowWidth: slideWidth, // Force VW units to resolve to 1920
-          windowHeight: slideHeight, // Force VH units to resolve to 1080
-          scale: 2, // 2x is plenty for a 1920 base
+          windowWidth: slideWidth,
+          windowHeight: slideHeight,
+          scale: 3, // Increased for better resolution
           useCORS: true,
           allowTaint: true,
           backgroundColor: null,
-          logging: false
+          logging: false,
+          scrollX: 0,
+          scrollY: 0,
+          onclone: (clonedDoc) => {
+             // Force the cloned body to match our target dimensions
+             // This ensures media queries and viewport units behave as if on a 1920x1080 screen
+             clonedDoc.body.style.width = '1920px';
+             clonedDoc.body.style.height = '1080px';
+             clonedDoc.documentElement.style.width = '1920px';
+             clonedDoc.documentElement.style.height = '1080px';
+          }
         });
 
         if (i > 0) pdf.addPage();
-        const imgData = canvas.toDataURL('image/jpeg', 0.9);
-        pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidthMm, pdfHeightMm);
+        // Use PNG for lossless quality
+        const imgData = canvas.toDataURL('image/png');
+        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidthMm, pdfHeightMm, undefined, 'FAST');
       }
 
       document.body.removeChild(renderContainer);
