@@ -101,7 +101,7 @@ hide_table_of_contents: true
             <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" />
           </div>
           <h3>Keith Coleman</h3>
-          <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Strategic Partnerships</p>
+          <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Strategy and Partnerships</p>
         </div>
       </a>
     </div>
@@ -112,7 +112,7 @@ hide_table_of_contents: true
             <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" />
           </div>
           <h3>Mike Belloli</h3>
-          <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Technology Lead</p>
+          <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Technology and Operations</p>
         </div>
       </a>
     </div>

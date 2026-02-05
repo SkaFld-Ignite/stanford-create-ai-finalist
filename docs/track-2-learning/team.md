@@ -27,7 +27,7 @@ Charles Sims is a technology transformation leader at Skafld Studio, where he de
 
 ---
 
-### Keith Coleman - Strategic Partnerships
+### Keith Coleman - Strategy and Partnerships
 
 **Role:** Stanford collaboration, partnership development, equity framework oversight
 

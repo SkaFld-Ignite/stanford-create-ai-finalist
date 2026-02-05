@@ -40,7 +40,7 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
     </a>
   </div>
   <div className="col col--9">
-    <h3><a href="https://www.linkedin.com/in/keith-coleman-9000973/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}} className="team-card-link">Keith Coleman | Strategic Partnerships</a></h3>
+    <h3><a href="https://www.linkedin.com/in/keith-coleman-9000973/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}} className="team-card-link">Keith Coleman | Strategy and Partnerships</a></h3>
     <p><strong>Policy & strategy expertise for responsible AI deployment, Stanford collaboration, workforce development</strong></p>
     <p>Keith Coleman brings the policy and strategy awareness essential for responsible AI deployment—complementing technical AI skills with governance understanding and ethical considerations. His career spans workforce development and building bridges between education, industry, and policy.</p>
     <ul style={{fontSize: '0.9rem'}}>
@@ -61,7 +61,7 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
     </a>
   </div>
   <div className="col col--9">
-    <h3><a href="https://www.linkedin.com/in/mikebelloli/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}} className="team-card-link">Mike Belloli | Technology Lead</a></h3>
+    <h3><a href="https://www.linkedin.com/in/mikebelloli/" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}} className="team-card-link">Mike Belloli | Technology and Operations</a></h3>
     <p><strong>Platform strategy, financial modeling, digital infrastructure</strong></p>
     <p>Mike Belloli is COO of SkaFld Studio, Co-Founder of Lyfe AI & Defy Mortgage, and a full-stack developer and architect. He manages financials, pitch strategy, and digital infrastructure for the SkaFld Trailhead platform, ensuring operational excellence across all technical and business domains.</p>
     <ul style={{fontSize: '0.9rem'}}>

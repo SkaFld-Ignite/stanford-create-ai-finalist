@@ -315,10 +315,10 @@ school to what you can DO. Focus on what you can do. Unlock your potential."
 [Charles] Charles Sims—Project Director. Former CTO of the LA Clippers and United
 Talent Agency. Creator of the SkaFld Ideation Methodology.
 
-[Keith] Keith Coleman—Strategic Partnerships. Distinguished Visiting Scholar at Stanford
+[Keith] Keith Coleman—Strategy and Partnerships. Distinguished Visiting Scholar at Stanford
 mediaX. Co-Chair of the UN SDG Fund Breakthrough Alliance.
 
-[Mike] Mike Belloli—Technology Lead. COO of SkaFld Studio. Co-Founder of
+[Mike] Mike Belloli—Technology and Operations. COO of SkaFld Studio. Co-Founder of
 Lyfe AI and Defy Mortgage. A full-stack developer and platform architect
 expert in scaling operations and data security.
 
