@@ -1064,6 +1064,21 @@ table tr:hover {
 
 }
 
+/* Team card LinkedIn link styling */
+.team-card-link {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.team-card-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 119, 181, 0.15);
+  border-color: #0077B5 !important;
+}
+
+a:has(.team-card-link) {
+  display: block;
+}
+
 
 
 .feature-icon {

@@ -258,6 +258,42 @@ const PitchDeckController = () => {
         // Use PNG for lossless quality
         const imgData = canvas.toDataURL('image/png');
         pdf.addImage(imgData, 'PNG', 0, 0, pdfWidthMm, pdfHeightMm, undefined, 'FAST');
+
+        // Add clickable links for team cards on slide 10 (Team slide, index 9)
+        if (i === 9) {
+          // LinkedIn links for team members
+          // Card positions are roughly: Charles (left), Keith (middle), Mike (right)
+          // PDF coordinates are in mm, slides are 338.67mm x 190.5mm
+          const cardWidth = 70; // approximate card width in mm
+          const cardHeight = 80; // approximate card height in mm
+          const cardY = 80; // approximate Y position from top
+          const cardSpacing = 15;
+          const startX = (pdfWidthMm - (cardWidth * 3 + cardSpacing * 2)) / 2;
+
+          // Charles Sims
+          pdf.link(startX, cardY, cardWidth, cardHeight, { url: 'https://www.linkedin.com/in/charlessims/' });
+          // Keith Coleman
+          pdf.link(startX + cardWidth + cardSpacing, cardY, cardWidth, cardHeight, { url: 'https://www.linkedin.com/in/keith-coleman-9000973/' });
+          // Mike Belloli
+          pdf.link(startX + (cardWidth + cardSpacing) * 2, cardY, cardWidth, cardHeight, { url: 'https://www.linkedin.com/in/mikebelloli/' });
+        }
+
+        // Add clickable links for final slide (slide 12, index 11) contact section
+        if (i === 11) {
+          // Contact section at bottom of slide
+          const contactY = 140; // approximate Y position
+          const contactWidth = 80;
+          const contactHeight = 25;
+          const contactSpacing = 20;
+          const startX = (pdfWidthMm - (contactWidth * 3 + contactSpacing * 2)) / 2;
+
+          // Charles contact
+          pdf.link(startX, contactY, contactWidth, contactHeight, { url: 'https://www.linkedin.com/in/charlessims/' });
+          // Keith contact
+          pdf.link(startX + contactWidth + contactSpacing, contactY, contactWidth, contactHeight, { url: 'https://www.linkedin.com/in/keith-coleman-9000973/' });
+          // Mike contact
+          pdf.link(startX + (contactWidth + contactSpacing) * 2, contactY, contactWidth, contactHeight, { url: 'https://www.linkedin.com/in/mikebelloli/' });
+        }
       }
 
       document.body.removeChild(renderContainer);
