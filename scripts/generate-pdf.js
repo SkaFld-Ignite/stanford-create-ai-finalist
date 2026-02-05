@@ -9,8 +9,10 @@ const path = require('path');
   const width = 1920;
   const height = 1080;
 
+  // Set viewport to match slide dimensions
+  await page.setViewportSize({ width, height });
+
   // Navigate to the pitch deck
-  // Assumes the server is running on port 3000
   const url = 'http://localhost:3000/pitch';
   console.log(`Navigating to ${url}...`);
   
@@ -22,7 +24,11 @@ const path = require('path');
     process.exit(1);
   }
 
-  // Inject CSS to ensure perfect print rendering
+  // Force 'screen' media type to bypass @media print styles in custom.css
+  await page.emulateMedia({ media: 'screen' });
+
+  // Inject CSS to ensure perfect PDF rendering
+  // We force body/html to be the exact size and hide UI elements
   await page.addStyleTag({
     content: `
       @page {
@@ -32,26 +38,48 @@ const path = require('path');
       body {
         margin: 0;
         padding: 0;
-        background: #121212; /* Fallback */
+        width: ${width}px;
+        height: ${height}px;
+        overflow: hidden;
       }
+      /* Force pitch slides to fill the page */
       .pitch-slide {
         width: ${width}px !important;
         height: ${height}px !important;
+        min-height: ${height}px !important;
+        padding: 0 !important; /* Remove padding that might shift content */
+        margin: 0 !important;
+        box-sizing: border-box;
         page-break-after: always;
-        print-color-adjust: exact;
-        -webkit-print-color-adjust: exact;
-        overflow: hidden;
+        page-break-inside: avoid;
       }
-      /* Hide UI controls */
-      .navbar, .footer, .pitch-controls { display: none !important; }
       
-      /* Force visibility of all elements */
-      .animate-enter { opacity: 1 !important; transform: none !important; }
+      /* Ensure inner content is centered and scaled correctly if needed */
+      .pitch-slide > * {
+        max-width: 100%;
+      }
+
+      /* Hide UI controls */
+      .navbar, .footer, .pitch-controls, .theme-doc-sidebar-container { 
+        display: none !important; 
+      }
+      
+      /* Force visibility of all animations */
+      .animate-enter, .layer-card, .funding-segment, .chat-message { 
+        opacity: 1 !important; 
+        transform: none !important; 
+        transition: none !important;
+        animation: none !important;
+      }
+      
+      /* Fix layout shifts */
+      .main-wrapper { padding: 0 !important; margin: 0 !important; }
+      article { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
     `
   });
 
-  // Wait a moment for any final renders (e.g. images)
-  await page.waitForTimeout(2000);
+  // Wait a moment for any final renders
+  await page.waitForTimeout(3000);
 
   console.log('Generating PDF...');
   
@@ -60,7 +88,7 @@ const path = require('path');
     width: `${width}px`,
     height: `${height}px`,
     printBackground: true,
-    pageRanges: '1-12' // Ensure we capture all slides
+    pageRanges: '1-12' 
   });
 
   console.log('PDF generated successfully at internal/ingestion/deck-export/AI_Studio_Teams_HighFidelity.pdf');
