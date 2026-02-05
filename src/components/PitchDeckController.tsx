@@ -113,15 +113,32 @@ const PitchDeckController = () => {
     }
   }, [isPresentationMode]);
 
-  // Handle PDF Download
-  // Simply downloads the pre-generated high-fidelity PDF from the static folder
-  const handleDownloadPDF = () => {
-    const link = document.createElement('a');
-    link.href = '/AI_Studio_Teams_Presentation.pdf'; // Path relative to static folder
-    link.download = 'AI_Studio_Teams_Presentation.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  // Handle PDF Download via Local Server
+  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
+
+  const handleDownloadPDF = async () => {
+    if (isGeneratingPDF) return;
+    setIsGeneratingPDF(true);
+
+    try {
+      const response = await fetch('http://localhost:3001/generate-pdf');
+      if (!response.ok) throw new Error('PDF Generation Failed');
+
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'AI_Studio_Teams_Presentation.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error:', error);
+      alert('PDF Server not running. Please run "npm run pdf-server" in a separate terminal.');
+    } finally {
+      setIsGeneratingPDF(false);
+    }
   };
 
   return (
@@ -145,13 +162,21 @@ const PitchDeckController = () => {
       <button
         onClick={handleDownloadPDF}
         className="control-btn"
-        title="Download PDF"
+        title={isGeneratingPDF ? "Generating High-Res PDF..." : "Download PDF"}
+        disabled={isGeneratingPDF}
+        style={{ opacity: isGeneratingPDF ? 0.6 : 1 }}
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-          <polyline points="7 10 12 15 17 10" />
-          <line x1="12" y1="15" x2="12" y2="3" />
-        </svg>
+        {isGeneratingPDF ? (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="spin">
+            <circle cx="12" cy="12" r="10" strokeDasharray="32" strokeDashoffset="12" />
+          </svg>
+        ) : (
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+        )}
       </button>
 
     </div>
