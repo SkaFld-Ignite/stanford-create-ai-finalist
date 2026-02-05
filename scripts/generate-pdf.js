@@ -72,7 +72,7 @@ const { jsPDF } = require('jspdf');
     doc.addImage(screenshotBuffer, 'PNG', 0, 0, pdfWidthMm, pdfHeightMm, undefined, 'SLOW');
   }
 
-  const outputPath = path.join(__dirname, '../internal/ingestion/deck-export/AI_Studio_Teams_HighFidelity.pdf');
+  const outputPath = path.join(__dirname, '../static/AI_Studio_Teams_Presentation.pdf');
   const pdfBuffer = doc.output('arraybuffer');
   fs.writeFileSync(outputPath, Buffer.from(pdfBuffer));
 

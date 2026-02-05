@@ -17,7 +17,6 @@ const PitchDeckController = () => {
         if (entry.isIntersecting) {
           entry.target.classList.add('in-view');
 
-          // Update active index based on the slide's index
           const slides = document.querySelectorAll('.pitch-slide');
           const index = Array.from(slides).indexOf(entry.target);
           if (index !== -1) setActiveSlideIndex(index);
@@ -70,10 +69,9 @@ const PitchDeckController = () => {
     };
   }, []);
 
-  // Presentation Mode & Download Logic
+  // Presentation Mode
   const [isPresentationMode, setIsPresentationMode] = useState(false);
 
-  // Toggle Presentation Mode
   const togglePresentationMode = () => {
     const nextState = !isPresentationMode;
     setIsPresentationMode(nextState);
@@ -113,7 +111,7 @@ const PitchDeckController = () => {
     }
   }, [isPresentationMode]);
 
-  // Handle PDF Download via Local Server
+  // Handle PDF Download (High-Fidelity Client-Side)
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
 
   const handleDownloadPDF = async () => {
@@ -121,21 +119,140 @@ const PitchDeckController = () => {
     setIsGeneratingPDF(true);
 
     try {
-      const response = await fetch('http://localhost:3001/generate-pdf');
-      if (!response.ok) throw new Error('PDF Generation Failed');
+      const html2canvas = (await import('html2canvas')).default;
+      const { jsPDF } = await import('jspdf');
 
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'AI_Studio_Teams_Presentation.pdf';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
+      const slides = document.querySelectorAll('.pitch-slide');
+      if (!slides.length) return;
+
+      // Exact 16:9 dimensions
+      const slideWidth = 1920;
+      const slideHeight = 1080;
+      const pdfWidthMm = 338.67;
+      const pdfHeightMm = 190.5;
+
+      const pdf = new jsPDF({
+        orientation: 'landscape',
+        unit: 'mm',
+        format: [pdfWidthMm, pdfHeightMm],
+        compress: true
+      });
+
+      // Create a dedicated rendering container to isolate from app styles
+      const renderContainer = document.createElement('div');
+      renderContainer.style.cssText = `
+        position: fixed;
+        left: -10000px;
+        top: 0;
+        width: ${slideWidth}px;
+        height: ${slideHeight}px;
+        z-index: 99999;
+        overflow: hidden;
+        background: #fff;
+      `;
+      document.body.appendChild(renderContainer);
+
+      for (let i = 0; i < slides.length; i++) {
+        const originalSlide = slides[i];
+        const slideClone = originalSlide.cloneNode(true);
+
+        // Get background styles
+        const computedStyle = window.getComputedStyle(originalSlide);
+        const originalBg = computedStyle.background;
+        const originalBgColor = computedStyle.backgroundColor;
+
+        // Force slide dimensions and reset layout for capture
+        slideClone.style.cssText = `
+          width: ${slideWidth}px !important;
+          height: ${slideHeight}px !important;
+          min-height: ${slideHeight}px !important;
+          max-height: ${slideHeight}px !important;
+          padding: 60px !important;
+          margin: 0 !important;
+          box-sizing: border-box !important;
+          display: flex !important;
+          flex-direction: column !important;
+          justify-content: center !important;
+          align-items: center !important;
+          overflow: hidden !important;
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
+          background: ${originalBg || originalBgColor} !important;
+          transform: none !important;
+          opacity: 1 !important;
+        `;
+
+        // Force all animated elements to final state
+        slideClone.classList.add('in-view');
+        slideClone.querySelectorAll('.animate-enter, .layer-card, .funding-segment, .chat-message, [class*="animate"]').forEach((el) => {
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+          el.style.transition = 'none';
+          el.style.animation = 'none';
+        });
+
+        // FIX: Image Distortion (Team Avatars)
+        slideClone.querySelectorAll('.avatar-circle').forEach((avatar) => {
+          const img = avatar.querySelector('img');
+          if (img) {
+            const src = img.getAttribute('src');
+            const replacementDiv = document.createElement('div');
+            replacementDiv.style.width = '100%';
+            replacementDiv.style.height = '100%';
+            replacementDiv.style.borderRadius = '50%';
+            replacementDiv.style.backgroundImage = `url(${src})`;
+            replacementDiv.style.backgroundSize = 'cover';
+            replacementDiv.style.backgroundPosition = img.style.objectPosition || 'center';
+            replacementDiv.style.transform = img.style.transform || 'none';
+            avatar.innerHTML = '';
+            avatar.appendChild(replacementDiv);
+          }
+        });
+
+        // Ensure other images are visible and not distorted
+        slideClone.querySelectorAll('img').forEach(img => {
+          img.style.objectFit = 'contain';
+          img.style.maxWidth = '100%';
+        });
+
+        // Force funding segment widths
+        slideClone.querySelectorAll('.funding-segment.fill-40').forEach(el => el.style.width = '40%');
+        slideClone.querySelectorAll('.funding-segment.fill-24').forEach(el => el.style.width = '24%');
+        slideClone.querySelectorAll('.funding-segment.fill-16').forEach(el => el.style.width = '16%');
+        slideClone.querySelectorAll('.funding-segment.fill-20').forEach(el => el.style.width = '20%');
+
+        // Remove UI controls
+        slideClone.querySelectorAll('.pitch-controls, .control-btn').forEach((el) => el.remove());
+
+        renderContainer.innerHTML = '';
+        renderContainer.appendChild(slideClone);
+
+        // Wait for rendering to stabilize
+        await new Promise((resolve) => setTimeout(resolve, 150));
+
+        const canvas = await html2canvas(slideClone, {
+          width: slideWidth,
+          height: slideHeight,
+          windowWidth: slideWidth, // Force VW units to resolve to 1920
+          windowHeight: slideHeight, // Force VH units to resolve to 1080
+          scale: 2, // 2x is plenty for a 1920 base
+          useCORS: true,
+          allowTaint: true,
+          backgroundColor: null,
+          logging: false
+        });
+
+        if (i > 0) pdf.addPage();
+        const imgData = canvas.toDataURL('image/jpeg', 0.9);
+        pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidthMm, pdfHeightMm);
+      }
+
+      document.body.removeChild(renderContainer);
+      pdf.save('AI_Studio_Teams_Presentation.pdf');
     } catch (error) {
-      console.error('Error:', error);
-      alert('PDF Server not running. Please run "npm run pdf-server" in a separate terminal.');
+      console.error('PDF generation failed:', error);
+      alert('PDF generation failed. Please try again.');
     } finally {
       setIsGeneratingPDF(false);
     }
@@ -162,7 +279,7 @@ const PitchDeckController = () => {
       <button
         onClick={handleDownloadPDF}
         className="control-btn"
-        title={isGeneratingPDF ? "Generating High-Res PDF..." : "Download PDF"}
+        title={isGeneratingPDF ? "Generating PDF..." : "Download PDF"}
         disabled={isGeneratingPDF}
         style={{ opacity: isGeneratingPDF ? 0.6 : 1 }}
       >
@@ -178,7 +295,6 @@ const PitchDeckController = () => {
           </svg>
         )}
       </button>
-
     </div>
   );
 };
