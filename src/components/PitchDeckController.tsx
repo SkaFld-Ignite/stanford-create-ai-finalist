@@ -135,7 +135,7 @@ const PitchDeckController = () => {
         orientation: 'landscape',
         unit: 'mm',
         format: [pdfWidthMm, pdfHeightMm],
-        compress: false
+        compress: true
       });
 
       // Create a dedicated rendering container to isolate from app styles
@@ -257,7 +257,7 @@ const PitchDeckController = () => {
         if (i > 0) pdf.addPage();
         // Use PNG for lossless quality
         const imgData = canvas.toDataURL('image/png');
-        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidthMm, pdfHeightMm, undefined, 'NONE');
+        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidthMm, pdfHeightMm, undefined, 'FAST');
 
         // Add clickable links for team cards on slide 10 (Team slide, index 9)
         if (i === 9) {
