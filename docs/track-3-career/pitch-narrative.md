@@ -327,10 +327,12 @@ school to what you can DO. Focus on what you can do. Unlock your potential."
 "We're the right team to execute this.
 
 [Charles] Charles Sims—Project Director. Former CTO of the LA Clippers and United
-Talent Agency. Creator of the SkaFld Ideation Methodology.
+Talent Agency. Founder of SkaFld Studio. Board Member of the El Segundo Economic
+Development Committee—direct ties to our pilot community.
 
-[Keith] Keith Coleman—Strategy and Partnerships. Distinguished Visiting Scholar at Stanford
-mediaX. Co-Chair of the UN SDG Fund Breakthrough Alliance.
+[Keith] Keith Coleman—Strategy and Partnerships. Advisory Scholar at Stanford
+mediaX. Co-Chair of the UN SDG Fund Breakthrough Alliance. Delegate Assembly,
+CA School Boards Association.
 
 [Mike] Mike Belloli—Technology and Operations. COO of SkaFld Studio. Co-Founder of
 Lyfe AI and Defy Mortgage. A full-stack developer and platform architect

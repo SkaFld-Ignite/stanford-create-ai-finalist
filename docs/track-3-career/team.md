@@ -27,6 +27,7 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
       <li><strong>Former CTO, LA Clippers & UTA (United Talent Agency).</strong> Led technology transformation initiatives across major sports and entertainment organizations.</li>
       <li>Developed frameworks for integrating emerging technology into established organizational workflows.</li>
       <li>NYU-educated with deep understanding of educational systems and workforce development.</li>
+      <li><strong>Board Member, El Segundo Economic Development Committee.</strong> Direct community ties to the pilot district and local employer ecosystem.</li>
     </ul>
   </div>
 </div>
@@ -48,6 +49,7 @@ AI Studio Teams is led by a multi-disciplinary team with deep expertise in techn
       <li><strong>Distinguished Scholar, Stanford mediaX.</strong> Connected researchers and industry practitioners to explore how human insight and technology interaction shape the future of work.</li>
       <li><strong>UN Joint SDG Fund Breakthrough Alliance Co-Chair.</strong> Overseeing $290M+ portfolio across 150+ countries, bringing global perspective on education and workforce development.</li>
       <li><strong>Capitol Partners General Partner.</strong> 17 years experience in economic opportunity, aerospace/defense coalition building, and policy-aware technology deployment.</li>
+      <li><strong>Delegate Assembly, CA School Boards Association.</strong> Direct experience with California education governance and district-level decision making.</li>
     </ul>
   </div>
 </div>
