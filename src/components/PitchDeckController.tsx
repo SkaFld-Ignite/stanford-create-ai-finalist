@@ -231,8 +231,8 @@ const PitchDeckController = () => {
         offscreenContainer.innerHTML = '';
         offscreenContainer.appendChild(slideClone);
 
-        // Wait for render stability
-        await new Promise((resolve) => setTimeout(resolve, 150));
+        // Wait for render stability - slightly longer for high-res assets
+        await new Promise((resolve) => setTimeout(resolve, 250));
 
         // Use windowWidth/windowHeight to ensure relative units (vw/vh) resolve to our fixed dimensions
         const canvas = await html2canvas(slideClone, {
@@ -240,18 +240,20 @@ const PitchDeckController = () => {
           height: slideHeight,
           windowWidth: slideWidth,
           windowHeight: slideHeight,
-          scale: 2, // 2x scale for crisp text on PDF
+          scale: 4, // Ultra-high resolution (4x)
           useCORS: true,
           allowTaint: true,
           backgroundColor: null,
           logging: false,
           scrollX: 0,
-          scrollY: 0
+          scrollY: 0,
+          imageTimeout: 0
         });
 
         if (i > 0) pdf.addPage();
-        const imgData = canvas.toDataURL('image/jpeg', 0.95);
-        pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidthMm, pdfHeightMm);
+        // Use PNG for maximum sharpness on text and logos
+        const imgData = canvas.toDataURL('image/png');
+        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidthMm, pdfHeightMm, undefined, 'SLOW');
       }
 
       document.body.removeChild(offscreenContainer);
