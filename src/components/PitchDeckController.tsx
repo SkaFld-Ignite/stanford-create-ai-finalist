@@ -237,7 +237,7 @@ const PitchDeckController = () => {
           height: slideHeight,
           windowWidth: slideWidth,
           windowHeight: slideHeight,
-          scale: 3, // Increased for better resolution
+          scale: 5, // High resolution capture
           useCORS: true,
           allowTaint: true,
           backgroundColor: null,
