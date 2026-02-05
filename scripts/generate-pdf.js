@@ -39,19 +39,30 @@ const path = require('path');
         margin: 0;
         padding: 0;
         width: ${width}px;
-        height: ${height}px;
-        overflow: hidden;
+        height: auto !important; /* Allow full height */
+        overflow: visible !important; /* Show all content */
       }
+      
+      /* Un-fix the container so it flows vertically */
+      .pitch-deck-container {
+        position: relative !important;
+        height: auto !important;
+        overflow: visible !important;
+        top: auto !important;
+        left: auto !important;
+      }
+
       /* Force pitch slides to fill the page */
       .pitch-slide {
         width: ${width}px !important;
         height: ${height}px !important;
         min-height: ${height}px !important;
-        padding: 0 !important; /* Remove padding that might shift content */
+        padding: 0 !important;
         margin: 0 !important;
         box-sizing: border-box;
         page-break-after: always;
         page-break-inside: avoid;
+        display: flex !important; /* Ensure flex layout is kept */
       }
       
       /* Ensure inner content is centered and scaled correctly if needed */
