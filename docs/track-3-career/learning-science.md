@@ -57,6 +57,8 @@ Students learn to direct AI systems, evaluate output quality, and add human judg
 
 **Ethical Use From the Start:** By embedding appropriate use boundaries into every project, students internalize responsible AI practices before entering the workforce. This includes transparency about AI contributions and understanding when human judgment must override AI suggestions.
 
+**Policy and Strategy as Complementary Training:** For students, policy and strategy provide essential context for technical AI work. Policy helps students understand the ethical, legal, and governance boundaries involved in developing AI, while strategy demonstrates how AI projects align with organizational goals. Together, they enable students to see how responsible design and strategic thinking shape effective, real-world AI solutions. This approach extends traditional user-centered design by considering broader social impacts—building ethical and trustworthy AI that augments human potential and respects human dignity.
+
 ---
 
 ## Works Cited

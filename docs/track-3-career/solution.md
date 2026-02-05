@@ -147,9 +147,13 @@ Students develop critical skills for responsible AI use: hallucination detection
   <div className="feature-card" style={{border: '2px solid var(--pitch-accent)'}}>
     <div className="feature-icon">🛡️</div>
     <h3>Responsible AI Practices</h3>
-    <p>Students learn WHY ethical boundaries matter—active judgment, not just rules. <em>(UNESCO, 2021)</em></p>
+    <p>Students learn WHY ethical boundaries matter—active judgment, not just rules. Policy and strategy are complementary: policy provides ethical, legal, and governance context; strategy shows alignment with organizational goals. <em>(UNESCO, 2021)</em></p>
   </div>
 </div>
+
+:::info Human-Centered AI Design
+AI Studio Teams extends traditional user-centered design by considering broader social impacts. Students learn to build ethical and trustworthy AI that **augments human potential** and **respects human dignity**—preparing them to shape responsible AI use in their future careers.
+:::
 
 ## SkafldTrailhead: The Technology Platform
 

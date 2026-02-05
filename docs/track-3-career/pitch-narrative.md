@@ -211,6 +211,9 @@ Active judgment, not just guardrails. This is Human-Centered AI."
 - Connect back to employer verification (thesis: portfolios prove capability)
 - **Emphasize "Human-Centered AI"** - aligns with slide footer
 
+**Verbal expansion on Responsible AI (if time/interest permits):**
+> "For students, policy and strategy are complementary parts of AI training. Policy helps them understand ethical, legal, and governance boundaries. Strategy shows how AI projects align with organizational goals. Together, they see how responsible design shapes real-world AI solutions—AI that augments human potential and respects human dignity."
+
 **[CLICK to Slide 7]**
 
 ---
@@ -420,10 +423,15 @@ Thank you. We're ready for your questions."
 **2. "How do you address AI ethics and safety concerns?"**
 
 > "Beyond guardrails. Yes, our platform has content moderation and safety filters. But
-> more importantly, we actively TEACH policy and strategy awareness. Students learn WHY
-> ethical boundaries matter. They develop judgment for when human oversight should
-> override AI suggestions. This is human-centered design—not just protecting students
-> from AI, but empowering them to shape responsible AI use."
+> more importantly, we actively TEACH policy and strategy awareness. Policy helps students
+> understand ethical, legal, and governance boundaries. Strategy shows how AI projects
+> align with organizational goals. Together, they see how responsible design and strategic
+> thinking shape effective, real-world AI solutions.
+>
+> We extend traditional user-centered design to consider broader social impacts—building
+> ethical AI that augments human potential and respects human dignity. Students develop
+> judgment for when human oversight must override AI suggestions. This is human-centered
+> design—not just protecting students from AI, but empowering them to shape responsible AI use."
 
 **3. "What makes the team qualified?"**
 
