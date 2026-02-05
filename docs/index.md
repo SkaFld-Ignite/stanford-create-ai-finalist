@@ -8,7 +8,7 @@ hide_table_of_contents: true
 <div className="landing-hero">
   <div className="landing-title">AI Studio Teams</div>
   <div className="landing-subtitle">
-    A portfolio-based farm system for the AI-augmented workforce.
+    Portfolio-Based Pathways to AI-Era Careers
     <br/>
     <strong>Stanford CREATE+AI Challenge • Track 3</strong>
   </div>
@@ -50,7 +50,7 @@ hide_table_of_contents: true
       <p className="text--center padding-horiz--md" style={{fontSize: '1.2rem', lineHeight: '1.6'}}>
         Entry-level jobs are disappearing. Young people can't get experience because employers no longer offer the roles that used to provide it.
         <br/><br/>
-        <strong>AI Studio Teams</strong> solves this by creating a structured "farm system" where high school students build <strong>employer-validated portfolios</strong> by solving real problems for local companies using AI.
+        <strong>AI Studio Teams</strong> solves this by creating a structured pathway where high school students build <strong>employer-validated portfolios</strong> by solving real problems for local companies using AI.
       </p>
     </div>
   </div>
@@ -84,31 +84,37 @@ hide_table_of_contents: true
   <h2 className="text--center margin-top--xl margin-bottom--lg">Project Leadership</h2>
   <div className="row" style={{justifyContent: 'center', gap: '2rem'}}>
     <div className="col col--3">
-      <div className="feature-card text--center" style={{height: '100%'}}>
-        <div className="avatar-circle">
-          <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" />
+      <a href="https://www.linkedin.com/in/charlessims/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}}>
+        <div className="feature-card text--center team-card-link" style={{height: '100%', cursor: 'pointer'}}>
+          <div className="avatar-circle">
+            <img src="/img/team/charles-sims-portrait.png" className="avatar-img" alt="Charles Sims" />
+          </div>
+          <h3>Charles Sims</h3>
+          <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Project Director</p>
         </div>
-        <h3>Charles Sims</h3>
-        <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Project Director</p>
-      </div>
+      </a>
     </div>
     <div className="col col--3">
-      <div className="feature-card text--center" style={{height: '100%'}}>
-        <div className="avatar-circle">
-          <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" />
+      <a href="https://www.linkedin.com/in/keith-coleman-9000973/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}}>
+        <div className="feature-card text--center team-card-link" style={{height: '100%', cursor: 'pointer'}}>
+          <div className="avatar-circle">
+            <img src="/img/team/keith-coleman-portrait.jpg" className="avatar-img" alt="Keith Coleman" />
+          </div>
+          <h3>Keith Coleman</h3>
+          <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Strategic Partnerships</p>
         </div>
-        <h3>Keith Coleman</h3>
-        <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Strategic Partnerships</p>
-      </div>
+      </a>
     </div>
     <div className="col col--3">
-      <div className="feature-card text--center" style={{height: '100%'}}>
-        <div className="avatar-circle">
-          <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" />
+      <a href="https://www.linkedin.com/in/mikebelloli/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none', color: 'inherit'}}>
+        <div className="feature-card text--center team-card-link" style={{height: '100%', cursor: 'pointer'}}>
+          <div className="avatar-circle">
+            <img src="/img/team/mike-belloli-portrait.png" className="avatar-img" alt="Mike Belloli" />
+          </div>
+          <h3>Mike Belloli</h3>
+          <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Technology Lead</p>
         </div>
-        <h3>Mike Belloli</h3>
-        <p style={{color: 'var(--ifm-color-primary)', fontWeight: 'bold'}}>Technology & Operations</p>
-      </div>
+      </a>
     </div>
   </div>
 
