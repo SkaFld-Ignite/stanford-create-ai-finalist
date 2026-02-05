@@ -361,7 +361,7 @@ interdisciplinary methodology."
 ```
 "The first dollar is the hardest. This is that dollar.
 
-To do this right—to build a scalable national platform—takes $500K to a million.
+To do this right—to build a scalable national platform—takes a million dollars.
 Stanford CREATE+AI is the LEVERAGE that unlocks the rest.
 
 [Gesture to funding bar]
