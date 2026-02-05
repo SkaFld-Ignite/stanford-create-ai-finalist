@@ -1,108 +1,90 @@
 const { chromium } = require('playwright');
 const path = require('path');
+const fs = require('fs');
+const { jsPDF } = require('jspdf'); // Requires 'jspdf' in package.json
 
 (async () => {
+  console.log('Starting High-Fidelity PDF Generation...');
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  // 1920x1080 resolution
+  // 1. Setup - Exact 16:9 Slide Dimensions
   const width = 1920;
   const height = 1080;
-
-  // Set viewport to match slide dimensions
   await page.setViewportSize({ width, height });
 
-  // Navigate to the pitch deck
+  // 2. Navigate
   const url = 'http://localhost:3000/pitch';
   console.log(`Navigating to ${url}...`);
-  
   try {
     await page.goto(url, { waitUntil: 'networkidle' });
   } catch (e) {
-    console.error('Error connecting to localhost:3000. Make sure "npm start" is running!');
+    console.error('Error: Could not connect to http://localhost:3000. Is the server running?');
     await browser.close();
     process.exit(1);
   }
 
-  // Force 'screen' media type to bypass @media print styles in custom.css
-  await page.emulateMedia({ media: 'screen' });
-
-  // Inject CSS to ensure perfect PDF rendering
-  // We force body/html to be the exact size and hide UI elements
+  // 3. Prepare Page (Hide UI, stop animations)
   await page.addStyleTag({
     content: `
-      @page {
-        size: ${width}px ${height}px;
-        margin: 0;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        width: ${width}px;
-        height: auto !important; /* Allow full height */
-        overflow: visible !important; /* Show all content */
-      }
-      
-      /* Un-fix the container so it flows vertically */
-      .pitch-deck-container {
-        position: relative !important;
-        height: auto !important;
-        overflow: visible !important;
-        top: auto !important;
-        left: auto !important;
-      }
-
-      /* Force pitch slides to fill the page */
-      .pitch-slide {
-        width: ${width}px !important;
-        height: ${height}px !important;
-        min-height: ${height}px !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        box-sizing: border-box;
-        page-break-after: always;
-        page-break-inside: avoid;
-        display: flex !important; /* Ensure flex layout is kept */
-      }
-      
-      /* Ensure inner content is centered and scaled correctly if needed */
-      .pitch-slide > * {
-        max-width: 100%;
-      }
-
-      /* Hide UI controls */
-      .navbar, .footer, .pitch-controls, .theme-doc-sidebar-container { 
-        display: none !important; 
-      }
-      
-      /* Force visibility of all animations */
-      .animate-enter, .layer-card, .funding-segment, .chat-message { 
+      body { overflow: hidden !important; }
+      .pitch-controls, .navbar, .footer { display: none !important; }
+      .animate-enter, .layer-card, .funding-segment { 
         opacity: 1 !important; 
         transform: none !important; 
-        transition: none !important;
+        transition: none !important; 
         animation: none !important;
       }
-      
-      /* Fix layout shifts */
-      .main-wrapper { padding: 0 !important; margin: 0 !important; }
-      article { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+      /* Ensure text rendering is consistent */
+      body { -webkit-font-smoothing: antialiased; }
     `
   });
 
-  // Wait a moment for any final renders
-  await page.waitForTimeout(3000);
-
-  console.log('Generating PDF...');
+  // 4. Initialize PDF
+  // A4 Landscape is approx 297mm x 210mm. 
+  // 16:9 ratio fits well on screen but PDF usually uses mm.
+  // We will create a PDF with custom dimensions matching the 16:9 ratio to ensure full bleed.
+  // 1920px / 96dpi * 25.4 = ~508mm. Let's just map pixels to points or match ratio.
+  // We'll use the exact mm dimensions for 16:9 aspect ratio: 338.67mm x 190.5mm (used in controller)
+  const pdfWidthMm = 338.67;
+  const pdfHeightMm = 190.5;
   
-  await page.pdf({
-    path: path.join(__dirname, '../internal/ingestion/deck-export/AI_Studio_Teams_HighFidelity.pdf'),
-    width: `${width}px`,
-    height: `${height}px`,
-    printBackground: true,
-    pageRanges: '1-12' 
+  const doc = new jsPDF({
+    orientation: 'landscape',
+    unit: 'mm',
+    format: [pdfWidthMm, pdfHeightMm] // Custom 16:9 format
   });
 
-  console.log('PDF generated successfully at internal/ingestion/deck-export/AI_Studio_Teams_HighFidelity.pdf');
+  // 5. Capture Slides
+  const slides = await page.$$('.pitch-slide');
+  console.log(`Found ${slides.length} slides.`);
 
+  for (let i = 0; i < slides.length; i++) {
+    console.log(`Processing slide ${i + 1}/${slides.length}...`);
+    
+    // Scroll to slide
+    await slides[i].scrollIntoViewIfNeeded();
+    
+    // Wait for any lazy loads or repaints
+    await page.waitForTimeout(500);
+
+    // Capture screenshot of the viewport (which is exactly one slide)
+    const screenshotBuffer = await page.screenshot({
+      type: 'jpeg',
+      quality: 90,
+      clip: { x: 0, y: 0, width, height } // Force capture of viewport
+    });
+
+    // Add to PDF
+    if (i > 0) doc.addPage();
+    doc.addImage(screenshotBuffer, 'JPEG', 0, 0, pdfWidthMm, pdfHeightMm);
+  }
+
+  // 6. Save
+  const outputPath = path.join(__dirname, '../internal/ingestion/deck-export/AI_Studio_Teams_HighFidelity.pdf');
+  const pdfBuffer = doc.output('arraybuffer');
+  fs.writeFileSync(outputPath, Buffer.from(pdfBuffer));
+
+  console.log(`Success! PDF saved to: ${outputPath}`);
   await browser.close();
 })();
