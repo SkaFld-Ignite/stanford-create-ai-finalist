@@ -6,13 +6,18 @@ const { jsPDF } = require('jspdf'); // Requires 'jspdf' in package.json
 (async () => {
   console.log('Starting High-Fidelity PDF Generation...');
   const browser = await chromium.launch();
-  const page = await browser.newPage();
+  // Set deviceScaleFactor to 2 for Retina-quality screenshots (3840x2160 effective pixels)
+  const context = await browser.newContext({
+    viewport: { width: 1920, height: 1080 },
+    deviceScaleFactor: 2
+  });
+  const page = await context.newPage();
 
   // 1. Setup - Exact 16:9 Slide Dimensions
   const width = 1920;
   const height = 1080;
-  await page.setViewportSize({ width, height });
-
+  // Viewport already set in newContext, but ensuring variables are kept for logic
+  
   // 2. Navigate
   const url = 'http://localhost:3000/pitch';
   console.log(`Navigating to ${url}...`);
@@ -68,16 +73,16 @@ const { jsPDF } = require('jspdf'); // Requires 'jspdf' in package.json
     // Wait for any lazy loads or repaints
     await page.waitForTimeout(500);
 
-    // Capture screenshot of the viewport (which is exactly one slide)
+    // Capture high-res screenshot
     const screenshotBuffer = await page.screenshot({
-      type: 'jpeg',
-      quality: 90,
-      clip: { x: 0, y: 0, width, height } // Force capture of viewport
+      type: 'png', // PNG is sharper for text than JPEG
+      clip: { x: 0, y: 0, width, height }
     });
 
     // Add to PDF
     if (i > 0) doc.addPage();
-    doc.addImage(screenshotBuffer, 'JPEG', 0, 0, pdfWidthMm, pdfHeightMm);
+    // 'PNG' format, 0 compression (lossless)
+    doc.addImage(screenshotBuffer, 'PNG', 0, 0, pdfWidthMm, pdfHeightMm);
   }
 
   // 6. Save
