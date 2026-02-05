@@ -114,156 +114,14 @@ const PitchDeckController = () => {
   }, [isPresentationMode]);
 
   // Handle PDF Download
-  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
-
-  const handleDownloadPDF = async () => {
-    if (isGeneratingPDF) return;
-    setIsGeneratingPDF(true);
-
-    try {
-      const html2canvas = (await import('html2canvas')).default;
-      const { jsPDF } = await import('jspdf');
-
-      const slides = document.querySelectorAll('.pitch-slide');
-      if (!slides.length) return;
-
-      // Force 1920x1080 resolution for capture
-      const slideWidth = 1920;
-      const slideHeight = 1080;
-
-      // PDF dimensions in mm (16:9 ratio)
-      const pdfWidthMm = 338.67;
-      const pdfHeightMm = 190.5;
-
-      const pdf = new jsPDF({
-        orientation: 'landscape',
-        unit: 'mm',
-        format: [pdfWidthMm, pdfHeightMm],
-        compress: true
-      });
-
-      // Offscreen container to render slides at exact target dimensions
-      const offscreenContainer = document.createElement('div');
-      offscreenContainer.style.cssText = `
-        position: fixed;
-        left: -10000px;
-        top: 0;
-        width: ${slideWidth}px;
-        height: ${slideHeight}px;
-        z-index: 99999;
-        overflow: hidden;
-      `;
-      document.body.appendChild(offscreenContainer);
-
-      for (let i = 0; i < slides.length; i++) {
-        const originalSlide = slides[i];
-        const slideClone = originalSlide.cloneNode(true);
-
-        const computedStyle = window.getComputedStyle(originalSlide);
-        const originalBg = computedStyle.background;
-        const originalBgColor = computedStyle.backgroundColor;
-
-        // Apply exact dimensions and styling for PDF capture
-        slideClone.style.cssText = `
-          width: ${slideWidth}px !important;
-          height: ${slideHeight}px !important;
-          min-height: ${slideHeight}px !important;
-          max-height: ${slideHeight}px !important;
-          padding: 60px !important;
-          margin: 0 !important;
-          box-sizing: border-box !important;
-          display: flex !important;
-          flex-direction: column !important;
-          justify-content: center !important;
-          align-items: center !important;
-          overflow: hidden !important;
-          position: absolute !important;
-          top: 0 !important;
-          left: 0 !important;
-          background: ${originalBg || originalBgColor} !important;
-        `;
-
-        // Force animations to complete state
-        slideClone.classList.add('in-view');
-        slideClone.querySelectorAll('.animate-enter, .layer-card, .funding-segment, .chat-message, [class*="animate"]').forEach((el) => {
-          el.style.opacity = '1';
-          el.style.transform = 'none';
-          el.style.transition = 'none';
-          el.style.animation = 'none';
-        });
-
-        // FIX: Image Distortion
-        // Replace avatar images with background-image divs for perfect object-fit in html2canvas
-        slideClone.querySelectorAll('.avatar-circle').forEach((avatar) => {
-          const img = avatar.querySelector('img');
-          if (img) {
-            const src = img.getAttribute('src');
-            // Create a replacement div
-            const replacementDiv = document.createElement('div');
-            replacementDiv.style.width = '100%';
-            replacementDiv.style.height = '100%';
-            replacementDiv.style.borderRadius = '50%';
-            replacementDiv.style.backgroundImage = `url(${src})`;
-            replacementDiv.style.backgroundSize = 'cover';
-            replacementDiv.style.backgroundPosition = img.style.objectPosition || 'center'; // Preserve custom object-position
-            replacementDiv.style.transform = img.style.transform || 'none'; // Preserve scale transforms
-            
-            // Clear the avatar container and append the new div
-            avatar.innerHTML = '';
-            avatar.appendChild(replacementDiv);
-          }
-        });
-
-        // Ensure other images have object-fit cover
-        slideClone.querySelectorAll('img:not(.avatar-circle img)').forEach((img) => {
-           img.style.objectFit = 'cover';
-        });
-
-        // Force funding segment widths if they are percentage based
-        slideClone.querySelectorAll('.funding-segment.fill-40').forEach(el => el.style.width = '40%');
-        slideClone.querySelectorAll('.funding-segment.fill-24').forEach(el => el.style.width = '24%');
-        slideClone.querySelectorAll('.funding-segment.fill-16').forEach(el => el.style.width = '16%');
-        slideClone.querySelectorAll('.funding-segment.fill-20').forEach(el => el.style.width = '20%');
-
-        // Remove controls
-        slideClone.querySelectorAll('.pitch-controls, .control-btn').forEach((el) => el.remove());
-
-        offscreenContainer.innerHTML = '';
-        offscreenContainer.appendChild(slideClone);
-
-        // Wait for render stability - slightly longer for high-res assets
-        await new Promise((resolve) => setTimeout(resolve, 250));
-
-        // Use windowWidth/windowHeight to ensure relative units (vw/vh) resolve to our fixed dimensions
-        const canvas = await html2canvas(slideClone, {
-          width: slideWidth,
-          height: slideHeight,
-          windowWidth: slideWidth,
-          windowHeight: slideHeight,
-          scale: 4, // Ultra-high resolution (4x)
-          useCORS: true,
-          allowTaint: true,
-          backgroundColor: null,
-          logging: false,
-          scrollX: 0,
-          scrollY: 0,
-          imageTimeout: 0
-        });
-
-        if (i > 0) pdf.addPage();
-        // Use PNG for maximum sharpness on text and logos
-        const imgData = canvas.toDataURL('image/png');
-        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidthMm, pdfHeightMm, undefined, 'SLOW');
-      }
-
-      document.body.removeChild(offscreenContainer);
-      pdf.save('AI_Studio_Teams_Presentation.pdf');
-    } catch (error) {
-      console.error('PDF generation failed:', error);
-      alert('PDF Generation failed. Please try again.');
-    } finally {
-      setIsGeneratingPDF(false);
-    }
+  // Simply downloads the pre-generated high-fidelity PDF from the static folder
+  const handleDownloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = '/AI_Studio_Teams_Presentation.pdf'; // Path relative to static folder
+    link.download = 'AI_Studio_Teams_Presentation.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -287,21 +145,13 @@ const PitchDeckController = () => {
       <button
         onClick={handleDownloadPDF}
         className="control-btn"
-        title={isGeneratingPDF ? "Generating PDF..." : "Download PDF"}
-        disabled={isGeneratingPDF}
-        style={{ opacity: isGeneratingPDF ? 0.6 : 1 }}
+        title="Download PDF"
       >
-        {isGeneratingPDF ? (
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="spin">
-            <circle cx="12" cy="12" r="10" strokeDasharray="32" strokeDashoffset="12" />
-          </svg>
-        ) : (
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-            <polyline points="7 10 12 15 17 10" />
-            <line x1="12" y1="15" x2="12" y2="3" />
-          </svg>
-        )}
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
       </button>
 
     </div>
