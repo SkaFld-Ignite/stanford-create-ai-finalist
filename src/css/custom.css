@@ -455,6 +455,14 @@ table tr:hover {
   box-shadow: var(--pitch-card-hover-shadow);
 }
 
+.pitch-slide .metric-card p,
+.pitch-slide .metric-card h3 {
+  font-size: inherit;
+  max-width: none;
+  text-align: inherit;
+  margin-bottom: 0;
+}
+
 .metric-val {
   font-size: 4rem;
   font-weight: 800;
