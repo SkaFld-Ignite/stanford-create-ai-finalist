@@ -52,10 +52,9 @@ is collapsing?"
 "The numbers tell a stark story.
 
 [Gesture to stats]
-40% of employers plan AI workforce reductions.
-45% reduction in tech entry-level roles.
+Two out of three employers won't hire without AI skills.
 78% of hiring managers predict AI will displace recent graduates.
-And Coursera's latest data: two out of three employers won't hire without AI skills.
+45% reduction in tech entry-level roles.
 
 The floor is rising while the ladder is shrinking. That is the EXPERIENCE PARADOX:
 Young people can't gain experience because the entry-level positions that provide
