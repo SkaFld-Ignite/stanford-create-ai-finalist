@@ -295,6 +295,22 @@ const PitchDeckController = () => {
         slideClone.querySelectorAll('.funding-segment.fill-16').forEach((el: HTMLElement) => el.style.width = '16%');
         slideClone.querySelectorAll('.funding-segment.fill-20').forEach((el: HTMLElement) => el.style.width = '20%');
 
+        // Boost subtle shadows so they render visibly in html2canvas/PDF
+        slideClone.querySelectorAll('.metric-card, .highlight-box, .chat-window, .layer-card, .team-card-link').forEach((el: HTMLElement) => {
+          const shadow = window.getComputedStyle(el).boxShadow;
+          if (shadow && shadow !== 'none') {
+            // Increase shadow opacity for PDF fidelity
+            el.style.boxShadow = shadow.replace(/rgba?\(([^)]+)\)/g, (match, inner) => {
+              const parts = inner.split(',').map((s: string) => s.trim());
+              if (parts.length === 4) {
+                const alpha = Math.min(parseFloat(parts[3]) * 2.5, 0.3);
+                return `rgba(${parts[0]}, ${parts[1]}, ${parts[2]}, ${alpha})`;
+              }
+              return match;
+            });
+          }
+        });
+
         // Remove UI controls
         slideClone.querySelectorAll('.pitch-controls, .control-btn').forEach((el) => el.remove());
 
