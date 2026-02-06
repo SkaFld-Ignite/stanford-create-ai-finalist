@@ -127,17 +127,25 @@ This document provides prepared responses aligned with the evaluation criteria a
 
 ### "Walk me through the unit economics. What's the business model at scale?"
 
-> "Year 1 cost is $521 per student—competitive with existing CTE programs that often run $1,500-3,000 per student.
+> "Year 1 cost works out to roughly $521 per student—competitive with existing CTE programs that often run $1,500-3,000 per student.
 >
 > **Three revenue streams** for sustainability:
 >
 > 1. **District CTE funding**—schools already allocate budgets for career-technical education. We're a better use of those dollars.
 >
-> 2. **Employer sponsorships**—companies pay to access the talent pipeline and shape curriculum relevant to their needs. Boeing and Northrop are already engaged.
+> 2. **Employer sponsorships**—companies invest in pipeline programs that deliver job-ready candidates. Boeing and Northrop are already engaged.
 >
-> 3. **Platform licensing**—Year 3 SaaS model lets other districts adopt the system with their own local employer networks.
+> 3. **Platform licensing**—as we prove the model, other districts can adopt the system with their own local employer networks.
 >
-> The $50,000 from Stanford proves the model. District contracts and employer partners cover ongoing costs."
+> The $50,000 from Stanford proves the model works. That proof is what makes district contracts and employer partnerships possible at scale."
+
+### "Your proposal budget looks different from what you're presenting — can you explain?"
+
+> "Our original submission reflected our best estimate of direct pilot costs—teacher stipends, student materials, employer engagement, curriculum development. That's what $50,000 delivers on the ground.
+>
+> As we've refined the plan, we've also scoped what it takes to build the technology platform that makes this scalable beyond El Segundo. Platform development is the multiplier—it's how 96 students becomes 96,000.
+>
+> The core pilot deliverables are the same: 96 students, 12 employer partners, validated portfolios. The question is how much platform infrastructure we build in Year 1 versus Year 2. We're flexible on that phasing based on what makes sense."
 
 ### "What's the ROI for all stakeholders—employers, learners, institutions?"
 
@@ -247,7 +255,8 @@ This document provides prepared responses aligned with the evaluation criteria a
 | AI Limitations | "Students learn to verify, not just accept—that's the curriculum" |
 | Evidence | "Research-backed approach with rigorous measurement plan" |
 | Teacher Impact | "AI handles scaffolding; teachers focus on relationships" |
-| Sustainability | "Three revenue streams: district CTE, employer sponsors, platform licensing" |
+| Sustainability | "Three revenue streams: district CTE, employer sponsors, platform licensing—proof of model unlocks all three" |
+| Budget Discrepancy | "Original = direct pilot costs. Refined plan includes platform for scale. Core deliverables unchanged." |
 | Differentiation | "Portfolio-based outcomes, not credential accumulation" |
 | Team | "Three distinct capabilities this project specifically requires" |
 

@@ -272,7 +272,7 @@ Year 1: 96 students in 8 teams. 12 employer partners. 24 paid internships.
 This is proof of concept for California-wide expansion in Year 2, and national
 SaaS rollout in Year 3.
 
-The $50,000 from Stanford CREATE+AI is the leverage that makes all of this possible."
+Stanford CREATE+AI is the catalyst that makes all of this possible."
 ```
 
 **Key Emphasis:**
@@ -357,29 +357,58 @@ interdisciplinary methodology."
 
 **Speaker:** [Lead closes]
 
-**Narrative:**
+:::tip Choose Your Variant Based on Room Energy
+Read the judges during Q&A and other presentations. If they seem receptive to bold vision, use **Variant A**. If they seem focused on feasibility and what $50K actually buys, use **Variant B**. Both work with the same slide.
+:::
+
+#### VARIANT A: Ambitious (Growth Vision)
+
+**Use when:** Judges seem excited about scale, ask about national impact, investors in the room are engaged.
+
 ```
 "The first dollar is the hardest. This is that dollar.
 
-To do this right—to build a scalable national platform—takes a million dollars.
-Stanford CREATE+AI is the LEVERAGE that unlocks the rest.
-
 [Gesture to funding bar]
 $50,000 funds Year 1: platform development, pilot implementation, assessment,
-and operations. $521 per student.
+and operations.
 
 This award proves the model. It enables conversations with district partners,
 industry sponsors, and impact investors that turn a pilot into a movement.
 
-Year 2 and beyond is sustainable: Recurring District Contracts and Employer
-partners cover the program cost. This $50K is the seed that proves it works."
+Scaling nationally will require significant additional investment—and this
+is the proof-of-concept that makes that investment possible. Stanford's
+backing opens every door we need.
+
+Year 2 and beyond is sustainable: District CTE contracts and employer
+partners fund ongoing operations."
 ```
 
-**Key Emphasis:**
+#### VARIANT B: Conservative (MVP Pilot)
+
+**Use when:** Judges seem focused on feasibility, ask about what $50K actually delivers, or if other teams are making modest asks.
+
+```
+"The first dollar is the hardest. This is that dollar.
+
+[Gesture to funding bar]
+$50,000 gets us to a working MVP pilot in El Segundo. 96 students. 12
+employer partners. 24 internships. Validated portfolios.
+
+That's what this funding delivers—a proven model with real outcomes.
+
+Building the scalable platform for Year 2 and beyond will need additional
+investment, but we'll have the evidence to earn it. District CTE contracts
+and employer partners are already designed into the sustainability model.
+
+This $50K proves it works. Everything else follows from that proof."
+```
+
+**Key Emphasis (both variants):**
 - "First dollar is hardest" - creates emotional resonance
-- Frame $50K as LEVERAGE, not the full solution (per team discussion)
+- Frame $50K as CATALYST, not the full solution
 - Stanford backing unlocks larger funding conversations
 - Demonstrate clear sustainability path
+- **Do NOT name a specific total** beyond $50K — keep it open-ended
 
 **[CLICK to Slide 12]**
 
@@ -478,10 +507,11 @@ Thank you. We're ready for your questions."
 **7. "How is this sustainable beyond Stanford funding?"**
 
 > "Three revenue streams for Year 2 and beyond. First, CTE pathway integration—schools
-> pay for career-technical education. Second, employer contributions—companies
-> sponsor teams and internship pipelines. Third, platform licensing—our SaaS model
-> lets other districts adopt the system. The $50,000 is seed capital that proves the
-> model; sustainability comes from demonstrated outcomes."
+> already allocate budgets for career-technical education, and we're a better use of
+> those dollars. Second, employer contributions—companies invest in pipeline programs
+> that deliver job-ready candidates. Third, platform licensing as we expand.
+> The $50,000 proves the model works. Sustainability comes from demonstrated outcomes
+> that districts and employers are willing to fund."
 
 ---
 
@@ -519,7 +549,7 @@ Ensure these three documents stay aligned:
 | SkaFld Methodology | Slide 7 | "Research wide, validate narrow" | solution.md |
 | Equity Targets | Slide 9 | 50/40/30 targets | equity.md |
 | Team Formatting | Slide 10 | Tech/Design/Policy | team.md |
-| The Ask | Slide 11 | $50K leverage | budget.md |
+| The Ask | Slide 11 | $50K catalyst (Variant A or B) | budget.md |
 
 ---
 

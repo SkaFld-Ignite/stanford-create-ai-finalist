@@ -6,9 +6,9 @@ sidebar_position: 9
 # Budget
 
 :::tip The First Dollar is the Hardest
-**This is that dollar.** To build AI Studio Teams right—to create a scalable national platform that transforms how students prepare for AI-shaped careers—takes $1M. Stanford CREATE+AI is the **pre-seed leverage** that unlocks the rest.
+**This is that dollar.** Stanford CREATE+AI is the **catalyst** that proves the model and unlocks what comes next.
 
-This $50,000 investment provides the proof-of-concept that makes the larger vision fundable. Nothing is overhead—every dollar builds real infrastructure that delivers immediate value to pilot students and employers.
+This $50,000 investment delivers a working pilot with real outcomes—96 students, 12 employer partners, validated portfolios. Nothing is overhead—every dollar builds real infrastructure that delivers immediate value to pilot students and employers. Scaling nationally will require additional investment, and this proof-of-concept makes that investment possible.
 :::
 
 ## $50,000 Resource Allocation
@@ -71,7 +71,7 @@ The **$521/student** program cost (96 students / $50,000) is the key metric that
 | **Workforce Development Grants** | $10,000 | DOL and state workforce boards fund validated career pathways |
 | **In-Kind Employer Contributions** | $10,000 | Project mentorship, facility access, internship slots |
 
-**The Stanford CREATE+AI investment isn't the whole budget—it's the pre-seed leverage.** With Year 1 evidence in hand, we approach district superintendents and employer partners with a proven model at a fundable price point.
+**The Stanford CREATE+AI investment proves the model.** With Year 1 evidence in hand, we approach district superintendents and employer partners with demonstrated outcomes at a fundable price point. Additional investment for platform scaling follows from proven results.
 
 :::info Cost Efficiency Enables Scale
 At **$521 per student** (96 students / $50,000), AI Studio Teams delivers employer-validated career preparation at a fraction of traditional workforce development program costs. This price point is the unlock: it's low enough for district CTE budgets, attractive enough for employer co-investment, and proven enough for workforce development grants. The per-student investment produces documented, verified capability that directly translates to employment opportunity—and that's the evidence that makes Year 2+ funding conversations possible.
