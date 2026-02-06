@@ -200,7 +200,7 @@ table tr:hover {
     transform: none !important;
     box-sizing: border-box !important;
     overflow: hidden !important;
-    padding: 3vw !important;
+    padding: 6vw !important; /* Match fullscreen padding exactly */
   }
 
   /* Disable animations for print */
@@ -1302,7 +1302,7 @@ body.presentation-mode-active .pitch-deck-container {
 /* PDF Generation State */
 /* Force exact 16:9 aspect ratio logic for high-quality export */
 body.pdf-generating .pitch-deck-container {
-  width: 1280px !important;
+  width: 1920px !important;
   height: auto !important;
   overflow: visible !important;
   position: absolute !important;
@@ -1313,15 +1313,14 @@ body.pdf-generating .pitch-deck-container {
 }
 
 body.pdf-generating .pitch-slide {
-  width: 1280px !important;
-  height: 720px !important;
-  /* Exact 16:9 ratio */
+  width: 1920px !important;
+  height: 1080px !important;
   page-break-after: always;
   page-break-inside: avoid;
   opacity: 1 !important;
   transform: none !important;
   margin: 0 !important;
-  padding: 40px !important;
+  padding: 115px !important; /* 6vw at 1920px = 115.2px */
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -1360,6 +1359,17 @@ body.pdf-generating .funding-segment.fill-16 {
 
 body.pdf-generating .funding-segment.fill-20 {
   width: 20% !important;
+}
+
+/* Ensure split-layout and metric-grid maintain their widths during PDF generation */
+body.pdf-generating .split-layout {
+  width: 100% !important;
+  max-width: 1400px !important;
+}
+
+body.pdf-generating .metric-grid {
+  width: 100% !important;
+  max-width: 1200px !important;
 }
 
 /* Hide controls during print/PDF */

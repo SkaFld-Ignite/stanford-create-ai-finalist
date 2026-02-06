@@ -125,7 +125,7 @@ const PitchDeckController = () => {
       const slides = document.querySelectorAll('.pitch-slide');
       if (!slides.length) return;
 
-      // Exact 16:9 dimensions
+      // Exact 16:9 dimensions matching fullscreen display
       const slideWidth = 1920;
       const slideHeight = 1080;
       const pdfWidthMm = 338.67;
@@ -138,7 +138,7 @@ const PitchDeckController = () => {
         compress: true
       });
 
-      // Create a dedicated rendering container to isolate from app styles
+      // Create a dedicated rendering container sized exactly like fullscreen
       const renderContainer = document.createElement('div');
       renderContainer.style.cssText = `
         position: fixed;
@@ -149,25 +149,77 @@ const PitchDeckController = () => {
         z-index: 99999;
         overflow: hidden;
         background: #fff;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       `;
       document.body.appendChild(renderContainer);
 
-      for (let i = 0; i < slides.length; i++) {
-        const originalSlide = slides[i];
-        const slideClone = originalSlide.cloneNode(true);
+      // Helper: copy all computed styles from an element to its clone counterpart
+      const copyComputedStyles = (source: Element, target: HTMLElement) => {
+        const computed = window.getComputedStyle(source);
+        // Copy key layout-affecting properties that might use relative units
+        const props = [
+          'font-size', 'font-weight', 'font-family', 'line-height', 'letter-spacing',
+          'text-align', 'text-transform', 'color', 'background', 'background-color',
+          'background-image', 'border', 'border-radius', 'border-left', 'border-top',
+          'border-right', 'border-bottom', 'box-shadow',
+          'padding', 'padding-top', 'padding-right', 'padding-bottom', 'padding-left',
+          'margin', 'margin-top', 'margin-right', 'margin-bottom', 'margin-left',
+          'width', 'min-width', 'max-width', 'height', 'min-height', 'max-height',
+          'display', 'flex-direction', 'justify-content', 'align-items', 'align-self',
+          'flex', 'flex-grow', 'flex-shrink', 'flex-basis', 'flex-wrap',
+          'gap', 'grid-template-columns', 'grid-template-rows',
+          'position', 'top', 'right', 'bottom', 'left',
+          'overflow', 'white-space', 'word-break', 'text-decoration',
+          'opacity', 'z-index', 'backdrop-filter',
+          'list-style', 'list-style-type',
+          'border-collapse', 'table-layout',
+        ];
+        props.forEach(prop => {
+          try {
+            const val = computed.getPropertyValue(prop);
+            if (val) target.style.setProperty(prop, val);
+          } catch (e) { /* skip */ }
+        });
+      };
 
-        // Get background styles
+      // Helper: recursively apply computed styles to all element descendants
+      const deepCopyStyles = (source: Element, target: Element) => {
+        const sourceChildren = source.children;
+        const targetChildren = target.children;
+        for (let c = 0; c < sourceChildren.length && c < targetChildren.length; c++) {
+          const srcChild = sourceChildren[c];
+          const tgtChild = targetChildren[c] as HTMLElement;
+          if (tgtChild.style !== undefined) {
+            copyComputedStyles(srcChild, tgtChild);
+          }
+          deepCopyStyles(srcChild, tgtChild);
+        }
+      };
+
+      for (let i = 0; i < slides.length; i++) {
+        const originalSlide = slides[i] as HTMLElement;
+        const slideClone = originalSlide.cloneNode(true) as HTMLElement;
+
+        // Get computed background from the original (resolves CSS variables)
         const computedStyle = window.getComputedStyle(originalSlide);
         const originalBg = computedStyle.background;
         const originalBgColor = computedStyle.backgroundColor;
+        // Get the actual computed padding (resolves 6vw to px at current viewport)
+        // We scale it proportionally to our target 1920px width
+        const currentVw = window.innerWidth;
+        const paddingScale = slideWidth / currentVw;
+        const originalPaddingTop = parseFloat(computedStyle.paddingTop) * paddingScale;
+        const originalPaddingRight = parseFloat(computedStyle.paddingRight) * paddingScale;
+        const originalPaddingBottom = parseFloat(computedStyle.paddingBottom) * paddingScale;
+        const originalPaddingLeft = parseFloat(computedStyle.paddingLeft) * paddingScale;
 
-        // Force slide dimensions and reset layout for capture
+        // Force slide dimensions matching fullscreen exactly
         slideClone.style.cssText = `
           width: ${slideWidth}px !important;
           height: ${slideHeight}px !important;
           min-height: ${slideHeight}px !important;
           max-height: ${slideHeight}px !important;
-          padding: 60px !important;
+          padding: ${originalPaddingTop}px ${originalPaddingRight}px ${originalPaddingBottom}px ${originalPaddingLeft}px !important;
           margin: 0 !important;
           box-sizing: border-box !important;
           display: flex !important;
@@ -181,11 +233,38 @@ const PitchDeckController = () => {
           background: ${originalBg || originalBgColor} !important;
           transform: none !important;
           opacity: 1 !important;
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
         `;
+
+        // Also copy any inline style overrides from the original slide (e.g. padding, justifyContent)
+        const origInlineStyle = originalSlide.getAttribute('style');
+        if (origInlineStyle) {
+          // Parse individual properties from inline style, scale vw/vh units
+          const inlineProps = origInlineStyle.split(';').filter(Boolean);
+          inlineProps.forEach(prop => {
+            const [key, val] = prop.split(':').map(s => s?.trim());
+            if (!key || !val) return;
+            // Skip properties we've already explicitly set
+            if (['width', 'height', 'min-height', 'max-height', 'position', 'top', 'left'].includes(key)) return;
+            // Convert vw/vh values
+            let resolvedVal = val;
+            if (val.includes('vw')) {
+              resolvedVal = val.replace(/(\d+(?:\.\d+)?)vw/g, (_, n) => `${(parseFloat(n) / 100 * slideWidth)}px`);
+            }
+            if (val.includes('vh')) {
+              resolvedVal = val.replace(/(\d+(?:\.\d+)?)vh/g, (_, n) => `${(parseFloat(n) / 100 * slideHeight)}px`);
+            }
+            try { slideClone.style.setProperty(key, resolvedVal); } catch (e) { /* skip */ }
+          });
+        }
+
+        // Deep copy computed styles from original to clone for all children
+        // This ensures text wrapping, font sizes, gaps, etc. match exactly
+        deepCopyStyles(originalSlide, slideClone);
 
         // Force all animated elements to final state
         slideClone.classList.add('in-view');
-        slideClone.querySelectorAll('.animate-enter, .layer-card, .funding-segment, .chat-message, [class*="animate"]').forEach((el) => {
+        slideClone.querySelectorAll('.animate-enter, .layer-card, .funding-segment, .chat-message, [class*="animate"]').forEach((el: HTMLElement) => {
           el.style.opacity = '1';
           el.style.transform = 'none';
           el.style.transition = 'none';
@@ -193,8 +272,8 @@ const PitchDeckController = () => {
         });
 
         // FIX: Image Distortion (Team Avatars)
-        slideClone.querySelectorAll('.avatar-circle').forEach((avatar) => {
-          const img = avatar.querySelector('img');
+        slideClone.querySelectorAll('.avatar-circle').forEach((avatar: HTMLElement) => {
+          const img = avatar.querySelector('img') as HTMLImageElement;
           if (img) {
             const src = img.getAttribute('src');
             const replacementDiv = document.createElement('div');
@@ -211,16 +290,16 @@ const PitchDeckController = () => {
         });
 
         // Ensure other images are visible and not distorted
-        slideClone.querySelectorAll('img').forEach(img => {
+        slideClone.querySelectorAll('img').forEach((img: HTMLImageElement) => {
           img.style.objectFit = 'contain';
           img.style.maxWidth = '100%';
         });
 
-        // Force funding segment widths
-        slideClone.querySelectorAll('.funding-segment.fill-40').forEach(el => el.style.width = '40%');
-        slideClone.querySelectorAll('.funding-segment.fill-24').forEach(el => el.style.width = '24%');
-        slideClone.querySelectorAll('.funding-segment.fill-16').forEach(el => el.style.width = '16%');
-        slideClone.querySelectorAll('.funding-segment.fill-20').forEach(el => el.style.width = '20%');
+        // Force funding segment widths (in case animation state wasn't applied)
+        slideClone.querySelectorAll('.funding-segment.fill-40').forEach((el: HTMLElement) => el.style.width = '40%');
+        slideClone.querySelectorAll('.funding-segment.fill-24').forEach((el: HTMLElement) => el.style.width = '24%');
+        slideClone.querySelectorAll('.funding-segment.fill-16').forEach((el: HTMLElement) => el.style.width = '16%');
+        slideClone.querySelectorAll('.funding-segment.fill-20').forEach((el: HTMLElement) => el.style.width = '20%');
 
         // Remove UI controls
         slideClone.querySelectorAll('.pitch-controls, .control-btn').forEach((el) => el.remove());
@@ -228,10 +307,9 @@ const PitchDeckController = () => {
         renderContainer.innerHTML = '';
         renderContainer.appendChild(slideClone);
 
-        // Wait for rendering to stabilize
-        await new Promise((resolve) => setTimeout(resolve, 150));
+        // Wait for rendering and font loading to stabilize
+        await new Promise((resolve) => setTimeout(resolve, 250));
 
-        // Use windowWidth/windowHeight to ensure relative units (vw/vh) resolve to our fixed dimensions
         const canvas = await html2canvas(slideClone, {
           width: slideWidth,
           height: slideHeight,
@@ -245,12 +323,16 @@ const PitchDeckController = () => {
           scrollX: 0,
           scrollY: 0,
           onclone: (clonedDoc) => {
-             // Force the cloned body to match our target dimensions
-             // This ensures media queries and viewport units behave as if on a 1920x1080 screen
-             clonedDoc.body.style.width = '1920px';
-             clonedDoc.body.style.height = '1080px';
-             clonedDoc.documentElement.style.width = '1920px';
-             clonedDoc.documentElement.style.height = '1080px';
+             // Force the cloned document to match our target dimensions
+             // so viewport units and media queries resolve as if fullscreen at 1920x1080
+             clonedDoc.body.style.width = `${slideWidth}px`;
+             clonedDoc.body.style.height = `${slideHeight}px`;
+             clonedDoc.body.style.margin = '0';
+             clonedDoc.body.style.padding = '0';
+             clonedDoc.body.style.overflow = 'hidden';
+             clonedDoc.documentElement.style.width = `${slideWidth}px`;
+             clonedDoc.documentElement.style.height = `${slideHeight}px`;
+             clonedDoc.documentElement.style.overflow = 'hidden';
           }
         });
 
