@@ -456,16 +456,15 @@ table tr:hover {
 }
 
 .pitch-slide .metric-card p {
-  font-size: 0.82rem !important;
+  font-size: 1rem !important;
   max-width: none !important;
-  text-align: left !important;
   margin-bottom: 0 !important;
-  line-height: 1.25 !important;
+  line-height: 1.35 !important;
 }
 
 .pitch-slide .metric-card h3 {
-  font-size: 0.88rem !important;
-  margin-bottom: 0.1rem !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 0.15rem !important;
 }
 
 .metric-val {
