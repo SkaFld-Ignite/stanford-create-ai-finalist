@@ -153,26 +153,20 @@ const PitchDeckController = () => {
       `;
       document.body.appendChild(renderContainer);
 
-      // Helper: copy all computed styles from an element to its clone counterpart
+      // Helper: copy only typography/visual computed styles (NOT layout/sizing)
+      // Layout properties (width, height, position, flex, grid, etc.) must resolve
+      // naturally from CSS classes in the 1920px container, not be frozen from the
+      // user's viewport size which would break centering and alignment.
       const copyComputedStyles = (source: Element, target: HTMLElement) => {
         const computed = window.getComputedStyle(source);
-        // Copy key layout-affecting properties that might use relative units
         const props = [
           'font-size', 'font-weight', 'font-family', 'line-height', 'letter-spacing',
-          'text-align', 'text-transform', 'color', 'background', 'background-color',
-          'background-image', 'border', 'border-radius', 'border-left', 'border-top',
+          'text-align', 'text-transform', 'color',
+          'background', 'background-color', 'background-image',
+          'border', 'border-radius', 'border-left', 'border-top',
           'border-right', 'border-bottom', 'box-shadow',
-          'padding', 'padding-top', 'padding-right', 'padding-bottom', 'padding-left',
-          'margin', 'margin-top', 'margin-right', 'margin-bottom', 'margin-left',
-          'width', 'min-width', 'max-width', 'height', 'min-height', 'max-height',
-          'display', 'flex-direction', 'justify-content', 'align-items', 'align-self',
-          'flex', 'flex-grow', 'flex-shrink', 'flex-basis', 'flex-wrap',
-          'gap', 'grid-template-columns', 'grid-template-rows',
-          'position', 'top', 'right', 'bottom', 'left',
-          'overflow', 'white-space', 'word-break', 'text-decoration',
-          'opacity', 'z-index', 'backdrop-filter',
-          'list-style', 'list-style-type',
-          'border-collapse', 'table-layout',
+          'white-space', 'word-break', 'text-decoration',
+          'opacity', 'list-style', 'list-style-type',
         ];
         props.forEach(prop => {
           try {
