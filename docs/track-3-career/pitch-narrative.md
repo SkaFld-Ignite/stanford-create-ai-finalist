@@ -55,9 +55,11 @@ is collapsing?"
 40% of employers plan AI workforce reductions.
 45% reduction in tech entry-level roles.
 78% of hiring managers predict AI will displace recent graduates.
+And Coursera's latest data: two out of three employers won't hire without AI skills.
 
-This is the EXPERIENCE PARADOX: Young people can't gain experience because the
-entry-level positions that provide experience are disappearing.
+The floor is rising while the ladder is shrinking. That is the EXPERIENCE PARADOX:
+Young people can't gain experience because the entry-level positions that provide
+experience are disappearing.
 
 [Pause - this is the hook]
 
@@ -94,15 +96,16 @@ DON'T give them the fish. Teach them to FISH.
 Most AI training teaches prompts that expire in months. ChatGPT prompts from last
 year are already obsolete.
 
-We teach METACOGNITIVE SKILLS THROUGH REAL BUSINESS CHALLENGES—skills that
+We build AI RESILIENCE THROUGH REAL BUSINESS CHALLENGES—metacognitive skills that
 transfer across ANY AI tool, because tools change, but the way you THINK persists.
 
-We're not just teaching AI. We're teaching students how to LEARN."
+We're not just teaching AI. We're building AI resilience—teaching students how to LEARN."
 ```
 
 **Key Emphasis:**
 - The "teaching to fish" metaphor is universally understood
 - Emphasize "how to THINK" and "how to LEARN" - this is the differentiator
+- "AI resilience" is a World Bank/EdTech Hub term (Jan 2026) — carries institutional weight
 - Note: "forever" was removed per team discussion; skills evolve with continuous learning
 
 **[CLICK to Slide 4]**
@@ -195,7 +198,7 @@ the motivation that no AI can replicate."
 **Narrative:**
 ```
 "Our approach is built on four pillars—each backed by validated learning science.
-Building capability that employers can actually verify.
+These aren't four separate courses—they're integrated into every project.
 
 [Quick overview of four pillars]
 
@@ -214,6 +217,7 @@ Active judgment, not just guardrails. This is Human-Centered AI."
 
 **Key Emphasis:**
 - Say "four pillars" to establish the framework
+- **"Integrated, not isolated"** — external validation from World Bank CoI (Jan 2026): skills, literacy, and ethics taught together
 - Quickly cite the research—establishes credibility without dwelling
 - Connect back to employer verification (thesis: portfolios prove capability)
 - **Emphasize "Human-Centered AI"** - aligns with slide footer
@@ -542,10 +546,10 @@ Ensure these three documents stay aligned:
 
 | Element | Pitch Deck (pitch.mdx) | Narrative Script (this doc) | Proposal (docs/track-3-career/) |
 |---------|------------------------|----------------------------|----------------------------------|
-| Experience Paradox | Slide 2 stats | "45% reduction..." | problem.md |
+| Experience Paradox | Slide 2 stats | "45% reduction..." + Coursera 2/3 stat | problem.md |
 | Credential Crisis | Slide 2 (added) | "Credentials losing value" | problem.md |
 | Portfolio vs Credentials | Slides 3, 4, 6 | Core thesis throughout | solution.md, index.md |
-| Four Pillars | Slide 6 | "Four pillars, backed by learning science" | solution.md |
+| Four Pillars | Slide 6 | "Integrated into every project" + learning science | solution.md |
 | SkaFld Methodology | Slide 7 | "Research wide, validate narrow" | solution.md |
 | Equity Targets | Slide 9 | 50/40/30 targets | equity.md |
 | Team Formatting | Slide 10 | Tech/Design/Policy | team.md |
@@ -566,4 +570,4 @@ Ensure these three documents stay aligned:
 ---
 
 *Document generated: February 3, 2026*
-*Last updated: February 3, 2026*
+*Last updated: February 5, 2026 — Integrated World Bank/EdTech Hub CoI findings (Jan 22, 2026): Coursera employer stat, AI resilience terminology, inseparable skills/literacy/ethics framing*

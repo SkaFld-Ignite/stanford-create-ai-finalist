@@ -59,6 +59,21 @@ Students learn to direct AI systems, evaluate output quality, and add human judg
 
 **Policy and Strategy as Complementary Training:** For students, policy and strategy provide essential context for technical AI work. Policy helps students understand the ethical, legal, and governance boundaries involved in developing AI, while strategy demonstrates how AI projects align with organizational goals. Together, they enable students to see how responsible design and strategic thinking shape effective, real-world AI solutions. This approach extends traditional user-centered design by considering broader social impacts—building ethical and trustworthy AI that augments human potential and respects human dignity.
 
+## AI Resilience
+
+AI resilience—the capacity to adapt to new tools and innovations as they emerge—is essential for long-term career readiness.
+
+| Finding | Source | Implication |
+|---------|--------|-------------|
+| Fixed AI curricula become outdated within 2-5 years | World Bank/EdTech Hub CoI, 2026 | Programs must teach adaptable skills, not specific tools |
+| AI resilience requires experimentation and continuous learning | Morphew (Purdue), 2026 | Scaffolding must intentionally fade to build independence |
+| Skills and mindsets must endure across technological shifts | EdTech Hub AI Observatory, 2026 | Metacognitive capability is the durable outcome |
+| Skills, literacy, and ethics are inseparable | Morphew (Purdue), 2026 | Holistic integration, not isolated modules |
+
+**Building Resilience Through Scaffolded Independence:** AI Studio Teams' three-phase structure intentionally builds AI resilience. Early phases provide more support; later phases require students to adapt to new challenges with less guidance. By the employer project phase, students must demonstrate they can approach unfamiliar problems with unfamiliar tools—proving resilience, not just proficiency.
+
+**Holistic AI Fluency:** Teaching skills, literacy, and ethics in isolation risks producing confident users without real understanding. As Morphew notes, "You can't have literacy without having some basic understanding of how the tool works. And you can't talk about applying a skill without thinking about the ethical implications." AI Studio Teams integrates these elements into every project rather than teaching them as separate modules.
+
 ---
 
 ## Works Cited
@@ -88,6 +103,8 @@ Topping, K. J. (2005). Trends in peer learning. *Educational Psychology, 25*(6),
 UNESCO. (2021). *AI and education: Guidance for policy-makers*. UNESCO Publishing.
 
 Wenger, E. (1998). *Communities of practice: Learning, meaning, and identity*. Cambridge University Press.
+
+World Bank & EdTech Hub. (2026). *Preparing Tertiary Institutions for an AI-Driven World*. AI in Education Community of Interest, January 22, 2026.
 
 ---
 

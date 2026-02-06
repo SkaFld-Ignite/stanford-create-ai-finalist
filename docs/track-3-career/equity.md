@@ -9,6 +9,8 @@ sidebar_position: 6
 
 AI's workforce disruption does not affect all populations equally. AI Studio Teams moves beyond access to **Universal Learning**. We create structured pathways designed *with* and *for* learners of all backgrounds—focusing on what you can do and unlocking your potential.
 
+But true equity goes deeper than access. We ask the harder questions: Whose voice does the AI represent? Who benefits from the tool's design? Who has the power to shape these systems? Our program builds not just access equity but **agency equity**—students from all backgrounds learn to evaluate, critique, and shape AI, not just consume it.
+
 ## Explicit Parity Targets
 
 We aren't just hoping for diversity; we are designing for it with specific cohort targets.

@@ -23,7 +23,9 @@ This document provides prepared responses aligned with the evaluation criteria a
 >
 > Third, **portfolios as equalizers**. Research shows portfolio-based hiring reduces demographic bias compared to credential-based evaluation. Students from any background demonstrate capability through work samples, not pedigree signals.
 >
-> We're not hoping diversity happens—we're designing systems where it's built in."
+> We're not hoping diversity happens—we're designing systems where it's built in.
+>
+> And equity goes deeper than access. Students learn to ask: whose voice does the AI represent? Who benefits from the tool's design? We're building not just access equity but **agency equity**—students from all backgrounds learn to shape AI, not just use it."
 
 ### "What happens in under-resourced schools without reliable internet or devices?"
 
@@ -66,6 +68,16 @@ This document provides prepared responses aligned with the evaluation criteria a
 > More importantly, students learn to **expect challenge**. We explicitly teach that if the AI is only agreeing with you, you're not learning. The verification mindset is core curriculum, not optional.
 >
 > And ultimately, **employer reviewers** provide the honest feedback that matters most. AI can be sycophantic; professionals evaluating your portfolio won't be."
+
+### "How is student data being used? What about privacy?"
+
+> "Data protection is foundational, not optional.
+>
+> We're **COPPA and FERPA compliant** by design—built-in consent management, data protection, and enterprise SSO for district integration. Student interaction data stays within the platform and is never used to train external AI models.
+>
+> More importantly, we teach students to understand data practices as part of AI literacy. They learn to ask: 'What data is this tool collecting? Who has access? What are the implications?' That critical awareness is part of responsible AI practice.
+>
+> Student data is used solely for **learning analytics**—helping teachers see where students are struggling and adapting the program accordingly. Never for commercial purposes."
 
 ### "What happens when students become dependent on AI assistance?"
 
@@ -235,6 +247,16 @@ This document provides prepared responses aligned with the evaluation criteria a
 >
 > But the fundamental demand is real—employers are struggling to find entry-level candidates with demonstrated AI collaboration skills. We're building supply for existing demand."
 
+### "What about the environmental impact of AI tools in education?"
+
+> "It's a real concern we address directly.
+>
+> We teach students to consider the **full impact** of AI use—including computational costs and environmental tradeoffs. Responsible AI isn't just about bias and ethics; it's about resource awareness.
+>
+> Practically, our platform is designed for **efficiency**: low-bandwidth environments, offline-capable components, and targeted AI interactions rather than always-on processing. We're not building AI for the sake of AI—we use it strategically where it adds the most learning value.
+>
+> This mirrors our methodology: use the right tool for the right problem, and understand the costs of every choice."
+
 ### "When should you refrain from implementing AI?"
 
 > "When it would replace human judgment that matters.
@@ -251,15 +273,18 @@ This document provides prepared responses aligned with the evaluation criteria a
 
 | Question Type | Key Message |
 |--------------|-------------|
-| Equity | "By design, not hope—explicit targets we track and adjust" |
+| Equity | "By design, not hope—access, representation, AND agency equity" |
 | AI Limitations | "Students learn to verify, not just accept—that's the curriculum" |
 | Evidence | "Research-backed approach with rigorous measurement plan" |
 | Teacher Impact | "AI handles scaffolding; teachers focus on relationships" |
 | Sustainability | "Three revenue streams: district CTE, employer sponsors, platform licensing—proof of model unlocks all three" |
 | Budget Discrepancy | "Original = direct pilot costs. Refined plan includes platform for scale. Core deliverables unchanged." |
-| Differentiation | "Portfolio-based outcomes, not credential accumulation" |
+| Differentiation | "Portfolio-based outcomes proving authentic human capability, not credential accumulation" |
 | Team | "Three distinct capabilities this project specifically requires" |
+| Data Privacy | "COPPA/FERPA compliant by design—student data never used for external training" |
+| Environmental | "Efficient by design—targeted AI use where it adds learning value" |
 
 ---
 
 *Document prepared: February 4, 2026*
+*Last updated: February 5, 2026 — Added data privacy, environmental sustainability, and deeper equity responses based on World Bank/EdTech Hub CoI findings (Jan 22, 2026)*

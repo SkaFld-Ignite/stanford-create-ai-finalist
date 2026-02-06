@@ -132,7 +132,7 @@ Students develop critical skills for responsible AI use: hallucination detection
   <div className="feature-card">
     <div className="feature-icon">📂</div>
     <h3>Portfolio Over Credentials</h3>
-    <p>Students build portfolios demonstrating actual capability through documented work. Minimum 7.0/10 rating required from employer panels.</p>
+    <p>Students build portfolios demonstrating authentic human capability—skills AI can't replicate—through documented work. Minimum 7.0/10 rating required from employer panels.</p>
   </div>
   <div className="feature-card">
     <div class="feature-icon">🤝</div>
