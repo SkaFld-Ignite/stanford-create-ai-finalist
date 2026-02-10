@@ -297,6 +297,9 @@ Stanford CREATE+AI is the catalyst that makes all of this possible."
 ```
 "We're moving beyond simple access to UNIVERSAL LEARNING.
 
+Whose voice does the AI represent? Who benefits from the tool's design?
+Who has the power to shape these systems?
+
 Our answer: EVERYONE.
 
 [Point to targets]
