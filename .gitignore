@@ -26,3 +26,4 @@ yarn-error.log*
 
 # Internal analysis - tracked but not on website
 # internal/
+.vercel

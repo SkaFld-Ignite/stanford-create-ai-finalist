@@ -2,9 +2,43 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const PitchDeckController = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const [totalSlides, setTotalSlides] = useState(0);
+  const [scale, setScale] = useState(1);
   const observerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const slides = document.querySelectorAll('.pitch-slide');
+    setTotalSlides(slides.length);
+
+    // Dynamic Scaling Logic
+    const updateScale = () => {
+      const container = document.querySelector('.pitch-deck-container');
+      if (container) {
+        const width = container.clientWidth;
+        // Base scale on a standard 1920px width
+        const newScale = width / 1920;
+        setScale(newScale);
+        document.documentElement.style.setProperty('--pitch-scale', newScale.toString());
+      }
+    };
+
+    const resizeObserver = new ResizeObserver(updateScale);
+    const container = document.querySelector('.pitch-deck-container');
+    if (container) resizeObserver.observe(container);
+    updateScale();
+
+    // Inject/Update dynamic slide numbers for each slide
+    slides.forEach((slide, index) => {
+      let numDiv = slide.querySelector('.slide-number');
+      if (!numDiv) {
+        numDiv = document.createElement('div');
+        numDiv.className = 'slide-number';
+        slide.appendChild(numDiv);
+      }
+      numDiv.textContent = (index + 1).toString();
+    });
+
     // 1. Setup Intersection Observer for Animations
     const options = {
       root: null, // viewport
@@ -19,14 +53,19 @@ const PitchDeckController = () => {
 
           const slides = document.querySelectorAll('.pitch-slide');
           const index = Array.from(slides).indexOf(entry.target);
-          if (index !== -1) setActiveSlideIndex(index);
+          if (index !== -1) {
+            setActiveSlideIndex(index);
+            // Notify parent window (for pitch-internal synchronization)
+            if (window.parent !== window) {
+              window.parent.postMessage({ type: 'SLIDE_CHANGE', index }, '*');
+            }
+          }
         }
       });
     };
 
     observerRef.current = new IntersectionObserver(handleIntersect, options);
 
-    const slides = document.querySelectorAll('.pitch-slide');
     slides.forEach((slide) => {
       if (observerRef.current) observerRef.current.observe(slide);
     });
@@ -63,14 +102,28 @@ const PitchDeckController = () => {
 
     window.addEventListener('keydown', handleKeyDown);
 
+    // 3. Listen for message from parent (pitch-internal control)
+    const handleMessage = (event) => {
+      if (event.data && event.data.type === 'GOTO_SLIDE') {
+        const index = event.data.index;
+        const slides = document.querySelectorAll('.pitch-slide');
+        if (slides[index]) {
+          slides[index].scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+    window.addEventListener('message', handleMessage);
+
     return () => {
       if (observerRef.current) observerRef.current.disconnect();
       window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('message', handleMessage);
     };
   }, []);
 
   // Presentation Mode
   const [isPresentationMode, setIsPresentationMode] = useState(false);
+  const [isEditable, setIsEditable] = useState(false);
 
   const togglePresentationMode = () => {
     const nextState = !isPresentationMode;
@@ -90,6 +143,24 @@ const PitchDeckController = () => {
         });
       }
     }
+  };
+
+  const toggleEditable = () => {
+    const nextState = !isEditable;
+    setIsEditable(nextState);
+    
+    const slides = document.querySelectorAll('.pitch-slide');
+    slides.forEach((slide) => {
+      // We target common text elements to make them editable
+      // or just the whole slide for maximum flexibility
+      if (nextState) {
+        slide.setAttribute('contenteditable', 'true');
+        (slide as HTMLElement).style.cursor = 'text';
+      } else {
+        slide.removeAttribute('contenteditable');
+        (slide as HTMLElement).style.cursor = '';
+      }
+    });
   };
 
   useEffect(() => {
@@ -400,6 +471,22 @@ const PitchDeckController = () => {
 
   return (
     <div className="pitch-controls">
+      <div className="slide-counter">
+        {activeSlideIndex + 1} / {totalSlides}
+      </div>
+
+      <button
+        onClick={toggleEditable}
+        className={`control-btn ${isEditable ? 'active' : ''}`}
+        title={isEditable ? "Disable Editing" : "Enable Inline Editing"}
+        style={{ color: isEditable ? 'var(--pitch-accent)' : 'inherit' }}
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+        </svg>
+      </button>
+
       <button
         onClick={togglePresentationMode}
         className="control-btn"
