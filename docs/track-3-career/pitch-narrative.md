@@ -29,7 +29,7 @@ Practice until the narrative flows naturally within the 6-minute constraint.
 
 ### Slide 1: Title (15 seconds)
 
-**Speaker:** [Charles or Keith opens]
+**Speaker:** [Keith]
 
 ```
 "Good afternoon. I'm [Name], joined by [teammates]. We're here from AI Studio Teams
@@ -115,7 +115,7 @@ We're not just teaching AI. We're building AI resilience—teaching students how
 
 ### Slide 4: SkaFld Trailhead (45 seconds)
 
-**Speaker:** [Can transition to Mike or Charles here]
+**Speaker:** [Charles]
 
 **Narrative:**
 ```
@@ -154,7 +154,7 @@ The result? Portfolios that PROVE capability—not credentials that claim it."
 
 ### Slide 5: From Crutch to Catalyst (30 seconds)
 
-**Speaker:** [Continue or visual only]
+**Speaker:** [Continue]
 
 **Narrative:**
 ```
@@ -192,7 +192,7 @@ the motivation that no AI can replicate."
 
 ### Slide 6: Four Pillars (30 seconds)
 
-**Speaker:** [Continue]
+**Speaker:** [Keith]
 
 **Narrative:**
 ```
@@ -232,7 +232,7 @@ Active judgment, not just guardrails. This is Human-Centered AI."
 
 ### Slide 7: SkaFld Ideation Methodology (20 seconds)
 
-**Speaker:** [Keith or Charles - methodology ownership]
+**Speaker:** [Charles]
 
 **Narrative:**
 ```
@@ -260,7 +260,7 @@ That's how students generate breakthroughs on demand."
 
 ### Slide 8: El Segundo Pilot (30 seconds)
 
-**Speaker:** [Continue]
+**Speaker:** [Charles]
 
 **Narrative:**
 ```
@@ -291,7 +291,7 @@ Stanford CREATE+AI is the catalyst that makes all of this possible."
 
 ### Slide 9: Equity - Universal Design (30 seconds)
 
-**Speaker:** [Can transition speakers here]
+**Speaker:** [Keith]
 
 **Narrative:**
 ```
@@ -326,7 +326,7 @@ school to what you can DO. Focus on what you can do. Unlock your potential."
 
 ### Slide 10: The Team (30 seconds)
 
-**Speaker:** [Each person can intro briefly, or one person covers all]
+**Speaker:** [Charles]
 
 **Narrative:**
 ```
@@ -361,7 +361,7 @@ interdisciplinary methodology."
 
 ### Slide 11: The Ask (30 seconds)
 
-**Speaker:** [Lead closes]
+**Speaker:** [Charles]
 
 :::tip Choose Your Variant Based on Room Energy
 Read the judges during Q&A and other presentations. If they seem receptive to bold vision, use **Variant A**. If they seem focused on feasibility and what $50K actually buys, use **Variant B**. Both work with the same slide.
