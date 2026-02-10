@@ -311,6 +311,9 @@ We apply UNIVERSAL DESIGN principles.
 
 No coding prerequisites. No GPA hurdles. No equipment costs.
 
+Our program builds not just access equity but AGENCY equity—students from all
+backgrounds learn to evaluate, critique, and shape AI, not just consume it.
+
 Portfolios are the great equalizer. They shift the focus from where you went to
 school to what you can DO. Focus on what you can do. Unlock your potential."
 ```
