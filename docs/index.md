@@ -6,9 +6,11 @@ hide_table_of_contents: true
 ---
 
 <div className="landing-hero">
-  <div className="landing-title">AI Studio Teams</div>
+  <div className="landing-title">SkaFld Studio x Strategic Alignment</div>
   <div className="landing-subtitle">
-    Portfolio-Based Pathways to AI-Era Careers
+    A joint partnership focused on bringing the innovation and speed of the
+    startup ecosystem to industries not traditionally associated with rapid
+    technological adoption.
     <br/>
     <strong>Stanford CREATE+AI Challenge • Track 3</strong>
   </div>
@@ -50,7 +52,10 @@ hide_table_of_contents: true
       <p className="text--center padding-horiz--md" style={{fontSize: '1.2rem', lineHeight: '1.6'}}>
         Entry-level jobs are disappearing. Young people can't get experience because employers no longer offer the roles that used to provide it.
         <br/><br/>
-        <strong>AI Studio Teams</strong> solves this by creating a structured pathway where high school students build <strong>employer-validated portfolios</strong> by solving real problems for local companies using AI.
+        <strong>SkaFld Studio x Strategic Alignment</strong> solves this by creating
+        a structured pathway where high school students build
+        <strong>employer-validated portfolios</strong> by solving real problems
+        for local companies using AI.
       </p>
     </div>
   </div>

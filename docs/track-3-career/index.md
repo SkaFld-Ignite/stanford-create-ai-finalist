@@ -1,9 +1,9 @@
 ---
-title: "AI Studio Teams: Portfolio-Based Pathways to AI-Era Careers"
+title: "SkaFld Studio x Strategic Alignment: Portfolio-Based Pathways"
 sidebar_position: 1
 ---
 
-# AI Studio Teams: Portfolio-Based Pathways to AI-Era Careers
+# SkaFld Studio x Strategic Alignment: Portfolio-Based Pathways
 
 **Stanford CREATE AI Challenge | Track 3: Augment Career Opportunities**
 
@@ -17,7 +17,13 @@ sidebar_position: 1
 
 The pathway from education to employment is breaking. As AI transforms the workforce, entry-level positions are disappearing at an alarming rate—creating an **"experience paradox"** where young people cannot gain experience because employers no longer offer the entry points that traditionally provided it. This isn't a future problem—this is the landscape TODAY's students will enter within 24-48 months.
 
-**AI Studio Teams** addresses this crisis by **rebuilding the bridge to careers**—a structured approach to nurturing human potential through verified capability. Our model replaces the broken credential-to-career pipeline with a portfolio-based pathway where cross-grade teams of 8-12 high school students complete authentic projects for local employers, building verified portfolios that prove their ability to work effectively alongside AI systems.
+**SkaFld Studio x Strategic Alignment** addresses this crisis by
+**rebuilding the bridge to careers**—a structured approach to nurturing human
+potential through verified capability. Our model replaces the broken
+credential-to-career pipeline with a portfolio-based pathway where cross-grade
+teams of 8-12 high school students complete authentic projects for local
+employers, building verified portfolios that prove their ability to work
+effectively alongside AI systems.
 
 ### Don't Give Them the Fish. Teach Them to Fish.
 
@@ -49,7 +55,7 @@ El Segundo represents an ideal implementation environment: a compact district (5
 | Gender parity in participation | 50/50 target |
 
 :::info Stanford Alignment
-This proposal directly addresses CREATE AI's Track 3 focus on "AI solutions that support skill-building, mentorship, and pathways to meaningful work." AI Studio Teams transforms how students develop career-ready capabilities by embedding AI collaboration into authentic project work validated by actual employers.
+This proposal directly addresses CREATE AI's Track 3 focus on "AI solutions that support skill-building, mentorship, and pathways to meaningful work." SkaFld Studio x Strategic Alignment transforms how students develop career-ready capabilities by embedding AI collaboration into authentic project work validated by actual employers.
 :::
 
 ---

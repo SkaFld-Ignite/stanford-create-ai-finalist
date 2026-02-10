@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'AI Studio Teams',
-  tagline: 'Portfolio-Based Pathways to AI-Era Careers',
+  title: 'SkaFld Studio x Strategic Alignment',
+  tagline: 'A Join Partnership for Transformative Growth',
   favicon: 'img/favicon.svg',
 
   future: {
@@ -47,9 +47,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'AI Studio Teams',
+      title: 'SkaFld x Strategic Alignment',
       logo: {
-        alt: 'AI Studio Teams',
+        alt: 'SkaFld Studio x Strategic Alignment',
         src: 'img/logo.svg',
       },
       items: [
@@ -101,7 +101,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `AI Studio Teams | Stanford CREATE AI Challenge 2026`,
+      copyright: `SkaFld Studio x Strategic Alignment | Stanford CREATE AI Challenge 2026`,
     },
     prism: {
       theme: prismThemes.github,

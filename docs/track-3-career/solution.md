@@ -3,7 +3,7 @@ title: "Solution"
 sidebar_position: 3
 ---
 
-# AI Studio Teams: The Solution
+# SkaFld Studio x Strategic Alignment: The Solution
 
 ## The Core Insight
 
@@ -13,11 +13,11 @@ sidebar_position: 3
   </p>
 </div>
 
-Traditional approaches give students the fish (prompts, templates, tool tutorials). AI Studio Teams teaches students to fish—building the metacognitive capabilities that transfer across any AI tool or domain.
+Traditional approaches give students the fish (prompts, templates, tool tutorials). **SkaFld Studio x Strategic Alignment** teaches students to fish—building the metacognitive capabilities that transfer across any AI tool or domain.
 
 ## Model Overview
 
-AI Studio Teams replaces the broken credential-to-career pipeline with a portfolio-based pathway where high school students complete authentic projects for local employers.
+**SkaFld Studio x Strategic Alignment** replaces the broken credential-to-career pipeline...
 
 **Core Structure:**
 - **8 teams** of 12 students each (9th-12th grade mix).
@@ -152,12 +152,12 @@ Students develop critical skills for responsible AI use: hallucination detection
 </div>
 
 :::info Human-Centered AI Design
-AI Studio Teams extends traditional user-centered design by considering broader social impacts. Students learn to build ethical and trustworthy AI that **augments human potential** and **respects human dignity**—preparing them to shape responsible AI use in their future careers.
+**SkaFld Studio x Strategic Alignment** extends traditional user-centered design...
 :::
 
 ## SkafldTrailhead: The Technology Platform
 
-AI Studio Teams is powered by **SkafldTrailhead**, an AI-powered K-12 learning platform built specifically for educational environments requiring compliance, safety, and engagement.
+**SkaFld Studio x Strategic Alignment** is powered by **SkafldTrailhead**...
 
 <div className="row">
   <div className="col col--6">
