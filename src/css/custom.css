@@ -1382,3 +1382,63 @@ body.pdf-generating .metric-grid {
 body.pdf-generating .pitch-controls {
   display: none !important;
 }
+
+/* Collapsible TOC sections */
+.toc-section > ul {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.25s ease, opacity 0.2s ease;
+}
+
+.toc-section.toc-expanded > ul {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.toc-arrow {
+  display: inline-block;
+  width: 14px;
+  font-size: 0.65rem;
+  color: var(--ifm-color-emphasis-500);
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.toc-section > a {
+  cursor: pointer;
+  user-select: none;
+}
+
+.toc-section > a:hover .toc-arrow {
+  color: var(--ifm-color-primary);
+}
+
+/* Slide click navigation links */
+a.slide-click-link {
+  display: inline-block;
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700;
+  text-decoration: none !important;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: rgba(140, 21, 21, 0.07);
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+a.slide-click-link:hover {
+  background: rgba(140, 21, 21, 0.14);
+  color: var(--ifm-color-primary-dark) !important;
+  transform: translateX(3px);
+  text-decoration: none !important;
+}
+
+[data-theme='dark'] a.slide-click-link {
+  background: rgba(232, 93, 93, 0.1);
+}
+
+[data-theme='dark'] a.slide-click-link:hover {
+  background: rgba(232, 93, 93, 0.2);
+}

@@ -24,6 +24,10 @@ const config: Config = {
     locales: ['en'],
   },
 
+  clientModules: [
+    require.resolve('./src/clientModules/pitchNarrativeEnhancements.ts'),
+  ],
+
   presets: [
     [
       'classic',

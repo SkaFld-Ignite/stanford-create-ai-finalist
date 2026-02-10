@@ -27,7 +27,7 @@ Practice until the narrative flows naturally within the 6-minute constraint.
 
 ## OPENING: THE PROBLEM (90 seconds total)
 
-### Slide 1: Title (15 seconds)
+### Slide 1: Title (15 seconds) {#slide-1}
 
 **Speaker:** [Keith]
 
@@ -39,11 +39,11 @@ How do we prepare the next generation for careers when the bridge to those caree
 is collapsing?"
 ```
 
-**[CLICK to Slide 2]**
+<a href="#slide-2" class="slide-click-link">CLICK to Slide 2 →</a>
 
 ---
 
-### Slide 2: The Experience Paradox (45 seconds)
+### Slide 2: The Experience Paradox (45 seconds) {#slide-2}
 
 **Speaker:** [Continue]
 
@@ -76,11 +76,11 @@ This isn't a future problem. This is happening RIGHT NOW."
 - "Credentials are losing value" connects to our thesis (portfolio > credentials)
 - "Right NOW" creates urgency
 
-**[CLICK to Slide 3]**
+<a href="#slide-3" class="slide-click-link">CLICK to Slide 3 →</a>
 
 ---
 
-### Slide 3: Teach Them to Fish (30 seconds)
+### Slide 3: Teach Them to Fish (30 seconds) {#slide-3}
 
 **Speaker:** [Continue]
 
@@ -107,13 +107,13 @@ We're not just teaching AI. We're building AI resilience—teaching students how
 - "AI resilience" is a World Bank/EdTech Hub term (Jan 2026) — carries institutional weight
 - Note: "forever" was removed per team discussion; skills evolve with continuous learning
 
-**[CLICK to Slide 4]**
+<a href="#slide-4" class="slide-click-link">CLICK to Slide 4 →</a>
 
 ---
 
 ## THE SOLUTION (90 seconds total)
 
-### Slide 4: SkaFld Trailhead (45 seconds)
+### Slide 4: SkaFld Trailhead (45 seconds) {#slide-4}
 
 **Speaker:** [Charles]
 
@@ -148,11 +148,11 @@ The result? Portfolios that PROVE capability—not credentials that claim it."
 - "Expand their toolset" - connects to adaptability
 - "Simple prompts can't handle" - reinforces "Teach to Fish"
 
-**[CLICK to Slide 5]**
+<a href="#slide-5" class="slide-click-link">CLICK to Slide 5 →</a>
 
 ---
 
-### Slide 5: From Crutch to Catalyst (30 seconds)
+### Slide 5: From Crutch to Catalyst (30 seconds) {#slide-5}
 
 **Speaker:** [Continue]
 
@@ -186,11 +186,11 @@ the motivation that no AI can replicate."
 **Optional addition if time permits:**
 > "And crucially—the AI can be wrong. Students learn to verify, not just accept. That's the difference between AI as crutch and AI as catalyst."
 
-**[CLICK to Slide 6]**
+<a href="#slide-6" class="slide-click-link">CLICK to Slide 6 →</a>
 
 ---
 
-### Slide 6: Four Pillars (30 seconds)
+### Slide 6: Four Pillars (30 seconds) {#slide-6}
 
 **Speaker:** [Keith]
 
@@ -224,13 +224,13 @@ Active judgment, not just guardrails. This is Human-Centered AI."
 **Verbal expansion on Responsible AI (if time/interest permits):**
 > "For students, policy and strategy are complementary parts of AI training. Policy helps them understand ethical, legal, and governance boundaries. Strategy shows how AI projects align with organizational goals. Together, they see how responsible design shapes real-world AI solutions—AI that augments human potential and respects human dignity."
 
-**[CLICK to Slide 7]**
+<a href="#slide-7" class="slide-click-link">CLICK to Slide 7 →</a>
 
 ---
 
 ## THE METHODOLOGY & DIFFERENTIATION (60 seconds total)
 
-### Slide 7: SkaFld Ideation Methodology (20 seconds)
+### Slide 7: SkaFld Ideation Methodology (20 seconds) {#slide-7}
 
 **Speaker:** [Charles]
 
@@ -254,11 +254,11 @@ That's how students generate breakthroughs on demand."
 - Emphasize the "Research Wide" phase as the core differentiator
 - "Breakthroughs on demand" creates a sense of repeatable capability
 
-**[CLICK to Slide 8]**
+<a href="#slide-8" class="slide-click-link">CLICK to Slide 8 →</a>
 
 ---
 
-### Slide 8: El Segundo Pilot (30 seconds)
+### Slide 8: El Segundo Pilot (30 seconds) {#slide-8}
 
 **Speaker:** [Charles]
 
@@ -283,13 +283,13 @@ Stanford CREATE+AI is the catalyst that makes all of this possible."
 - Employer names add legitimacy (aerospace industry)
 - Clear path from pilot to scale
 
-**[CLICK to Slide 9]**
+<a href="#slide-9" class="slide-click-link">CLICK to Slide 9 →</a>
 
 ---
 
 ## EQUITY & TEAM (60 seconds total)
 
-### Slide 9: Equity - Universal Design (30 seconds)
+### Slide 9: Equity - Universal Design (30 seconds) {#slide-9}
 
 **Speaker:** [Keith]
 
@@ -320,11 +320,11 @@ school to what you can DO. Focus on what you can do. Unlock your potential."
 - Concrete parity targets demonstrate commitment
 - "Portfolios are the great equalizer" - connects equity to thesis
 
-**[CLICK to Slide 10]**
+<a href="#slide-10" class="slide-click-link">CLICK to Slide 10 →</a>
 
 ---
 
-### Slide 10: The Team (30 seconds)
+### Slide 10: The Team (30 seconds) {#slide-10}
 
 **Speaker:** [Charles]
 
@@ -353,13 +353,13 @@ interdisciplinary methodology."
 - Each person has distinct domain expertise
 - "Technology. Design. Policy." - the new header (replaced "Stanford DNA")
 
-**[CLICK to Slide 11]**
+<a href="#slide-11" class="slide-click-link">CLICK to Slide 11 →</a>
 
 ---
 
 ## CLOSE (60 seconds total)
 
-### Slide 11: The Ask (30 seconds)
+### Slide 11: The Ask (30 seconds) {#slide-11}
 
 **Speaker:** [Charles]
 
@@ -416,11 +416,11 @@ This $50K proves it works. Everything else follows from that proof."
 - Demonstrate clear sustainability path
 - **Do NOT name a specific total** beyond $50K — keep it open-ended
 
-**[CLICK to Slide 12]**
+<a href="#slide-12" class="slide-click-link">CLICK to Slide 12 →</a>
 
 ---
 
-### Slide 12: Closing (30 seconds)
+### Slide 12: Closing (30 seconds) {#slide-12}
 
 **Speaker:** [Lead closes - strong finish]
 
