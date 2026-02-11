@@ -1,6 +1,7 @@
 ---
 title: "Q&A Preparation"
 sidebar_position: 11
+draft: true
 ---
 
 # Q&A Preparation: Strategic Response Guide

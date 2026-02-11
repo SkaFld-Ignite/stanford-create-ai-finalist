@@ -1,6 +1,7 @@
 ---
 title: "Judge Analysis: Strategic Briefing"
 sidebar_position: 12
+draft: true
 ---
 
 # Create+AI Challenge Finalist Pitch: Strategic Briefing Document

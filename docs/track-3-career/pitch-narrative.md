@@ -2,6 +2,7 @@
 sidebar_label: Pitch Deck Presentation Narrative
 title: "AI Studio Teams: 6-Minute Pitch Narrative"
 description: Speaker script and talking points for the Stanford CREATE+AI Finals pitch presentation
+draft: true
 ---
 
 # AI Studio Teams: 6-Minute Pitch Narrative
