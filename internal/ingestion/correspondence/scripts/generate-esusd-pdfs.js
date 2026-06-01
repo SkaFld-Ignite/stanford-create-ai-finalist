@@ -216,6 +216,8 @@ function buildHtml(title, subtitle, docType, contentHtml) {
     color: ${BRAND.dark};
     margin: 26px 0 8px;
     border: none;
+    page-break-after: avoid;
+    break-after: avoid;
   }
   h2 {
     font-family: 'Manrope', sans-serif;
@@ -225,6 +227,8 @@ function buildHtml(title, subtitle, docType, contentHtml) {
     margin: 22px 0 6px;
     padding-bottom: 3px;
     border-bottom: 2px solid ${BRAND.orange};
+    page-break-after: avoid;
+    break-after: avoid;
   }
   h3 {
     font-family: 'Inter', sans-serif;
@@ -232,6 +236,8 @@ function buildHtml(title, subtitle, docType, contentHtml) {
     font-weight: 700;
     color: ${BRAND.orange};
     margin: 16px 0 4px;
+    page-break-after: avoid;
+    break-after: avoid;
   }
   h4 {
     font-family: 'Inter', sans-serif;
@@ -241,6 +247,8 @@ function buildHtml(title, subtitle, docType, contentHtml) {
     text-transform: uppercase;
     letter-spacing: 0.04em;
     margin: 12px 0 3px;
+    page-break-after: avoid;
+    break-after: avoid;
   }
   .content > h1:first-child { display: none; }
 
@@ -283,7 +291,11 @@ function buildHtml(title, subtitle, docType, contentHtml) {
     margin: 10px 0;
     font-size: 9pt;
     overflow: hidden;
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
+  thead { display: table-header-group; }
+  tr { page-break-inside: avoid; break-inside: avoid; }
   thead tr {
     background: ${BRAND.headerBg};
     border-top: 3px solid ${BRAND.orange};
@@ -403,7 +415,9 @@ const DOCS = [
   if (LOGO_B64) console.log('  Logo loaded from:', LOGO_PATH);
   else console.log('  Warning: Logo not found, using text fallback');
 
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({
+    executablePath: process.env.CHROME_PATH || undefined,
+  });
 
   for (const doc of DOCS) {
     const mdPath = path.join(PARTNERSHIP_DIR, doc.file);

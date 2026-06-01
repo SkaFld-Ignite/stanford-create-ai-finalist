@@ -14,11 +14,21 @@ This plan outlines the implementation partnership between **SkaFld Studio LLC** 
 |---------|--------|
 | Students | 12 in 1 cross-grade team (9th-12th) |
 | Teacher Mentor | 1 dedicated teacher mentor |
-| Session Format | Weekly 90-minute sessions |
+| Session Format | Monthly 90-minute after-school sessions, teacher-led |
 | Employer Partners | 2-3 local companies (aerospace, tech) |
 | Curriculum | SkaFld Ideation Methodology |
 | Platform | SkaFld Trailhead (AI-powered, COPPA/FERPA compliant) |
 | Duration | 12 months |
+
+---
+
+## Session Delivery Model
+
+SkaFld prepares the teacher mentor to lead all monthly after-school sessions independently. SkaFld's role is to **train, equip, and support** — not to attend every session.
+
+- **Teacher-Led**: The trained teacher mentor facilitates monthly after-school sessions using SkaFld's curriculum guides and the Trailhead platform. The teacher is the consistent presence for students.
+- **SkaFld Support**: SkaFld provides ongoing coaching, curriculum materials, and platform support. SkaFld joins select sessions for key moments (project kickoffs, employer reviews, mid-year check-ins).
+- **Scheduling**: Sessions are held monthly after school. Specific day-of-week and start time will be determined collaboratively with the school to fit existing schedules and student needs.
 
 ---
 
@@ -29,17 +39,18 @@ This plan outlines the implementation partnership between **SkaFld Studio LLC** 
 ### What SkaFld Provides
 
 - **SkaFld Trailhead Platform** — AI Coaching Engine, Portfolio Review System, Student Progression Tracking, Teacher Dashboard. Fully COPPA/FERPA compliant with enterprise SSO (Microsoft/Google).
-- **Curriculum & Training** — Complete SkaFld Ideation Methodology curriculum for weekly 90-minute sessions. Teacher mentor training and ongoing support.
+- **Curriculum & Training** — Complete SkaFld Ideation Methodology curriculum designed for teacher-led monthly after-school sessions. SkaFld trains the teacher mentor to deliver the program independently, with session guides, facilitation materials, and ongoing coaching support. SkaFld does not attend every session — the teacher leads.
+- **Periodic Direct Support** — SkaFld joins select sessions for key milestones (e.g., project kickoffs, employer portfolio reviews, mid-year check-ins). The specific cadence of SkaFld-attended sessions will be determined collaboratively with the school.
 - **Employer Partnerships** — Recruitment and onboarding of 2-3 employer partners in El Segundo's aerospace/tech corridor for project briefs and portfolio review.
-- **Program Management** — Day-to-day coordination, progress tracking, employer communications, quarterly portfolio review facilitation.
+- **Program Management** — Coordination, progress tracking, employer communications, quarterly portfolio review facilitation. Day-to-day session delivery is led by the trained teacher mentor.
 - **Assessment & Reporting** — Learning outcome tracking with disaggregated equity monitoring. Progress reports and year-end assessment.
 
 ### What ESUSD Provides
 
 - **District Point of Contact** — A designated coordinator (CTE coordinator, assistant principal, or equivalent) to serve as the primary liaison between SkaFld and the district.
-- **Facility Access** — A classroom or meeting space for weekly 90-minute sessions (after school or embedded in CTE block, TBD).
-- **Teacher Mentor** — 1 teacher mentor to facilitate team sessions. SkaFld provides all training and curriculum materials; the teacher brings their knowledge of students and school culture.
-- **Student Recruitment Support** — Help promoting the program to students and families, processing parental consent forms, and supporting equitable recruitment (targeting 50% female, 40% FRL, 30% first-generation).
+- **Facility Access** — A classroom or meeting space for monthly after-school sessions. Specific day and start time will be determined collaboratively between SkaFld and the school.
+- **Teacher Mentor** — 1 teacher mentor who serves as the primary session facilitator. SkaFld provides comprehensive training, session-by-session curriculum guides, and ongoing coaching so the teacher can lead monthly sessions independently. The teacher brings their knowledge of students and school culture; SkaFld equips them with the methodology and materials.
+- **Student Recruitment Support** — Help promoting the program to students and families and processing parental consent forms.
 - **Administrative Support** — Standard district approvals, data sharing agreements, and coordination with existing CTE or after-school programming.
 
 ---
@@ -63,8 +74,8 @@ This plan outlines the implementation partnership between **SkaFld Studio LLC** 
 
 | Month | SkaFld Actions | ESUSD Actions |
 |-------|---------------|---------------|
-| 4 | Conduct teacher mentor training; finalize student applications; configure platform for ESUSD SSO | Open student applications; support equitable recruitment; process parental consent forms |
-| 5 | Form team of 12 students; assign employer project brief; launch weekly sessions | Students begin attending sessions; teacher mentor actively facilitating |
+| 4 | Conduct teacher mentor training (methodology, platform, session facilitation); finalize student applications; configure platform for ESUSD SSO | Open student applications; process parental consent forms |
+| 5 | Form team of 12 students; assign employer project brief; support teacher-led session launch | Students begin attending sessions; trained teacher mentor leads monthly after-school sessions with SkaFld platform and curriculum |
 | 6 | First project cycle underway; mid-year progress report | Ongoing facility and schedule support; feedback on program integration |
 
 **Month 5 Milestone:**
@@ -103,23 +114,17 @@ This plan outlines the implementation partnership between **SkaFld Studio LLC** 
 
 | # | Action | Owner | Target Date |
 |---|--------|-------|-------------|
-| 1 | Schedule 30-minute partnership kickoff call | Charles Sims / Dr. Johnson | Week of April 13 |
+| 1 | 30-minute partnership kickoff call | Charles Sims / Dr. Johnson | Wednesday, April 15 |
 | 2 | Designate ESUSD point of contact | Dr. Johnson | April 18 |
-| 3 | Identify facility for weekly sessions | ESUSD Point of Contact | April 25 |
+| 3 | Identify facility for monthly after-school sessions | ESUSD Point of Contact | April 25 |
 | 4 | Share teacher mentor criteria and identify candidate | SkaFld + ESUSD | May 2 |
 | 5 | Execute data sharing / partnership agreement | Both parties | May 9 |
 
 ---
 
-## Equity Commitments
+## Team Model
 
-SkaFld Trailhead is designed for equitable access. Recruitment and team formation will target:
-
-- **50% female / 50% male** participation
-- **40% Free/Reduced Lunch** eligible students
-- **30% first-generation** college-bound students
-
-All platform features are built with accessibility in mind, and the cross-grade team model (12th graders mentoring 10th graders, 11th graders mentoring 9th graders) ensures peer support structures are embedded from day one.
+The cross-grade team model (12th graders mentoring 10th graders, 11th graders mentoring 9th graders) ensures peer support structures are embedded from day one. All platform features are built with accessibility in mind.
 
 ---
 
